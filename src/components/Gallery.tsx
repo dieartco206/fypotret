@@ -1,5 +1,6 @@
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
 import { Eye, MessageCircle, MapPin, Sparkles, Filter } from 'lucide-react';
+import { InstagramIcon } from './InstagramIcon';
 
 interface GalleryProps {
   items: PortfolioItem[];
@@ -122,19 +123,28 @@ export const Gallery: React.FC<GalleryProps> = ({
                   </div>
                 </div>
 
-                {/* Card Action Footer: Quick WhatsApp Question */}
-                <div className="p-3 sm:p-4 bg-obsidian-900/90 border-t border-white/5 flex items-center justify-between gap-3 mt-auto">
-                  <p className="text-xs text-zinc-400 line-clamp-1 hidden xs:block">
-                    {item.description}
-                  </p>
-                  
+                {/* Card Action Footer: Quick WhatsApp Question & Instagram Link */}
+                <div className="p-3 sm:p-4 bg-obsidian-900/90 border-t border-white/5 flex items-center justify-between gap-2 mt-auto">
                   <button
                     onClick={() => onInquireItem(item)}
-                    className="w-full xs:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg bg-gold-500/15 hover:bg-gold-500/25 active:bg-gold-500/30 text-gold-400 hover:text-gold-300 border border-gold-500/30 text-xs font-semibold transition-all duration-200 cursor-pointer min-h-[38px] flex-shrink-0"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-gold-500/15 hover:bg-gold-500/25 active:bg-gold-500/30 text-gold-400 hover:text-gold-300 border border-gold-500/30 text-xs font-semibold transition-all duration-200 cursor-pointer min-h-[38px]"
                   >
                     <MessageCircle className="w-3.5 h-3.5" />
                     <span>Tanya Paket Serupa</span>
                   </button>
+
+                  {item.instagramUrl && (
+                    <a
+                      href={item.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-pink-400 border border-white/10 transition-colors flex items-center justify-center min-w-[38px] min-h-[38px]"
+                      title="Buka postingan asli di Instagram @fypotretid"
+                      aria-label="Buka postingan asli di Instagram @fypotretid"
+                    >
+                      <InstagramIcon className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
               </div>
             );

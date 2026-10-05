@@ -8,6 +8,7 @@ export interface PortfolioItem {
   location: string;
   client: string;
   description: string;
+  instagramUrl?: string;
 }
 
 export interface PricingPackage {
@@ -34,37 +35,37 @@ export interface Testimonial {
 
 export const CATEGORIES = [
   { id: 'all', label: 'Semua Karya', icon: 'Sparkles' },
+  { id: 'graduation', label: 'Wisuda (Graduation)', icon: 'GraduationCap' },
   { id: 'wedding', label: 'Wedding & Akad', icon: 'Heart' },
-  { id: 'prewedding', label: 'Prewedding', icon: 'Camera' },
-  { id: 'graduation', label: 'Wisuda', icon: 'GraduationCap' },
+  { id: 'prewedding', label: 'Lamaran & Prewed', icon: 'Camera' },
   { id: 'birthday', label: 'Kids & Birthday', icon: 'Cake' },
   { id: 'event', label: 'Dokumentasi Event', icon: 'Users' },
 ] as const;
 
 export const HIGHLIGHT_STORIES = [
   {
+    id: 'graduation',
+    title: 'Wisuda',
+    subtitle: 'Graduation Squad',
+    iconName: 'GraduationCap',
+    count: '200+ Wisudawan',
+    image: '/portfolio/p4_DbOWBkKE80l.jpg',
+  },
+  {
     id: 'wedding',
     title: 'Wedding',
-    subtitle: 'Akad & Resepsi',
+    subtitle: 'Akad & Pelaminan',
     iconName: 'Ring',
     count: '150+ Momen',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80',
+    image: '/portfolio/p7_DbVM3ScFJoX.jpg',
   },
   {
     id: 'prewedding',
-    title: 'Prewedding',
-    subtitle: 'Romantic Story',
+    title: 'Lamaran',
+    subtitle: 'Bella & Luthfy',
     iconName: 'Film',
     count: '90+ Pasangan',
-    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'graduation',
-    title: 'Wisuda',
-    subtitle: 'Graduation Glow',
-    iconName: 'GraduationCap',
-    count: '200+ Wisudawan',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80',
+    image: '/portfolio/p11_DbmsYCQkysa.jpg',
   },
   {
     id: 'birthday',
@@ -85,41 +86,177 @@ export const HIGHLIGHT_STORIES = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  // 1. Wisuda - Ch Lailonas, S.Ak Family
   {
-    id: 'p1',
-    title: 'Akad Penuh Haru & Bahagia',
+    id: 'ig-1',
+    title: 'Selebrasi Wisuda Bersama Keluarga Tercinta',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p1_DbOVpy9kzB1.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Convention Center',
+    client: 'Ch Lailonas, S.Ak',
+    description: 'Momen penuh kebanggaan bersama ibunda dan keluarga saat prosesi wisuda dengan balutan kebaya biru elegan.',
+    instagramUrl: 'https://www.instagram.com/p/DbOVpy9kzB1/',
+  },
+
+  // 2. Wisuda - Lailonas Glow
+  {
+    id: 'ig-2',
+    title: 'Glow & Senyum Bahagia Sarjana Baru',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p2_DbOVvb6E70Q.jpg',
+    aspect: 'tall',
+    location: 'Gedung Wisuda Jakarta',
+    client: 'Wisudawati Lailonas',
+    description: 'Potret senyum anggun wisudawati dengan latar belakang bunga selebrasi kelulusan.',
+    instagramUrl: 'https://www.instagram.com/p/DbOVvb6E70Q/',
+  },
+
+  // 3. Wisuda - Pelukan Ibu
+  {
+    id: 'ig-3',
+    title: 'Pelukan Haru & Bangga Ibu Tercinta',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p3_DbOV1UJk41A.jpg',
+    aspect: 'tall',
+    location: 'Lobi Wisuda Jakarta',
+    client: 'Ibu & Wisudawati',
+    description: 'Ekspresi cinta tulus dan pelukan hangat seorang ibu mendampingi putrinya meraih gelar sarjana.',
+    instagramUrl: 'https://www.instagram.com/p/DbOV1UJk41A/',
+  },
+
+  // 4. Wisuda - Dynamic Fashion 05mm Look
+  {
+    id: 'ig-4',
+    title: 'Dynamic & Fashion Graduation Outdoor',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p4_DbOWBkKE80l.jpg',
+    aspect: 'tall',
+    location: 'Stadion Outdoor Jakarta',
+    client: 'Wisudawati Sarah',
+    description: 'Pose dinamis modern dengan angle lebar (05mm look) memperlihatkan keanggunan jubah toga di lapangan terbuka.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWBkKE80l/',
+  },
+
+  // 5. Wisuda - Restu Kedua Orang Tua
+  {
+    id: 'ig-5',
+    title: 'Restu & Bangga Kedua Orang Tua',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p5_DbOWOPjE9jN.jpg',
+    aspect: 'tall',
+    location: 'Rooftop Wisuda Senayan',
+    client: 'Keluarga Besar Sarah',
+    description: 'Sentuhan tangan ayah di pundak putrinya dengan tatapan bangga dan senyum teduh sang ibu.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWOPjE9jN/',
+  },
+
+  // 6. Wisuda - Rooftop Skyline
+  {
+    id: 'ig-6',
+    title: 'Golden Hour Rooftop Sky Portrait',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p6_DbOWVZSk3Xz.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Skyline Rooftop',
+    client: 'Wisudawati Glamour',
+    description: 'Potret glamor wisudawati berbalut kebaya merah marun di bawah langit biru kota Jakarta.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWVZSk3Xz/',
+  },
+
+  // 7. Wedding - Dian & Rizky
+  {
+    id: 'ig-7',
+    title: 'Kehangatan Cinta & Senyum Pengantin Baru',
     category: 'wedding',
     categoryLabel: 'Wedding',
-    image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85',
+    image: '/portfolio/p7_DbVM3ScFJoX.jpg',
     aspect: 'tall',
     location: 'Tangerang Selatan',
     client: 'Dian & Rizky',
-    description: 'Momen sakral ijab qabul dan pamer buku nikah berbalut busana adat Jawa bernuansa emas elegan.',
+    description: 'Potret intim pengantin berbusana adat kuning emas dengan buket bunga mawar merekah.',
+    instagramUrl: 'https://www.instagram.com/p/DbVM3ScFJoX/',
   },
+
+  // 8. Wedding - Dian Mahkota Emas
   {
-    id: 'p2',
-    title: 'Graduation Day: Sarjana Terhebat',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=85',
+    id: 'ig-8',
+    title: 'Potret Anggun Mahkota & Kebaya Emas',
+    category: 'wedding',
+    categoryLabel: 'Wedding',
+    image: '/portfolio/p8_DbVNIwIFLbn.jpg',
     aspect: 'tall',
-    location: 'Universitas Indonesia, Depok',
-    client: 'Nabila, S.Ked',
-    description: 'Potret selebrasi wisuda bersama keluarga tercinta dengan jubah kebanggaan dan selempang kehormatan.',
+    location: 'Gedung Pernikahan Tangerang',
+    client: 'Pengantin Wanita Dian',
+    description: 'Detail keindahan rias pengantin, mahkota tiara, dan busana berpayet emas elegan.',
+    instagramUrl: 'https://www.instagram.com/p/DbVNIwIFLbn/',
   },
+
+  // 9. Wedding - Dian & Rizky Pelaminan
   {
-    id: 'p3',
-    title: 'Golden Sunset Prewedding Story',
+    id: 'ig-9',
+    title: 'Pelaminan Sakral Penuh Bunga & Doa',
+    category: 'wedding',
+    categoryLabel: 'Wedding',
+    image: '/portfolio/p9_DbVNZCJFIJL.jpg',
+    aspect: 'tall',
+    location: 'Pelaminan Tradisional Modern',
+    client: 'Dian & Rizky',
+    description: 'Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.',
+    instagramUrl: 'https://www.instagram.com/p/DbVNZCJFIJL/',
+  },
+
+  // 10. Lamaran - Bella & Luthfy Surprise
+  {
+    id: 'ig-10',
+    title: 'Kejutan Manis & Air Mata Bahagia Lamaran',
     category: 'prewedding',
-    categoryLabel: 'Prewedding',
-    image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1000&q=85',
-    aspect: 'wide',
-    location: 'Pantai Indah Kapuk (PIK), Jakarta',
-    client: 'Sarah & Kevin',
-    description: 'Sesi prewedding santai & intim dengan pencahayaan golden hour alami dan tawa spontan.',
+    categoryLabel: 'Lamaran',
+    image: '/portfolio/p10_Dbmrw6cE4Kj.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Bella & Luthfy',
+    description: 'Ekspresi spontan haru dan tawa bahagia calon mempelai wanita saat menerima kejutan lamaran.',
+    instagramUrl: 'https://www.instagram.com/p/Dbmrw6cE4Kj/',
   },
+
+  // 11. Lamaran - Bella & Luthfy Serasi
   {
-    id: 'p4',
+    id: 'ig-11',
+    title: 'Serasi Berbalut Batik Pink di Pelaminan Lamaran',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran',
+    image: '/portfolio/p11_DbmsYCQkysa.jpg',
+    aspect: 'tall',
+    location: 'Lamaran Intimate Tangerang',
+    client: 'Bella & Luthfy',
+    description: 'Pasangan serasi saling membelakangi dan tersenyum dengan busana senada bernuansa dusty pink.',
+    instagramUrl: 'https://www.instagram.com/p/DbmsYCQkysa/',
+  },
+
+  // 12. Lamaran - Bella & Luthfy Sambutan
+  {
+    id: 'ig-12',
+    title: 'Momen Ungkapan Rasa & Buket Bunga Bahagia',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran',
+    image: '/portfolio/p12_Dbmsw-4kzOJ.jpg',
+    aspect: 'tall',
+    location: 'Engagement Ceremony Tangerang',
+    client: 'Bella & Luthfy',
+    description: 'Sesi penyampaian pesan cinta dan penyerahan buket bunga di hadapan keluarga kedua belah pihak.',
+    instagramUrl: 'https://www.instagram.com/p/Dbmsw-4kzOJ/',
+  },
+
+  // Kategori Tambahan: Kids & Birthday
+  {
+    id: 'b-1',
     title: '1st Birthday: Senyum Ceria Nayra',
     category: 'birthday',
     categoryLabel: 'Kids & Birthday',
@@ -130,51 +267,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Koleksi tawa menggemaskan saat pesta ulang tahun pertama dengan tema dekorasi penuh warna ceria.',
   },
   {
-    id: 'p5',
-    title: 'Kehangatan Resepsi Adat & Keluarga',
-    category: 'wedding',
-    categoryLabel: 'Wedding',
-    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85',
-    aspect: 'wide',
-    location: 'Gedung Pertemuan Jakarta',
-    client: 'Anisa & Dimas',
-    description: 'Dokumentasi lengkap momen sungkeman haru dan senyum hangat sanak famili.',
-  },
-  {
-    id: 'p6',
-    title: 'Outdoor Graduation Portrait',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: 'https://images.unsplash.com/photo-1627556704302-624286467c65?auto=format&fit=crop&w=1000&q=85',
-    aspect: 'tall',
-    location: 'Taman Impian Jakarta',
-    client: 'Jessica & Squad',
-    description: 'Potret keceriaan bersama bestie kampus dengan pose dinamis dan pencahayaan outdoor natural.',
-  },
-  {
-    id: 'p7',
-    title: 'Dokumentasi Pertandingan & Turnamen',
-    category: 'event',
-    categoryLabel: 'Event & Sport',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1000&q=85',
-    aspect: 'wide',
-    location: 'GOR Jakarta',
-    client: 'Turnamen Futsal / PLN Event',
-    description: 'Aksi dinamis kecepatan tinggi saat selebrasi kemenangan dan penyerahan piala tim.',
-  },
-  {
-    id: 'p8',
-    title: 'Casual & Intimate Prewedding',
-    category: 'prewedding',
-    categoryLabel: 'Prewedding',
-    image: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1000&q=85',
-    aspect: 'tall',
-    location: 'Hutan Kota GBK, Jakarta',
-    client: 'Rani & Fajar',
-    description: 'Konsep street & casual prewedding dengan busana senada, natural tanpa pose kaku.',
-  },
-  {
-    id: 'p9',
+    id: 'b-2',
     title: 'Newborn Warmth & Little Miracle',
     category: 'birthday',
     categoryLabel: 'Kids & Birthday',
@@ -183,6 +276,19 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     location: 'Depok Studio',
     client: 'Baby Kalandra',
     description: 'Potret lembut si kecil di usia 14 hari dalam balutan kain lembut yang aman & nyaman.',
+  },
+
+  // Kategori Tambahan: Dokumentasi Event & Sport
+  {
+    id: 'e-1',
+    title: 'Dokumentasi Turnamen & Selebrasi Tim',
+    category: 'event',
+    categoryLabel: 'Event & Sport',
+    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1000&q=85',
+    aspect: 'wide',
+    location: 'GOR Jakarta',
+    client: 'Turnamen Futsal / PLN Event',
+    description: 'Aksi dinamis kecepatan tinggi saat selebrasi kemenangan dan penyerahan piala tim.',
   },
 ];
 
@@ -256,8 +362,8 @@ export const PRICING_PACKAGES: PricingPackage[] = [
   {
     id: 'prewed-casual',
     category: 'prewedding',
-    title: 'Prewedding Romantic Story',
-    tagline: 'Konsep kasual atau adat di lokasi outdoor favorit Jakarta / Tangerang',
+    title: 'Prewedding / Lamaran Romantic Story',
+    tagline: 'Dokumentasi momen lamaran intimate atau sesi prewedding outdoor',
     price: 'Rp 1.250.000',
     duration: '3 - 4 Jam Sesi Foto (1 - 2 Lokasi)',
     deliverables: 'All Raw Files + 30 Color Graded Photos + 1 Frame 12R',
@@ -288,38 +394,38 @@ export const PRICING_PACKAGES: PricingPackage[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    name: 'Nabila & Dimas',
-    role: 'Pengantin Akad Nikah',
+    name: 'Dian & Rizky',
+    role: 'Pengantin Akad & Pelaminan Tangerang',
     category: 'Wedding',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: '/portfolio/p7_DbVM3ScFJoX.jpg',
     quote: 'Mas fotografernya sabar banget dan asik pas ngarahin gaya! Awalnya kami berdua kaku banget depan kamera, tapi pas lihat hasilnya... MasyaAllah warna gold hangatnya dapet banget, persis yang kita mau.',
     rating: 5,
   },
   {
     id: 't2',
-    name: 'Alifia Putri, S.I.Kom',
-    role: 'Wisudawati UI Depok',
+    name: 'Ch Lailonas, S.Ak',
+    role: 'Wisudawati JCC Jakarta',
     category: 'Graduation',
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80',
-    quote: 'Booking H-3 wisuda karena bingung cari fotografer yang ready di Depok. Respon admin FYPotret via WA cepet banget. Pas hari H on-time, angle fotonya flattering banget buat cewek!',
+    avatar: '/portfolio/p2_DbOVvb6E70Q.jpg',
+    quote: 'Foto-fotonya bagus banget, tone warnanya bersih dan natural! Pengarahan posenya luwes banget jadi gak kelihatan canggung sama keluarga. Recommended banget buat temen-temen wisuda!',
     rating: 5,
   },
   {
     id: 't3',
-    name: 'Hendro Prasetyo',
-    role: 'Koordinator Acara PLN Sport',
-    category: 'Event Dokumentasi',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    quote: 'Sudah 2x pakai jasa FYPotret untuk turnamen kantor. Tangkapan momen smash dan selebrasinya dapet banget. File Google Drive dikirim rapi per folder kategori pertandingan.',
+    name: 'Bella & Luthfy',
+    role: 'Pasangan Lamaran Tangerang',
+    category: 'Lamaran',
+    avatar: '/portfolio/p11_DbmsYCQkysa.jpg',
+    quote: 'Momen surprise lamaran kami terabadikan sempurna, ekspresi nangis haru dan ketawa candid semuanya dapet. Terima kasih banyak tim FYPotret!',
     rating: 5,
   },
   {
     id: 't4',
-    name: 'Citra & Kevin',
-    role: 'Prewedding Couple',
-    category: 'Prewedding',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-    quote: 'Suka banget sama grading fotonya yang moody tapi tetep warm. Banyak temen yang nanya di Instagram fotografernya siapa. Highly recommended buat yang cari fotografer di Tangerang!',
+    name: 'Sarah, S.Ked',
+    role: 'Wisudawati Rooftop Senayan',
+    category: 'Graduation',
+    avatar: '/portfolio/p6_DbOWVZSk3Xz.jpg',
+    quote: 'Suka banget sama konsep foto rooftop dan angle lebarnya. Banyak temen yang nanya di Instagram fotografernya siapa. Highly recommended!',
     rating: 5,
   },
 ];

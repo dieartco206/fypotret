@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import type { PortfolioItem } from '../data/portfolioData';
 import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin } from 'lucide-react';
+import { InstagramIcon } from './InstagramIcon';
 
 interface LightboxModalProps {
   items: PortfolioItem[];
@@ -128,16 +129,31 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             </p>
           </div>
 
-          <button
-            onClick={() => {
-              onClose();
-              onInquire(currentItem);
-            }}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-500/20 active:scale-98 transition-all min-h-[44px] flex-shrink-0"
-          >
-            <MessageCircle className="w-4 h-4 fill-obsidian-950" />
-            <span>Tanya Paket Seperti Ini</span>
-          </button>
+          <div className="flex items-center gap-2 w-full sm:w-auto flex-shrink-0">
+            {currentItem.instagramUrl && (
+              <a
+                href={currentItem.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-pink-400 font-bold text-xs flex items-center justify-center gap-2 border border-white/15 transition-all min-h-[44px]"
+                title="Buka postingan asli di Instagram @fypotretid"
+              >
+                <InstagramIcon className="w-4 h-4 text-pink-400" />
+                <span className="hidden xs:inline">Buka IG</span>
+              </a>
+            )}
+
+            <button
+              onClick={() => {
+                onClose();
+                onInquire(currentItem);
+              }}
+              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-500/20 active:scale-98 transition-all min-h-[44px]"
+            >
+              <MessageCircle className="w-4 h-4 fill-obsidian-950" />
+              <span>Tanya Paket Seperti Ini</span>
+            </button>
+          </div>
         </div>
       </div>
 

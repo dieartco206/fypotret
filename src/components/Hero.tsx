@@ -126,8 +126,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* Main Visual Image Card */}
               <div className="relative rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl shadow-black/90 aspect-[4/5] bg-obsidian-900 group">
                 <img
-                  src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=85"
-                  alt="FYPotret Wedding Moment"
+                  src="/portfolio/p7_DbVM3ScFJoX.jpg"
+                  alt="Dian & Rizky Wedding - FYPotret"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="eager"
                 />
