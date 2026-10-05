@@ -19,14 +19,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           alt="Cinematic Photography Backdrop"
           className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115 animate-ken-burns"
         />
-        {/* Layered Dark Vignette - Dominan Hitam Eksklusif, Teks Tajam Kontras */}
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/80 to-obsidian-950/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/85" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-amber-500/25 via-orange-500/12 to-transparent" />
+        {/* Layered Dark Vignette - Pure Obsidian Luxury, Teks Putih & Emas Menyala Tajam */}
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/80 to-obsidian-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gold-400/12 via-amber-500/5 to-transparent" />
       </div>
 
-      {/* Warm Orange Spotlight behind Headline (Gelap Sedang, Nuansa Oranye Tetap Ada & Elegan) */}
-      <div className="absolute top-1/4 -left-12 w-[450px] sm:w-[650px] h-[450px] sm:h-[650px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/26 via-orange-500/14 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
+      {/* Subtle Champagne Gold Halo behind Headline (Sesuai Logo FYPotret, Bebas Warna Cokelat Keruh) */}
+      <div className="absolute top-1/4 -left-12 w-[450px] sm:w-[650px] h-[450px] sm:h-[650px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/14 via-amber-400/5 to-transparent rounded-full blur-[100px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -89,8 +89,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-6 relative mt-6 lg:mt-0">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
-              {/* Subtle Ambient Golden/Orange Glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/12 to-transparent rounded-full blur-[90px] pointer-events-none -z-10" />
+              {/* Subtle Ambient Golden Halo */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/12 via-amber-400/5 to-transparent rounded-full blur-[90px] pointer-events-none -z-10" />
 
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">

@@ -52,14 +52,14 @@ export const Gallery: React.FC<GalleryProps> = ({
           alt="Gallery Exhibition Atmosphere"
           className="w-full h-full object-cover object-center scale-105 filter brightness-80 contrast-115 animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-obsidian-950/85 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/90 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/12 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-400/10 via-transparent to-transparent" />
       </div>
 
-      {/* Warm Golden/Orange Spotlights (Dominan Hitam Mewah, Sentuhan Oranye Elegan) */}
-      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/14 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
-      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-orange-500/22 via-amber-500/12 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
+      {/* Subtle Champagne Gold Ambient Halos (Bersih, Mewah, Foto Portofolio Menyala Tajam) */}
+      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/10 via-amber-400/4 to-transparent rounded-full blur-[110px] pointer-events-none z-0" />
+      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/8 via-gold-400/3 to-transparent rounded-full blur-[110px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
