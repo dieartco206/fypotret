@@ -6,18 +6,18 @@ export const BackgroundDecoration: React.FC = () => {
       {/* 1. Subtle Camera Rule-of-Thirds & Focus Dot Grid Pattern */}
       <div className="absolute inset-0 bg-camera-grid opacity-35" />
 
-      {/* 2. Champagne Gold Lens Flares & Optical Bokeh (Pure Luxury, 100% harmonized with logo) */}
-      {/* Top Left Subtle Champagne Gold Halo (Hero Headline Area) */}
-      <div className="absolute -top-16 -left-16 w-[420px] sm:w-[650px] h-[420px] sm:h-[650px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/15 via-amber-400/6 to-transparent rounded-full blur-[110px] animate-pulse-subtle" />
+      {/* 2. Champagne Gold Lens Flares & Optical Bokeh (Harmonious Luxury, Not pitch-black) */}
+      {/* Top Left Warm Champagne Gold Halo (Hero Headline Area) */}
+      <div className="absolute -top-16 -left-16 w-[480px] sm:w-[750px] h-[480px] sm:h-[750px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/22 via-amber-500/10 to-transparent rounded-full blur-[100px] animate-pulse-subtle" />
 
       {/* Center Right Optical Bokeh (Gallery Area) */}
-      <div className="absolute top-[35%] -right-16 w-[360px] sm:w-[580px] h-[360px] sm:h-[580px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/10 via-yellow-500/4 to-transparent rounded-full blur-[110px]" />
+      <div className="absolute top-[35%] -right-16 w-[420px] sm:w-[680px] h-[420px] sm:h-[680px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/18 via-gold-500/8 to-transparent rounded-full blur-[100px]" />
 
       {/* Mid Left Subtle Gold Flare (Pricing Area) */}
-      <div className="absolute top-[65%] -left-16 w-[380px] sm:w-[600px] h-[380px] sm:h-[600px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/10 via-amber-500/4 to-transparent rounded-full blur-[110px]" />
+      <div className="absolute top-[65%] -left-16 w-[450px] sm:w-[700px] h-[450px] sm:h-[700px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/18 via-amber-500/8 to-transparent rounded-full blur-[100px]" />
 
       {/* Bottom Center Champagne Gold Halo (Testimonials & Footer Area) */}
-      <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[450px] sm:w-[700px] h-[320px] sm:h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/12 via-amber-400/5 to-transparent rounded-full blur-[90px]" />
+      <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[500px] sm:w-[800px] h-[350px] sm:h-[500px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/20 via-amber-400/8 to-transparent rounded-full blur-[90px]" />
 
       {/* 3. Luxury Lens Aperture & Golden Rings Watermark */}
       <div className="absolute top-40 right-10 w-96 h-96 opacity-[0.08] hidden lg:block">

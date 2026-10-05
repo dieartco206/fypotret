@@ -50,16 +50,16 @@ export const Gallery: React.FC<GalleryProps> = ({
         <img
           src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85"
           alt="Gallery Exhibition Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-80 contrast-115 animate-ken-burns"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-95 contrast-110 animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-obsidian-950/90 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/75 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-400/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-400/16 via-transparent to-transparent" />
       </div>
 
       {/* Subtle Champagne Gold Ambient Halos (Bersih, Mewah, Foto Portofolio Menyala Tajam) */}
-      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/10 via-amber-400/4 to-transparent rounded-full blur-[110px] pointer-events-none z-0" />
-      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/8 via-gold-400/3 to-transparent rounded-full blur-[110px] pointer-events-none z-0" />
+      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/18 via-amber-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/16 via-gold-400/10 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
