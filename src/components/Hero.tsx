@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, MapPin, Calendar, Heart, ShieldCheck, ArrowUpRight, Camera } from 'lucide-react';
+import { Sparkles, MapPin, Calendar, Heart, ShieldCheck, ArrowUpRight } from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -137,8 +137,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                     <div className="text-sm font-semibold text-white mt-0.5">Dian & Rizky</div>
                     <div className="text-[11px] text-zinc-400">Tangerang Selatan</div>
                   </div>
-                  <div className="w-9 h-9 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
-                    <Camera className="w-4 h-4" />
+                  <div className="w-9 h-9 rounded-full overflow-hidden bg-obsidian-900 border border-gold-500/50 flex items-center justify-center shadow-md">
+                    <img
+                      src="/logo.jpg"
+                      alt="FYPotret"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, MessageCircle, MapPin, Heart } from 'lucide-react';
+import { MessageCircle, MapPin, Heart } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 export const Footer: React.FC = () => {
@@ -11,8 +11,12 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-obsidian-900 border-2 border-gold-500/80 flex items-center justify-center">
-                <Camera className="w-5 h-5 text-gold-400" />
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-obsidian-900 border-2 border-gold-500/80 flex items-center justify-center shadow-lg shadow-gold-500/20">
+                <img
+                  src="/logo.jpg"
+                  alt="FYPotret Official Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="text-2xl font-bold tracking-tight text-white font-serif">
                 FY<span className="text-gold-400">Potret</span>

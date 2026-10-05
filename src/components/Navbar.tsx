@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Menu, X, MessageCircle, Sparkles } from 'lucide-react';
+import { Menu, X, MessageCircle, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface NavbarProps {
@@ -41,8 +41,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             href="#"
             className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 rounded-lg p-1"
           >
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-obsidian-900 border-2 border-gold-500/80 flex items-center justify-center shadow-lg shadow-gold-500/10 group-hover:border-gold-400 group-hover:scale-105 transition-all duration-300">
-              <Camera className="w-5 h-5 sm:w-5 sm:h-5 text-gold-400" />
+            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-obsidian-900 border-2 border-gold-500/80 flex items-center justify-center shadow-lg shadow-gold-500/20 group-hover:border-gold-400 group-hover:scale-105 transition-all duration-300">
+              <img
+                src="/logo.jpg"
+                alt="FYPotret Official Logo"
+                className="w-full h-full object-cover"
+              />
               <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-gold-400 rounded-full animate-ping opacity-75" />
             </div>
             <div>
