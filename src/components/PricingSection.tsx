@@ -22,11 +22,22 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
   ] as const;
 
   return (
-    <section id="pricing" className="py-16 sm:py-24 bg-obsidian-900/60 border-t border-white/5 relative">
-      {/* Background radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold-500/5 rounded-full blur-[140px] pointer-events-none -z-10" />
+    <section id="pricing" className="py-16 sm:py-24 border-t border-white/5 relative overflow-hidden">
+      {/* Real Photography Backdrop for Pricing Section */}
+      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=2000&q=80"
+          alt="Wedding Celebration Atmosphere"
+          className="w-full h-full object-cover object-center opacity-25 filter brightness-75 contrast-125"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-obsidian-950/92 to-obsidian-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/12 via-transparent to-transparent" />
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background radial glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">

@@ -27,8 +27,16 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
   };
 
   return (
-    <section className="py-6 sm:py-8 border-y border-white/5 bg-obsidian-900/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-7 sm:py-9 border-y border-gold-500/25 bg-gradient-to-r from-obsidian-900 via-amber-950/25 to-obsidian-900 shadow-2xl overflow-hidden">
+      {/* Background Subtle Studio Camera Atmosphere */}
+      <div className="absolute inset-0 pointer-events-none opacity-15 mix-blend-overlay -z-10">
+        <img
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80"
+          alt="Studio Background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header on Mobile */}
         <div className="flex items-center justify-between mb-4">

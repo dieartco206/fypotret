@@ -17,8 +17,19 @@ export const Gallery: React.FC<GalleryProps> = ({
   onInquireItem,
 }) => {
   return (
-    <section id="gallery" className="py-16 sm:py-24 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="py-16 sm:py-24 relative overflow-hidden">
+      {/* Real Photography Backdrop for Gallery Section */}
+      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=2000&q=80"
+          alt="Gallery Exhibition Atmosphere"
+          className="w-full h-full object-cover object-center opacity-20 filter brightness-70 contrast-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-obsidian-950/90 to-obsidian-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">

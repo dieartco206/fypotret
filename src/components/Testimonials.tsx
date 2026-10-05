@@ -15,7 +15,17 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
 
   return (
     <section id="testimonials" className="py-16 sm:py-24 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Real Photography Backdrop for Testimonials Section */}
+      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=2000&q=80"
+          alt="Event and Reception Atmosphere"
+          className="w-full h-full object-cover object-center opacity-20 filter brightness-70 contrast-125"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-obsidian-950/90 to-obsidian-950" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Testimonials Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
