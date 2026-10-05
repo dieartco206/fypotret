@@ -45,10 +45,11 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
 
         {/* Testimonial Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-20">
-          {TESTIMONIALS.map((t) => (
+          {TESTIMONIALS.map((t, i) => (
             <div
               key={t.id}
-              className="rounded-2xl p-6 card-luxury transition-all flex flex-col justify-between"
+              style={{ animationDelay: `${i * 120}ms` }}
+              className="rounded-2xl p-6 card-luxury transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gold-500/10 flex flex-col justify-between animate-card-enter"
             >
               <div>
                 {/* Verified Client Badge & Quote Icon */}

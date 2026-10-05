@@ -167,3 +167,101 @@
   animation: storyRingSpin 8s linear infinite;
 }
 
+/* 6. Card Staggered Entrance (Meluncur halus dari bawah & scale up lembut) */
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(36px) scale(0.95);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(-2px) scale(1.005);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-card-enter {
+  animation: cardEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* 7. Text Smooth Reveal & Focus (Blur to crisp text entrance) */
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.animate-text-reveal {
+  animation: textReveal 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* 8. Text Shimmer Flow (Kilau emas dinamis mengalir pada teks) */
+@keyframes textGoldFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gold-flow {
+  background: linear-gradient(90deg, #FDE68A 0%, #F59E0B 25%, #FFFBEB 50%, #F59E0B 75%, #D97706 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGoldFlow 4s ease-in-out infinite;
+}
+
+/* 9. Floating Card Breathing Ambient Movement */
+@keyframes floatSubtleA {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatSubtleB {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-float-a {
+  animation: floatSubtleA 6s ease-in-out infinite;
+}
+
+.animate-float-b {
+  animation: floatSubtleB 7s ease-in-out infinite;
+}
+
+/* Staggered Delay Utilities */
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-150 { animation-delay: 150ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-250 { animation-delay: 250ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-350 { animation-delay: 350ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-450 { animation-delay: 450ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-600 { animation-delay: 600ms; }
+

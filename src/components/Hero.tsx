@@ -36,39 +36,39 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-6 text-center lg:text-left">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-5">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
               Abadikan Momen Berharga Bersama{' '}
-              <span className="italic font-normal text-gold-gradient block sm:inline">
+              <span className="italic font-normal animate-gold-flow inline-block">
                 FYPotret
               </span>.
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-7">
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-7 animate-text-reveal animation-delay-200">
               Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
 
             {/* Location & Coverage Tags */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-8 text-xs text-zinc-400">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-8 text-xs text-zinc-400 animate-text-reveal animation-delay-300">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
                 <MapPin className="w-3.5 h-3.5 text-gold-400" />
                 Tangerang
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
                 <MapPin className="w-3.5 h-3.5 text-gold-400" />
                 Depok
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
                 <MapPin className="w-3.5 h-3.5 text-gold-400" />
                 Jakarta & Sekitarnya
               </span>
             </div>
 
             {/* Action Buttons (Mobile-First Touch Optimized) */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 animate-text-reveal animation-delay-400">
               <button
                 onClick={onOpenBooking}
-                className="relative overflow-hidden w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px] group"
+                className="relative overflow-hidden w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px] group cursor-pointer"
               >
                 {/* Golden Shimmer Light Sweep Effect */}
                 <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none animate-shimmer-sweep" />
@@ -96,12 +96,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">
                 
-                {/* Column 1 */}
-                <div className="flex flex-col gap-3 sm:gap-4.5">
+                {/* Column 1 with Subtle Float */}
+                <div className="flex flex-col gap-3 sm:gap-4.5 animate-float-a">
                   {/* 01. Wedding & Akad */}
                   <a
                     href="#gallery"
-                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-100"
                   >
                     <img
                       src="/portfolio/p7_DbVM3ScFJoX.jpg"
@@ -123,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   {/* 02. Lamaran & Prewedding */}
                   <a
                     href="#gallery"
-                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-250"
                   >
                     <img
                       src="/portfolio/p11_DbmsYCQkysa.jpg"
@@ -143,12 +143,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   </a>
                 </div>
 
-                {/* Column 2 (Offset / Staggered down) */}
-                <div className="flex flex-col gap-3 sm:gap-4.5 pt-5 sm:pt-9">
+                {/* Column 2 (Offset / Staggered down) with Complementary Float */}
+                <div className="flex flex-col gap-3 sm:gap-4.5 pt-5 sm:pt-9 animate-float-b">
                   {/* 03. Wisuda Solo */}
                   <a
                     href="#gallery"
-                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-200"
                   >
                     <img
                       src="/portfolio/p2_DbOVvb6E70Q.jpg"
@@ -170,7 +170,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   {/* 04. Wisuda Squad / Sahabat */}
                   <a
                     href="#gallery"
-                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-350"
                   >
                     <img
                       src="/portfolio/p4_DbOWBkKE80l.jpg"

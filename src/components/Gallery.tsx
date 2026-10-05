@@ -101,7 +101,8 @@ export const Gallery: React.FC<GalleryProps> = ({
             return (
               <div
                 key={item.id}
-                className="group relative rounded-xl sm:rounded-2xl overflow-hidden card-luxury transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold-500/10 flex flex-col"
+                style={{ animationDelay: `${(index % 8) * 80}ms` }}
+                className="group relative rounded-xl sm:rounded-2xl overflow-hidden card-luxury transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-gold-500/15 flex flex-col animate-card-enter"
               >
                 {/* Image Container with Dynamic Aspect Ratios */}
                 <div

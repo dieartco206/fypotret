@@ -59,7 +59,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
           {/* "Semua" pill / circle */}
           <button
             onClick={() => onSelectCategory('all')}
-            className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform"
+            className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform animate-card-enter animation-delay-100"
           >
             <div
               className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full p-0.5 transition-all duration-300 ${
@@ -83,13 +83,14 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
           </button>
 
           {/* Individual Category Stories */}
-          {HIGHLIGHT_STORIES.map((story) => {
+          {HIGHLIGHT_STORIES.map((story, idx) => {
             const isActive = activeCategory === story.id;
             return (
               <button
                 key={story.id}
                 onClick={() => onSelectCategory(story.id)}
-                className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform"
+                style={{ animationDelay: `${(idx + 1) * 90}ms` }}
+                className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform animate-card-enter"
               >
                 {/* Circle Container with Golden Border Ring */}
                 <div

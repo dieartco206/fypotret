@@ -31,21 +31,21 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         </div>
 
         {/* Big Editorial Headline */}
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6 animate-text-reveal">
           Momen Berharga Berlangsung Sekali Seumur Hidup,{' '}
-          <span className="italic font-normal text-gold-gradient block sm:inline">
+          <span className="italic font-normal animate-gold-flow inline-block">
             Abadikan dengan Indah
           </span>{' '}
           Bersama Kami.
         </h2>
 
         {/* Subtitle */}
-        <p className="text-sm sm:text-base lg:text-lg text-zinc-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+        <p className="text-sm sm:text-base lg:text-lg text-zinc-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans animate-text-reveal animation-delay-200">
           Jadwal akhir pekan dan periode wisuda memiliki kuota terbatas. Ingin berkonsultasi mengenai lokasi foto, konsep pakaian, atau alur acara? Tim fotografer kami siap membantu Anda merencanakan sesi foto terbaik.
         </p>
 
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-text-reveal animation-delay-300">
           <button
             onClick={onOpenBooking}
             className="relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-extrabold text-sm sm:text-base uppercase tracking-wider shadow-2xl shadow-gold-500/40 hover:shadow-gold-500/60 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer min-h-[52px] group"

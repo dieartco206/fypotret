@@ -73,11 +73,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
 
         {/* Pricing Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
-          {filteredPackages.map((pkg) => {
+          {filteredPackages.map((pkg, index) => {
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury ${
+                style={{ animationDelay: `${index * 150}ms` }}
+                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 ${
                   pkg.isPopular
                     ? 'border-gold-400/90 shadow-2xl shadow-gold-500/20 ring-1 ring-gold-400/50'
                     : 'hover:border-gold-500/50'
