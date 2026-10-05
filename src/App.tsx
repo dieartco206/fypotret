@@ -4,7 +4,6 @@ import { Hero } from './components/Hero';
 import { Gallery } from './components/Gallery';
 import { PricingSection } from './components/PricingSection';
 import { Testimonials } from './components/Testimonials';
-import { CtaBanner } from './components/CtaBanner';
 import { Footer } from './components/Footer';
 import { LightboxModal } from './components/LightboxModal';
 import { BookingModal } from './components/BookingModal';
@@ -70,17 +69,13 @@ export function App() {
           selectedCategory={selectedCategory}
           onSelectCategory={(catId) => setSelectedCategory(catId)}
           onOpenLightbox={handleOpenLightbox}
-          onInquireItem={handleInquireItem}
         />
 
         {/* Transparent Pricing Section */}
         <PricingSection onSelectPackage={handleSelectPackage} />
 
-        {/* High-Impact Photography CTA Banner */}
-        <CtaBanner onOpenBooking={handleOpenGeneralBooking} />
-
         {/* Testimonials & FAQ Section */}
-        <Testimonials onOpenBooking={handleOpenGeneralBooking} />
+        <Testimonials />
       </main>
 
       {/* Brand Footer */}

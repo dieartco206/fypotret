@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 {/* Golden Shimmer Light Sweep Effect */}
                 <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none animate-shimmer-sweep" />
                 <Calendar className="w-4 h-4 fill-obsidian-950 relative z-10" />
-                <span className="relative z-10">Konsultasi Jadwal & Booking</span>
+                <span className="relative z-10">Reservasi Jadwal</span>
               </button>
 
               <a

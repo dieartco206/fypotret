@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               className="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-500/20 hover:shadow-gold-500/40 hover:brightness-110 active:scale-95 transition-all duration-200 cursor-pointer min-h-[44px]"
             >
               <MessageCircle className="w-4 h-4 fill-obsidian-950" />
-              <span>Booking Jadwal</span>
+              <span>Reservasi</span>
             </button>
           </div>
 
@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <button
               onClick={onOpenBooking}
               className="p-2.5 rounded-full bg-gold-500 text-obsidian-950 font-bold shadow-md shadow-gold-500/20 active:scale-95 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center"
-              aria-label="Booking WhatsApp"
+              aria-label="Reservasi WhatsApp"
             >
               <MessageCircle className="w-5 h-5 fill-obsidian-950" />
             </button>
@@ -141,7 +141,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-sm tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20 active:scale-98"
               >
                 <CalendarCheck className="w-4 h-4" />
-                <span>Tanya Jadwal & Booking Sekarang</span>
+                <span>Reservasi Jadwal</span>
               </button>
 
               <a

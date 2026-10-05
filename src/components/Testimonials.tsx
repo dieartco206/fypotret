@@ -1,12 +1,8 @@
 import React from 'react';
 import { TESTIMONIALS, FAQ_ITEMS } from '../data/portfolioData';
-import { CheckCircle2, Quote, ChevronDown, Camera, MessageCircle } from 'lucide-react';
+import { CheckCircle2, Quote, ChevronDown, Camera } from 'lucide-react';
 
-interface TestimonialsProps {
-  onOpenBooking: () => void;
-}
-
-export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => {
+export const Testimonials: React.FC = () => {
   const [openFaqIndex, setOpenFaqIndex] = React.useState<number | null>(0);
 
   const toggleFaq = (index: number) => {
@@ -122,18 +118,6 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
                 </div>
               );
             })}
-          </div>
-
-          {/* Quick FAQ CTA */}
-          <div className="mt-8 text-center">
-            <p className="text-xs text-zinc-400 mb-3">Masih memiliki pertanyaan lain yang belum terjawab?</p>
-            <button
-              onClick={onOpenBooking}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 hover:bg-gold-500/20 text-zinc-200 hover:text-gold-300 border border-white/10 hover:border-gold-500/30 text-xs font-semibold transition-all cursor-pointer min-h-[44px]"
-            >
-              <MessageCircle className="w-3.5 h-3.5 text-gold-400" />
-              <span>Konsultasi Langsung via WhatsApp</span>
-            </button>
           </div>
         </div>
 
