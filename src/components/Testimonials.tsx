@@ -36,7 +36,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}
-              className="rounded-2xl p-6 bg-obsidian-900 border border-white/10 hover:border-gold-500/30 transition-all flex flex-col justify-between shadow-xl"
+              className="rounded-2xl p-6 card-luxury transition-all flex flex-col justify-between"
             >
               <div>
                 {/* Rating Stars & Quote Icon */}

@@ -60,7 +60,7 @@ export const Gallery: React.FC<GalleryProps> = ({
             return (
               <div
                 key={item.id}
-                className="group relative rounded-2xl overflow-hidden bg-obsidian-900 border border-white/10 hover:border-gold-500/50 shadow-xl transition-all duration-300 flex flex-col"
+                className="group relative rounded-2xl overflow-hidden card-luxury transition-all duration-300 flex flex-col"
               >
                 {/* Image Container with Dynamic Aspect Ratios */}
                 <div

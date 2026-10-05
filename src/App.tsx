@@ -9,6 +9,7 @@ import { Footer } from './components/Footer';
 import { LightboxModal } from './components/LightboxModal';
 import { BookingModal } from './components/BookingModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { BackgroundDecoration } from './components/BackgroundDecoration';
 import { PORTFOLIO_ITEMS, type PricingPackage, type PortfolioItem } from './data/portfolioData';
 
 export function App() {
@@ -51,7 +52,10 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-obsidian-950 text-zinc-100 flex flex-col selection:bg-gold-500 selection:text-black">
+    <div className="min-h-screen bg-obsidian-950 text-zinc-100 flex flex-col selection:bg-gold-500 selection:text-black relative">
+      {/* Background Cinematic Texture & Bokeh Layer */}
+      <BackgroundDecoration />
+
       {/* Top Navbar */}
       <Navbar onOpenBooking={handleOpenGeneralBooking} />
 

@@ -65,10 +65,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ${
+                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury ${
                   pkg.isPopular
-                    ? 'bg-gradient-to-b from-obsidian-850 to-obsidian-900 border-2 border-gold-500/70 shadow-2xl shadow-gold-500/10 scale-[1.02]'
-                    : 'bg-obsidian-900/90 border border-white/10 hover:border-gold-500/40 shadow-xl'
+                    ? 'border-2 border-gold-500/80 shadow-2xl shadow-gold-500/20 scale-[1.02] ring-1 ring-gold-500/30'
+                    : 'hover:border-gold-500/50'
                 }`}
               >
                 {/* Popular Pill */}
