@@ -6,18 +6,18 @@ export const BackgroundDecoration: React.FC = () => {
       {/* 1. Subtle Camera Rule-of-Thirds & Focus Dot Grid Pattern */}
       <div className="absolute inset-0 bg-camera-grid opacity-35" />
 
-      {/* 2. Soft Amber & Orange Bokeh Orbs (Keeps dark dominant, subtle warm presence) */}
-      {/* Top Left Warm Bokeh (Hero Area) */}
-      <div className="absolute -top-24 -left-24 w-[380px] sm:w-[680px] h-[380px] sm:h-[680px] bg-gradient-to-br from-amber-500/24 via-orange-500/15 to-transparent rounded-full blur-[140px] animate-pulse-subtle" />
+      {/* 2. Vibrant Warm Amber & Golden Bokeh Spots (High contrast, crisp dark background with visible golden-orange aura) */}
+      {/* Top Left Warm Golden Aura (Hero Headline Area) */}
+      <div className="absolute -top-12 -left-12 w-[420px] sm:w-[650px] h-[420px] sm:h-[650px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/35 via-orange-500/22 to-transparent rounded-full blur-[90px] animate-pulse-subtle" />
 
-      {/* Center Right Warm Bokeh (Gallery Area) */}
-      <div className="absolute top-[35%] -right-24 w-[340px] sm:w-[600px] h-[340px] sm:h-[600px] bg-gradient-to-bl from-amber-600/20 via-orange-500/12 to-transparent rounded-full blur-[140px]" />
+      {/* Center Right Warm Bokeh (Gallery Transition) */}
+      <div className="absolute top-[35%] -right-16 w-[360px] sm:w-[580px] h-[360px] sm:h-[580px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-orange-500/30 via-amber-500/18 to-transparent rounded-full blur-[90px]" />
 
-      {/* Mid Left Soft Bronze/Orange Orb (Pricing Area) */}
-      <div className="absolute top-[65%] -left-28 w-[360px] sm:w-[620px] h-[360px] sm:h-[620px] bg-gradient-to-tr from-amber-500/20 via-orange-600/12 to-transparent rounded-full blur-[150px]" />
+      {/* Mid Left Golden Spotlight (Pricing Area) */}
+      <div className="absolute top-[65%] -left-16 w-[380px] sm:w-[600px] h-[380px] sm:h-[600px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/30 via-orange-600/18 to-transparent rounded-full blur-[90px]" />
 
-      {/* Bottom Center Golden/Orange Glow (Testimonials & Footer Area) */}
-      <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[420px] sm:w-[750px] h-[300px] sm:h-[450px] bg-gradient-to-t from-amber-500/22 via-orange-600/14 to-transparent rounded-full blur-[130px]" />
+      {/* Bottom Center Golden/Orange Warm Halo (Testimonials & Footer Area) */}
+      <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[450px] sm:w-[700px] h-[320px] sm:h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/32 via-orange-500/20 to-transparent rounded-full blur-[80px]" />
 
       {/* 3. Luxury Lens Aperture & Golden Rings Watermark */}
       <div className="absolute top-40 right-10 w-96 h-96 opacity-[0.08] hidden lg:block">

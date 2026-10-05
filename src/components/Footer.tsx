@@ -13,11 +13,11 @@ export const Footer: React.FC = () => {
           className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-125"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/85 to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-500/28 via-orange-500/15 to-transparent" />
       </div>
 
-      {/* Subtle Warm Amber Glow */}
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[250px] bg-amber-500/18 rounded-full blur-[130px] pointer-events-none z-0" />
+      {/* Warm Golden/Amber Glow from bottom */}
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[250px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/30 via-orange-500/16 to-transparent rounded-full blur-[80px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
