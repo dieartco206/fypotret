@@ -628,7 +628,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
   {
     id: 'wedding-intimate',
     category: 'wedding',
-    title: 'Akad Nikah / Intimate Wedding',
+    title: 'Akad Nikah & Intimate',
     tagline: 'Fokus mendokumentasikan setiap detil sakral ijab qabul dan haru keluarga',
     price: 'Rp 1.850.000',
     duration: 'Up to 5 Jam Liputan Acara',
@@ -661,7 +661,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
   {
     id: 'prewed-casual',
     category: 'prewedding',
-    title: 'Prewedding / Lamaran Romantic Story',
+    title: 'Prewedding & Lamaran',
     tagline: 'Dokumentasi momen lamaran intimate atau sesi prewedding outdoor',
     price: 'Rp 1.250.000',
     duration: '3 - 4 Jam Sesi Foto (1 - 2 Lokasi)',
@@ -676,7 +676,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
   {
     id: 'birthday-kids',
     category: 'birthday',
-    title: 'Birthday Party & Kids Celebration',
+    title: 'Birthday & Kids Party',
     tagline: 'Abadikan tawa polos si kecil dan kebersamaan keluarga yang tak terulang',
     price: 'Rp 750.000',
     duration: '2.5 Jam Liputan Pesta Ulang Tahun',

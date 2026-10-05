@@ -72,31 +72,31 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
           {filteredPackages.map((pkg) => {
             return (
               <div
                 key={pkg.id}
                 className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury ${
                   pkg.isPopular
-                    ? 'border-2 border-gold-500/80 shadow-2xl shadow-gold-500/20 sm:scale-[1.02] ring-1 ring-gold-500/30'
+                    ? 'border-gold-400/90 shadow-2xl shadow-gold-500/20 ring-1 ring-gold-400/50'
                     : 'hover:border-gold-500/50'
                 }`}
               >
                 {/* Popular Pill */}
                 {pkg.isPopular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-gold-500 to-amber-500 text-obsidian-950 font-extrabold text-[11px] uppercase tracking-wider shadow-md shadow-gold-500/30 flex items-center gap-1.5">
-                    <Flame className="w-3.5 h-3.5 fill-obsidian-950 text-obsidian-950" />
-                    Paling Laris & Favorit
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-gradient-to-r from-gold-500 to-amber-500 text-obsidian-950 font-black text-xs uppercase tracking-wider shadow-md shadow-gold-500/30 flex items-center gap-1.5 whitespace-nowrap z-10">
+                    <Flame className="w-3.5 h-3.5 fill-obsidian-950 text-obsidian-950 flex-shrink-0" />
+                    <span>Favorit</span>
                   </div>
                 )}
 
-                {/* Package Title & Tagline */}
-                <div className="mb-6">
-                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
+                {/* Package Title & Tagline with identical fixed height so price is 100% sebaris */}
+                <div className="h-[76px] sm:h-[80px] mb-5 flex flex-col justify-start">
+                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-white truncate" title={pkg.title}>
                     {pkg.title}
                   </h3>
-                  <p className="text-xs text-zinc-400 mt-2 min-h-[32px] leading-relaxed">
+                  <p className="text-xs text-zinc-400 mt-2 line-clamp-2 leading-relaxed">
                     {pkg.tagline}
                   </p>
                 </div>
