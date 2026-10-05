@@ -28,15 +28,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         <img
           src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=2000&q=85"
           alt="Wedding Celebration Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-95 contrast-110"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-105"
         />
-        <div className="absolute inset-0 bg-obsidian-950/75 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/16 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-obsidian-950/65 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-transparent to-obsidian-950/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/20 via-transparent to-transparent" />
       </div>
 
       {/* Subtle Champagne Gold Center Aura behind pricing cards */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[750px] h-[550px] sm:h-[750px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/20 via-amber-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[800px] h-[550px] sm:h-[800px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/24 via-amber-400/14 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

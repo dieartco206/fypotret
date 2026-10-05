@@ -6,18 +6,18 @@ export const Footer: React.FC = () => {
   return (
     <footer className="relative isolate bg-obsidian-950 border-t border-gold-500/25 pt-16 pb-12 text-zinc-400 text-xs sm:text-sm overflow-hidden">
       {/* Background Photography Vintage Camera Accent */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none opacity-45">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none opacity-55">
         <img
           src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=1600&q=80"
           alt="Vintage Photography Setup"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/75 to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gold-400/18 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/65 to-obsidian-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gold-400/22 via-transparent to-transparent" />
       </div>
 
       {/* Subtle Champagne Gold Glow from bottom */}
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[250px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/20 via-amber-400/10 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[550px] sm:w-[800px] h-[280px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/24 via-amber-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">

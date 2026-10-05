@@ -17,16 +17,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <img
           src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85"
           alt="Cinematic Photography Backdrop"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-110 animate-ken-burns"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-105 contrast-105 animate-ken-burns"
         />
         {/* Layered Dark Vignette - Foto Acara Tetap Terlihat Hidup & Teks Kontras Tajam */}
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-obsidian-950/70 to-obsidian-950/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/75" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gold-400/18 via-amber-500/8 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/80 via-obsidian-950/55 to-obsidian-950/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/80 via-transparent to-obsidian-950/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gold-400/22 via-amber-500/10 to-transparent" />
       </div>
 
       {/* Champagne Gold Halo behind Headline (Hangat Mewah, Tidak Gelap Gulita) */}
-      <div className="absolute top-1/4 -left-12 w-[480px] sm:w-[700px] h-[480px] sm:h-[700px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/22 via-amber-400/10 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/26 via-amber-400/14 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
