@@ -160,10 +160,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         {/* Custom Event Note */}
         <div className="mt-12 text-center p-6 rounded-2xl bg-zinc-900/60 border border-white/5 max-w-2xl mx-auto">
           <p className="text-xs sm:text-sm text-zinc-300">
-            Membutuhkan paket khusus untuk <strong>Dokumentasi Event Perusahaan / Turnamen / Seminar</strong>?
+            Membutuhkan paket khusus untuk <strong>Event Perusahaan / Turnamen / Seminar</strong>?
           </p>
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Admin%20FYPotret%2C%20saya%20ingin%20konsultasi%20paket%20dokumentasi%20event..."
+            href="https://wa.me/6281234567890?text=Halo%20Admin%20FYPotret%2C%20saya%20ingin%20konsultasi%20paket%20event..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-300 text-xs sm:text-sm font-bold mt-2 underline underline-offset-4"

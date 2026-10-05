@@ -16,7 +16,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   preselectedItem,
 }) => {
   const [name, setName] = useState('');
-  const [service, setService] = useState('Wisuda (Graduation)');
+  const [service, setService] = useState('Wisuda');
   const [packageChoice, setPackageChoice] = useState('');
   const [eventDate, setEventDate] = useState('');
   const [location, setLocation] = useState('Tangerang');
@@ -26,13 +26,18 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   useEffect(() => {
     if (preselectedPackage) {
       setPackageChoice(preselectedPackage.title);
-      if (preselectedPackage.category === 'graduation') setService('Wisuda (Graduation)');
-      if (preselectedPackage.category === 'wedding') setService('Wedding & Akad');
+      if (preselectedPackage.category === 'graduation') setService('Wisuda');
+      if (preselectedPackage.category === 'wedding') setService('Wedding');
       if (preselectedPackage.category === 'prewedding') setService('Prewedding');
-      if (preselectedPackage.category === 'birthday') setService('Kids & Birthday');
+      if (preselectedPackage.category === 'birthday') setService('Birthday');
     } else if (preselectedItem) {
       setPackageChoice(`Referensi Foto: ${preselectedItem.title}`);
-      setService(preselectedItem.categoryLabel);
+      if (preselectedItem.category === 'event') setService('Event');
+      else if (preselectedItem.category === 'graduation') setService('Wisuda');
+      else if (preselectedItem.category === 'wedding') setService('Wedding');
+      else if (preselectedItem.category === 'prewedding') setService('Prewedding');
+      else if (preselectedItem.category === 'birthday') setService('Birthday');
+      else setService(preselectedItem.categoryLabel);
       if (preselectedItem.location.includes('Tangerang')) setLocation('Tangerang');
       else if (preselectedItem.location.includes('Depok')) setLocation('Depok');
       else if (preselectedItem.location.includes('Jakarta')) setLocation('Jakarta');
@@ -136,12 +141,12 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
                 onChange={(e) => setService(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors"
               >
-                <option value="Wisuda (Graduation)">Wisuda (Graduation)</option>
-                <option value="Wedding & Akad">Wedding & Akad</option>
+                <option value="Wisuda">Wisuda</option>
+                <option value="Wedding">Wedding</option>
                 <option value="Prewedding">Prewedding</option>
-                <option value="Kids & Birthday">Kids & Birthday</option>
-                <option value="Event Dokumentasi">Event / Turnamen</option>
-                <option value="Sesi Lainnya">Layanan Lainnya</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Event">Event</option>
+                <option value="Lainnya">Layanan Lainnya</option>
               </select>
             </div>
 
