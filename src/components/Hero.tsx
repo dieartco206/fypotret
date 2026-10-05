@@ -20,14 +20,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115 animate-ken-burns"
         />
         {/* Layered Dark Vignette - Foto tetap jelas terlihat, teks putih tajam kontras */}
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/75 to-obsidian-950/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/15 via-transparent to-obsidian-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/85 via-obsidian-950/65 to-obsidian-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/70" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-amber-500/45 via-orange-500/30 to-transparent" />
       </div>
 
-      {/* Background Soft Flare Accents */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[680px] h-[340px] sm:h-[680px] bg-gradient-to-tr from-amber-500/15 via-gold-500/10 to-transparent rounded-full blur-[140px] pointer-events-none z-0" />
-      <div className="absolute top-1/3 left-10 w-80 h-80 bg-amber-600/10 rounded-full blur-[110px] pointer-events-none z-0" />
+      {/* Background Warm Orange Flare Accents */}
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[750px] h-[400px] sm:h-[750px] bg-gradient-to-tr from-amber-500/40 via-orange-500/35 to-transparent rounded-full blur-[130px] pointer-events-none z-0" />
+      <div className="absolute top-1/3 left-4 w-96 h-96 bg-gradient-to-br from-amber-500/40 to-orange-600/30 rounded-full blur-[100px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -90,8 +90,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-6 relative mt-6 lg:mt-0">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
-              {/* Subtle Ambient Golden Glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-gold-500/10 rounded-full blur-[110px] pointer-events-none -z-10" />
+              {/* Subtle Ambient Golden/Orange Glow */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] sm:w-[560px] h-[380px] sm:h-[560px] bg-gradient-to-tr from-amber-500/35 via-orange-500/30 to-transparent rounded-full blur-[110px] pointer-events-none -z-10" />
 
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">

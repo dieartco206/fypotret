@@ -16,12 +16,15 @@ export const Testimonials: React.FC = () => {
         <img
           src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=2000&q=85"
           alt="Event and Reception Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-120"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-80 contrast-115"
         />
-        <div className="absolute inset-0 bg-obsidian-950/80 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/70 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/12 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/45 via-orange-500/30 to-transparent" />
       </div>
+
+      {/* Ambient Warm Orange Glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] sm:w-[950px] h-[450px] sm:h-[600px] bg-gradient-to-b from-amber-500/35 via-orange-500/25 to-transparent rounded-full blur-[140px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

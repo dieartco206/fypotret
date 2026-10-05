@@ -35,8 +35,8 @@
 /* Camera Focus Dot & Grid Pattern */
 .bg-camera-grid {
   background-image: 
-    radial-gradient(rgba(245, 158, 11, 0.14) 1px, transparent 1px),
-    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    radial-gradient(rgba(245, 158, 11, 0.24) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 32px 32px, 64px 64px;
   background-position: 0 0, 16px 16px;
 }

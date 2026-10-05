@@ -28,15 +28,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         <img
           src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=2000&q=85"
           alt="Wedding Celebration Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-80 contrast-115"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-85 contrast-115"
         />
-        <div className="absolute inset-0 bg-obsidian-950/80 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/70 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/15 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/45 via-orange-500/30 to-transparent" />
       </div>
 
       {/* Background radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-[140px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] sm:w-[900px] h-[650px] sm:h-[900px] bg-gradient-to-r from-amber-500/40 via-orange-500/35 to-amber-600/25 rounded-full blur-[140px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
