@@ -34,12 +34,12 @@ export interface Testimonial {
 }
 
 export const CATEGORIES = [
-  { id: 'all', label: 'Semua Karya', icon: 'Images' },
-  { id: 'graduation', label: 'Wisuda (Graduation)', icon: 'GraduationCap' },
-  { id: 'wedding', label: 'Wedding & Akad', icon: 'Heart' },
-  { id: 'prewedding', label: 'Lamaran & Prewed', icon: 'Camera' },
-  { id: 'birthday', label: 'Kids & Birthday', icon: 'Cake' },
-  { id: 'event', label: 'Dokumentasi Event', icon: 'Users' },
+  { id: 'all', label: 'Semua', icon: 'Images' },
+  { id: 'graduation', label: 'Wisuda', icon: 'GraduationCap' },
+  { id: 'wedding', label: 'Wedding', icon: 'Heart' },
+  { id: 'prewedding', label: 'Prewed', icon: 'Camera' },
+  { id: 'birthday', label: 'Birthday', icon: 'Cake' },
+  { id: 'event', label: 'Event', icon: 'Users' },
 ] as const;
 
 export const HIGHLIGHT_STORIES = [
@@ -69,7 +69,7 @@ export const HIGHLIGHT_STORIES = [
   },
   {
     id: 'birthday',
-    title: 'Birthday & Kids',
+    title: 'Birthday',
     subtitle: 'Ceria & Hangat',
     iconName: 'Smile',
     count: '80+ Pesta',
@@ -77,7 +77,7 @@ export const HIGHLIGHT_STORIES = [
   },
   {
     id: 'event',
-    title: 'Event & Sport',
+    title: 'Event',
     subtitle: 'PLN & Turnamen',
     iconName: 'Award',
     count: '50+ Event',

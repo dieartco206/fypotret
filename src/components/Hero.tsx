@@ -36,17 +36,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-6 text-center lg:text-left">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-5">
-              Jangan Biarkan Momen Bahagia Terlewatkan,{' '}
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-5">
+              Abadikan Momen Berharga Bersama{' '}
               <span className="italic font-normal text-gold-gradient block sm:inline">
-                Abadikan
-              </span>{' '}
-              Bersama FYPotret.
+                FYPotret
+              </span>.
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
-              Mulai dari sakralnya <strong>Akad & Pernikahan</strong>, selebrasi <strong>Wisuda</strong> bersama keluarga dan sahabat, romantisnya <strong>Lamaran</strong>, hingga keceriaan pesta <strong>Ulang Tahun Buah Hati</strong>. Tim fotografer kami siap memandu pose dengan ramah dan nyaman agar senyum natural Anda terpancar sempurna.
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-7">
+              Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
 
             {/* Location & Coverage Tags */}

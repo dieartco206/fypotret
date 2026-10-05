@@ -16,9 +16,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
   const filterTabs = [
     { id: 'all', label: 'Semua' },
     { id: 'graduation', label: 'Wisuda' },
-    { id: 'wedding', label: 'Wedding & Akad' },
-    { id: 'prewedding', label: 'Lamaran & Prewed' },
-    { id: 'birthday', label: 'Ulang Tahun & Anak' },
+    { id: 'wedding', label: 'Wedding' },
+    { id: 'prewedding', label: 'Prewed' },
+    { id: 'birthday', label: 'Birthday' },
   ] as const;
 
   return (
