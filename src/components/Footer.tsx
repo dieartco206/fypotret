@@ -12,12 +12,12 @@ export const Footer: React.FC = () => {
           alt="Vintage Photography Setup"
           className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-125"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/70 to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-500/40 via-orange-600/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/85 to-obsidian-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
       </div>
 
-      {/* Ambient Warm Orange Glow */}
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[650px] sm:w-[900px] h-[300px] bg-gradient-to-t from-amber-500/35 via-orange-500/25 to-transparent rounded-full blur-[120px] pointer-events-none z-0" />
+      {/* Subtle Warm Amber Glow */}
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[250px] bg-amber-500/18 rounded-full blur-[130px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
