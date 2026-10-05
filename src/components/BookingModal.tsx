@@ -57,16 +57,16 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
     // Construct friendly WhatsApp Message
     const text = `Halo Admin FYPotret (@fypotretid)!
-Saya mau tanya ketersediaan jadwal dan booking sesi foto:
+Saya ingin menanyakan ketersediaan jadwal dan reservasi sesi foto:
 
 👤 Nama: ${name || 'Calon Klien'}
 📸 Layanan: ${service}
-📦 Pilihan Paket / Referensi: ${packageChoice || 'Mau tanya rekomendasi'}
-📅 Rencana Tanggal: ${eventDate || 'Bisa dibicarakan'}
+📦 Pilihan Paket / Referensi: ${packageChoice || 'Ingin konsultasi rekomendasi'}
+📅 Rencana Tanggal: ${eventDate || 'Dapat didiskusikan'}
 📍 Lokasi Sesi: ${location}
 📝 Catatan Tambahan: ${notes || '-'}
 
-Kira-kira tanggal tersebut masih available? Mohon info lengkapnya ya, terima kasih!`;
+Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan dan detail selanjutnya. Terima kasih!`;
 
     const encodedText = encodeURIComponent(text);
     // Standard phone link for FYPotret (WhatsApp)
@@ -99,10 +99,10 @@ Kira-kira tanggal tersebut masih available? Mohon info lengkapnya ya, terima kas
             <span>Fast Response WhatsApp Admin</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
-            Tanya Jadwal & Booking Sesi
+            Reservasi Jadwal & Konsultasi
           </h3>
           <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-            Isi form simpel ini ya, nanti otomatis kita arahkan langsung ke chat WhatsApp kami.
+            Silakan lengkapi formulir di bawah ini, Anda akan diarahkan langsung ke WhatsApp resmi FYPotret.
           </p>
         </div>
 

@@ -33,13 +33,13 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
             <Camera className="w-3.5 h-3.5" />
-            <span>Cerita Klien Kami</span>
+            <span>Testimoni Klien</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
-            Apa Kata Mereka yang Udah Difoto Bareng?
+            Apa Kata Mereka Tentang FYPotret?
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-2">
-            Cerita jujur dari temen-temen yang udah ngerasain asyiknya sesi foto bareng tim FYPotret.
+            Ulasan tulus dari para klien yang telah mempercayakan momen spesial mereka bersama kami.
           </p>
         </div>
 
@@ -87,10 +87,10 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
         <div id="faq" className="max-w-3xl mx-auto pt-10 border-t border-white/10">
           <div className="text-center mb-10">
             <h3 className="text-xl sm:text-3xl font-serif font-bold text-white">
-              Hal yang Sering Ditanyain (FAQ)
+              Pertanyaan yang Sering Diajukan (FAQ)
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 mt-2">
-              Biar makin jelas dan nggak bingung sebelum booking sesi fotomu.
+              Informasi lengkap seputar pemesanan, teknis sesi foto, dan penyerahan hasil karya.
             </p>
           </div>
 
@@ -125,13 +125,13 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
 
           {/* Quick FAQ CTA */}
           <div className="mt-8 text-center">
-            <p className="text-xs text-zinc-400 mb-3">Punya pertanyaan lain yang belum terjawab?</p>
+            <p className="text-xs text-zinc-400 mb-3">Masih memiliki pertanyaan lain yang belum terjawab?</p>
             <button
               onClick={onOpenBooking}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 hover:bg-gold-500/20 text-zinc-200 hover:text-gold-300 border border-white/10 hover:border-gold-500/30 text-xs font-semibold transition-all cursor-pointer min-h-[44px]"
             >
               <MessageCircle className="w-3.5 h-3.5 text-gold-400" />
-              <span>Tanya Admin FYPotret Langsung di WhatsApp</span>
+              <span>Konsultasi Langsung via WhatsApp</span>
             </button>
           </div>
         </div>

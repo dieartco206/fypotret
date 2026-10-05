@@ -731,19 +731,19 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQ_ITEMS = [
   {
-    q: 'Kapan waktu paling pas buat booking jadwal foto?',
-    a: 'Biar tanggal aman dan nggak keduluan klien lain, disarankan booking 1-2 minggu sebelumnya untuk wisuda/lamaran, atau 1-3 bulan sebelum hari H untuk acara pernikahan ya!',
+    q: 'Kapan waktu terbaik untuk melakukan reservasi sesi foto?',
+    a: 'Agar jadwal Anda terjamin dan tidak terisi oleh klien lain, kami menyarankan reservasi 1–2 minggu sebelumnya untuk sesi wisuda atau lamaran, serta 1–3 bulan sebelum hari-H untuk acara pernikahan.',
   },
   {
-    q: 'Bisa nggak sesi foto di luar area Tangerang, Depok, dan Jakarta?',
-    a: 'Bisa banget! Tim FYPotret siap jalan ke mana aja (Bogor, Bekasi, Bandung, dan kota lainnya). Nanti tinggal kita sesuaikan biaya transport dan akomodasinya yang bersahabat.',
+    q: 'Apakah melayani sesi foto di luar area Jabodetabek?',
+    a: 'Tentu bisa. Tim FYPotret siap melayani sesi pemotretan di berbagai kota di luar Jabodetabek (seperti Bandung, Bogor, dan sekitarnya) dengan penyesuaian biaya transportasi serta akomodasi yang wajar.',
   },
   {
-    q: 'Berapa lama proses nunggu hasil foto dan editingnya?',
-    a: 'Cepat kok! Semua file foto mentahan (all raw) langsung kita upload ke Google Drive kamu H+1 sampai H+2 beres pemotretan. Buat foto yang diedit cantik, selesai dalam 4-7 hari kerja.',
+    q: 'Berapa lama estimasi penyerahan file foto dan hasil edit?',
+    a: 'Seluruh file foto asli (raw/master) akan kami unggah ke Google Drive dalam H+1 hingga H+2 setelah pemotretan. Untuk foto pilihan yang diedit warna dan tonal (best edited), selesai dalam 4–7 hari kerja.',
   },
   {
-    q: 'Gimana sistem pembayaran dan tanda jadinya (DP)?',
-    a: 'Cukup DP 30% aja buat amankan tanggal dan jam sesimu. Sisanya bisa dilunasi pas hari H beres sesi foto.',
+    q: 'Bagaimana sistem pembayaran dan uang muka (DP)?',
+    a: 'Uang muka (DP) sebesar 30% diperlukan untuk mengunci tanggal dan jam sesi Anda. Pelunasan dapat dilakukan pada hari-H setelah sesi foto selesai.',
   },
 ];

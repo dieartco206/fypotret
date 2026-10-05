@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             </div>
             
             <p className="text-zinc-300 max-w-md leading-relaxed mb-4 text-xs sm:text-sm">
-              Capturing Love, Joy, & Memories — Fotografer andalan untuk abadikan momen Wedding, Prewedding, Wisuda, Ulang Tahun, dan Event kamu di Jabodetabek.
+              Capturing Love, Joy, & Memories — Jasa fotografi profesional untuk mengabadikan momen Wedding, Prewedding, Wisuda, Ulang Tahun, dan Dokumentasi Event di Jabodetabek.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-zinc-400">
@@ -50,10 +50,10 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs text-zinc-300">
               <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Wedding & Akad Nikah</a></li>
-              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Prewedding Romantic Story</a></li>
-              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Wisuda & Graduation Squad</a></li>
-              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Kids & Birthday Party</a></li>
-              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Dokumentasi Turnamen & Event PLN</a></li>
+              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Prewedding & Lamaran</a></li>
+              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Wisuda & Kelulusan</a></li>
+              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Ulang Tahun & Anak</a></li>
+              <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Dokumentasi Event & Perusahaan</a></li>
             </ul>
           </div>
 

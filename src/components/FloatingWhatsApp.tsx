@@ -11,7 +11,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onOpenBookin
       {/* Floating Micro Badge (Gentle Pulse) */}
       <div className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-obsidian-900/95 backdrop-blur-md border border-emerald-500/30 text-xs font-semibold text-zinc-100 shadow-xl shadow-black/80">
         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-        <span>Tanya Jadwal & Booking</span>
+        <span>Konsultasi & Reservasi</span>
       </div>
 
       {/* Floating Action Button with Sonar Ripple Wave */}

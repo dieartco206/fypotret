@@ -27,21 +27,21 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         {/* Top Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/40 text-gold-300 text-xs sm:text-sm font-semibold mb-6 shadow-lg shadow-gold-500/10">
           <Clock className="w-4 h-4 text-gold-400" />
-          <span>Yuk Amankan Tanggalmu Lebih Awal!</span>
+          <span>Reservasi Tanggal Acara Lebih Awal</span>
         </div>
 
         {/* Big Editorial Headline */}
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
-          Hari Bahagia Cuma Sekali Seumur Hidup,{' '}
+          Momen Berharga Berlangsung Sekali Seumur Hidup,{' '}
           <span className="italic font-normal text-gold-gradient block sm:inline">
-            Jangan Sampai Nyesel
+            Abadikan dengan Indah
           </span>{' '}
-          Nggak Didokumentasiin.
+          Bersama Kami.
         </h2>
 
         {/* Subtitle */}
         <p className="text-sm sm:text-base lg:text-lg text-zinc-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-          Jadwal akhir pekan dan musim wisuda cepet banget penuhnya! Mau tanya rekomendasi tempat foto estetik, cocokin tema baju, atau diskusi rundown acara? Bebas ngobrol bareng tim fotografer kita, gratis kok.
+          Jadwal akhir pekan dan periode wisuda memiliki kuota terbatas. Ingin berkonsultasi mengenai lokasi foto, konsep pakaian, atau alur acara? Tim fotografer kami siap membantu Anda merencanakan sesi foto terbaik.
         </p>
 
         {/* CTA Button */}
@@ -53,12 +53,12 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
             {/* Shimmer Light Sweep */}
             <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/45 to-transparent pointer-events-none animate-shimmer-sweep" />
             <MessageCircle className="w-5 h-5 fill-obsidian-950 relative z-10" />
-            <span className="relative z-10">Chat WhatsApp Sekarang</span>
+            <span className="relative z-10">Hubungi WhatsApp Kami</span>
           </button>
 
           <div className="flex items-center gap-2 text-xs text-zinc-300 mt-2 sm:mt-0">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Bebas Konsultasi Konsep & Moodboard</span>
+            <span>Konsultasi Konsep & Moodboard Gratis</span>
           </div>
         </div>
 

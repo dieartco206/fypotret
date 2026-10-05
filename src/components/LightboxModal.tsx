@@ -19,16 +19,6 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   onInquire,
 }) => {
   const currentItem = currentIndex !== null ? items[currentIndex] : null;
-  const [isShutterFlashing, setIsShutterFlashing] = React.useState(true);
-
-  // Trigger brief camera shutter blitz on image switch
-  useEffect(() => {
-    if (currentIndex !== null) {
-      setIsShutterFlashing(true);
-      const timer = setTimeout(() => setIsShutterFlashing(false), 240);
-      return () => clearTimeout(timer);
-    }
-  }, [currentIndex]);
 
   const handlePrev = useCallback(() => {
     if (currentIndex !== null && items.length > 0) {
@@ -134,16 +124,11 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
       {/* Main Image Viewport Area (Clean & Centered) */}
       <div className="relative flex-1 w-full max-w-6xl mx-auto flex items-center justify-center px-3 sm:px-12 overflow-hidden my-auto">
-        {/* Soft Camera Shutter Flash Overlay */}
-        {isShutterFlashing && (
-          <div className="absolute inset-0 bg-white/60 animate-shutter-flash z-30 pointer-events-none rounded-xl" />
-        )}
-
         <img
           key={currentItem.id}
           src={currentItem.image}
           alt={currentItem.title}
-          className="max-w-full max-h-[58vh] sm:max-h-[72vh] md:max-h-[76vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-2xl border border-white/10 select-none transition-all duration-300 ease-out"
+          className="max-w-full max-h-[58vh] sm:max-h-[72vh] md:max-h-[76vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
         />
 
         {/* Desktop-Only Lateral Navigation Buttons (Outside photo focus area) */}
@@ -210,7 +195,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wide shadow-lg shadow-gold-500/20 active:scale-98 transition-all min-h-[40px] sm:min-h-[44px] cursor-pointer"
             >
               <MessageCircle className="w-4 h-4 fill-obsidian-950 flex-shrink-0" />
-              <span>Mau Foto Seperti Ini</span>
+              <span>Konsultasi Konsep Serupa</span>
             </button>
           </div>
         </div>

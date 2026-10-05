@@ -37,16 +37,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-5">
-              Biar Momen Bahagia Kamu Nggak Lewat Gitu Aja,{' '}
+              Jangan Biarkan Momen Bahagia Terlewatkan,{' '}
               <span className="italic font-normal text-gold-gradient block sm:inline">
                 Abadikan
               </span>{' '}
-              Bareng FYPotret.
+              Bersama FYPotret.
             </h1>
 
             {/* Description */}
             <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
-              Mulai dari serunya selebrasi <strong>Wisuda</strong> bareng bestie, sakralnya <strong>Akad & Wedding</strong>, romantisnya <strong>Lamaran</strong>, sampai lucunya pesta <strong>Ulang Tahun Si Kecil</strong>. Nggak usah khawatir kalau kaku di depan kamera, tim fotografer kita siap arahin gaya dengan santai biar ketawa lepas kamu keluar alami.
+              Mulai dari sakralnya <strong>Akad & Pernikahan</strong>, selebrasi <strong>Wisuda</strong> bersama keluarga dan sahabat, romantisnya <strong>Lamaran</strong>, hingga keceriaan pesta <strong>Ulang Tahun Buah Hati</strong>. Tim fotografer kami siap memandu pose dengan ramah dan nyaman agar senyum natural Anda terpancar sempurna.
             </p>
 
             {/* Location & Coverage Tags */}
@@ -74,14 +74,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 {/* Golden Shimmer Light Sweep Effect */}
                 <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none animate-shimmer-sweep" />
                 <Calendar className="w-4 h-4 fill-obsidian-950 relative z-10" />
-                <span className="relative z-10">Tanya Jadwal & Booking</span>
+                <span className="relative z-10">Konsultasi Jadwal & Booking</span>
               </button>
 
               <a
                 href="#gallery"
                 className="w-full sm:w-auto px-6 py-4 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 text-zinc-200 hover:text-white font-semibold text-sm sm:text-base border border-gold-500/30 hover:border-gold-400 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 min-h-[48px]"
               >
-                <span>Lihat Hasil Foto</span>
+                <span>Lihat Galeri Foto</span>
                 <ArrowUpRight className="w-4 h-4 text-gold-400" />
               </a>
             </div>
@@ -185,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                         Squad
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Momen Bareng Bestie
+                        Momen Bersama Sahabat
                       </p>
                     </div>
                   </a>

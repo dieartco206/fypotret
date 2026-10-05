@@ -44,13 +44,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
             <Camera className="w-3.5 h-3.5" />
-            <span>Daftar Harga & Pilihan Paket</span>
+            <span>Investasi & Pilihan Paket</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight">
-            Paket Foto Pas di Kantong, Hasil Maksimal
+            Paket Foto Fleksibel dengan Hasil Optimal
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-3 font-sans">
-            Semua harga jujur dan transparan tanpa biaya siluman. Beres foto, semua file mentahan langsung kita upload ke Google Drive kamu!
+            Harga transparan tanpa biaya tersembunyi. Seluruh file master resolusi tinggi langsung kami unggah ke Google Drive Anda setelah sesi selesai.
           </p>
 
           {/* Category Tabs */}
@@ -148,7 +148,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
                   }`}
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>Ambil Paket Ini</span>
+                  <span>Pilih Paket Ini</span>
                   <ArrowRight className="w-3.5 h-3.5 ml-1" />
                 </button>
               </div>
@@ -159,15 +159,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         {/* Custom Event Note */}
         <div className="mt-12 text-center p-6 rounded-2xl bg-zinc-900/60 border border-white/5 max-w-2xl mx-auto">
           <p className="text-xs sm:text-sm text-zinc-300">
-            Mau kustom paket untuk <strong>Turnamen Olahraga / Event Kantor PLN / Komunitas</strong>?
+            Membutuhkan paket khusus untuk <strong>Dokumentasi Event Perusahaan / Turnamen / Seminar</strong>?
           </p>
           <a
-            href="https://wa.me/6281234567890?text=Halo%20FYPotret%2C%20saya%20ingin%20tanya%20paket%20custom%20untuk%20event..."
+            href="https://wa.me/6281234567890?text=Halo%20Admin%20FYPotret%2C%20saya%20ingin%20konsultasi%20paket%20dokumentasi%20event..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-300 text-xs sm:text-sm font-bold mt-2 underline underline-offset-4"
           >
-            Ngobrol langsung bareng admin buat proposal event kustom →
+            Konsultasikan penawaran dan proposal event bersama tim kami →
           </a>
         </div>
 

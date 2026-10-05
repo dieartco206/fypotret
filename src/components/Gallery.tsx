@@ -20,7 +20,6 @@ export const Gallery: React.FC<GalleryProps> = ({
   onOpenLightbox,
   onInquireItem,
 }) => {
-  const [flashItemId, setFlashItemId] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
 
   // Reset page to 1 whenever category changes
@@ -41,15 +40,8 @@ export const Gallery: React.FC<GalleryProps> = ({
     }
   };
 
-  const handleCardClick = (index: number, itemId: string) => {
-    // 1. Trigger soft camera shutter blitz flash
-    setFlashItemId(itemId);
-    setTimeout(() => {
-      onOpenLightbox(index);
-    }, 150);
-    setTimeout(() => {
-      setFlashItemId(null);
-    }, 350);
+  const handleCardClick = (index: number) => {
+    onOpenLightbox(index);
   };
 
   return (
@@ -72,13 +64,13 @@ export const Gallery: React.FC<GalleryProps> = ({
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
             <Camera className="w-3.5 h-3.5" />
-            <span>Hasil Jepretan Klien Kami</span>
+            <span>Dokumentasi & Portofolio Klien</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight">
-            Intip Koleksi Foto & Momen Seru
+            Koleksi Karya & Momen Terbaik
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-3 font-sans">
-            Klik atau tap fotonya buat lihat hasil jepretan resolusi jernih dan info lokasinya.
+            Pilih foto untuk melihat resolusi penuh, informasi lokasi, dan detail setiap momen istimewa.
           </p>
 
           {/* Category Filter Pills (Mobile Responsive Swipe) */}
@@ -105,7 +97,6 @@ export const Gallery: React.FC<GalleryProps> = ({
         {/* Dynamic Bento / Masonry Gallery Grid - 2 Kolom di Mobile, 2 Kolom di Tablet, 3 Kolom di Desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-5 lg:gap-6">
           {paginatedItems.map((item, index) => {
-            const isFlashing = flashItemId === item.id;
             const globalIndex = startIndex + index;
             return (
               <div
@@ -121,7 +112,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                       ? 'aspect-[4/3] sm:aspect-[16/10]'
                       : 'aspect-square'
                   }`}
-                  onClick={() => handleCardClick(globalIndex, item.id)}
+                  onClick={() => handleCardClick(globalIndex)}
                 >
                   <img
                     src={item.image}
@@ -129,11 +120,6 @@ export const Gallery: React.FC<GalleryProps> = ({
                     className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                     loading="lazy"
                   />
-
-                  {/* Camera Shutter Blitz Flash Overlay on Click */}
-                  {isFlashing && (
-                    <div className="absolute inset-0 bg-white animate-shutter-flash z-30 pointer-events-none" />
-                  )}
 
                   {/* Gradient Shadow Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
@@ -193,10 +179,14 @@ export const Gallery: React.FC<GalleryProps> = ({
           })}
         </div>
 
-        {/* Pagination Controls */}
+        {/* Pagination Controls - Paling Kanan */}
         {totalPages > 1 && (
-          <div className="mt-10 sm:mt-14 flex flex-col items-center gap-3">
-            <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row items-center sm:justify-between gap-4">
+            <p className="text-xs text-zinc-400 font-sans order-2 sm:order-1 text-center sm:text-left">
+              Menampilkan {startIndex + 1}–{Math.min(endIndex, items.length)} dari {items.length} karya foto
+            </p>
+
+            <div className="flex items-center gap-1.5 sm:gap-2 order-1 sm:order-2 sm:ml-auto">
               <button
                 onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
                 disabled={currentPage === 1}
@@ -231,10 +221,6 @@ export const Gallery: React.FC<GalleryProps> = ({
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
-
-            <p className="text-[11px] sm:text-xs text-zinc-400 font-sans">
-              Menampilkan {startIndex + 1}–{Math.min(endIndex, items.length)} dari {items.length} karya foto
-            </p>
           </div>
         )}
 
