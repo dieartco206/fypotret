@@ -78,3 +78,92 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* =========================================================================
+   Luxury Photography Animation Suite (GPU-Accelerated & Mobile Friendly)
+   ========================================================================= */
+
+/* 1. Camera Shutter Flash (Kilatan Lampu Blitz Halus) */
+@keyframes shutterFlash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-shutter-flash {
+  animation: shutterFlash 220ms ease-out forwards;
+  will-change: opacity;
+}
+
+/* 2. Golden Shimmer Sweep (Kilau Pantulan Cahaya Emas pada Tombol) */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  30%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmerSweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* 3. Ken Burns Slow Cinematic Ambient Drift */
+@keyframes kenBurnsSlow {
+  0% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate3d(-0.8%, -0.6%, 0);
+  }
+  100% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+}
+
+.animate-ken-burns {
+  animation: kenBurnsSlow 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* 4. WhatsApp Sonar Ripple Pulse */
+@keyframes sonarPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.75;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-sonar {
+  animation: sonarPulse 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+/* 5. Instagram Story Rotating Conic Glow Ring */
+@keyframes storyRingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-story-spin {
+  animation: storyRingSpin 8s linear infinite;
+}
+

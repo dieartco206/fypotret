@@ -13,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <img
           src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85"
           alt="Cinematic Photography Backdrop"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115 animate-ken-burns"
         />
         {/* Layered Dark Vignette - Foto tetap jelas terlihat, teks putih tajam kontras */}
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/75 to-obsidian-950/50" />
@@ -81,10 +81,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
               <button
                 onClick={onOpenBooking}
-                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px]"
+                className="relative overflow-hidden w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px] group"
               >
-                <Calendar className="w-4 h-4 fill-obsidian-950" />
-                <span>Konsultasi & Cek Tanggal</span>
+                {/* Golden Shimmer Light Sweep Effect */}
+                <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none animate-shimmer-sweep" />
+                <Calendar className="w-4 h-4 fill-obsidian-950 relative z-10" />
+                <span className="relative z-10">Konsultasi & Cek Tanggal</span>
               </button>
 
               <a

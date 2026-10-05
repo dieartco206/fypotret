@@ -33,7 +33,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
         <img
           src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80"
           alt="Studio Background"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-70 contrast-120"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-70 contrast-120 animate-ken-burns"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-obsidian-950/75 to-obsidian-950/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950" />
@@ -59,16 +59,16 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
           {/* "Semua" pill / circle */}
           <button
             onClick={() => onSelectCategory('all')}
-            className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none"
+            className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform"
           >
             <div
               className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full p-0.5 transition-all duration-300 ${
                 activeCategory === 'all'
-                  ? 'bg-gradient-to-tr from-gold-500 to-amber-300 ring-4 ring-gold-500/20 scale-105'
+                  ? 'bg-gradient-to-tr from-gold-500 to-amber-300 ring-4 ring-gold-500/30 scale-105 shadow-lg shadow-gold-500/20'
                   : 'bg-zinc-800 hover:bg-gold-500/40'
               }`}
             >
-              <div className="w-full h-full rounded-full bg-obsidian-950 flex flex-col items-center justify-center p-1 border border-white/10">
+              <div className="w-full h-full rounded-full bg-obsidian-950 flex flex-col items-center justify-center p-1 border border-white/10 group-hover:border-gold-500/40 transition-colors">
                 <span className="text-base sm:text-lg">✨</span>
                 <span className="text-[10px] font-bold text-zinc-200 mt-0.5">Semua</span>
               </div>
@@ -89,13 +89,13 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
               <button
                 key={story.id}
                 onClick={() => onSelectCategory(story.id)}
-                className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none"
+                className="flex flex-col items-center gap-2 group flex-shrink-0 focus:outline-none active:scale-95 transition-transform"
               >
                 {/* Circle Container with Golden Border Ring */}
                 <div
                   className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full p-0.5 transition-all duration-300 ${
                     isActive
-                      ? 'bg-gradient-to-tr from-gold-500 via-amber-400 to-yellow-200 ring-4 ring-gold-500/20 scale-105'
+                      ? 'bg-gradient-to-tr from-gold-500 via-amber-400 to-yellow-200 ring-4 ring-gold-500/30 scale-105 shadow-lg shadow-gold-500/25'
                       : 'bg-gradient-to-tr from-gold-600/60 to-zinc-700 hover:from-gold-500 hover:to-amber-300'
                   }`}
                 >

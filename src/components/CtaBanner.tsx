@@ -13,7 +13,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         <img
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=85"
           alt="Graduation and Wedding Celebration Sky"
-          className="w-full h-full object-cover object-center filter brightness-85 contrast-115 scale-105"
+          className="w-full h-full object-cover object-center filter brightness-85 contrast-115 scale-105 animate-ken-burns"
         />
         {/* Cinematic Golden Amber Vignette */}
         <div className="absolute inset-0 bg-[#070709]/70 backdrop-blur-[0.5px]" />
@@ -48,10 +48,12 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onOpenBooking}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-extrabold text-sm sm:text-base uppercase tracking-wider shadow-2xl shadow-gold-500/40 hover:shadow-gold-500/60 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer min-h-[52px]"
+            className="relative overflow-hidden w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-extrabold text-sm sm:text-base uppercase tracking-wider shadow-2xl shadow-gold-500/40 hover:shadow-gold-500/60 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer min-h-[52px] group"
           >
-            <MessageCircle className="w-5 h-5 fill-obsidian-950" />
-            <span>Booking Jadwal Sekarang</span>
+            {/* Shimmer Light Sweep */}
+            <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/45 to-transparent pointer-events-none animate-shimmer-sweep" />
+            <MessageCircle className="w-5 h-5 fill-obsidian-950 relative z-10" />
+            <span className="relative z-10">Booking Jadwal Sekarang</span>
           </button>
 
           <div className="flex items-center gap-2 text-xs text-zinc-300 mt-2 sm:mt-0">

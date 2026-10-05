@@ -19,6 +19,16 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   onInquire,
 }) => {
   const currentItem = currentIndex !== null ? items[currentIndex] : null;
+  const [isShutterFlashing, setIsShutterFlashing] = React.useState(true);
+
+  // Trigger brief camera shutter blitz on image switch
+  useEffect(() => {
+    if (currentIndex !== null) {
+      setIsShutterFlashing(true);
+      const timer = setTimeout(() => setIsShutterFlashing(false), 240);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex]);
 
   const handlePrev = useCallback(() => {
     if (currentIndex !== null && items.length > 0) {
@@ -81,10 +91,16 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
       {/* Main Image Container */}
       <div className="relative max-w-5xl max-h-[75vh] sm:max-h-[82vh] w-full flex items-center justify-center overflow-hidden my-auto">
+        {/* Soft Camera Shutter Flash Overlay */}
+        {isShutterFlashing && (
+          <div className="absolute inset-0 bg-white/60 animate-shutter-flash z-30 pointer-events-none rounded-lg" />
+        )}
+
         <img
+          key={currentItem.id}
           src={currentItem.image}
           alt={currentItem.title}
-          className="max-w-full max-h-[72vh] sm:max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl border border-white/10 select-none"
+          className="max-w-full max-h-[72vh] sm:max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl border border-white/10 select-none transition-all duration-300 ease-out"
         />
 
         {/* Navigation Left / Prev Button */}
