@@ -4,8 +4,6 @@ import {
   MapPin,
   Calendar,
   ArrowUpRight,
-  CheckCircle2,
-  Sparkles as _UnusedSparkles, // removed AI slop
 } from 'lucide-react';
 
 interface HeroProps {
@@ -128,98 +126,73 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* Subtle Ambient Golden Glow Behind Collage */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] bg-gold-500/10 rounded-full blur-[100px] pointer-events-none -z-10" />
 
-              {/* The 3-Photo Editorial Grid */}
+              {/* The 3-Photo Editorial Grid (Clean & Minimalist) */}
               <div className="grid grid-cols-12 gap-3 sm:gap-4 items-stretch">
                 
-                {/* 01. Main Anchor Photo (Wedding & Akad) - Tall Portrait Left */}
+                {/* 01. Foto Utama (Wedding & Akad) */}
                 <div className="col-span-12 sm:col-span-7 group relative flex flex-col">
-                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-gold-500/35 bg-obsidian-900 shadow-2xl shadow-black/90 aspect-[3/4] sm:aspect-[4/5.4] w-full flex-grow">
+                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-gold-500/30 bg-obsidian-900 shadow-2xl shadow-black/80 aspect-[3/4] sm:aspect-[4/5.4] w-full flex-grow">
                     <img
                       src="/portfolio/p7_DbVM3ScFJoX.jpg"
-                      alt="Wedding & Akad Dian & Rizky - FYPotret"
+                      alt="Wedding Dian & Rizky - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                       loading="eager"
                     />
 
-                    {/* Gentle Bottom Vignette for Crisp Text */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/95 via-obsidian-950/25 to-transparent pointer-events-none" />
+                    {/* Soft Bottom Gradient for Text Legibility */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
-                    {/* Editorial Index Badge */}
-                    <div className="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-obsidian-950/85 backdrop-blur-md border border-gold-500/40 text-[10px] font-mono tracking-widest text-gold-300 font-bold uppercase shadow-lg">
-                      <span>01</span>
-                      <span className="text-zinc-500">/</span>
-                      <span>WEDDING</span>
-                    </div>
-
-                    {/* Client & Location Caption */}
-                    <div className="absolute bottom-3.5 left-3.5 right-3.5 p-3 sm:p-3.5 rounded-xl bg-obsidian-950/90 backdrop-blur-md border border-white/10 shadow-xl flex items-center justify-between">
-                      <div className="min-w-0 pr-2">
-                        <div className="text-sm sm:text-base font-serif font-bold text-white tracking-tight truncate">
-                          Dian & Rizky
-                        </div>
-                        <div className="text-[11px] text-zinc-300 flex items-center gap-1 mt-0.5 truncate">
-                          <MapPin className="w-3 h-3 text-gold-400 flex-shrink-0" />
-                          <span className="truncate">Tangerang Selatan • Akad & Resepsi</span>
-                        </div>
-                      </div>
-                      <div className="w-8 h-8 rounded-full overflow-hidden bg-obsidian-900 border border-gold-500/60 flex-shrink-0 flex items-center justify-center shadow">
-                        <img src="/logo.jpg" alt="FYPotret" className="w-full h-full object-cover" />
-                      </div>
+                    {/* Simple Minimalist Caption */}
+                    <div className="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 z-10">
+                      <p className="text-sm sm:text-base font-serif font-bold text-white drop-shadow">
+                        Wedding & Akad
+                      </p>
+                      <p className="text-xs text-gold-300 font-sans mt-0.5">
+                        Dian & Rizky
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Right Sub-Column: 2 Companion Photos (Wisuda & Lamaran) */}
+                {/* Right Sub-Column: 2 Foto Pendamping (Wisuda & Lamaran) */}
                 <div className="col-span-12 sm:col-span-5 grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4">
                   
-                  {/* 02. Secondary Photo (Wisuda Squad) */}
+                  {/* 02. Foto Wisuda */}
                   <div className="group relative">
-                    <div className="relative rounded-2xl overflow-hidden border border-white/15 group-hover:border-gold-500/50 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-gold-500/40 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
                       <img
                         src="/portfolio/p2_DbOVvb6E70Q.jpg"
-                        alt="Wisuda Ch Lailonas JCC Senayan - FYPotret"
+                        alt="Wisuda Ch Lailonas - FYPotret"
                         className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/90 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
-                      {/* Editorial Index Badge */}
-                      <div className="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded bg-obsidian-950/85 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-wider text-gold-300 font-bold uppercase shadow">
-                        <span>02</span>
-                        <span className="text-zinc-500">/</span>
-                        <span>WISUDA</span>
-                      </div>
-
-                      {/* Micro Caption */}
-                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-left">
-                        <p className="text-xs font-serif font-bold text-white truncate">Ch Lailonas, S.Ak</p>
-                        <p className="text-[10px] text-zinc-300 truncate">JCC Senayan • Squad Ceria</p>
+                      {/* Simple Minimalist Caption */}
+                      <div className="absolute bottom-3 left-3 z-10">
+                        <p className="text-xs sm:text-sm font-serif font-bold text-white drop-shadow">
+                          Wisuda
+                        </p>
                       </div>
                     </div>
                   </div>
 
-                  {/* 03. Tertiary Photo (Engagement / Lamaran) */}
+                  {/* 03. Foto Lamaran */}
                   <div className="group relative">
-                    <div className="relative rounded-2xl overflow-hidden border border-white/15 group-hover:border-gold-500/50 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-gold-500/40 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
                       <img
                         src="/portfolio/p11_DbmsYCQkysa.jpg"
-                        alt="Lamaran Bella & Luthfy Serpong - FYPotret"
+                        alt="Lamaran Bella & Luthfy - FYPotret"
                         className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/90 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
-                      {/* Editorial Index Badge */}
-                      <div className="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded bg-obsidian-950/85 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-wider text-gold-300 font-bold uppercase shadow">
-                        <span>03</span>
-                        <span className="text-zinc-500">/</span>
-                        <span>LAMARAN</span>
-                      </div>
-
-                      {/* Micro Caption */}
-                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-left">
-                        <p className="text-xs font-serif font-bold text-white truncate">Bella & Luthfy</p>
-                        <p className="text-[10px] text-zinc-300 truncate">Serpong • Intimate Session</p>
+                      {/* Simple Minimalist Caption */}
+                      <div className="absolute bottom-3 left-3 z-10">
+                        <p className="text-xs sm:text-sm font-serif font-bold text-white drop-shadow">
+                          Lamaran
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -227,18 +200,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 </div>
 
               </div>
-
-              {/* Bottom Editorial Strip: Clean Authentic Trust Bar */}
-              <div className="mt-3.5 p-3 rounded-2xl bg-obsidian-900/85 backdrop-blur-md border border-white/10 flex items-center justify-between text-xs text-zinc-300 shadow-lg">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span className="font-medium text-[11px] sm:text-xs">Foto Asli Karya Fotografer FYPotret</span>
-                </div>
-                <div className="flex items-center gap-1.5 text-gold-400 font-mono text-[10px] sm:text-[11px]">
-                  <span>Jabodetabek Studio & Outdoor</span>
-                </div>
-              </div>
-
             </div>
           </div>
 
