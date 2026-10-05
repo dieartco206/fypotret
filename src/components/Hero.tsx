@@ -1,11 +1,76 @@
-import React from 'react';
-import { Camera, MapPin, Calendar, Heart, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import {
+  Camera,
+  MapPin,
+  Calendar,
+  Heart,
+  ShieldCheck,
+  ArrowUpRight,
+  GraduationCap,
+  Sun,
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
+} from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: () => void;
 }
 
+const FEATURED_SHOTS = [
+  {
+    id: 'wedding',
+    tag: 'Wedding & Akad',
+    icon: Heart,
+    image: '/portfolio/p7_DbVM3ScFJoX.jpg',
+    client: 'Dian & Rizky',
+    location: 'Tangerang Selatan',
+    desc: 'Akad Nikah Penuh Haru & Bahagia',
+  },
+  {
+    id: 'graduation',
+    tag: 'Wisuda Squad',
+    icon: GraduationCap,
+    image: '/portfolio/p2_DbOVvb6E70Q.jpg',
+    client: 'Ch Lailonas, S.Ak',
+    location: 'JCC Senayan, Jakarta',
+    desc: 'Selebrasi Toga Bareng Sahabat',
+  },
+  {
+    id: 'engagement',
+    tag: 'Lamaran & Prewed',
+    icon: Camera,
+    image: '/portfolio/p11_DbmsYCQkysa.jpg',
+    client: 'Bella & Luthfy',
+    location: 'Serpong, Tangerang',
+    desc: 'Momen Lamaran Intimate & Manis',
+  },
+  {
+    id: 'rooftop',
+    tag: 'Outdoor Golden Hour',
+    icon: Sun,
+    image: '/portfolio/p6_DbOWVZSk3Xz.jpg',
+    client: 'Sarah, S.Ked',
+    location: 'Rooftop Senayan',
+    desc: 'Sudut Estetik & Warm Tone Alami',
+  },
+];
+
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
+  const [currentShotIndex, setCurrentShotIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setCurrentShotIndex((prev) => (prev + 1) % FEATURED_SHOTS.length);
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const currentShot = FEATURED_SHOTS[currentShotIndex];
+  const CurrentIcon = currentShot.icon;
+
   return (
     <section className="relative isolate pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
@@ -114,70 +179,140 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Right Column: Visual Collage Cards with Viewfinder Brackets */}
+          {/* Right Column: Interactive Editorial Showcase Frame */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Camera Viewfinder Corners on Main Card */}
-              <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-gold-400/80 z-20 pointer-events-none" />
-              <div className="absolute -top-3 -right-3 w-6 h-6 border-t-2 border-r-2 border-gold-400/80 z-20 pointer-events-none" />
-              <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-2 border-l-2 border-gold-400/80 z-20 pointer-events-none" />
-              <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-gold-400/80 z-20 pointer-events-none" />
+              {/* Category Filter Pills (Quick Switcher) */}
+              <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-obsidian-900/90 border border-white/10 backdrop-blur-md mb-3.5 justify-between">
+                {FEATURED_SHOTS.map((shot, idx) => {
+                  const Icon = shot.icon;
+                  const isActive = idx === currentShotIndex;
+                  return (
+                    <button
+                      key={shot.id}
+                      onClick={() => setCurrentShotIndex(idx)}
+                      className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-xl text-xs font-medium transition-all duration-300 cursor-pointer ${
+                        isActive
+                          ? 'bg-gold-500 text-obsidian-950 font-bold shadow-md shadow-gold-500/25'
+                          : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      <Icon className="w-3.5 h-3.5 flex-shrink-0" />
+                      <span className="truncate">{shot.tag}</span>
+                    </button>
+                  );
+                })}
+              </div>
 
-              {/* Main Visual Image Card */}
-              <div className="relative rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl shadow-black/90 aspect-[4/5] bg-obsidian-900 group">
-                <img
-                  src="/portfolio/p7_DbVM3ScFJoX.jpg"
-                  alt="Dian & Rizky Wedding - FYPotret"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="eager"
-                />
-                
-                {/* 35mm Analog Film Edge Number Watermark */}
-                <div className="absolute top-3 left-3 text-[10px] font-mono text-gold-400/70 bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded border border-gold-500/30">
-                  🎞️ 35mm • EXP 24A
-                </div>
+              {/* Stacked Photo Frame Container */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
+                {/* Secondary Background Layer (Simulating Stacked Editorial Prints) */}
+                <div className="absolute inset-0 rounded-3xl bg-obsidian-900 border border-gold-500/20 translate-x-2.5 translate-y-2.5 rotate-1 opacity-60 pointer-events-none transition-transform duration-500 group-hover:rotate-2 group-hover:translate-x-3.5" />
 
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/20 to-transparent" />
+                {/* Main Visual Image Card */}
+                <div className="relative rounded-3xl overflow-hidden border border-gold-500/40 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] aspect-[4/5] bg-obsidian-900">
+                  <img
+                    key={currentShot.image}
+                    src={currentShot.image}
+                    alt={`${currentShot.client} - ${currentShot.tag} FYPotret`}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out animate-fade-in"
+                    loading="eager"
+                  />
 
-                {/* Bottom Details Tag */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-obsidian-900/90 backdrop-blur-md border border-gold-500/30 shadow-lg flex items-center justify-between">
-                  <div>
-                    <div className="text-xs uppercase tracking-wider font-semibold text-gold-400 flex items-center gap-1.5">
-                      <Heart className="w-3.5 h-3.5 fill-gold-400" />
-                      Wedding & Akad
+                  {/* Gradient Shadow at Bottom for Crisp Text Legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/95 via-obsidian-950/30 to-transparent pointer-events-none" />
+
+                  {/* Category Pill Tag at Top Left (Clean & Accurate to Active Photo) */}
+                  <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-obsidian-950/80 backdrop-blur-md border border-gold-500/40 text-gold-400 text-xs font-semibold shadow-lg">
+                    <CurrentIcon className="w-3.5 h-3.5 text-gold-400" />
+                    <span>{currentShot.tag}</span>
+                  </div>
+
+                  {/* Micro Live Indicator at Top Right */}
+                  <div className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[10px] text-zinc-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                    <span>FYPotret Signature</span>
+                  </div>
+
+                  {/* Left & Right Interactive Navigation Controls */}
+                  <div className="absolute inset-y-0 left-2 right-2 flex items-center justify-between pointer-events-none">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentShotIndex((prev) => (prev === 0 ? FEATURED_SHOTS.length - 1 : prev - 1));
+                      }}
+                      className="w-8 h-8 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-white flex items-center justify-center backdrop-blur-md pointer-events-auto border border-white/15 transition-all opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
+                      aria-label="Foto Sebelumnya"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentShotIndex((prev) => (prev + 1) % FEATURED_SHOTS.length);
+                      }}
+                      className="w-8 h-8 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-white flex items-center justify-center backdrop-blur-md pointer-events-auto border border-white/15 transition-all opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
+                      aria-label="Foto Selanjutnya"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  {/* Clean Non-Overlapping Bottom Details Card */}
+                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-obsidian-900/85 backdrop-blur-md border border-white/10 shadow-2xl flex items-center justify-between">
+                    <div className="min-w-0 pr-3">
+                      <div className="text-sm sm:text-base font-serif font-bold text-white tracking-tight truncate">
+                        {currentShot.client}
+                      </div>
+                      <div className="text-xs text-zinc-300 flex items-center gap-1.5 mt-0.5 truncate">
+                        <MapPin className="w-3 h-3 text-gold-400 flex-shrink-0" />
+                        <span className="truncate">{currentShot.location}</span>
+                        <span className="text-zinc-500">•</span>
+                        <span className="text-zinc-400 hidden sm:inline truncate">{currentShot.desc}</span>
+                      </div>
                     </div>
-                    <div className="text-sm font-semibold text-white mt-0.5">Dian & Rizky</div>
-                    <div className="text-[11px] text-zinc-400">Tangerang Selatan</div>
-                  </div>
-                  <div className="w-9 h-9 rounded-full overflow-hidden bg-obsidian-900 border border-gold-500/50 flex items-center justify-center shadow-md">
-                    <img
-                      src="/logo.jpg"
-                      alt="FYPotret"
-                      className="w-full h-full object-cover"
-                    />
+
+                    <div className="w-10 h-10 rounded-full overflow-hidden bg-obsidian-900 border border-gold-500/60 flex items-center justify-center shadow-lg flex-shrink-0">
+                      <img
+                        src="/logo.jpg"
+                        alt="FYPotret Official Logo"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Mini Highlight Card (Top Right) */}
-              <div className="absolute -top-4 -right-2 sm:-right-4 bg-obsidian-900/95 backdrop-blur-md border border-gold-500/50 rounded-xl p-3 shadow-xl hidden sm:flex items-center gap-3 animate-pulse-subtle">
-                <div className="w-9 h-9 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-400 font-bold text-xs">
-                  🎓
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-white">Wisuda & Graduation</div>
-                  <div className="text-[10px] text-zinc-400">Outdoor & Studio UI Depok</div>
-                </div>
+              {/* Progress Dots Indicator */}
+              <div className="flex items-center justify-center gap-2 mt-4 mb-3">
+                {FEATURED_SHOTS.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentShotIndex(idx)}
+                    className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                      idx === currentShotIndex
+                        ? 'w-7 bg-gold-400'
+                        : 'w-2 bg-zinc-700 hover:bg-zinc-500'
+                    }`}
+                    aria-label={`Lihat karya ke-${idx + 1}`}
+                  />
+                ))}
               </div>
 
-              {/* Floating Mini Trust Card (Bottom Left) */}
-              <div className="absolute -bottom-4 -left-2 sm:-left-4 bg-obsidian-900/95 backdrop-blur-md border border-gold-500/40 rounded-xl p-3 shadow-xl flex items-center gap-2.5">
-                <ShieldCheck className="w-5 h-5 text-emerald-400" />
-                <div>
-                  <div className="text-xs font-bold text-white">Fotografer Ramah & Sabar</div>
-                  <div className="text-[10px] text-zinc-400">Bebas Konsultasi Moodboard</div>
+              {/* Clean Bottom Trust Badges (Terpisah rapi, tidak menabrak foto!) */}
+              <div className="grid grid-cols-2 gap-2 text-[11px] text-zinc-300">
+                <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-zinc-900/80 border border-white/5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span className="truncate">Arah Gaya Santai & Luwes</span>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-zinc-900/80 border border-white/5">
+                  <ShieldCheck className="w-4 h-4 text-gold-400 flex-shrink-0" />
+                  <span className="truncate">Konsultasi Konsep Gratis</span>
                 </div>
               </div>
 
