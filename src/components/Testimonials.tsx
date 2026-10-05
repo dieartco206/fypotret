@@ -1,6 +1,6 @@
 import React from 'react';
 import { TESTIMONIALS, FAQ_ITEMS } from '../data/portfolioData';
-import { Star, Quote, ChevronDown, Sparkles, MessageCircle } from 'lucide-react';
+import { CheckCircle2, Quote, ChevronDown, Camera, MessageCircle } from 'lucide-react';
 
 interface TestimonialsProps {
   onOpenBooking: () => void;
@@ -32,14 +32,14 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
         {/* Testimonials Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Kesan & Cerita Klien</span>
+            <Camera className="w-3.5 h-3.5" />
+            <span>Cerita Klien Kami</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
-            Dipercaya Ratusan Klien di Jabodetabek
+            Apa Kata Mereka yang Udah Difoto Bareng?
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-2">
-            Lihat apa kata mereka tentang pengalaman pemotretan bersama tim FYPotret.
+            Cerita jujur dari temen-temen yang udah ngerasain asyiknya sesi foto bareng tim FYPotret.
           </p>
         </div>
 
@@ -51,12 +51,11 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
               className="rounded-2xl p-6 card-luxury transition-all flex flex-col justify-between"
             >
               <div>
-                {/* Rating Stars & Quote Icon */}
+                {/* Verified Client Badge & Quote Icon */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-1 text-gold-400">
-                    {[...Array(t.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
-                    ))}
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[11px] font-semibold text-emerald-400">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>100% Puas • Klien Nyata</span>
                   </div>
                   <Quote className="w-5 h-5 text-zinc-600" />
                 </div>
@@ -88,10 +87,10 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ onOpenBooking }) => 
         <div id="faq" className="max-w-3xl mx-auto pt-10 border-t border-white/10">
           <div className="text-center mb-10">
             <h3 className="text-xl sm:text-3xl font-serif font-bold text-white">
-              Pertanyaan yang Sering Diajukan (FAQ)
+              Hal yang Sering Ditanyain (FAQ)
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 mt-2">
-              Segala hal penting yang perlu Anda ketahui sebelum sesi pemotretan.
+              Biar makin jelas dan nggak bingung sebelum booking sesi fotomu.
             </p>
           </div>
 

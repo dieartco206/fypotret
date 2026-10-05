@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             </div>
             
             <p className="text-zinc-300 max-w-md leading-relaxed mb-4 text-xs sm:text-sm">
-              Capturing Love, Joy, & Memories ✨ — Jasa fotografi profesional spesialis Wedding, Prewedding, Wisuda, Birthday & Event di Tangerang, Depok, dan Jakarta.
+              Capturing Love, Joy, & Memories — Fotografer andalan untuk abadikan momen Wedding, Prewedding, Wisuda, Ulang Tahun, dan Event kamu di Jabodetabek.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-zinc-400">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle, Sparkles } from 'lucide-react';
+import { Menu, X, MessageCircle, CalendarCheck } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface NavbarProps {
@@ -143,8 +143,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 }}
                 className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-sm tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20 active:scale-98"
               >
-                <Sparkles className="w-4 h-4" />
-                <span>Konsultasi & Cek Tanggal Kosong</span>
+                <CalendarCheck className="w-4 h-4" />
+                <span>Tanya Jadwal & Booking Sekarang</span>
               </button>
 
               <a

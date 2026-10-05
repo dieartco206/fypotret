@@ -1,6 +1,6 @@
 import React from 'react';
 import { HIGHLIGHT_STORIES } from '../data/portfolioData';
-import { Heart, Film, Star, Smile, GraduationCap, ChevronRight } from 'lucide-react';
+import { Heart, Film, Camera, Smile, GraduationCap, ChevronRight, Images } from 'lucide-react';
 
 interface HighlightStoriesProps {
   onSelectCategory: (categoryId: string) => void;
@@ -22,7 +22,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
       case 'GraduationCap':
         return <GraduationCap className="w-5 h-5 text-gold-400" />;
       default:
-        return <Star className="w-5 h-5 text-gold-400" />;
+        return <Camera className="w-5 h-5 text-gold-400" />;
     }
   };
 
@@ -45,11 +45,11 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-gold-400 animate-ping" />
             <h2 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-zinc-300">
-              Sorotan Kategori & Portofolio
+              Kategori Foto
             </h2>
           </div>
           <span className="text-[11px] text-zinc-400 flex items-center gap-0.5">
-            Geser untuk melihat <ChevronRight className="w-3 h-3 text-gold-400" />
+            Geser ke samping <ChevronRight className="w-3 h-3 text-gold-400" />
           </span>
         </div>
 
@@ -69,7 +69,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
               }`}
             >
               <div className="w-full h-full rounded-full bg-obsidian-950 flex flex-col items-center justify-center p-1 border border-white/10 group-hover:border-gold-500/40 transition-colors">
-                <span className="text-base sm:text-lg">✨</span>
+                <Images className="w-5 h-5 text-gold-400" />
                 <span className="text-[10px] font-bold text-zinc-200 mt-0.5">Semua</span>
               </div>
             </div>

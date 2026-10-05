@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { PricingPackage, PortfolioItem } from '../data/portfolioData';
-import { X, Send, Sparkles, Calendar, MapPin, User, Heart } from 'lucide-react';
+import { X, Send, Camera, Calendar, MapPin, User, Heart } from 'lucide-react';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -56,17 +56,17 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     e.preventDefault();
 
     // Construct friendly WhatsApp Message
-    const text = `Halo Admin FYPotret (@fypotretid)! ✨
-Saya ingin konsultasi booking jadwal foto:
+    const text = `Halo Admin FYPotret (@fypotretid)!
+Saya mau tanya ketersediaan jadwal dan booking sesi foto:
 
 👤 Nama: ${name || 'Calon Klien'}
 📸 Layanan: ${service}
-📦 Pilihan Paket / Referensi: ${packageChoice || 'Belum Ditentukan'}
-📅 Estimasi Tanggal: ${eventDate || 'Menyesuaikan Ketersediaan'}
+📦 Pilihan Paket / Referensi: ${packageChoice || 'Mau tanya rekomendasi'}
+📅 Rencana Tanggal: ${eventDate || 'Bisa dibicarakan'}
 📍 Lokasi Sesi: ${location}
 📝 Catatan Tambahan: ${notes || '-'}
 
-Mohon info ketersediaan slot tanggal dan prosedur bookingnya ya. Terima kasih! 🙏`;
+Kira-kira tanggal tersebut masih available? Mohon info lengkapnya ya, terima kasih!`;
 
     const encodedText = encodeURIComponent(text);
     // Standard phone link for FYPotret (WhatsApp)
@@ -95,14 +95,14 @@ Mohon info ketersediaan slot tanggal dan prosedur bookingnya ya. Terima kasih! �
         {/* Modal Header */}
         <div className="mb-6">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-500/10 text-gold-400 text-xs font-semibold mb-2 border border-gold-500/20">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Fast Response WhatsApp</span>
+            <Camera className="w-3.5 h-3.5" />
+            <span>Fast Response WhatsApp Admin</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
-            Konsultasi & Cek Tanggal
+            Tanya Jadwal & Booking Sesi
           </h3>
           <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-            Isi detail singkat di bawah ini untuk terhubung langsung ke WhatsApp admin FYPotret.
+            Isi form simpel ini ya, nanti otomatis kita arahkan langsung ke chat WhatsApp kami.
           </p>
         </div>
 

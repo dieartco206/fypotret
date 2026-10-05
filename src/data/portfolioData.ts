@@ -34,7 +34,7 @@ export interface Testimonial {
 }
 
 export const CATEGORIES = [
-  { id: 'all', label: 'Semua Karya', icon: 'Sparkles' },
+  { id: 'all', label: 'Semua Karya', icon: 'Images' },
   { id: 'graduation', label: 'Wisuda (Graduation)', icon: 'GraduationCap' },
   { id: 'wedding', label: 'Wedding & Akad', icon: 'Heart' },
   { id: 'prewedding', label: 'Lamaran & Prewed', icon: 'Camera' },
@@ -731,19 +731,19 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQ_ITEMS = [
   {
-    q: 'Berapa hari sebelum hari H sebaiknya kami melakukan booking?',
-    a: 'Disarankan melakukan booking minimal 1-2 minggu sebelum hari H untuk wisuda/prewedding, dan 1-3 bulan sebelum hari H untuk acara pernikahan, guna memastikan ketersediaan tanggal fotografer.',
+    q: 'Kapan waktu paling pas buat booking jadwal foto?',
+    a: 'Biar tanggal aman dan nggak keduluan klien lain, disarankan booking 1-2 minggu sebelumnya untuk wisuda/lamaran, atau 1-3 bulan sebelum hari H untuk acara pernikahan ya!',
   },
   {
-    q: 'Apakah bisa sesi foto di luar area Tangerang, Depok, dan Jakarta?',
-    a: 'Tentu bisa! Kami siap melayani sesi foto di luar Jabodetabek (Bogor, Bekasi, Bandung, dll.) dengan penyesuaian biaya akomodasi/transport yang terjangkau.',
+    q: 'Bisa nggak sesi foto di luar area Tangerang, Depok, dan Jakarta?',
+    a: 'Bisa banget! Tim FYPotret siap jalan ke mana aja (Bogor, Bekasi, Bandung, dan kota lainnya). Nanti tinggal kita sesuaikan biaya transport dan akomodasinya yang bersahabat.',
   },
   {
-    q: 'Berapa lama proses editing dan penyerahan hasil foto?',
-    a: 'Preview all raw files akan diberikan via Google Drive dalam 1-2 hari setelah sesi. Foto hasil editing terpilih akan selesai dalam 4-7 hari kerja.',
+    q: 'Berapa lama proses nunggu hasil foto dan editingnya?',
+    a: 'Cepat kok! Semua file foto mentahan (all raw) langsung kita upload ke Google Drive kamu H+1 sampai H+2 beres pemotretan. Buat foto yang diedit cantik, selesai dalam 4-7 hari kerja.',
   },
   {
-    q: 'Bagaimana cara pembayaran dan tanda jadi (DP)?',
-    a: 'Cukup lakukan DP 30% untuk mengunci tanggal dan jam sesi foto Anda. Pelunasan dapat dilakukan pada hari H setelah sesi foto selesai.',
+    q: 'Gimana sistem pembayaran dan tanda jadinya (DP)?',
+    a: 'Cukup DP 30% aja buat amankan tanggal dan jam sesimu. Sisanya bisa dilunasi pas hari H beres sesi foto.',
   },
 ];

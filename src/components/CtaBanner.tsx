@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Sparkles, Calendar, ShieldCheck } from 'lucide-react';
+import { MessageCircle, Clock, ShieldCheck, Calendar, Zap, Palette, MapPin } from 'lucide-react';
 
 interface CtaBannerProps {
   onOpenBooking: () => void;
@@ -26,22 +26,22 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         
         {/* Top Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/40 text-gold-300 text-xs sm:text-sm font-semibold mb-6 shadow-lg shadow-gold-500/10">
-          <Sparkles className="w-4 h-4 text-gold-400 animate-spin" />
-          <span>Slot Jadwal Terbatas Setiap Bulannya</span>
+          <Clock className="w-4 h-4 text-gold-400" />
+          <span>Yuk Amankan Tanggalmu Lebih Awal!</span>
         </div>
 
         {/* Big Editorial Headline */}
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
-          Momen Bahagia Tak Bisa Diulang,{' '}
+          Hari Bahagia Cuma Sekali Seumur Hidup,{' '}
           <span className="italic font-normal text-gold-gradient block sm:inline">
-            Abadikan Selamanya
+            Jangan Sampai Nyesel
           </span>{' '}
-          Bersama FYPotret.
+          Nggak Didokumentasiin.
         </h2>
 
         {/* Subtitle */}
         <p className="text-sm sm:text-base lg:text-lg text-zinc-200 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-          Jangan biarkan hari bersejarah wisuda atau pernikahan Anda terlewat tanpa dokumentasi terbaik. Konsultasikan konsep foto, pilihan lokasi, hingga outfit bersama fotografer kami secara gratis.
+          Jadwal akhir pekan dan musim wisuda cepet banget penuhnya! Mau tanya rekomendasi tempat foto estetik, cocokin tema baju, atau diskusi rundown acara? Bebas ngobrol bareng tim fotografer kita, gratis kok.
         </p>
 
         {/* CTA Button */}
@@ -53,32 +53,32 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
             {/* Shimmer Light Sweep */}
             <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/45 to-transparent pointer-events-none animate-shimmer-sweep" />
             <MessageCircle className="w-5 h-5 fill-obsidian-950 relative z-10" />
-            <span className="relative z-10">Booking Jadwal Sekarang</span>
+            <span className="relative z-10">Chat WhatsApp Sekarang</span>
           </button>
 
           <div className="flex items-center gap-2 text-xs text-zinc-300 mt-2 sm:mt-0">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Free Konsultasi Rundown & Moodboard</span>
+            <span>Bebas Konsultasi Konsep & Moodboard</span>
           </div>
         </div>
 
         {/* Trust Badges Bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/10 text-xs text-zinc-300">
-          <div className="flex items-center justify-center gap-1.5">
+          <div className="flex items-center justify-center gap-2">
             <Calendar className="w-4 h-4 text-gold-400" />
             <span>Booking Fleksibel</span>
           </div>
-          <div className="flex items-center justify-center gap-1.5">
-            <span className="text-gold-400">⚡</span>
+          <div className="flex items-center justify-center gap-2">
+            <Zap className="w-4 h-4 text-gold-400" />
             <span>H+1 All Raw Files</span>
           </div>
-          <div className="flex items-center justify-center gap-1.5">
-            <span className="text-gold-400">🎨</span>
+          <div className="flex items-center justify-center gap-2">
+            <Palette className="w-4 h-4 text-gold-400" />
             <span>Tone Warna Hangat</span>
           </div>
-          <div className="flex items-center justify-center gap-1.5">
-            <span className="text-gold-400">📍</span>
-            <span>Cover Seluruh Jabodetabek</span>
+          <div className="flex items-center justify-center gap-2">
+            <MapPin className="w-4 h-4 text-gold-400" />
+            <span>Cover Area Jabodetabek</span>
           </div>
         </div>
 

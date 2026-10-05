@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
-import { MessageCircle, MapPin, Sparkles, Camera, Filter } from 'lucide-react';
+import { MessageCircle, MapPin, Camera, Filter } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface GalleryProps {
@@ -50,14 +50,14 @@ export const Gallery: React.FC<GalleryProps> = ({
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Koleksi Karya Terbaik</span>
+            <Camera className="w-3.5 h-3.5" />
+            <span>Hasil Jepretan Klien Kami</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight">
-            Galeri Portofolio & Cerita Klien
+            Intip Koleksi Foto & Momen Seru
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-3 font-sans">
-            Sentuh atau klik foto untuk melihat resolusi penuh dan detail lokasi sesi pemotretan.
+            Klik atau tap fotonya buat lihat hasil jepretan resolusi jernih dan info lokasinya.
           </p>
 
           {/* Category Filter Pills (Mobile Responsive) */}
@@ -158,7 +158,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-gold-500/15 hover:bg-gold-500/25 active:bg-gold-500/30 text-gold-400 hover:text-gold-300 border border-gold-500/30 text-xs font-semibold transition-all duration-200 cursor-pointer min-h-[38px]"
                   >
                     <MessageCircle className="w-3.5 h-3.5" />
-                    <span>Tanya Paket Serupa</span>
+                    <span>Mau Foto Kayak Gini</span>
                   </button>
 
                   {item.instagramUrl && (
