@@ -7,26 +7,26 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
+    <section className="relative isolate pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
-      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80"
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85"
           alt="Cinematic Photography Backdrop"
-          className="w-full h-full object-cover object-center opacity-30 scale-105 filter brightness-75 contrast-125"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-115"
         />
-        {/* Layered Dark Vignette & Amber Glow */}
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950 via-obsidian-950/90 to-obsidian-950/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-obsidian-950/80" />
+        {/* Layered Dark Vignette - Foto tetap jelas terlihat, teks putih tajam kontras */}
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/75 to-obsidian-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/15 via-transparent to-obsidian-950/60" />
       </div>
 
       {/* Background Soft Flare Accents */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[680px] h-[340px] sm:h-[680px] bg-gradient-to-tr from-amber-500/15 via-gold-500/10 to-transparent rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute top-1/3 left-10 w-80 h-80 bg-amber-600/8 rounded-full blur-[110px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[680px] h-[340px] sm:h-[680px] bg-gradient-to-tr from-amber-500/15 via-gold-500/10 to-transparent rounded-full blur-[140px] pointer-events-none z-0" />
+      <div className="absolute top-1/3 left-10 w-80 h-80 bg-amber-600/10 rounded-full blur-[110px] pointer-events-none z-0" />
 
       {/* Decorative Viewfinder Lines */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 pointer-events-none hidden md:flex items-center justify-between text-[11px] font-mono text-gold-500/30">
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 pointer-events-none hidden md:flex items-center justify-between text-[11px] font-mono text-gold-500/40 z-10">
         <span>[ REC • 4K 60FPS ]</span>
         <span className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <span>[ EXP 0.0 • 5600K ]</span>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}

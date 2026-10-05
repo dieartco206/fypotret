@@ -7,18 +7,19 @@ interface CtaBannerProps {
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative py-20 sm:py-28 overflow-hidden border-y border-gold-500/30">
+    <section className="relative isolate py-20 sm:py-28 overflow-hidden border-y-2 border-gold-500/40 shadow-2xl">
       {/* High-Impact Photography Background with Golden Sunset Sky */}
-      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=85"
           alt="Graduation and Wedding Celebration Sky"
-          className="w-full h-full object-cover object-center filter brightness-60 contrast-125 scale-105"
+          className="w-full h-full object-cover object-center filter brightness-85 contrast-115 scale-105"
         />
         {/* Cinematic Golden Amber Vignette */}
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950 via-obsidian-950/85 to-obsidian-950/70" />
+        <div className="absolute inset-0 bg-[#070709]/70 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-transparent to-obsidian-950/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-obsidian-950/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/25 via-transparent to-obsidian-950/80" />
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">

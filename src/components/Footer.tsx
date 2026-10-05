@@ -4,8 +4,18 @@ import { InstagramIcon } from './InstagramIcon';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-obsidian-950 border-t border-white/10 pt-16 pb-12 text-zinc-400 text-xs sm:text-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative isolate bg-obsidian-950 border-t border-gold-500/25 pt-16 pb-12 text-zinc-400 text-xs sm:text-sm overflow-hidden">
+      {/* Background Photography Vintage Camera Accent */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none opacity-25">
+        <img
+          src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=1600&q=80"
+          alt="Vintage Photography Setup"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-70 contrast-125"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/80 to-obsidian-950" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           
           {/* Col 1: Brand Info */}

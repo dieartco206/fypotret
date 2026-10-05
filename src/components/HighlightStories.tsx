@@ -27,14 +27,16 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
   };
 
   return (
-    <section className="relative py-7 sm:py-9 border-y border-gold-500/25 bg-gradient-to-r from-obsidian-900 via-amber-950/25 to-obsidian-900 shadow-2xl overflow-hidden">
+    <section className="relative isolate py-7 sm:py-9 border-y border-gold-500/30 bg-obsidian-950 shadow-2xl overflow-hidden">
       {/* Background Subtle Studio Camera Atmosphere */}
-      <div className="absolute inset-0 pointer-events-none opacity-15 mix-blend-overlay -z-10">
+      <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80"
           alt="Studio Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-70 contrast-120"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-obsidian-950/75 to-obsidian-950/90" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950" />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
