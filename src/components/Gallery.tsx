@@ -60,15 +60,15 @@ export const Gallery: React.FC<GalleryProps> = ({
             Klik atau tap fotonya buat lihat hasil jepretan resolusi jernih dan info lokasinya.
           </p>
 
-          {/* Category Filter Pills (Mobile Responsive) */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mt-8">
+          {/* Category Filter Pills (Mobile Responsive Swipe) */}
+          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 mt-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
             {CATEGORIES.map((cat) => {
               const isSelected = selectedCategory === cat.id;
               return (
                 <button
                   key={cat.id}
                   onClick={() => onSelectCategory(cat.id)}
-                  className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] flex items-center gap-1.5 active:scale-95 ${
+                  className={`px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] flex items-center gap-1.5 active:scale-95 flex-shrink-0 whitespace-nowrap ${
                     isSelected
                       ? 'bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 shadow-lg shadow-gold-500/25 scale-105'
                       : 'bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/5'

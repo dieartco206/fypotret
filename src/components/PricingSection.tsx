@@ -54,12 +54,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
           </p>
 
           {/* Category Tabs */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
+          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 mt-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
             {filterTabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setSelectedCategory(tab.id)}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] ${
+                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] flex-shrink-0 whitespace-nowrap ${
                   selectedCategory === tab.id
                     ? 'bg-gold-500 text-obsidian-950 font-bold shadow-md shadow-gold-500/20'
                     : 'bg-zinc-900 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/5'
@@ -79,7 +79,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
                 key={pkg.id}
                 className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury ${
                   pkg.isPopular
-                    ? 'border-2 border-gold-500/80 shadow-2xl shadow-gold-500/20 scale-[1.02] ring-1 ring-gold-500/30'
+                    ? 'border-2 border-gold-500/80 shadow-2xl shadow-gold-500/20 sm:scale-[1.02] ring-1 ring-gold-500/30'
                     : 'hover:border-gold-500/50'
                 }`}
               >

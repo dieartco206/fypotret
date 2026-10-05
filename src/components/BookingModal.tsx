@@ -81,7 +81,7 @@ Kira-kira tanggal tersebut masih available? Mohon info lengkapnya ya, terima kas
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Box */}
-      <div className="relative w-full sm:max-w-lg bg-obsidian-900 border border-white/10 sm:rounded-2xl rounded-t-3xl shadow-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto z-10">
+      <div className="relative w-full sm:max-w-lg bg-obsidian-900 border border-white/10 sm:rounded-2xl rounded-t-3xl shadow-2xl p-5 sm:p-8 max-h-[88vh] overflow-y-auto z-10">
         
         {/* Close Button (Apple HIG 44x44px touch target) */}
         <button
