@@ -54,12 +54,12 @@ export const Gallery: React.FC<GalleryProps> = ({
         />
         <div className="absolute inset-0 bg-obsidian-950/85 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/32 via-orange-500/16 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/12 to-transparent" />
       </div>
 
-      {/* Warm Golden/Orange Spotlights (Jelas Terlihat, Latar Belakang Tetap Dominan Hitam) */}
-      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/32 via-orange-500/18 to-transparent rounded-full blur-[85px] pointer-events-none z-0" />
-      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-orange-500/30 via-amber-500/16 to-transparent rounded-full blur-[85px] pointer-events-none z-0" />
+      {/* Warm Golden/Orange Spotlights (Dominan Hitam Mewah, Sentuhan Oranye Elegan) */}
+      <div className="absolute top-10 -left-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/14 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
+      <div className="absolute bottom-10 -right-16 w-[420px] sm:w-[620px] h-[420px] sm:h-[620px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-orange-500/22 via-amber-500/12 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

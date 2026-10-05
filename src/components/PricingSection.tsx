@@ -32,11 +32,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         />
         <div className="absolute inset-0 bg-obsidian-950/85 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950 via-transparent to-obsidian-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/30 via-orange-500/15 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/22 via-orange-500/12 to-transparent" />
       </div>
 
-      {/* Vibrant Golden/Amber Center Spotlight behind pricing cards */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/32 via-orange-500/18 to-transparent rounded-full blur-[85px] pointer-events-none z-0" />
+      {/* Warm Golden/Amber Center Spotlight behind pricing cards */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-500/24 via-orange-500/14 to-transparent rounded-full blur-[90px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
