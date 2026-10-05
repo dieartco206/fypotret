@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
-import { MessageCircle, MapPin, Camera, Filter } from 'lucide-react';
+import { MessageCircle, MapPin, Camera, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface GalleryProps {
@@ -11,6 +11,8 @@ interface GalleryProps {
   onInquireItem: (item: PortfolioItem) => void;
 }
 
+const ITEMS_PER_PAGE = 8;
+
 export const Gallery: React.FC<GalleryProps> = ({
   items,
   selectedCategory,
@@ -19,6 +21,25 @@ export const Gallery: React.FC<GalleryProps> = ({
   onInquireItem,
 }) => {
   const [flashItemId, setFlashItemId] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Reset page to 1 whenever category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory]);
+
+  const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedItems = items.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    const section = document.getElementById('gallery');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const handleCardClick = (index: number, itemId: string) => {
     // 1. Trigger soft camera shutter blitz flash
@@ -83,8 +104,9 @@ export const Gallery: React.FC<GalleryProps> = ({
 
         {/* Dynamic Bento / Masonry Gallery Grid - 2 Kolom di Mobile, 2 Kolom di Tablet, 3 Kolom di Desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-5 lg:gap-6">
-          {items.map((item, index) => {
+          {paginatedItems.map((item, index) => {
             const isFlashing = flashItemId === item.id;
+            const globalIndex = startIndex + index;
             return (
               <div
                 key={item.id}
@@ -99,7 +121,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                       ? 'aspect-[4/3] sm:aspect-[16/10]'
                       : 'aspect-square'
                   }`}
-                  onClick={() => handleCardClick(index, item.id)}
+                  onClick={() => handleCardClick(globalIndex, item.id)}
                 >
                   <img
                     src={item.image}
@@ -170,6 +192,51 @@ export const Gallery: React.FC<GalleryProps> = ({
             );
           })}
         </div>
+
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className="mt-10 sm:mt-14 flex flex-col items-center gap-3">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <button
+                onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
+                disabled={currentPage === 1}
+                className="px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:border-gold-500/40 disabled:opacity-30 disabled:pointer-events-none transition-all flex items-center gap-1 text-xs sm:text-sm font-medium cursor-pointer"
+                aria-label="Halaman Sebelumnya"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span className="hidden sm:inline">Sebelumnya</span>
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <button
+                  key={pageNum}
+                  onClick={() => handlePageChange(pageNum)}
+                  className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center ${
+                    currentPage === pageNum
+                      ? 'bg-gold-500 text-obsidian-950 shadow-lg shadow-gold-500/25 scale-105'
+                      : 'bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/10'
+                  }`}
+                >
+                  {pageNum}
+                </button>
+              ))}
+
+              <button
+                onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:border-gold-500/40 disabled:opacity-30 disabled:pointer-events-none transition-all flex items-center gap-1 text-xs sm:text-sm font-medium cursor-pointer"
+                aria-label="Halaman Selanjutnya"
+              >
+                <span className="hidden sm:inline">Selanjutnya</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+
+            <p className="text-[11px] sm:text-xs text-zinc-400 font-sans">
+              Menampilkan {startIndex + 1}–{Math.min(endIndex, items.length)} dari {items.length} karya foto
+            </p>
+          </div>
+        )}
 
         {/* Empty State if category has no items */}
         {items.length === 0 && (

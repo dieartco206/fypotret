@@ -50,16 +50,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-gold-400 rounded-full animate-ping opacity-75" />
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-xl sm:text-2xl font-bold tracking-tight text-white font-serif">
-                  FY<span className="text-gold-400">Potret</span>
-                </span>
-                <span className="text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-gold-500/15 text-gold-400 border border-gold-500/30">
-                  Pro
+              <div className="flex items-center">
+                <span className="text-xl sm:text-2xl font-black tracking-tight font-sans text-gold-400">
+                  FYP<span className="text-white font-bold">otret</span>
                 </span>
               </div>
-              <p className="text-[10px] text-zinc-400 font-sans tracking-wide hidden xs:block">
-                Capturing Love, Joy, & Memories
+              <p className="text-[9px] uppercase tracking-[0.22em] text-zinc-400 font-sans font-medium hidden xs:block">
+                Capture Your Moment
               </p>
             </div>
           </a>

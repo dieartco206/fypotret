@@ -87,84 +87,108 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Right Column: Asymmetric Editorial Magazine Collage */}
-          <div className="lg:col-span-6 relative">
+          {/* Right Column: Staggered Dual-Column Editorial Showcase */}
+          <div className="lg:col-span-6 relative mt-6 lg:mt-0">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
-              {/* Subtle Ambient Golden Glow Behind Collage */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] bg-gold-500/10 rounded-full blur-[100px] pointer-events-none -z-10" />
+              {/* Subtle Ambient Golden Glow */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-gold-500/10 rounded-full blur-[110px] pointer-events-none -z-10" />
 
-              {/* The 3-Photo Editorial Grid (Clean & Minimalist) */}
-              <div className="grid grid-cols-12 gap-3 sm:gap-4 items-stretch">
+              {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
+              <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">
                 
-                {/* 01. Foto Utama (Wedding & Akad) */}
-                <div className="col-span-12 sm:col-span-7 group relative flex flex-col">
-                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-gold-500/30 bg-obsidian-900 shadow-2xl shadow-black/80 aspect-[3/4] sm:aspect-[4/5.4] w-full flex-grow">
+                {/* Column 1 */}
+                <div className="flex flex-col gap-3 sm:gap-4.5">
+                  {/* 01. Wedding & Akad */}
+                  <a
+                    href="#gallery"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                  >
                     <img
                       src="/portfolio/p7_DbVM3ScFJoX.jpg"
-                      alt="Wedding Dian & Rizky - FYPotret"
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                      alt="Wedding & Akad Dian & Rizky - FYPotret"
+                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="eager"
                     />
-
-                    {/* Soft Bottom Gradient for Text Legibility */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-
-                    {/* Simple Minimalist Caption */}
-                    <div className="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 z-10">
-                      <p className="text-sm sm:text-base font-serif font-bold text-white drop-shadow">
-                        Wedding & Akad
-                      </p>
-                      <p className="text-xs text-gold-300 font-sans mt-0.5">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                      <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
+                        Wedding
+                      </span>
+                      <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
                         Dian & Rizky
                       </p>
                     </div>
-                  </div>
+                  </a>
+
+                  {/* 02. Lamaran & Prewedding */}
+                  <a
+                    href="#gallery"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                  >
+                    <img
+                      src="/portfolio/p11_DbmsYCQkysa.jpg"
+                      alt="Lamaran Bella & Luthfy - FYPotret"
+                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                      <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
+                        Lamaran
+                      </span>
+                      <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                        Bella & Luthfy
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
-                {/* Right Sub-Column: 2 Foto Pendamping (Wisuda & Lamaran) */}
-                <div className="col-span-12 sm:col-span-5 grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4">
-                  
-                  {/* 02. Foto Wisuda */}
-                  <div className="group relative">
-                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-gold-500/40 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
-                      <img
-                        src="/portfolio/p2_DbOVvb6E70Q.jpg"
-                        alt="Wisuda Ch Lailonas - FYPotret"
-                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-
-                      {/* Simple Minimalist Caption */}
-                      <div className="absolute bottom-3 left-3 z-10">
-                        <p className="text-xs sm:text-sm font-serif font-bold text-white drop-shadow">
-                          Wisuda
-                        </p>
-                      </div>
+                {/* Column 2 (Offset / Staggered down) */}
+                <div className="flex flex-col gap-3 sm:gap-4.5 pt-5 sm:pt-9">
+                  {/* 03. Wisuda Solo */}
+                  <a
+                    href="#gallery"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                  >
+                    <img
+                      src="/portfolio/p2_DbOVvb6E70Q.jpg"
+                      alt="Wisuda Ch Lailonas - FYPotret"
+                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                      <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
+                        Wisuda
+                      </span>
+                      <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                        Graduation Solo
+                      </p>
                     </div>
-                  </div>
+                  </a>
 
-                  {/* 03. Foto Lamaran */}
-                  <div className="group relative">
-                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-gold-500/40 bg-obsidian-900 shadow-xl aspect-square sm:aspect-[4/3] transition-all duration-500">
-                      <img
-                        src="/portfolio/p11_DbmsYCQkysa.jpg"
-                        alt="Lamaran Bella & Luthfy - FYPotret"
-                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-
-                      {/* Simple Minimalist Caption */}
-                      <div className="absolute bottom-3 left-3 z-10">
-                        <p className="text-xs sm:text-sm font-serif font-bold text-white drop-shadow">
-                          Lamaran
-                        </p>
-                      </div>
+                  {/* 04. Wisuda Squad / Sahabat */}
+                  <a
+                    href="#gallery"
+                    className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block"
+                  >
+                    <img
+                      src="/portfolio/p4_DbOWBkKE80l.jpg"
+                      alt="Wisuda Bestie Squad - FYPotret"
+                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                      <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
+                        Squad
+                      </span>
+                      <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                        Momen Bareng Bestie
+                      </p>
                     </div>
-                  </div>
-
+                  </a>
                 </div>
 
               </div>

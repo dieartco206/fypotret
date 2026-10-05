@@ -28,8 +28,8 @@ export const Footer: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-2xl font-bold tracking-tight text-white font-serif">
-                FY<span className="text-gold-400">Potret</span>
+              <span className="text-2xl font-black tracking-tight font-sans text-gold-400">
+                FYP<span className="text-white font-bold">otret</span>
               </span>
             </div>
             
