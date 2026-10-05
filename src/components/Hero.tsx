@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Camera,
   MapPin,
   Calendar,
   ArrowUpRight,
@@ -30,26 +29,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[680px] h-[340px] sm:h-[680px] bg-gradient-to-tr from-amber-500/15 via-gold-500/10 to-transparent rounded-full blur-[140px] pointer-events-none z-0" />
       <div className="absolute top-1/3 left-10 w-80 h-80 bg-amber-600/10 rounded-full blur-[110px] pointer-events-none z-0" />
 
-      {/* Subtle Studio Status Indicator */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 pointer-events-none hidden md:flex items-center justify-between text-[11px] font-mono text-gold-500/40 z-10">
-        <span>[ FYPOTRET • OFFICIAL PORTFOLIO ]</span>
-        <span className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-          <span>JADWAL BOOKING JABODETABEK TERSEDIA</span>
-        </span>
-        <span>[ TANGERANG • DEPOK • JAKARTA ]</span>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
           <div className="lg:col-span-6 text-center lg:text-left">
-            {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold mb-6 shadow-sm shadow-gold-500/5">
-              <Camera className="w-3.5 h-3.5 text-gold-400" />
-              <span>Dokumentasi Momen Hangat & Seru di Jabodetabek</span>
-            </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-5">
@@ -100,22 +84,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <span>Lihat Hasil Foto</span>
                 <ArrowUpRight className="w-4 h-4 text-gold-400" />
               </a>
-            </div>
-
-            {/* Quick Micro Trust Indicators */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-10 pt-8 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
-              <div className="text-center lg:text-left">
-                <div className="text-xl sm:text-2xl font-bold font-serif text-white">500+</div>
-                <div className="text-[11px] text-zinc-400 mt-0.5">Momen Klien</div>
-              </div>
-              <div className="text-center lg:text-left border-x border-white/10 px-2 sm:px-4">
-                <div className="text-xl sm:text-2xl font-bold font-serif text-gold-400">4.9 / 5.0</div>
-                <div className="text-[11px] text-zinc-400 mt-0.5">Rating Kepuasan</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-xl sm:text-2xl font-bold font-serif text-white">H+1</div>
-                <div className="text-[11px] text-zinc-400 mt-0.5">Semua File Mentahan</div>
-              </div>
             </div>
           </div>
 

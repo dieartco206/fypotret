@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { HighlightStories } from './components/HighlightStories';
 import { Gallery } from './components/Gallery';
 import { PricingSection } from './components/PricingSection';
 import { Testimonials } from './components/Testimonials';
@@ -64,12 +63,6 @@ export function App() {
       <main className="flex-grow">
         {/* Hero Section */}
         <Hero onOpenBooking={handleOpenGeneralBooking} />
-
-        {/* Instagram Highlight-Style Category Stories */}
-        <HighlightStories
-          activeCategory={selectedCategory}
-          onSelectCategory={(catId) => setSelectedCategory(catId)}
-        />
 
         {/* Dynamic Bento Gallery with Category Tabs */}
         <Gallery
