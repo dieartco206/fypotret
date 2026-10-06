@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  MapPin,
   Calendar,
   ArrowUpRight,
 } from 'lucide-react';
@@ -43,28 +42,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-7 animate-text-reveal animation-delay-200">
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8 sm:mb-9 animate-text-reveal animation-delay-200">
               Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
 
-            {/* Location & Coverage Tags */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-8 text-xs text-zinc-400 animate-text-reveal animation-delay-300">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
-                <MapPin className="w-3.5 h-3.5 text-gold-400" />
-                Tangerang
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
-                <MapPin className="w-3.5 h-3.5 text-gold-400" />
-                Depok
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/90 border border-gold-500/20 shadow-sm hover:border-gold-400/40 transition-colors">
-                <MapPin className="w-3.5 h-3.5 text-gold-400" />
-                Jakarta & Sekitarnya
-              </span>
-            </div>
-
             {/* Action Buttons (Mobile-First Touch Optimized) */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 animate-text-reveal animation-delay-400">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 animate-text-reveal animation-delay-300">
               <button
                 onClick={onOpenBooking}
                 className="relative overflow-hidden w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px] group cursor-pointer"
