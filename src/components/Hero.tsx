@@ -1,14 +1,10 @@
 import React from 'react';
-import {
-  Calendar,
-  ArrowUpRight,
-} from 'lucide-react';
 
 interface HeroProps {
-  onOpenBooking: () => void;
+  onOpenBooking?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
+export const Hero: React.FC<HeroProps> = () => {
   return (
     <section className="relative isolate pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
@@ -42,30 +38,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8 sm:mb-9 animate-text-reveal animation-delay-200">
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed animate-text-reveal animation-delay-200">
               Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
-
-            {/* Action Buttons (Mobile-First Touch Optimized) */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 animate-text-reveal animation-delay-300">
-              <button
-                onClick={onOpenBooking}
-                className="relative overflow-hidden w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm sm:text-base tracking-wide shadow-xl shadow-gold-500/30 hover:shadow-gold-500/50 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2.5 min-h-[48px] group cursor-pointer"
-              >
-                {/* Golden Shimmer Light Sweep Effect */}
-                <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none animate-shimmer-sweep" />
-                <Calendar className="w-4 h-4 fill-obsidian-950 relative z-10" />
-                <span className="relative z-10">Reservasi Jadwal</span>
-              </button>
-
-              <a
-                href="#gallery"
-                className="w-full sm:w-auto px-6 py-4 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 text-zinc-200 hover:text-white font-semibold text-sm sm:text-base border border-gold-500/30 hover:border-gold-400 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 min-h-[48px]"
-              >
-                <span>Lihat Galeri Foto</span>
-                <ArrowUpRight className="w-4 h-4 text-gold-400" />
-              </a>
-            </div>
           </div>
 
           {/* Right Column: Staggered Dual-Column Editorial Showcase */}
