@@ -9,6 +9,7 @@ export interface PortfolioItem {
   client: string;
   description: string;
   instagramUrl?: string;
+  isVideo?: boolean;
 }
 
 export interface PricingPackage {
@@ -532,6 +533,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     client: 'Keluarga Baby Kavi',
     description: 'Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.',
     instagramUrl: 'https://www.instagram.com/reel/DdRfHShTr7Q/',
+    isVideo: true,
   },
 
   // 33. Event - Syukuran & Momen Keluarga Besar
@@ -588,6 +590,126 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     client: 'Baby 1st Birthday',
     description: 'Momen menggemaskan tiup lilin dan potong kue ulang tahun pertama bernuansa laut biru dan kue cokelat Tous les Jours.',
     instagramUrl: 'https://www.instagram.com/p/Dd1iye5k7f4/',
+  },
+
+  // 37. Event - Weekend Stroll di Blok M
+  {
+    id: 'ig-37',
+    title: 'Weekend Stroll & Urban Hangout di Blok M',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p37_DeeRlPGlFnm.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan, capturing canda tawa hangat dan potret urban casual natural.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/',
+    isVideo: false,
+  },
+
+  // 38. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
+  {
+    id: 'ig-38',
+    title: 'Reuni Akbar Eks Karyawan PT Jaya Obayashi',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p38_DeRoRBnlOFJ.jpg',
+    aspect: 'tall',
+    location: 'Tomlex Resto & Cafe, Jakarta',
+    client: 'Alumni PT Jaya Obayashi',
+    description: 'Dokumentasi hangat temu kangen dan silaturahmi eks karyawan PT Jaya Obayashi, merajut kembali kenangan indah masa kerja dalam bingkai kebersamaan.',
+    instagramUrl: 'https://www.instagram.com/p/DeRoRBnlOFJ/',
+    isVideo: false,
+  },
+
+  // 39. Prewedding - The Engagement Day: Sarah & Singgih
+  {
+    id: 'ig-39',
+    title: 'The Engagement Day: Sarah & Singgih',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p39_DeKDqlqk26K.jpg',
+    aspect: 'tall',
+    location: 'Twins Studio, Jakarta',
+    client: 'Sarah & Singgih',
+    description: 'Potret pertunangan sakral dan romantis Sarah & Singgih dalam balutan busana formal elegan dengan background dekorasi studio minimalis modern.',
+    instagramUrl: 'https://www.instagram.com/p/DeKDqlqk26K/',
+    isVideo: false,
+  },
+
+  // 40. Birthday Reel - Jose 1st Birthday Celebration
+  {
+    id: 'ig-40',
+    title: "Jose's 1st Birthday Celebration Reel",
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p40_Dd_R1Tzp70Z.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Keluarga Sekar & Soelthan',
+    description: 'Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.',
+    instagramUrl: 'https://www.instagram.com/reel/Dd_R1Tzp70Z/',
+    isVideo: true,
+  },
+
+  // 41. Birthday Reel - Benjamin & Berkant Birthday Moments
+  {
+    id: 'ig-41',
+    title: 'Benjamin & Berkant Construction Birthday Reel',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p41_Dd1elU1Tycq.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Barat',
+    client: 'Keluarga Zulianita',
+    description: 'Kompilasi video seru keceriaan pesta ulang tahun Benjamin & Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.',
+    instagramUrl: 'https://www.instagram.com/reel/Dd1elU1Tycq/',
+    isVideo: true,
+  },
+
+  // 42. Event Reel - Tasyakuran & Aqiqah Baby
+  {
+    id: 'ig-42',
+    title: 'Tasyakuran & Aqiqah Baby Ceremony Reel',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p42_DdjhHhOz7Am.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Keluarga Baby',
+    description: 'Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.',
+    instagramUrl: 'https://www.instagram.com/reel/DdjhHhOz7Am/',
+    isVideo: true,
+  },
+
+  // 43. Birthday Reel - Chayra's Birthday Party Highlight
+  {
+    id: 'ig-43',
+    title: "Chayra's Sweet Birthday Party Highlight Reel",
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p43_DdiavVAz1HK.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Chayra & Family',
+    description: 'Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.',
+    instagramUrl: 'https://www.instagram.com/reel/DdiavVAz1HK/',
+    isVideo: true,
+  },
+
+  // 44. Birthday Reel - Elegant Milestone Birthday
+  {
+    id: 'ig-44',
+    title: 'Elegant Milestone Birthday Celebration Reel',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p44_DdT7VcKhZHA.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Birthday Milestone Client',
+    description: 'Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.',
+    instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
+    isVideo: true,
   },
 ];
 

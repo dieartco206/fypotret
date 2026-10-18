@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
-import { MapPin, Camera, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
+import { MapPin, Camera, Filter, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface GalleryProps {
@@ -130,9 +130,17 @@ export const Gallery: React.FC<GalleryProps> = ({
 
                   {/* Top Header inside Image: Category Badge & Instagram Icon */}
                   <div className="absolute top-2 left-2 right-2 sm:top-3 sm:left-3 sm:right-3 z-10 flex items-center justify-between">
-                    <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-obsidian-950/85 backdrop-blur-md text-gold-400 border border-gold-500/30">
-                      {item.categoryLabel}
-                    </span>
+                    <div className="flex items-center gap-1 sm:gap-1.5">
+                      <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-obsidian-950/85 backdrop-blur-md text-gold-400 border border-gold-500/30">
+                        {item.categoryLabel}
+                      </span>
+                      {item.isVideo && (
+                        <span className="px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-500/25 text-pink-300 border border-pink-500/35 backdrop-blur-md flex items-center gap-1">
+                          <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
+                          <span>Reel</span>
+                        </span>
+                      )}
+                    </div>
 
                     {item.instagramUrl && (
                       <a
@@ -149,11 +157,29 @@ export const Gallery: React.FC<GalleryProps> = ({
                     )}
                   </div>
 
-                  {/* Camera HUD Indicator on Hover (Desktop only) */}
+                  {/* Play Button Overlay for Videos */}
+                  {item.isVideo && (
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/55 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-obsidian-950 transition-all duration-300 shadow-xl">
+                        <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Camera/Play HUD Indicator on Hover (Desktop only) */}
                   <div className="hidden sm:block absolute top-12 right-3 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-1 group-hover:translate-y-0">
                     <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 flex items-center gap-1 shadow-md">
-                      <Camera className="w-3 h-3 text-gold-400" />
-                      <span>LIHAT</span>
+                      {item.isVideo ? (
+                        <>
+                          <Play className="w-3 h-3 fill-gold-400 text-gold-400" />
+                          <span>PUTAR REEL</span>
+                        </>
+                      ) : (
+                        <>
+                          <Camera className="w-3 h-3 text-gold-400" />
+                          <span>LIHAT</span>
+                        </>
+                      )}
                     </span>
                   </div>
 

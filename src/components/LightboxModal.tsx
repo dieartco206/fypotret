@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import type { PortfolioItem } from '../data/portfolioData';
-import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin, Play } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface LightboxModalProps {
@@ -124,12 +124,27 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
       {/* Main Image Viewport Area (Clean & Centered) */}
       <div className="relative flex-1 w-full max-w-6xl mx-auto flex items-center justify-center px-3 sm:px-12 overflow-hidden my-auto">
-        <img
-          key={currentItem.id}
-          src={currentItem.image}
-          alt={currentItem.title}
-          className="max-w-full max-h-[58vh] sm:max-h-[72vh] md:max-h-[76vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
-        />
+        <div className="relative inline-flex items-center justify-center">
+          <img
+            key={currentItem.id}
+            src={currentItem.image}
+            alt={currentItem.title}
+            className="max-w-full max-h-[58vh] sm:max-h-[72vh] md:max-h-[76vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
+          />
+
+          {/* Central Play Button Overlay for Reels */}
+          {currentItem.isVideo && currentItem.instagramUrl && (
+            <a
+              href={currentItem.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-black/65 hover:bg-gold-500 hover:text-obsidian-950 text-white border-2 border-white/30 backdrop-blur-md flex items-center justify-center shadow-2xl transition-all duration-300 transform hover:scale-110 active:scale-95 group z-20 cursor-pointer"
+              title="Tonton Video Reel di Instagram"
+            >
+              <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current ml-1" />
+            </a>
+          )}
+        </div>
 
         {/* Desktop-Only Lateral Navigation Buttons (Outside photo focus area) */}
         <button
@@ -157,6 +172,12 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               <span className="px-2 py-0.5 rounded bg-gold-500/20 text-gold-400 font-semibold border border-gold-500/30 text-[10px] sm:text-xs">
                 {currentItem.categoryLabel}
               </span>
+              {currentItem.isVideo && (
+                <span className="px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 font-semibold border border-pink-500/30 text-[10px] sm:text-xs flex items-center gap-1">
+                  <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
+                  <span>Video Reel</span>
+                </span>
+              )}
               <span className="flex items-center gap-1 truncate">
                 <MapPin className="w-3 h-3 text-gold-400 flex-shrink-0" />
                 <span className="truncate">{currentItem.location}</span>
@@ -182,8 +203,17 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 title="Buka postingan asli di Instagram @fypotretid"
                 aria-label="Buka di Instagram"
               >
-                <InstagramIcon className="w-4 h-4 text-pink-400" />
-                <span className="hidden sm:inline">Instagram</span>
+                {currentItem.isVideo ? (
+                  <>
+                    <Play className="w-4 h-4 fill-pink-400 text-pink-400" />
+                    <span className="hidden sm:inline">Putar Reel</span>
+                  </>
+                ) : (
+                  <>
+                    <InstagramIcon className="w-4 h-4 text-pink-400" />
+                    <span className="hidden sm:inline">Instagram</span>
+                  </>
+                )}
               </a>
             )}
 
