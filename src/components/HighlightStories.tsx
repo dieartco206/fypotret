@@ -31,9 +31,11 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
       {/* Background Subtle Studio Camera Atmosphere */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=70"
           alt="Studio Background"
           className="w-full h-full object-cover object-center scale-105 filter brightness-70 contrast-120 animate-ken-burns"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-obsidian-950/75 to-obsidian-950/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950" />

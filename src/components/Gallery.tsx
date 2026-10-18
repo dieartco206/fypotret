@@ -48,9 +48,11 @@ export const Gallery: React.FC<GalleryProps> = ({
       {/* Real Photography Backdrop for Gallery Section */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85"
+          src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=75"
           alt="Gallery Exhibition Atmosphere"
           className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-105 animate-ken-burns"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-obsidian-950/65 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-transparent to-obsidian-950/80" />
@@ -123,6 +125,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                     alt={item.title}
                     className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                     loading="lazy"
+                    decoding="async"
                   />
 
                   {/* Gradient Shadow Overlay */}

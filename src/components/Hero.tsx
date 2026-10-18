@@ -10,9 +10,11 @@ export const Hero: React.FC<HeroProps> = () => {
       {/* Real Photography Background with Cinematic Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85"
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=75"
           alt="Cinematic Photography Backdrop"
           className="w-full h-full object-cover object-center scale-105 filter brightness-105 contrast-105 animate-ken-burns"
+          loading="eager"
+          decoding="async"
         />
         {/* Layered Dark Vignette - Foto Acara Tetap Terlihat Hidup & Teks Kontras Tajam */}
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/80 via-obsidian-950/55 to-obsidian-950/25" />

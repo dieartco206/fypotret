@@ -26,9 +26,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
       {/* Real Photography Backdrop for Pricing Section */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=2000&q=85"
+          src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=75"
           alt="Wedding Celebration Atmosphere"
           className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-105"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-obsidian-950/65 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-transparent to-obsidian-950/80" />

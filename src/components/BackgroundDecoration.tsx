@@ -39,8 +39,8 @@ export const BackgroundDecoration: React.FC = () => {
         </svg>
       </div>
 
-      {/* Subtle Noise / 35mm Film Grain Simulation */}
-      <div className="absolute inset-0 bg-film-grain opacity-[0.03]" />
+      {/* Subtle Noise / 35mm Film Grain Simulation (Desktop only, saves mobile CPU) */}
+      <div className="absolute inset-0 bg-film-grain opacity-[0.03] hidden sm:block pointer-events-none" />
     </div>
   );
 };

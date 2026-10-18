@@ -8,9 +8,11 @@ export const Footer: React.FC = () => {
       {/* Background Photography Vintage Camera Accent */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none opacity-55">
         <img
-          src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=1000&q=70"
           alt="Vintage Photography Setup"
           className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-110"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/65 to-obsidian-950" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gold-400/22 via-transparent to-transparent" />

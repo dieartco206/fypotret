@@ -265,3 +265,66 @@
 .animation-delay-500 { animation-delay: 500ms; }
 .animation-delay-600 { animation-delay: 600ms; }
 
+/* =========================================================================
+   Ultra-Smooth 60/120fps Mobile Scrolling & Hardware Optimization Suite
+   ========================================================================= */
+
+/* Modern DOM Containment for Off-Screen Sections (Massive FPS Boost on Mobile) */
+#gallery, #pricing, #testimonials, #contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+@media (max-width: 768px) {
+  /* 1. Matikan continuous background GPU transforms di mobile */
+  .animate-ken-burns {
+    animation: none !important;
+    will-change: auto !important;
+    transform: none !important;
+  }
+
+  .animate-float-a,
+  .animate-float-b {
+    animation: none !important;
+    will-change: auto !important;
+    transform: none !important;
+  }
+
+  .animate-gold-flow {
+    animation: none !important;
+    background-position: 0% 50% !important;
+  }
+
+  /* 2. Ganti expensive backdrop-filter dengan solid luxury colors di mobile */
+  .card-luxury {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: #151824 !important;
+  }
+
+  .glass-panel,
+  .glass-gold {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(20, 24, 34, 0.96) !important;
+  }
+
+  /* Matikan filter blur berlebih di mobile agar GPU 0% lag saat scrolling */
+  [class*="backdrop-blur-"] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Ringankan efek halo blur besar di mobile */
+  [class*="blur-\[9"] {
+    filter: blur(35px) !important;
+    opacity: 0.15 !important;
+  }
+
+  /* Smooth momentum touch scrolling */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+

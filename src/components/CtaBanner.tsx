@@ -11,9 +11,11 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
       {/* High-Impact Photography Background with Golden Sunset Sky */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=85"
+          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=75"
           alt="Graduation and Wedding Celebration Sky"
           className="w-full h-full object-cover object-center filter brightness-85 contrast-115 scale-105 animate-ken-burns"
+          loading="lazy"
+          decoding="async"
         />
         {/* Cinematic Golden Amber Vignette */}
         <div className="absolute inset-0 bg-[#070709]/70 backdrop-blur-[0.5px]" />
