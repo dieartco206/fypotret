@@ -10,6 +10,7 @@ export interface PortfolioItem {
   description: string;
   instagramUrl?: string;
   isVideo?: boolean;
+  videoSrc?: string;
 }
 
 export interface PricingPackage {
@@ -365,6 +366,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     client: 'Pasangan Sporty Romantis',
     description: 'Sesi foto dan video reels prewedding santai di lapangan basket dengan outfit casual coklat & buket bunga cantik.',
     instagramUrl: 'https://www.instagram.com/reel/Db909O2TBA1/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v20_Db909O2TBA1.mp4',
   },
 
   // 21. Prewedding - Framing Pagar Kawat
@@ -534,6 +537,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.',
     instagramUrl: 'https://www.instagram.com/reel/DdRfHShTr7Q/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v32_DdRfHShTr7Q.mp4',
   },
 
   // 33. Event - Syukuran & Momen Keluarga Besar
@@ -650,6 +654,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.',
     instagramUrl: 'https://www.instagram.com/reel/Dd_R1Tzp70Z/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v40_Dd_R1Tzp70Z.mp4',
   },
 
   // 41. Birthday Reel - Benjamin & Berkant Birthday Moments
@@ -665,6 +670,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Kompilasi video seru keceriaan pesta ulang tahun Benjamin & Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.',
     instagramUrl: 'https://www.instagram.com/reel/Dd1elU1Tycq/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v41_Dd1elU1Tycq.mp4',
   },
 
   // 42. Event Reel - Tasyakuran & Aqiqah Baby
@@ -680,6 +686,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.',
     instagramUrl: 'https://www.instagram.com/reel/DdjhHhOz7Am/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v42_DdjhHhOz7Am.mp4',
   },
 
   // 43. Birthday Reel - Chayra's Birthday Party Highlight
@@ -695,6 +702,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.',
     instagramUrl: 'https://www.instagram.com/reel/DdiavVAz1HK/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v43_DdiavVAz1HK.mp4',
   },
 
   // 44. Birthday Reel - Elegant Milestone Birthday
@@ -710,6 +718,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.',
     instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
     isVideo: true,
+    videoSrc: '/portfolio/videos/v44_DdT7VcKhZHA.mp4',
   },
 ];
 
