@@ -32,9 +32,10 @@ export const Hero: React.FC<HeroProps> = () => {
           <div className="lg:col-span-6 text-center lg:text-left">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
-              Abadikan Momen Berharga Bersama{' '}
-              <span className="italic font-normal animate-gold-flow inline-block">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
+              <span className="block sm:inline">Abadikan Momen</span>{' '}
+              <span className="block sm:inline">Berharga Bersama</span>{' '}
+              <span className="italic font-normal animate-gold-flow block sm:inline-block">
                 FYPotret
               </span>
             </h1>
