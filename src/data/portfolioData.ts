@@ -64,10 +64,10 @@ export const HIGHLIGHT_STORIES = [
   {
     id: 'prewedding',
     title: 'Lamaran',
-    subtitle: 'Bella & Luthfy',
+    subtitle: 'Sarah & Singgih',
     iconName: 'Film',
     count: '90+ Pasangan',
-    image: '/portfolio/p11_DbmsYCQkysa.jpg',
+    image: '/portfolio/p39_DeKDqlqk26K.jpg',
   },
   {
     id: 'birthday',
@@ -212,48 +212,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     client: 'Dian & Rizky',
     description: 'Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.',
     instagramUrl: 'https://www.instagram.com/p/DbVNZCJFIJL/',
-  },
-
-  // 10. Lamaran - Bella & Luthfy Surprise
-  {
-    id: 'ig-10',
-    title: 'Kejutan Manis & Air Mata Bahagia Lamaran',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran',
-    image: '/portfolio/p10_Dbmrw6cE4Kj.jpg',
-    aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Bella & Luthfy',
-    description: 'Ekspresi spontan haru dan tawa bahagia calon mempelai wanita saat menerima kejutan lamaran.',
-    instagramUrl: 'https://www.instagram.com/p/Dbmrw6cE4Kj/',
-  },
-
-  // 11. Lamaran - Bella & Luthfy Serasi
-  {
-    id: 'ig-11',
-    title: 'Serasi Berbalut Batik Pink di Pelaminan Lamaran',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran',
-    image: '/portfolio/p11_DbmsYCQkysa.jpg',
-    aspect: 'tall',
-    location: 'Lamaran Intimate Tangerang',
-    client: 'Bella & Luthfy',
-    description: 'Pasangan serasi saling membelakangi dan tersenyum dengan busana senada bernuansa dusty pink.',
-    instagramUrl: 'https://www.instagram.com/p/DbmsYCQkysa/',
-  },
-
-  // 12. Lamaran - Bella & Luthfy Sambutan
-  {
-    id: 'ig-12',
-    title: 'Momen Ungkapan Rasa & Buket Bunga Bahagia',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran',
-    image: '/portfolio/p12_Dbmsw-4kzOJ.jpg',
-    aspect: 'tall',
-    location: 'Engagement Ceremony Tangerang',
-    client: 'Bella & Luthfy',
-    description: 'Sesi penyampaian pesan cinta dan penyerahan buket bunga di hadapan keluarga kedua belah pihak.',
-    instagramUrl: 'https://www.instagram.com/p/Dbmsw-4kzOJ/',
   },
 
   // 13. Wedding - Sungkeman Akad
@@ -842,11 +800,11 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 't3',
-    name: 'Bella & Luthfy',
-    role: 'Pasangan Lamaran Tangerang',
+    name: 'Sarah & Singgih',
+    role: 'Pasangan Lamaran Studio Jakarta',
     category: 'Lamaran',
-    avatar: '/portfolio/p11_DbmsYCQkysa.jpg',
-    quote: 'Momen surprise lamaran kami terabadikan sempurna, ekspresi nangis haru dan ketawa candid semuanya dapet. Terima kasih banyak tim FYPotret!',
+    avatar: '/portfolio/p39_DeKDqlqk26K.jpg',
+    quote: 'Sesi foto engagement kami di studio terabadikan sempurna, konsepnya elegan dan arahannya sangat nyaman. Terima kasih banyak tim FYPotret!',
     rating: 5,
   },
   {

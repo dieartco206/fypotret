@@ -85,10 +85,11 @@ export const Hero: React.FC<HeroProps> = () => {
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-250"
                   >
                     <img
-                      src="/portfolio/p11_DbmsYCQkysa.jpg"
-                      alt="Lamaran Bella & Luthfy - FYPotret"
+                      src="/portfolio/p39_DeKDqlqk26K.jpg"
+                      alt="Lamaran Sarah & Singgih - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
                     <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
@@ -96,7 +97,7 @@ export const Hero: React.FC<HeroProps> = () => {
                         Lamaran
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Bella & Luthfy
+                        Sarah & Singgih
                       </p>
                     </div>
                   </a>
