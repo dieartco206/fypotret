@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /tmp/
+
+# Host & Sitemap
+Host: https://fypotret.vercel.app
+Sitemap: https://fypotret.vercel.app/sitemap.xml

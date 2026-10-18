@@ -130,12 +130,12 @@ export const Gallery: React.FC<GalleryProps> = ({
 
                   {/* Top Header inside Image: Category Badge & Instagram Icon */}
                   <div className="absolute top-2 left-2 right-2 sm:top-3 sm:left-3 sm:right-3 z-10 flex items-center justify-between">
-                    <div className="flex items-center gap-1 sm:gap-1.5">
-                      <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-obsidian-950/85 backdrop-blur-md text-gold-400 border border-gold-500/30">
+                    <div className="flex items-center gap-1 sm:gap-1.5 flex-nowrap min-w-0">
+                      <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-obsidian-950/85 backdrop-blur-md text-gold-400 border border-gold-500/30">
                         {item.categoryLabel}
                       </span>
                       {item.isVideo && (
-                        <span className="px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-500/25 text-pink-300 border border-pink-500/35 backdrop-blur-md flex items-center gap-1">
+                        <span className="whitespace-nowrap flex-shrink-0 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-500/25 text-pink-300 border border-pink-500/35 backdrop-blur-md flex items-center gap-1">
                           <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
                           <span>Reel</span>
                         </span>
