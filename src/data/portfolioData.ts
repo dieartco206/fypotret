@@ -454,17 +454,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     instagramUrl: 'https://www.instagram.com/p/DdBp9ZBk5QW/',
   },
 
-  // 30. Wedding - Potret Keluarga di Pelaminan
+  // 30. Engagement - Alfathan & Arova Monokrom Editorial
   {
     id: 'ig-30',
-    title: 'Vintage Family Portrait di Pelaminan Resepsi',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
+    title: 'A New Chapter: Engagement Alfathan & Arova',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
     image: '/portfolio/p30_DdB3DEik_QK.jpg',
     aspect: 'tall',
-    location: 'Gedung Resepsi Jakarta',
-    client: 'Keluarga Mempelai',
-    description: 'Foto potret kebersamaan keluarga inti di atas pelaminan pernikahan dengan sentuhan tone monokrom artistik.',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Potret hangat lamaran Mas Alfathan & Kak Arova di Tangerang dengan sentuhan monokrom editorial dan bingkai artistic swirl.',
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/',
   },
 
@@ -677,6 +677,104 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v44_DdT7VcKhZHA.mp4',
+  },
+
+  // 45. Engagement Carousel - Storyboard Kolase 9 Frame
+  {
+    id: 'ig-45',
+    title: 'Engagement Storyboard: Alfathan & Arova',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p45_DdB3DEik_QK_grid.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Kolase 9 frame momen bahagia lamaran Mas Alfathan & Kak Arova, mulai dari tatapan penuh kasih hingga tawa bahagia berdua.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=2',
+  },
+
+  // 46. Engagement Carousel - Penyerahan Hantaran & Seserahan
+  {
+    id: 'ig-46',
+    title: 'Penyerahan Hantaran & Seserahan Lamaran',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p46_DdB3DEik_QK_seserahan.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Dokumentasi khidmat serah terima seserahan pernikahan dan buket bunga segar sebagai simbol ikatan restu dua keluarga.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=3',
+  },
+
+  // 47. Engagement Carousel - Penyematan Cincin & Doa Restu
+  {
+    id: 'ig-47',
+    title: 'Penyematan Cincin & Doa Restu Keluarga',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p47_DdB3DEik_QK_rings.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Momen sakral penyematan cincin tunangan di jari manis dan senyum penuh haru kebersamaan keluarga inti.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=4',
+  },
+
+  // 48. Engagement Carousel - The Rings & The Promise
+  {
+    id: 'ig-48',
+    title: 'The Rings & The Promise: Alfathan & Arova',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p48_DdB3DEik_QK_heart.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Pose simbol cinta lambang hati dan potret makro cincin tunangan emas yang elegan di atas genggaman tangan.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=5',
+  },
+
+  // 49. Engagement Carousel - Outdoor Garden Brick Wall Portrait
+  {
+    id: 'ig-49',
+    title: 'Outdoor Garden Engagement Portrait',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p49_DdB3DEik_QK_brick.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Potret berdua di latar dinding bata estetis dengan buket bunga pastel nan manis dan senyum semringah.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=6',
+  },
+
+  // 50. Engagement Carousel - Modern Architectural Stairs Session
+  {
+    id: 'ig-50',
+    title: 'Architectural Stairs Engagement Portrait',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p50_DdB3DEik_QK_stairs.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Sesi foto estetis di tangga arsitektural modern memperlihatkan keanggunan busana batik dan kebaya lamaran.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=7',
+  },
+
+  // 51. Prewed Casual - Urban Garden Greenery Stephanie & Firta
+  {
+    id: 'ig-51',
+    title: 'Urban Garden Greenery: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p51_DeeRlPGlFnm_urban.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
   },
 ];
 

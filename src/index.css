@@ -270,7 +270,7 @@
    ========================================================================= */
 
 /* Modern DOM Containment for Off-Screen Sections (Massive FPS Boost on Mobile) */
-#gallery, #pricing, #testimonials, #contact {
+#pricing, #testimonials, #contact {
   content-visibility: auto;
   contain-intrinsic-size: 1px 700px;
 }
@@ -319,6 +319,23 @@
   [class*="blur-\[9"] {
     filter: blur(35px) !important;
     opacity: 0.15 !important;
+  }
+
+  /* 3. Ringankan animasi card entrance di mobile menjadi GPU opacity murni (0% jank saat paginasi) */
+  .animate-card-enter {
+    animation: mobileCardFade 0.25s ease-out both !important;
+    animation-delay: 0ms !important;
+    transform: none !important;
+    will-change: opacity;
+  }
+
+  @keyframes mobileCardFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   /* Smooth momentum touch scrolling */

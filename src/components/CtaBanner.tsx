@@ -38,7 +38,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
           <span className="italic font-normal animate-gold-flow inline-block">
             Abadikan dengan Indah
           </span>{' '}
-          Bersama Kami.
+          <span className="inline-block whitespace-nowrap">Bersama Kami</span>
         </h2>
 
         {/* Subtitle */}

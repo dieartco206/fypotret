@@ -20,6 +20,7 @@ export const Gallery: React.FC<GalleryProps> = ({
   onOpenLightbox,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Reset page to 1 whenever category changes
   useEffect(() => {
@@ -32,11 +33,24 @@ export const Gallery: React.FC<GalleryProps> = ({
   const paginatedItems = items.slice(startIndex, endIndex);
 
   const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    const section = document.getElementById('gallery');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (page === currentPage || page < 1 || page > totalPages || isTransitioning) return;
+
+    setIsTransitioning(true);
+
+    // Scroll halus ke header galeri dengan offset navbar tepat di atas grid
+    const target = document.getElementById('gallery-heading');
+    if (target) {
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - 85;
+      window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
     }
+
+    // Ganti page di dalam transisi cepat yang mulus (tanpa jank / screen jump)
+    setTimeout(() => {
+      setCurrentPage(page);
+      requestAnimationFrame(() => {
+        setIsTransitioning(false);
+      });
+    }, 180);
   };
 
   const handleCardClick = (index: number) => {
@@ -66,7 +80,7 @@ export const Gallery: React.FC<GalleryProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div id="gallery-heading" className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 scroll-mt-24">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
             <Camera className="w-3.5 h-3.5" />
             <span>Dokumentasi & Portofolio Klien</span>
@@ -100,7 +114,11 @@ export const Gallery: React.FC<GalleryProps> = ({
         </div>
 
         {/* Dynamic Bento / Masonry Gallery Grid - 2 Kolom di Mobile, 2 Kolom di Tablet, 3 Kolom di Desktop */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
+        <div
+          className={`grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6 transition-all duration-200 ease-out will-change-transform ${
+            isTransitioning ? 'opacity-30 scale-[0.99] pointer-events-none' : 'opacity-100 scale-100'
+          }`}
+        >
           {paginatedItems.map((item, index) => {
             const globalIndex = startIndex + index;
             return (
@@ -212,7 +230,7 @@ export const Gallery: React.FC<GalleryProps> = ({
             <div className="flex items-center gap-1.5 sm:gap-2 order-1 sm:order-2 sm:ml-auto">
               <button
                 onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
-                disabled={currentPage === 1}
+                disabled={currentPage === 1 || isTransitioning}
                 className="px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:border-gold-500/40 disabled:opacity-30 disabled:pointer-events-none transition-all flex items-center gap-1 text-xs sm:text-sm font-medium cursor-pointer"
                 aria-label="Halaman Sebelumnya"
               >
@@ -224,10 +242,11 @@ export const Gallery: React.FC<GalleryProps> = ({
                 <button
                   key={pageNum}
                   onClick={() => handlePageChange(pageNum)}
+                  disabled={isTransitioning}
                   className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center ${
                     currentPage === pageNum
-                      ? 'bg-gold-500 text-obsidian-950 shadow-lg shadow-gold-500/25 scale-105'
-                      : 'bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/10'
+                      ? 'bg-gold-500 text-obsidian-950 shadow-lg shadow-gold-500/25 scale-105 pointer-events-none'
+                      : 'bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/10 active:scale-95'
                   }`}
                 >
                   {pageNum}
@@ -236,7 +255,7 @@ export const Gallery: React.FC<GalleryProps> = ({
 
               <button
                 onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
-                disabled={currentPage === totalPages}
+                disabled={currentPage === totalPages || isTransitioning}
                 className="px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:border-gold-500/40 disabled:opacity-30 disabled:pointer-events-none transition-all flex items-center gap-1 text-xs sm:text-sm font-medium cursor-pointer"
                 aria-label="Halaman Selanjutnya"
               >

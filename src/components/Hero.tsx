@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = () => {
               Abadikan Momen Berharga Bersama{' '}
               <span className="italic font-normal animate-gold-flow inline-block">
                 FYPotret
-              </span>.
+              </span>
             </h1>
 
             {/* Description */}
