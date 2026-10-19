@@ -82,12 +82,12 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 p-0 sm:p-4 animate-fade-in select-none">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3.5 sm:p-4 animate-fade-in select-none">
       {/* Backdrop */}
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Box */}
-      <div className="relative w-full sm:max-w-lg bg-obsidian-900 border border-white/10 sm:rounded-2xl rounded-t-3xl shadow-2xl p-4 sm:p-7 max-h-[92vh] overflow-y-auto z-10">
+      <div className="relative w-full max-w-lg bg-obsidian-900 border border-white/10 rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-7 max-h-[90vh] overflow-y-auto z-10">
         
         {/* Close Button */}
         <button

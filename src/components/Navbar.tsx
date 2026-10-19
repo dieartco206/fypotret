@@ -37,8 +37,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transform-gpu transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0e1017]/98 sm:bg-obsidian-950/90 sm:backdrop-blur-md py-3 shadow-xl shadow-black/60'
-          : 'bg-transparent py-4 sm:py-5'
+          ? 'bg-[#0c0f17]/98 sm:backdrop-blur-md py-2.5 sm:py-3 shadow-xl shadow-black/80'
+          : 'bg-[#0c0f17]/92 sm:bg-[#0c0f17]/85 sm:backdrop-blur-md py-3.5 sm:py-4 shadow-lg shadow-black/50'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
 
       {/* Mobile Drawer Navigation */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden bg-obsidian-900/95 backdrop-blur-xl border-b border-white/10 px-4 pt-3 pb-6 animate-fade-in">
+        <div className="sm:hidden bg-[#0c0f17] shadow-2xl px-4 pt-3 pb-6 animate-fade-in">
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <a
