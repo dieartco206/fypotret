@@ -6,7 +6,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="relative isolate pt-24 pb-14 sm:pt-28 sm:pb-20 lg:pt-32 lg:pb-24 overflow-hidden">
+    <section className="relative isolate pt-28 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Left Column: Editorial Headline & Copy */}
-          <div className="lg:col-span-6 text-center lg:text-left lg:pt-6 xl:pt-10">
+          <div className="lg:col-span-6 text-center lg:text-left lg:pt-14 xl:pt-20">
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
