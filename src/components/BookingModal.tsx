@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { PricingPackage, PortfolioItem } from '../data/portfolioData';
-import { X, Send, Camera, Calendar, MapPin, User, Heart } from 'lucide-react';
+import { X, Camera, Calendar, MapPin, User, Heart, MessageSquare } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -81,41 +82,41 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md p-0 sm:p-4 animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 p-0 sm:p-4 animate-fade-in select-none">
       {/* Backdrop */}
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Box */}
-      <div className="relative w-full sm:max-w-lg bg-obsidian-900 border border-white/10 sm:rounded-2xl rounded-t-3xl shadow-2xl p-5 sm:p-8 max-h-[88vh] overflow-y-auto z-10">
+      <div className="relative w-full sm:max-w-lg bg-obsidian-900 border border-white/10 sm:rounded-2xl rounded-t-3xl shadow-2xl p-4 sm:p-7 max-h-[92vh] overflow-y-auto z-10">
         
-        {/* Close Button (Apple HIG 44x44px touch target) */}
+        {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2.5 rounded-full bg-white/5 hover:bg-white/15 text-zinc-300 hover:text-white transition-colors cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center border border-white/5"
+          className="absolute top-3.5 right-3.5 p-2 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white transition-colors cursor-pointer min-w-[40px] min-h-[40px] flex items-center justify-center border border-white/5"
           aria-label="Tutup Form Booking"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         {/* Modal Header */}
-        <div className="mb-6">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-500/10 text-gold-400 text-xs font-semibold mb-2 border border-gold-500/20">
-            <Camera className="w-3.5 h-3.5" />
+        <div className="mb-3.5 sm:mb-5 pr-8">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold-500/10 text-gold-400 text-[11px] font-semibold mb-1.5 border border-gold-500/20">
+            <Camera className="w-3 h-3" />
             <span>Fast Response WhatsApp Admin</span>
           </div>
-          <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
+          <h3 className="text-lg sm:text-2xl font-serif font-bold text-white leading-tight">
             Reservasi Jadwal & Konsultasi
           </h3>
-          <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-            Silakan lengkapi formulir di bawah ini, Anda akan diarahkan langsung ke WhatsApp resmi FYPotret.
+          <p className="text-xs text-zinc-400 mt-1">
+            Lengkapi formulir singkat di bawah ini untuk terhubung langsung ke WhatsApp kami.
           </p>
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-4 text-xs sm:text-sm">
+        <form onSubmit={handleSubmit} className="space-y-2.5 sm:space-y-3.5 text-xs sm:text-sm">
           {/* Name Field */}
           <div>
-            <label className="block text-zinc-300 font-medium mb-1.5 flex items-center gap-1.5">
+            <label className="block text-zinc-300 font-medium mb-1 flex items-center gap-1.5">
               <User className="w-3.5 h-3.5 text-gold-400" />
               Nama Lengkap / Panggilan
             </label>
@@ -125,40 +126,40 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Contoh: Nabila Putri"
-              className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors"
+              className="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors"
             />
           </div>
 
-          {/* Service Category */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Service Category & Location: 2 Columns on Mobile */}
+          <div className="grid grid-cols-2 gap-2 sm:gap-3">
             <div>
-              <label className="block text-zinc-300 font-medium mb-1.5 flex items-center gap-1.5">
+              <label className="block text-zinc-300 font-medium mb-1 flex items-center gap-1.5">
                 <Heart className="w-3.5 h-3.5 text-gold-400" />
                 Jenis Layanan
               </label>
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors"
+                className="w-full px-2.5 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors cursor-pointer text-xs sm:text-sm"
               >
                 <option value="Wisuda">Wisuda</option>
                 <option value="Wedding">Wedding</option>
                 <option value="Prewedding">Prewedding</option>
                 <option value="Birthday">Birthday</option>
                 <option value="Event">Event</option>
-                <option value="Lainnya">Layanan Lainnya</option>
+                <option value="Lainnya">Lainnya</option>
               </select>
             </div>
 
             <div>
-              <label className="block text-zinc-300 font-medium mb-1.5 flex items-center gap-1.5">
+              <label className="block text-zinc-300 font-medium mb-1 flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-gold-400" />
                 Area Lokasi
               </label>
               <select
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors"
+                className="w-full px-2.5 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors cursor-pointer text-xs sm:text-sm"
               >
                 <option value="Tangerang (Kota / Tangsel / Kab)">Tangerang Area</option>
                 <option value="Depok">Depok Area</option>
@@ -171,7 +172,7 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
 
           {/* Package Choice */}
           <div>
-            <label className="block text-zinc-300 font-medium mb-1.5">
+            <label className="block text-zinc-300 font-medium mb-1">
               Pilihan Paket / Catatan Khusus
             </label>
             <input
@@ -179,13 +180,13 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
               value={packageChoice}
               onChange={(e) => setPackageChoice(e.target.value)}
               placeholder="Contoh: Paket Graduation Squad / Wedding Akad"
-              className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors"
+              className="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors"
             />
           </div>
 
           {/* Event Date */}
           <div>
-            <label className="block text-zinc-300 font-medium mb-1.5 flex items-center gap-1.5">
+            <label className="block text-zinc-300 font-medium mb-1 flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5 text-gold-400" />
               Estimasi Tanggal Pemotretan
             </label>
@@ -193,13 +194,14 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
               type="date"
               value={eventDate}
               onChange={(e) => setEventDate(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors"
+              className="w-full px-3.5 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors cursor-pointer"
             />
           </div>
 
           {/* Notes */}
           <div>
-            <label className="block text-zinc-300 font-medium mb-1.5">
+            <label className="block text-zinc-300 font-medium mb-1 flex items-center gap-1.5">
+              <MessageSquare className="w-3.5 h-3.5 text-gold-400" />
               Pertanyaan / Permintaan Khusus
             </label>
             <textarea
@@ -207,22 +209,22 @@ Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
               placeholder="Misal: Rencana outdoor di kampus UI Depok bersama 5 teman..."
-              className="w-full px-4 py-2.5 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors resize-none"
+              className="w-full px-3.5 py-2 rounded-xl bg-obsidian-950 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-500 transition-colors resize-none"
             />
           </div>
 
-          {/* Submit Button */}
+          {/* Submit Button (Concise 1-Line CTA with WhatsApp Icon) */}
           <button
             type="submit"
-            className="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-sm uppercase tracking-wider shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer min-h-[48px] mt-6"
+            className="w-full py-3 sm:py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-amber-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wide shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 hover:brightness-110 active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer min-h-[44px] mt-3 sm:mt-4"
           >
-            <Send className="w-4 h-4 fill-obsidian-950" />
-            <span>Kirim Pesan ke WhatsApp FYPotret</span>
+            <WhatsAppIcon className="w-4 h-4 fill-obsidian-950 flex-shrink-0" />
+            <span className="whitespace-nowrap">Kirim ke WhatsApp</span>
           </button>
         </form>
 
-        <p className="text-[11px] text-zinc-500 text-center mt-4">
-          Data Anda aman & langsung diteruskan ke aplikasi WhatsApp tanpa penyimpanan data privasi pihak ketiga.
+        <p className="text-[11px] text-zinc-500 text-center mt-2.5">
+          🔒 Terhubung langsung ke WhatsApp resmi FYPotret
         </p>
 
       </div>
