@@ -269,11 +269,7 @@
    Ultra-Smooth 60/120fps Mobile Scrolling & Hardware Optimization Suite
    ========================================================================= */
 
-/* Modern DOM Containment for Off-Screen Sections (Massive FPS Boost on Mobile) */
-#pricing, #testimonials, #contact {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 700px;
-}
+
 
 @media (max-width: 768px) {
   /* 1. Matikan continuous background GPU transforms di mobile */

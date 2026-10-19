@@ -114,7 +114,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
                   </div>
                 </div>
 
-                {/* Title & Subtitle */}
+                {/* Title */}
                 <div className="text-center">
                   <span
                     className={`text-xs font-medium block transition-colors ${
@@ -122,9 +122,6 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
                     }`}
                   >
                     {story.title}
-                  </span>
-                  <span className="text-[10px] text-zinc-500 hidden sm:block">
-                    {story.count}
                   </span>
                 </div>
               </button>

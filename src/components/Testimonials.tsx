@@ -1,6 +1,6 @@
 import React from 'react';
 import { TESTIMONIALS, FAQ_ITEMS } from '../data/portfolioData';
-import { CheckCircle2, Quote, ChevronDown, Camera } from 'lucide-react';
+import { Star, Quote, ChevronDown, Camera } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   const [openFaqIndex, setOpenFaqIndex] = React.useState<number | null>(0);
@@ -53,11 +53,12 @@ export const Testimonials: React.FC = () => {
               className="rounded-2xl p-6 card-luxury transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gold-500/10 flex flex-col justify-between animate-card-enter"
             >
               <div>
-                {/* Verified Client Badge & Quote Icon */}
+                {/* Rating Stars & Quote Icon */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[11px] font-semibold text-emerald-400">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>100% Puas • Klien Nyata</span>
+                  <div className="flex items-center gap-1">
+                    {Array.from({ length: t.rating || 5 }).map((_, starIdx) => (
+                      <Star key={starIdx} className="w-3.5 h-3.5 fill-gold-400 text-gold-400" />
+                    ))}
                   </div>
                   <Quote className="w-5 h-5 text-zinc-600" />
                 </div>

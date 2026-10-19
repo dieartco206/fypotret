@@ -50,7 +50,6 @@ export const HIGHLIGHT_STORIES = [
     title: 'Wisuda',
     subtitle: 'Graduation Squad',
     iconName: 'GraduationCap',
-    count: '200+ Wisudawan',
     image: '/portfolio/p4_DbOWBkKE80l.jpg',
   },
   {
@@ -58,7 +57,6 @@ export const HIGHLIGHT_STORIES = [
     title: 'Wedding',
     subtitle: 'Akad & Pelaminan',
     iconName: 'Ring',
-    count: '150+ Momen',
     image: '/portfolio/p7_DbVM3ScFJoX.jpg',
   },
   {
@@ -66,7 +64,6 @@ export const HIGHLIGHT_STORIES = [
     title: 'Lamaran',
     subtitle: 'Sarah & Singgih',
     iconName: 'Film',
-    count: '90+ Pasangan',
     image: '/portfolio/p39_DeKDqlqk26K.jpg',
   },
   {
@@ -74,7 +71,6 @@ export const HIGHLIGHT_STORIES = [
     title: 'Birthday',
     subtitle: 'Ceria & Hangat',
     iconName: 'Smile',
-    count: '80+ Pesta',
     image: '/portfolio/p34_DdbXbC5FDdp.jpg',
   },
   {
@@ -82,7 +78,6 @@ export const HIGHLIGHT_STORIES = [
     title: 'Event',
     subtitle: 'PLN & Turnamen',
     iconName: 'Award',
-    count: '50+ Event',
     image: '/portfolio/p26_Dcf0M6AFLdX.jpg',
   },
 ];
