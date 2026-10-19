@@ -11,10 +11,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -28,9 +35,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transform-gpu transition-all duration-300 ${
         isScrolled
-          ? 'bg-obsidian-950/90 backdrop-blur-md py-3 shadow-xl shadow-black/60'
+          ? 'bg-[#0e1017]/98 sm:bg-obsidian-950/90 sm:backdrop-blur-md py-3 shadow-xl shadow-black/60'
           : 'bg-transparent py-4 sm:py-5'
       }`}
     >

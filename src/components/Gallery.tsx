@@ -64,18 +64,18 @@ export const Gallery: React.FC<GalleryProps> = ({
         <img
           src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=75"
           alt="Gallery Exhibition Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-105 animate-ken-burns"
+          className="hidden sm:block w-full h-full object-cover object-center scale-105 animate-ken-burns"
           loading="lazy"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-obsidian-950/65 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/75" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-transparent to-obsidian-950/80" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-400/20 via-transparent to-transparent" />
       </div>
 
       {/* Subtle Champagne Gold Ambient Halos (Bersih, Mewah, Foto Portofolio Menyala Tajam) */}
-      <div className="absolute top-10 -left-16 w-[450px] sm:w-[680px] h-[450px] sm:h-[680px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/22 via-amber-400/14 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
-      <div className="absolute bottom-10 -right-16 w-[450px] sm:w-[680px] h-[450px] sm:h-[680px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-amber-400/20 via-gold-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute top-10 -left-16 w-[450px] sm:w-[680px] h-[450px] sm:h-[680px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.16)_0%,_rgba(245,158,11,0.06)_40%,_transparent_70%)] pointer-events-none z-0" />
+      <div className="absolute bottom-10 -right-16 w-[450px] sm:w-[680px] h-[450px] sm:h-[680px] bg-[radial-gradient(circle_at_center,_rgba(245,158,11,0.15)_0%,_rgba(217,119,6,0.05)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -126,7 +126,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                 key={item.id}
                 style={{ animationDelay: `${(index % 8) * 80}ms` }}
                 onClick={() => handleCardClick(globalIndex)}
-                className="group relative rounded-xl sm:rounded-2xl overflow-hidden card-luxury transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-gold-500/15 flex flex-col animate-card-enter cursor-pointer select-none"
+                className="group relative rounded-xl sm:rounded-2xl overflow-hidden card-luxury transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-gold-500/15 flex flex-col animate-card-enter cursor-pointer select-none"
               >
                 {/* Image Container with Dynamic Aspect Ratios */}
                 <div
@@ -152,11 +152,11 @@ export const Gallery: React.FC<GalleryProps> = ({
                   {/* Top Header inside Image: Category Badge & Instagram Icon */}
                   <div className="absolute top-2 left-2 right-2 sm:top-3 sm:left-3 sm:right-3 z-10 flex items-center justify-between">
                     <div className="flex items-center gap-1 sm:gap-1.5 flex-nowrap min-w-0">
-                      <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-obsidian-950/85 backdrop-blur-md text-gold-400 border border-gold-500/30">
+                      <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-[#0e1017]/90 sm:backdrop-blur-md text-gold-400 border border-gold-500/30">
                         {item.categoryLabel}
                       </span>
                       {item.isVideo && (
-                        <span className="whitespace-nowrap flex-shrink-0 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-500/25 text-pink-300 border border-pink-500/35 backdrop-blur-md flex items-center gap-1">
+                        <span className="whitespace-nowrap flex-shrink-0 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-950/80 sm:backdrop-blur-md text-pink-300 border border-pink-500/35 flex items-center gap-1">
                           <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
                           <span>Reel</span>
                         </span>
@@ -169,7 +169,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="p-1 sm:p-1.5 rounded-full bg-black/60 hover:bg-black/80 text-zinc-300 hover:text-pink-400 border border-white/10 backdrop-blur-md transition-colors"
+                        className="p-1 sm:p-1.5 rounded-full bg-[#0e1017]/80 hover:bg-black/80 text-zinc-300 hover:text-pink-400 border border-white/10 sm:backdrop-blur-md transition-colors"
                         title="Lihat di Instagram"
                         aria-label="Lihat di Instagram"
                       >
@@ -181,7 +181,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                   {/* Play Button Overlay for Videos */}
                   {item.isVideo && (
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/55 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-obsidian-950 transition-all duration-300 shadow-xl">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/75 sm:backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-obsidian-950 transition-all duration-300 shadow-xl">
                         <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
                       </div>
                     </div>

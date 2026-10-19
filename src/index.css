@@ -4,8 +4,13 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (min-width: 769px) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
@@ -272,15 +277,13 @@
 
 
 @media (max-width: 768px) {
-  /* 1. Matikan continuous background GPU transforms di mobile */
-  .animate-ken-burns {
-    animation: none !important;
-    will-change: auto !important;
-    transform: none !important;
-  }
-
+  /* 1. Matikan continuous background GPU transforms & keyframes di mobile */
+  .animate-ken-burns,
   .animate-float-a,
-  .animate-float-b {
+  .animate-float-b,
+  .animate-shimmer-sweep,
+  .animate-sonar,
+  .animate-pulse-subtle {
     animation: none !important;
     will-change: auto !important;
     transform: none !important;
@@ -305,21 +308,27 @@
     background: rgba(20, 24, 34, 0.96) !important;
   }
 
-  /* Matikan filter blur berlebih di mobile agar GPU 0% lag saat scrolling */
-  [class*="backdrop-blur-"] {
+  /* Matikan SEMUA backdrop-filter di mobile agar GPU 0% lag saat scrolling */
+  [class*="backdrop-blur"],
+  .backdrop-blur-sm,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl,
+  .backdrop-blur-2xl {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
   }
 
-  /* Ringankan efek halo blur besar di mobile */
-  [class*="blur-\[9"] {
-    filter: blur(35px) !important;
-    opacity: 0.15 !important;
+  /* Matikan SEMUA filter blur Gaussian di mobile */
+  [class*="blur-"],
+  [class*="blur\["] {
+    filter: none !important;
+    -webkit-filter: none !important;
   }
 
   /* 3. Ringankan animasi card entrance di mobile menjadi GPU opacity murni (0% jank saat paginasi) */
   .animate-card-enter {
-    animation: mobileCardFade 0.25s ease-out both !important;
+    animation: mobileCardFade 0.2s ease-out both !important;
     animation-delay: 0ms !important;
     transform: none !important;
     will-change: opacity;
@@ -334,9 +343,10 @@
     }
   }
 
-  /* Smooth momentum touch scrolling */
+  /* Smooth momentum touch scrolling & GPU texture acceleration */
   html, body {
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
   }
 }
 

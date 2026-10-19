@@ -16,17 +16,17 @@ export const Testimonials: React.FC = () => {
         <img
           src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=75"
           alt="Event and Reception Atmosphere"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-105"
+          className="hidden sm:block w-full h-full object-cover object-center scale-105"
           loading="lazy"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-obsidian-950/65 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-obsidian-950/75" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-transparent to-obsidian-950/80" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/20 via-transparent to-transparent" />
       </div>
 
       {/* Subtle Champagne Gold Halo behind Testimonials & FAQ */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[520px] sm:w-[750px] h-[380px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/22 via-amber-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[520px] sm:w-[750px] h-[380px] bg-[radial-gradient(ellipse_at_center,_rgba(251,191,36,0.16)_0%,_rgba(245,158,11,0.06)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

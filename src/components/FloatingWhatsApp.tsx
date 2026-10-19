@@ -9,7 +9,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onOpenBookin
   return (
     <aside
       aria-label="Kontak WhatsApp FYPotret"
-      className="fixed bottom-8 sm:bottom-8 right-4 sm:right-8 z-40 mb-[env(safe-area-inset-bottom,0px)]"
+      className="fixed bottom-8 sm:bottom-8 right-4 sm:right-8 z-40 mb-[env(safe-area-inset-bottom,0px)] transform-gpu"
     >
       <button
         onClick={onOpenBooking}

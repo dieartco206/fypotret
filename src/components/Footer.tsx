@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
         <img
           src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=1000&q=70"
           alt="Vintage Photography Setup"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-100 contrast-110"
+          className="w-full h-full object-cover object-center scale-105"
           loading="lazy"
           decoding="async"
         />
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* Subtle Champagne Gold Glow from bottom */}
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[550px] sm:w-[800px] h-[280px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400/24 via-amber-400/12 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[550px] sm:w-[800px] h-[280px] bg-[radial-gradient(ellipse_at_center,_rgba(251,191,36,0.18)_0%,_rgba(245,158,11,0.06)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">

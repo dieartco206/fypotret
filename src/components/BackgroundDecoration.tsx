@@ -2,7 +2,7 @@ import React from 'react';
 
 export const BackgroundDecoration: React.FC = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10 select-none">
+    <div className="hidden md:block fixed inset-0 pointer-events-none overflow-hidden -z-10 select-none">
       {/* 1. Subtle Camera Rule-of-Thirds & Focus Dot Grid Pattern */}
       <div className="absolute inset-0 bg-camera-grid opacity-40" />
 

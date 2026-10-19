@@ -13,12 +13,12 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
         <img
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=75"
           alt="Graduation and Wedding Celebration Sky"
-          className="w-full h-full object-cover object-center filter brightness-85 contrast-115 scale-105 animate-ken-burns"
+          className="w-full h-full object-cover object-center scale-105 animate-ken-burns"
           loading="lazy"
           decoding="async"
         />
         {/* Cinematic Golden Amber Vignette */}
-        <div className="absolute inset-0 bg-[#070709]/70 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-[#070709]/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-transparent to-obsidian-950/90" />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/25 via-transparent to-obsidian-950/80" />

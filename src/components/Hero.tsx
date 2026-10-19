@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = () => {
         <img
           src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=75"
           alt="Cinematic Photography Backdrop"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-105 contrast-105 animate-ken-burns"
+          className="w-full h-full object-cover object-center scale-105 animate-ken-burns"
           loading="eager"
           decoding="async"
         />
@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = () => {
       </div>
 
       {/* Champagne Gold Halo behind Headline (Hangat Mewah, Tidak Gelap Gulita) */}
-      <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/26 via-amber-400/14 to-transparent rounded-full blur-[95px] pointer-events-none z-0" />
+      <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -51,7 +51,7 @@ export const Hero: React.FC<HeroProps> = () => {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
               {/* Subtle Ambient Golden Halo */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gold-400/12 via-amber-400/5 to-transparent rounded-full blur-[90px] pointer-events-none -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
 
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">
