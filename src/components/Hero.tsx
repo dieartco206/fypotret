@@ -26,10 +26,10 @@ export const Hero: React.FC<HeroProps> = () => {
       <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 lg:py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
-          <div className="lg:col-span-7 text-center lg:text-left">
+          <div className="lg:col-span-6 text-center lg:text-left">
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
@@ -46,18 +46,18 @@ export const Hero: React.FC<HeroProps> = () => {
             </p>
           </div>
 
-          {/* Right Column: Staggered Dual-Column Editorial Showcase (Compact & Symmetrical) */}
-          <div className="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[330px] xl:max-w-[360px]">
+          {/* Right Column: Staggered Dual-Column Editorial Showcase (Enlarged & Balanced) */}
+          <div className="lg:col-span-6 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[370px] lg:max-w-[410px] xl:max-w-[440px]">
               
               {/* Subtle Ambient Golden Halo */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[350px] h-[280px] sm:h-[350px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[420px] h-[320px] sm:h-[420px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
 
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
-              <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5 items-start">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 items-start">
                 
                 {/* Column 1 with Subtle Float */}
-                <div className="flex flex-col gap-2.5 sm:gap-3.5 animate-float-a">
+                <div className="flex flex-col gap-3 sm:gap-4 animate-float-a">
                   {/* 01. Wedding & Akad */}
                   <a
                     href="#gallery"
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = () => {
                       loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3.5 sm:left-3.5 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Wedding
                       </span>
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = () => {
                       decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3.5 sm:left-3.5 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Lamaran
                       </span>
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = () => {
                 </div>
 
                 {/* Column 2 (Offset / Staggered down) with Complementary Float */}
-                <div className="flex flex-col gap-2.5 sm:gap-3.5 pt-3 sm:pt-4 animate-float-b">
+                <div className="flex flex-col gap-3 sm:gap-4 pt-3.5 sm:pt-5 animate-float-b">
                   {/* 03. Wisuda Solo */}
                   <a
                     href="#gallery"
