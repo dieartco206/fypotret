@@ -1,6 +1,24 @@
+# FYPotret Official Robots.txt
 User-agent: *
 Allow: /
 Disallow: /tmp/
+
+# Dedicated Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Allow: /portfolio/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /portfolio/
+
+User-agent: bingbot
+Allow: /
+Allow: /portfolio/
+
+User-agent: Applebot
+Allow: /
+Allow: /portfolio/
 
 # Host & Sitemap
 Host: https://fypotret.vercel.app

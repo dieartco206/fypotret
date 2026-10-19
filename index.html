@@ -48,83 +48,97 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PhotographyBusiness",
-      "name": "FYPotret Photography",
-      "alternateName": "FYPotret",
-      "url": "https://fypotret.vercel.app/",
-      "logo": "https://fypotret.vercel.app/logo.jpg",
-      "image": "https://fypotret.vercel.app/og-image.jpg",
-      "description": "Jasa fotografi profesional untuk wisuda, pernikahan, lamaran, ulang tahun, dan dokumentasi event di Jabodetabek.",
-      "telephone": "+6281234567890",
-      "priceRange": "Rp 650.000 - Rp 3.500.000",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tangerang",
-        "addressRegion": "Banten",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.1783,
-        "longitude": 106.6319
-      },
-      "areaServed": [
-        "Jakarta",
-        "Tangerang",
-        "Tangerang Selatan",
-        "Depok",
-        "Bekasi",
-        "Bogor"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/fypotretid/"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Paket Fotografi FYPotret",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Paket Foto Wisuda (Graduation Squad & Single)",
-              "description": "Sesi foto wisuda kampus outdoor dengan pengarahan pose sabar dan color tone artistik."
-            },
-            "price": "650000",
-            "priceCurrency": "IDR"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fypotret.vercel.app/#website",
+          "url": "https://fypotret.vercel.app/",
+          "name": "FYPotret",
+          "alternateName": ["FYPotret Photography", "FYPotret ID", "fypotretid"],
+          "description": "Jasa Fotografi Profesional Wisuda, Wedding, Prewedding & Event di Jabodetabek",
+          "inLanguage": "id-ID"
+        },
+        {
+          "@type": "PhotographyBusiness",
+          "@id": "https://fypotret.vercel.app/#business",
+          "name": "FYPotret Photography",
+          "alternateName": "FYPotret",
+          "url": "https://fypotret.vercel.app/",
+          "logo": "https://fypotret.vercel.app/logo.jpg",
+          "image": "https://fypotret.vercel.app/og-image.jpg",
+          "description": "Jasa fotografi profesional untuk wisuda, pernikahan, lamaran, ulang tahun, dan dokumentasi event di Jabodetabek.",
+          "telephone": "+6281234567890",
+          "priceRange": "Rp 650.000 - Rp 3.500.000",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tangerang",
+            "addressRegion": "Banten",
+            "addressCountry": "ID"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Paket Foto Wedding & Akad Nikah",
-              "description": "Dokumentasi sakral prosesi akad nikah dan selebrasi resepsi pelaminan pernikahan."
-            },
-            "price": "1800000",
-            "priceCurrency": "IDR"
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.1783,
+            "longitude": 106.6319
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Paket Foto Prewedding & Lamaran",
-              "description": "Sesi foto romantis lamaran tunangan dan prewedding konsep santai casual atau adat."
-            },
-            "price": "1200000",
-            "priceCurrency": "IDR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Paket Foto Birthday & Anak",
-              "description": "Dokumentasi pesta ulang tahun anak, smash cake, newborn, dan milestone berharga keluarga."
-            },
-            "price": "950000",
-            "priceCurrency": "IDR"
+          "areaServed": [
+            "Jakarta",
+            "Tangerang",
+            "Tangerang Selatan",
+            "Depok",
+            "Bekasi",
+            "Bogor"
+          ],
+          "sameAs": [
+            "https://www.instagram.com/fypotretid/"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Paket Fotografi FYPotret",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Paket Foto Wisuda (Graduation Squad & Single)",
+                  "description": "Sesi foto wisuda kampus outdoor dengan pengarahan pose sabar dan color tone artistik."
+                },
+                "price": "650000",
+                "priceCurrency": "IDR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Paket Foto Wedding & Akad Nikah",
+                  "description": "Dokumentasi sakral prosesi akad nikah dan selebrasi resepsi pelaminan pernikahan."
+                },
+                "price": "1800000",
+                "priceCurrency": "IDR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Paket Foto Prewedding & Lamaran",
+                  "description": "Sesi foto romantis lamaran tunangan dan prewedding konsep santai casual atau adat."
+                },
+                "price": "1200000",
+                "priceCurrency": "IDR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Paket Foto Birthday & Anak",
+                  "description": "Dokumentasi pesta ulang tahun anak, smash cake, newborn, dan milestone berharga keluarga."
+                },
+                "price": "950000",
+                "priceCurrency": "IDR"
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     }
     </script>
 

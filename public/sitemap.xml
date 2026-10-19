@@ -3,31 +3,258 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fypotret.vercel.app/</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://fypotret.vercel.app/og-image.jpg</image:loc>
-      <image:title>FYPotret Photography Portfolio</image:title>
+      <image:title>FYPotret Photography Showcase</image:title>
       <image:caption>Jasa Fotografi Profesional Wisuda, Wedding, Prewedding dan Event Jabodetabek</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://fypotret.vercel.app/#gallery</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fypotret.vercel.app/#pricing</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fypotret.vercel.app/#testimonials</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/logo.jpg</image:loc>
+      <image:title>FYPotret Official Logo</image:title>
+      <image:caption>Logo Resmi FYPotret Fotografi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p1_DbOVpy9kzB1.jpg</image:loc>
+      <image:title>Selebrasi Wisuda Bersama Keluarga Tercinta</image:title>
+      <image:caption>FYPotret Wisuda di Jakarta Convention Center: Momen penuh kebanggaan bersama ibunda dan keluarga saat prosesi wisuda dengan balutan kebaya biru elegan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p2_DbOVvb6E70Q.jpg</image:loc>
+      <image:title>Glow &amp; Senyum Bahagia Sarjana Baru</image:title>
+      <image:caption>FYPotret Wisuda di Gedung Wisuda Jakarta: Potret senyum anggun wisudawati dengan latar belakang bunga selebrasi kelulusan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p3_DbOV1UJk41A.jpg</image:loc>
+      <image:title>Pelukan Haru &amp; Bangga Ibu Tercinta</image:title>
+      <image:caption>FYPotret Wisuda di Lobi Wisuda Jakarta: Ekspresi cinta tulus dan pelukan hangat seorang ibu mendampingi putrinya meraih gelar sarjana.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p4_DbOWBkKE80l.jpg</image:loc>
+      <image:title>Dynamic &amp; Fashion Graduation Outdoor</image:title>
+      <image:caption>FYPotret Wisuda di Stadion Outdoor Jakarta: Pose dinamis modern dengan angle lebar (05mm look) memperlihatkan keanggunan jubah toga di lapangan terbuka.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p5_DbOWOPjE9jN.jpg</image:loc>
+      <image:title>Restu &amp; Bangga Kedua Orang Tua</image:title>
+      <image:caption>FYPotret Wisuda di Rooftop Wisuda Senayan: Sentuhan tangan ayah di pundak putrinya dengan tatapan bangga dan senyum teduh sang ibu.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p6_DbOWVZSk3Xz.jpg</image:loc>
+      <image:title>Golden Hour Rooftop Sky Portrait</image:title>
+      <image:caption>FYPotret Wisuda di Jakarta Skyline Rooftop: Potret glamor wisudawati berbalut kebaya merah marun di bawah langit biru kota Jakarta.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p7_DbVM3ScFJoX.jpg</image:loc>
+      <image:title>Kehangatan Cinta &amp; Senyum Pengantin Baru</image:title>
+      <image:caption>FYPotret Wedding di Tangerang Selatan: Potret intim pengantin berbusana adat kuning emas dengan buket bunga mawar merekah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p8_DbVNIwIFLbn.jpg</image:loc>
+      <image:title>Potret Anggun Mahkota &amp; Kebaya Emas</image:title>
+      <image:caption>FYPotret Wedding di Gedung Pernikahan Tangerang: Detail keindahan rias pengantin, mahkota tiara, dan busana berpayet emas elegan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p9_DbVNZCJFIJL.jpg</image:loc>
+      <image:title>Pelaminan Sakral Penuh Bunga &amp; Doa</image:title>
+      <image:caption>FYPotret Wedding di Pelaminan Tradisional Modern: Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p13_Dbm_6vmEwfE.jpg</image:loc>
+      <image:title>Sungkeman Penuh Haru &amp; Restu Akad Nikah</image:title>
+      <image:caption>FYPotret Wedding &amp; Akad di Tangerang: Momen sakral dan penuh haru memohon doa restu kepada orang tua sebelum melangkah ke lembaran baru pernikahan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p14_DbnAQxzk_XR.jpg</image:loc>
+      <image:title>Momen Sah &amp; Bahagia Pamer Buku Nikah</image:title>
+      <image:caption>FYPotret Wedding &amp; Akad di Tangerang Selatan: Senyum lega dan sumringah kedua mempelai memperlihatkan buku nikah resmi sebagai tanda sah menjadi suami istri.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p15_DbnAcriE8hH.jpg</image:loc>
+      <image:title>Pamer Cincin Pernikahan di Pelaminan</image:title>
+      <image:caption>FYPotret Wedding &amp; Akad di Tangerang: Simbol ikatan cinta suci abadi, kilau cincin kawin di jari manis kedua mempelai yang saling tersenyum hangat.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p16_Db9v6fQzGta.jpg</image:loc>
+      <image:title>Behind The Scenes: Riasan Cantik Lamaran</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Jakarta Selatan: Dokumentasi detail persiapan makeup calon mempelai wanita sebelum menyambut kedatangan keluarga besar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p17_Db9wHXEzixp.jpg</image:loc>
+      <image:title>Anggun Dalam Balutan Kebaya Tunangan</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Jakarta: Kecantikan memikat dengan balutan kebaya brokat coklat bertabur payet elegan dan riasan lembut natural.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p18_Db9w6hPz_6r.jpg</image:loc>
+      <image:title>Our Journey Begins Here - Engagement Ring</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Jakarta: Lambaian tangan manis memperlihatkan cincin lamaran dengan konsep editorial modern</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p19_Db9zP8ck52O.jpg</image:loc>
+      <image:title>Playful &amp; Fun: These Kids Are Getting Engaged</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Depok: Konsep foto pertunangan kekinian bertema youthful dengan pose menutup satu mata dan senyum lepas tanpa jaim.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p20_Db909O2TBA1.jpg</image:loc>
+      <image:title>Casual &amp; Romantic di Lapangan Basket</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Depok Outdoor: Sesi foto dan video reels prewedding santai di lapangan basket dengan outfit casual coklat &amp; buket bunga cantik.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p21_Db99wJ8kwty.jpg</image:loc>
+      <image:title>Artistic Framing: Cincin di Balik Jaring</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Depok: Sudut pengambilan foto kreatif memanfaatkan tekstur pagar kawat lapangan untuk menonjolkan cincin pertunangan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p22_DcOXUqBFA5w.jpg</image:loc>
+      <image:title>Wisuda Sarjana Manajemen: Bella Hendriani, S.M</image:title>
+      <image:caption>FYPotret Wisuda di Kampus Jakarta: Sorot kebahagiaan dan kebanggaan mengenakan selempang sarjana manajemen di bawah rindangnya pepohonan kampus.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p23_DcOXf-6J2wG.jpg</image:loc>
+      <image:title>Editorial Silhouette &amp; Campus Architecture</image:title>
+      <image:caption>FYPotret Wisuda di Kampus Jakarta: Pose siluet artistik dari belakang memperlihatkan detail bordir selempang kelulusan dan arsitektur gedung kampus.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p24_DcOX1ODFLNM.jpg</image:loc>
+      <image:title>Playful Relief: Memeluk Ijazah Kelulusan</image:title>
+      <image:caption>FYPotret Wisuda di Kampus Jakarta: Ekspresi lega dan riang bersandar di pagar kampus memegang map ijazah setelah perjuangan bertahun-tahun kuliah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p25_Dcfzob2lAZb.jpg</image:loc>
+      <image:title>Kompak &amp; Semangat Juara: Tim PLN Serpong</image:title>
+      <image:caption>FYPotret Event di Lapangan Olahraga Serpong: Dokumentasi kebersamaan dan kekompakan tim futsal karyawan PLN Serpong dalam rangkaian turnamen kemerdekaan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p26_Dcf0M6AFLdX.jpg</image:loc>
+      <image:title>Kebanggaan Mengangkat Trofi Bergilir</image:title>
+      <image:caption>FYPotret Event di Serpong, Tangerang Selatan: Senyum bangga atlet pemenang turnamen berfoto bersama deretan piala kejuaraan bergilir.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p27_Dcf3W33lLMT.jpg</image:loc>
+      <image:title>Semangat Olahraga Bulutangkis PLN</image:title>
+      <image:caption>FYPotret Event di Hall Badminton Serpong: Aksi lincah dan canda tawa sehat pertandingan persahabatan bulutangkis antar pegawai instansi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p28_DcigMdxFDWZ.jpg</image:loc>
+      <image:title>Lying On Grass: Annisa &amp; Daffa Prewedding</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Taman Asri BSD: Komposisi simetris romantis berbaring santai di atas rumput hijau dengan sentuhan busana putih dan kain veil anggun.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p29_DdBp9ZBk5QW.jpg</image:loc>
+      <image:title>Sweet 5th Birthday &amp; Ciuman Kasih Ibu</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang: Kehangatan pelukan dan ciuman tulus seorang ibu merayakan pertambahan usia ke-5 jagoan kecilnya dengan balon angka emas.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p30_DdB3DEik_QK.jpg</image:loc>
+      <image:title>A New Chapter: Engagement Alfathan &amp; Arova</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Potret hangat lamaran Mas Alfathan &amp; Kak Arova di Tangerang dengan sentuhan monokrom editorial dan bingkai artistic swirl.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p31_DdRYl8cE56c.jpg</image:loc>
+      <image:title>Newborn Photography: Little Miracle Sleep</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang Home Session: Kolase potret kedamaian bayi mungil yang tertidur lelap, jari-jemari mungil yang menggenggam, dan kepolosan alami.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p32_DdRfHShTr7Q.jpg</image:loc>
+      <image:title>Tasyakuran Aqiqah Baby Kavi Noah Pratama</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang Selatan: Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p33_DdWVs71FI2a.jpg</image:loc>
+      <image:title>Dokumentasi Syukuran &amp; Kebersamaan Keluarga</image:title>
+      <image:caption>FYPotret Event di Tangerang: Kolase kebahagiaan momen kumpul keluarga besar, penyerahan bingkisan syukuran, dan senyum guyub generasi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p34_DdbXbC5FDdp.jpg</image:loc>
+      <image:title>Cinnamoroll Theme Birthday Party Shayra</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang: Keceriaan putri kecil di depan kue ulang tahun bertingkat karakter Cinnamoroll favorit bertabur balon meriah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p35_Ddy-wNJk8PD.jpg</image:loc>
+      <image:title>B&amp;B Construction Theme Birthday Celebration</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Jakarta Barat: Pesta ulang tahun seru bertema mobil konstruksi warna-warni bersama ayah, ibu, dan saudara tercinta.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p36_Dd1iye5k7f4.jpg</image:loc>
+      <image:title>1st Birthday: Under The Sea &amp; Chocolate Cake</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang Studio: Momen menggemaskan tiup lilin dan potong kue ulang tahun pertama bernuansa laut biru dan kue cokelat Tous les Jours.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p37_DeeRlPGlFnm.jpg</image:loc>
+      <image:title>Weekend Stroll &amp; Urban Hangout di Blok M</image:title>
+      <image:caption>FYPotret Event di Blok M, Jakarta Selatan: Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan, capturing canda tawa hangat dan potret urban casual natural.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p38_DeRoRBnlOFJ.jpg</image:loc>
+      <image:title>Reuni Akbar Eks Karyawan PT Jaya Obayashi</image:title>
+      <image:caption>FYPotret Event di Tomlex Resto &amp; Cafe, Jakarta: Dokumentasi hangat temu kangen dan silaturahmi eks karyawan PT Jaya Obayashi, merajut kembali kenangan indah masa kerja dalam bingkai kebersamaan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p39_DeKDqlqk26K.jpg</image:loc>
+      <image:title>The Engagement Day: Sarah &amp; Singgih</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Twins Studio, Jakarta: Potret pertunangan sakral dan romantis Sarah &amp; Singgih dalam balutan busana formal elegan dengan background dekorasi studio minimalis modern.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p40_Dd_R1Tzp70Z.jpg</image:loc>
+      <image:title>Jose</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Jakarta: Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p41_Dd1elU1Tycq.jpg</image:loc>
+      <image:title>Benjamin &amp; Berkant Construction Birthday Reel</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Jakarta Barat: Kompilasi video seru keceriaan pesta ulang tahun Benjamin &amp; Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p42_DdjhHhOz7Am.jpg</image:loc>
+      <image:title>Tasyakuran &amp; Aqiqah Baby Ceremony Reel</image:title>
+      <image:caption>FYPotret Event di Jakarta: Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p43_DdiavVAz1HK.jpg</image:loc>
+      <image:title>Chayra</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Tangerang: Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p44_DdT7VcKhZHA.jpg</image:loc>
+      <image:title>Elegant Milestone Birthday Celebration Reel</image:title>
+      <image:caption>FYPotret Kids &amp; Birthday di Jakarta: Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p45_DdB3DEik_QK_grid.jpg</image:loc>
+      <image:title>Engagement Storyboard: Alfathan &amp; Arova</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Kolase 9 frame momen bahagia lamaran Mas Alfathan &amp; Kak Arova, mulai dari tatapan penuh kasih hingga tawa bahagia berdua.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p46_DdB3DEik_QK_seserahan.jpg</image:loc>
+      <image:title>Penyerahan Hantaran &amp; Seserahan Lamaran</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Dokumentasi khidmat serah terima seserahan pernikahan dan buket bunga segar sebagai simbol ikatan restu dua keluarga.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p47_DdB3DEik_QK_rings.jpg</image:loc>
+      <image:title>Penyematan Cincin &amp; Doa Restu Keluarga</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Momen sakral penyematan cincin tunangan di jari manis dan senyum penuh haru kebersamaan keluarga inti.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p48_DdB3DEik_QK_heart.jpg</image:loc>
+      <image:title>The Rings &amp; The Promise: Alfathan &amp; Arova</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Pose simbol cinta lambang hati dan potret makro cincin tunangan emas yang elegan di atas genggaman tangan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p49_DdB3DEik_QK_brick.jpg</image:loc>
+      <image:title>Outdoor Garden Engagement Portrait</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Potret berdua di latar dinding bata estetis dengan buket bunga pastel nan manis dan senyum semringah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p50_DdB3DEik_QK_stairs.jpg</image:loc>
+      <image:title>Architectural Stairs Engagement Portrait</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Tangerang, Indonesia: Sesi foto estetis di tangga arsitektural modern memperlihatkan keanggunan busana batik dan kebaya lamaran.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fypotret.vercel.app/portfolio/p51_DeeRlPGlFnm_urban.jpg</image:loc>
+      <image:title>Urban Garden Greenery: Stephanie &amp; Firta</image:title>
+      <image:caption>FYPotret Lamaran &amp; Prewed di Blok M, Jakarta Selatan: Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.</image:caption>
+    </image:image>
   </url>
 </urlset>
