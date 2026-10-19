@@ -7,7 +7,7 @@ interface CtaBannerProps {
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative isolate py-20 sm:py-28 overflow-hidden border-y-2 border-gold-500/40 shadow-2xl">
+    <section className="relative isolate py-20 sm:py-28 overflow-hidden shadow-2xl">
       {/* High-Impact Photography Background with Golden Sunset Sky */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img

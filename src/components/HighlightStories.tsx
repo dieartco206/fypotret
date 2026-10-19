@@ -27,7 +27,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
   };
 
   return (
-    <section className="relative isolate py-7 sm:py-9 border-y border-gold-500/30 bg-obsidian-950 shadow-2xl overflow-hidden">
+    <section className="relative isolate py-7 sm:py-9 bg-obsidian-950 shadow-2xl overflow-hidden">
       {/* Background Subtle Studio Camera Atmosphere */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         <img

@@ -22,7 +22,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
   ] as const;
 
   return (
-    <section id="pricing" className="py-16 sm:py-24 border-t border-gold-500/20 relative isolate overflow-hidden">
+    <section id="pricing" className="py-16 sm:py-24 relative isolate overflow-hidden">
       {/* Real Photography Backdrop for Pricing Section */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img

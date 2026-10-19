@@ -4,7 +4,7 @@ import { InstagramIcon } from './InstagramIcon';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative isolate bg-obsidian-950 border-t border-gold-500/25 pt-16 pb-12 text-zinc-400 text-xs sm:text-sm overflow-hidden">
+    <footer className="relative isolate bg-obsidian-950 pt-16 pb-12 text-zinc-400 text-xs sm:text-sm overflow-hidden">
       {/* Background Photography Vintage Camera Accent */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none opacity-55">
         <img
