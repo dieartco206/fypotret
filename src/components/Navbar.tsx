@@ -21,6 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         ticking = true;
       }
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -33,12 +34,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     { name: 'FAQ', href: '#faq' },
   ];
 
+  const isDarkNavbar = isScrolled || isMobileMenuOpen;
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transform-gpu bg-[#0c0f17] transition-all duration-300 ${
-        isScrolled
-          ? 'py-2.5 sm:py-3 shadow-2xl shadow-black'
-          : 'py-3.5 sm:py-4 shadow-lg shadow-black/80'
+      className={`fixed top-0 left-0 right-0 z-50 transform-gpu transition-all duration-300 ${
+        isDarkNavbar
+          ? 'bg-[#0c0f17] py-2.5 sm:py-3 shadow-2xl shadow-black/80'
+          : 'bg-transparent py-4 sm:py-5 shadow-none'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
