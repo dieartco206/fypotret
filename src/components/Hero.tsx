@@ -6,7 +6,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="relative isolate pt-24 pb-14 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
+    <section className="relative isolate min-h-screen flex items-center pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-24 lg:pb-20 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = () => {
       {/* Champagne Gold Halo behind Headline (Hangat Mewah, Tidak Gelap Gulita) */}
       <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 lg:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
