@@ -6,7 +6,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="relative isolate pt-28 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24 overflow-hidden">
+    <section className="relative isolate pt-24 pb-14 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
       {/* Real Photography Background with Cinematic Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
@@ -26,10 +26,10 @@ export const Hero: React.FC<HeroProps> = () => {
       <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
-          <div className="lg:col-span-6 text-center lg:text-left lg:pt-14 xl:pt-20">
+          <div className="lg:col-span-7 text-center lg:text-left">
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
@@ -46,18 +46,18 @@ export const Hero: React.FC<HeroProps> = () => {
             </p>
           </div>
 
-          {/* Right Column: Staggered Dual-Column Editorial Showcase */}
-          <div className="lg:col-span-6 relative mt-6 lg:mt-0">
-            <div className="relative mx-auto max-w-lg lg:max-w-none">
+          {/* Right Column: Staggered Dual-Column Editorial Showcase (Compact & Symmetrical) */}
+          <div className="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[330px] xl:max-w-[360px]">
               
               {/* Subtle Ambient Golden Halo */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[480px] h-[340px] sm:h-[480px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[350px] h-[280px] sm:h-[350px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
 
               {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
-              <div className="grid grid-cols-2 gap-3 sm:gap-4.5 items-start">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5 items-start">
                 
                 {/* Column 1 with Subtle Float */}
-                <div className="flex flex-col gap-3 sm:gap-4.5 animate-float-a">
+                <div className="flex flex-col gap-2.5 sm:gap-3.5 animate-float-a">
                   {/* 01. Wedding & Akad */}
                   <a
                     href="#gallery"
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = () => {
                       loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Wedding
                       </span>
@@ -88,12 +88,12 @@ export const Hero: React.FC<HeroProps> = () => {
                     <img
                       src="/portfolio/p39_DeKDqlqk26K.jpg"
                       alt="Lamaran Sarah & Singgih - FYPotret"
-                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                      className="w-full h-full object-cover object-center scale-125 group-hover:scale-135 transition-transform duration-700 ease-out"
                       loading="lazy"
                       decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Lamaran
                       </span>
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = () => {
                 </div>
 
                 {/* Column 2 (Offset / Staggered down) with Complementary Float */}
-                <div className="flex flex-col gap-3 sm:gap-4.5 pt-5 sm:pt-9 animate-float-b">
+                <div className="flex flex-col gap-2.5 sm:gap-3.5 pt-3 sm:pt-4 animate-float-b">
                   {/* 03. Wisuda Solo */}
                   <a
                     href="#gallery"
@@ -118,7 +118,7 @@ export const Hero: React.FC<HeroProps> = () => {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Wisuda
                       </span>
@@ -140,7 +140,7 @@ export const Hero: React.FC<HeroProps> = () => {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-10">
+                    <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
                         Squad
                       </span>
