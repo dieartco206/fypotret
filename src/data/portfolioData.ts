@@ -83,328 +83,383 @@ export const HIGHLIGHT_STORIES = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  // 1. Wisuda - Ch Lailonas, S.Ak Family
+  // 1. Wedding - The Classic Elegance Putra & Putri at New Batavia Cafe
   {
-    id: 'ig-1',
-    title: 'Selebrasi Wisuda Bersama Keluarga Tercinta',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p1_DbOVpy9kzB1.jpg',
-    aspect: 'tall',
-    location: 'Jakarta Convention Center',
-    client: 'Ch Lailonas, S.Ak',
-    description: 'Momen penuh kebanggaan bersama ibunda dan keluarga saat prosesi wisuda dengan balutan kebaya biru elegan.',
-    instagramUrl: 'https://www.instagram.com/p/DbOVpy9kzB1/',
-  },
-
-  // 2. Wisuda - Lailonas Glow
-  {
-    id: 'ig-2',
-    title: 'Glow & Senyum Bahagia Sarjana Baru',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p2_DbOVvb6E70Q.jpg',
-    aspect: 'tall',
-    location: 'Gedung Wisuda Jakarta',
-    client: 'Wisudawati Lailonas',
-    description: 'Potret senyum anggun wisudawati dengan latar belakang bunga selebrasi kelulusan.',
-    instagramUrl: 'https://www.instagram.com/p/DbOVvb6E70Q/',
-  },
-
-  // 3. Wisuda - Pelukan Ibu
-  {
-    id: 'ig-3',
-    title: 'Pelukan Haru & Bangga Ibu Tercinta',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p3_DbOV1UJk41A.jpg',
-    aspect: 'tall',
-    location: 'Lobi Wisuda Jakarta',
-    client: 'Ibu & Wisudawati',
-    description: 'Ekspresi cinta tulus dan pelukan hangat seorang ibu mendampingi putrinya meraih gelar sarjana.',
-    instagramUrl: 'https://www.instagram.com/p/DbOV1UJk41A/',
-  },
-
-  // 4. Wisuda - Dynamic Fashion 05mm Look
-  {
-    id: 'ig-4',
-    title: 'Dynamic & Fashion Graduation Outdoor',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p4_DbOWBkKE80l.jpg',
-    aspect: 'tall',
-    location: 'Stadion Outdoor Jakarta',
-    client: 'Wisudawati Sarah',
-    description: 'Pose dinamis modern dengan angle lebar (05mm look) memperlihatkan keanggunan jubah toga di lapangan terbuka.',
-    instagramUrl: 'https://www.instagram.com/p/DbOWBkKE80l/',
-  },
-
-  // 5. Wisuda - Restu Kedua Orang Tua
-  {
-    id: 'ig-5',
-    title: 'Restu & Bangga Kedua Orang Tua',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p5_DbOWOPjE9jN.jpg',
-    aspect: 'tall',
-    location: 'Rooftop Wisuda Senayan',
-    client: 'Keluarga Besar Sarah',
-    description: 'Sentuhan tangan ayah di pundak putrinya dengan tatapan bangga dan senyum teduh sang ibu.',
-    instagramUrl: 'https://www.instagram.com/p/DbOWOPjE9jN/',
-  },
-
-  // 6. Wisuda - Rooftop Skyline
-  {
-    id: 'ig-6',
-    title: 'Golden Hour Rooftop Sky Portrait',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p6_DbOWVZSk3Xz.jpg',
-    aspect: 'tall',
-    location: 'Jakarta Skyline Rooftop',
-    client: 'Wisudawati Glamour',
-    description: 'Potret glamor wisudawati berbalut kebaya merah marun di bawah langit biru kota Jakarta.',
-    instagramUrl: 'https://www.instagram.com/p/DbOWVZSk3Xz/',
-  },
-
-  // 7. Wedding - Dian & Rizky
-  {
-    id: 'ig-7',
-    title: 'Kehangatan Cinta & Senyum Pengantin Baru',
-    category: 'wedding',
-    categoryLabel: 'Wedding',
-    image: '/portfolio/p7_DbVM3ScFJoX.jpg',
-    aspect: 'tall',
-    location: 'Tangerang Selatan',
-    client: 'Dian & Rizky',
-    description: 'Potret intim pengantin berbusana adat kuning emas dengan buket bunga mawar merekah.',
-    instagramUrl: 'https://www.instagram.com/p/DbVM3ScFJoX/',
-  },
-
-  // 8. Wedding - Dian Mahkota Emas
-  {
-    id: 'ig-8',
-    title: 'Potret Anggun Mahkota & Kebaya Emas',
-    category: 'wedding',
-    categoryLabel: 'Wedding',
-    image: '/portfolio/p8_DbVNIwIFLbn.jpg',
-    aspect: 'tall',
-    location: 'Gedung Pernikahan Tangerang',
-    client: 'Pengantin Wanita Dian',
-    description: 'Detail keindahan rias pengantin, mahkota tiara, dan busana berpayet emas elegan.',
-    instagramUrl: 'https://www.instagram.com/p/DbVNIwIFLbn/',
-  },
-
-  // 9. Wedding - Dian & Rizky Pelaminan
-  {
-    id: 'ig-9',
-    title: 'Pelaminan Sakral Penuh Bunga & Doa',
-    category: 'wedding',
-    categoryLabel: 'Wedding',
-    image: '/portfolio/p9_DbVNZCJFIJL.jpg',
-    aspect: 'tall',
-    location: 'Pelaminan Tradisional Modern',
-    client: 'Dian & Rizky',
-    description: 'Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.',
-    instagramUrl: 'https://www.instagram.com/p/DbVNZCJFIJL/',
-  },
-
-  // 13. Wedding - Sungkeman Akad
-  {
-    id: 'ig-13',
-    title: 'Sungkeman Penuh Haru & Restu Akad Nikah',
+    id: 'ig-52',
+    title: 'The Classic Elegance: Putra & Putri',
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p13_Dbm_6vmEwfE.jpg',
+    image: '/portfolio/p52_DewhdRwlMg_stairs.jpg',
     aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Prosesi Akad Nikah',
-    description: 'Momen sakral dan penuh haru memohon doa restu kepada orang tua sebelum melangkah ke lembaran baru pernikahan.',
-    instagramUrl: 'https://www.instagram.com/p/Dbm_6vmEwfE/',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe, memancarkan pesona cinta abadi bernuansa vintage.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=1',
   },
 
-  // 14. Wedding - Pamer Buku Nikah
+  // 2. Wedding - Storyboard Collage Moments Putra & Putri
   {
-    id: 'ig-14',
-    title: 'Momen Sah & Bahagia Pamer Buku Nikah',
+    id: 'ig-53',
+    title: 'Wedding Storyboard: Putra & Putri',
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p14_DbnAQxzk_XR.jpg',
+    image: '/portfolio/p53_DewhdRwlMg_grid.jpg',
     aspect: 'tall',
-    location: 'Tangerang Selatan',
-    client: 'Sepasang Pengantin Baru',
-    description: 'Senyum lega dan sumringah kedua mempelai memperlihatkan buku nikah resmi sebagai tanda sah menjadi suami istri.',
-    instagramUrl: 'https://www.instagram.com/p/DbnAQxzk_XR/',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Kolase 9 frame momen sakral dan bahagia pernikahan Mas Putra & Kak Putri, mulai dari akad khidmat, buku nikah, hingga romantic walk di Kota Tua Jakarta.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
   },
 
-  // 15. Wedding - Pamer Cincin Kawin
+  // 3. Event - Weekend Stroll di Blok M
   {
-    id: 'ig-15',
-    title: 'Pamer Cincin Pernikahan di Pelaminan',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p15_DbnAcriE8hH.jpg',
+    id: 'ig-37',
+    title: 'Weekend Stroll & Urban Hangout di Blok M',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p37_DeeRlPGlFnm.jpg',
     aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Pengantin Bahagia',
-    description: 'Simbol ikatan cinta suci abadi, kilau cincin kawin di jari manis kedua mempelai yang saling tersenyum hangat.',
-    instagramUrl: 'https://www.instagram.com/p/DbnAcriE8hH/',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan, capturing canda tawa hangat dan potret urban casual natural.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/',
+    isVideo: false,
   },
 
-  // 16. Lamaran - Makeup Touch-Up
+  // 4. Prewed Casual - Urban Garden Greenery Stephanie & Firta
   {
-    id: 'ig-16',
-    title: 'Behind The Scenes: Riasan Cantik Lamaran',
+    id: 'ig-51',
+    title: 'Urban Garden Greenery: Stephanie & Firta',
     category: 'prewedding',
     categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p16_Db9v6fQzGta.jpg',
+    image: '/portfolio/p51_DeeRlPGlFnm_urban.jpg',
     aspect: 'tall',
-    location: 'Jakarta Selatan',
-    client: 'Calon Pengantin',
-    description: 'Dokumentasi detail persiapan makeup calon mempelai wanita sebelum menyambut kedatangan keluarga besar.',
-    instagramUrl: 'https://www.instagram.com/p/Db9v6fQzGta/',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
   },
 
-  // 17. Lamaran - Potret Kebaya Payet
+  // 5. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
   {
-    id: 'ig-17',
-    title: 'Anggun Dalam Balutan Kebaya Tunangan',
+    id: 'ig-38',
+    title: 'Reuni Akbar Eks Karyawan PT Jaya Obayashi',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p38_DeRoRBnlOFJ.jpg',
+    aspect: 'tall',
+    location: 'Tomlex Resto & Cafe, Jakarta',
+    client: 'Alumni PT Jaya Obayashi',
+    description: 'Dokumentasi hangat temu kangen dan silaturahmi eks karyawan PT Jaya Obayashi, merajut kembali kenangan indah masa kerja dalam bingkai kebersamaan.',
+    instagramUrl: 'https://www.instagram.com/p/DeRoRBnlOFJ/',
+    isVideo: false,
+  },
+
+  // 6. Prewedding - The Engagement Day: Sarah & Singgih
+  {
+    id: 'ig-39',
+    title: 'The Engagement Day: Sarah & Singgih',
     category: 'prewedding',
     categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p17_Db9wHXEzixp.jpg',
+    image: '/portfolio/p39_DeKDqlqk26K.jpg',
+    aspect: 'tall',
+    location: 'Twins Studio, Jakarta',
+    client: 'Sarah & Singgih',
+    description: 'Potret pertunangan sakral dan romantis Sarah & Singgih dalam balutan busana formal elegan dengan background dekorasi studio minimalis modern.',
+    instagramUrl: 'https://www.instagram.com/p/DeKDqlqk26K/',
+    isVideo: false,
+  },
+
+  // 7. Birthday Reel - Jose 1st Birthday Celebration
+  {
+    id: 'ig-40',
+    title: "Jose's 1st Birthday Celebration Reel",
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p40_Dd_R1Tzp70Z.jpg',
     aspect: 'tall',
     location: 'Jakarta',
-    client: 'Calon Mempelai Wanita',
-    description: 'Kecantikan memikat dengan balutan kebaya brokat coklat bertabur payet elegan dan riasan lembut natural.',
-    instagramUrl: 'https://www.instagram.com/p/Db9wHXEzixp/',
-  },
-
-  // 18. Lamaran - Say Good Bye / Cincin
-  {
-    id: 'ig-18',
-    title: 'Our Journey Begins Here - Engagement Ring',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p18_Db9w6hPz_6r.jpg',
-    aspect: 'tall',
-    location: 'Jakarta',
-    client: 'Sesi Pertunangan',
-    description: 'Lambaian tangan manis memperlihatkan cincin lamaran dengan konsep editorial modern "A little moment, a lifetime promise".',
-    instagramUrl: 'https://www.instagram.com/p/Db9w6hPz_6r/',
-  },
-
-  // 19. Prewedding - These Kids Are Getting Engaged
-  {
-    id: 'ig-19',
-    title: 'Playful & Fun: These Kids Are Getting Engaged',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p19_Db9zP8ck52O.jpg',
-    aspect: 'tall',
-    location: 'Depok',
-    client: 'Pasangan Ceria',
-    description: 'Konsep foto pertunangan kekinian bertema youthful dengan pose menutup satu mata dan senyum lepas tanpa jaim.',
-    instagramUrl: 'https://www.instagram.com/p/Db9zP8ck52O/',
-  },
-
-  // 20. Prewedding - Casual Basket Court Reels
-  {
-    id: 'ig-20',
-    title: 'Casual & Romantic di Lapangan Basket',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p20_Db909O2TBA1.jpg',
-    aspect: 'tall',
-    location: 'Depok Outdoor',
-    client: 'Pasangan Sporty Romantis',
-    description: 'Sesi foto dan video reels prewedding santai di lapangan basket dengan outfit casual coklat & buket bunga cantik.',
-    instagramUrl: 'https://www.instagram.com/reel/Db909O2TBA1/',
+    client: 'Keluarga Sekar & Soelthan',
+    description: 'Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.',
+    instagramUrl: 'https://www.instagram.com/reel/Dd_R1Tzp70Z/',
     isVideo: true,
-    videoSrc: '/portfolio/videos/v20_Db909O2TBA1.mp4',
+    videoSrc: '/portfolio/videos/v40_Dd_R1Tzp70Z.mp4',
   },
 
-  // 21. Prewedding - Framing Pagar Kawat
+  // 8. Birthday - 1st Smash Cake Under The Sea
   {
-    id: 'ig-21',
-    title: 'Artistic Framing: Cincin di Balik Jaring',
+    id: 'ig-36',
+    title: '1st Birthday: Under The Sea & Chocolate Cake',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p36_Dd1iye5k7f4.jpg',
+    aspect: 'tall',
+    location: 'Tangerang Studio',
+    client: 'Baby 1st Birthday',
+    description: 'Momen menggemaskan tiup lilin dan potong kue ulang tahun pertama bernuansa laut biru dan kue cokelat Tous les Jours.',
+    instagramUrl: 'https://www.instagram.com/p/Dd1iye5k7f4/',
+  },
+
+  // 9. Birthday Reel - Benjamin & Berkant Birthday Moments
+  {
+    id: 'ig-41',
+    title: 'Benjamin & Berkant Construction Birthday Reel',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p41_Dd1elU1Tycq.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Barat',
+    client: 'Keluarga Zulianita',
+    description: 'Kompilasi video seru keceriaan pesta ulang tahun Benjamin & Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.',
+    instagramUrl: 'https://www.instagram.com/reel/Dd1elU1Tycq/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v41_Dd1elU1Tycq.mp4',
+  },
+
+  // 10. Birthday - Construction Theme B&B Party
+  {
+    id: 'ig-35',
+    title: 'B&B Construction Theme Birthday Celebration',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p35_Ddy-wNJk8PD.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Barat',
+    client: 'Keluarga B&B',
+    description: 'Pesta ulang tahun seru bertema mobil konstruksi warna-warni bersama ayah, ibu, dan saudara tercinta.',
+    instagramUrl: 'https://www.instagram.com/p/Ddy-wNJk8PD/',
+  },
+
+  // 11. Event Reel - Tasyakuran & Aqiqah Baby
+  {
+    id: 'ig-42',
+    title: 'Tasyakuran & Aqiqah Baby Ceremony Reel',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p42_DdjhHhOz7Am.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Keluarga Baby',
+    description: 'Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.',
+    instagramUrl: 'https://www.instagram.com/reel/DdjhHhOz7Am/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v42_DdjhHhOz7Am.mp4',
+  },
+
+  // 12. Birthday Reel - Chayra's Birthday Party Highlight
+  {
+    id: 'ig-43',
+    title: "Chayra's Sweet Birthday Party Highlight Reel",
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p43_DdiavVAz1HK.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Chayra & Family',
+    description: 'Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.',
+    instagramUrl: 'https://www.instagram.com/reel/DdiavVAz1HK/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v43_DdiavVAz1HK.mp4',
+  },
+
+  // 13. Birthday - Shayra Cinnamoroll Birthday
+  {
+    id: 'ig-34',
+    title: 'Cinnamoroll Theme Birthday Party Shayra',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p34_DdbXbC5FDdp.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Shayra & Family',
+    description: 'Keceriaan putri kecil di depan kue ulang tahun bertingkat karakter Cinnamoroll favorit bertabur balon meriah.',
+    instagramUrl: 'https://www.instagram.com/p/DdbXbC5FDdp/',
+  },
+
+  // 14. Event - Syukuran & Momen Keluarga Besar
+  {
+    id: 'ig-33',
+    title: 'Dokumentasi Syukuran & Kebersamaan Keluarga',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p33_DdWVs71FI2a.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Keluarga Besar',
+    description: 'Kolase kebahagiaan momen kumpul keluarga besar, penyerahan bingkisan syukuran, dan senyum guyub generasi.',
+    instagramUrl: 'https://www.instagram.com/p/DdWVs71FI2a/',
+  },
+
+  // 15. Birthday Reel - Elegant Milestone Birthday
+  {
+    id: 'ig-44',
+    title: 'Elegant Milestone Birthday Celebration Reel',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p44_DdT7VcKhZHA.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Birthday Milestone Client',
+    description: 'Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.',
+    instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v44_DdT7VcKhZHA.mp4',
+  },
+
+  // 16. Birthday/Event - Aqiqah Baby Kavi Noah
+  {
+    id: 'ig-32',
+    title: 'Tasyakuran Aqiqah Baby Kavi Noah Pratama',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p32_DdRfHShTr7Q.jpg',
+    aspect: 'tall',
+    location: 'Tangerang Selatan',
+    client: 'Keluarga Baby Kavi',
+    description: 'Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.',
+    instagramUrl: 'https://www.instagram.com/reel/DdRfHShTr7Q/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v32_DdRfHShTr7Q.mp4',
+  },
+
+  // 17. Birthday - Newborn Baby Pure Innocence
+  {
+    id: 'ig-31',
+    title: 'Newborn Photography: Little Miracle Sleep',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p31_DdRYl8cE56c.jpg',
+    aspect: 'tall',
+    location: 'Tangerang Home Session',
+    client: 'Baby Newborn',
+    description: 'Kolase potret kedamaian bayi mungil yang tertidur lelap, jari-jemari mungil yang menggenggam, dan kepolosan alami.',
+    instagramUrl: 'https://www.instagram.com/p/DdRYl8cE56c/',
+  },
+
+  // 18. Engagement - Alfathan & Arova Monokrom Editorial
+  {
+    id: 'ig-30',
+    title: 'A New Chapter: Engagement Alfathan & Arova',
     category: 'prewedding',
     categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p21_Db99wJ8kwty.jpg',
+    image: '/portfolio/p30_DdB3DEik_QK.jpg',
     aspect: 'tall',
-    location: 'Depok',
-    client: 'Pasangan Tunangan',
-    description: 'Sudut pengambilan foto kreatif memanfaatkan tekstur pagar kawat lapangan untuk menonjolkan cincin pertunangan.',
-    instagramUrl: 'https://www.instagram.com/p/Db99wJ8kwty/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Potret hangat lamaran Mas Alfathan & Kak Arova di Tangerang dengan sentuhan monokrom editorial dan bingkai artistic swirl.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/',
   },
 
-  // 22. Wisuda - Bella Hendriani Sukma, S.M
+  // 19. Engagement Carousel - Storyboard Kolase 9 Frame
   {
-    id: 'ig-22',
-    title: 'Wisuda Sarjana Manajemen: Bella Hendriani, S.M',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p22_DcOXUqBFA5w.jpg',
+    id: 'ig-45',
+    title: 'Engagement Storyboard: Alfathan & Arova',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p45_DdB3DEik_QK_grid.jpg',
     aspect: 'tall',
-    location: 'Kampus Jakarta',
-    client: 'Bella Hendriani Sukma, S.M',
-    description: 'Sorot kebahagiaan dan kebanggaan mengenakan selempang sarjana manajemen di bawah rindangnya pepohonan kampus.',
-    instagramUrl: 'https://www.instagram.com/p/DcOXUqBFA5w/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Kolase 9 frame momen bahagia lamaran Mas Alfathan & Kak Arova, mulai dari tatapan penuh kasih hingga tawa bahagia berdua.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=2',
   },
 
-  // 23. Wisuda - Silhouette & Campus View
+  // 20. Engagement Carousel - Penyerahan Hantaran & Seserahan
   {
-    id: 'ig-23',
-    title: 'Editorial Silhouette & Campus Architecture',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p23_DcOXf-6J2wG.jpg',
+    id: 'ig-46',
+    title: 'Penyerahan Hantaran & Seserahan Lamaran',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p46_DdB3DEik_QK_seserahan.jpg',
     aspect: 'tall',
-    location: 'Kampus Jakarta',
-    client: 'Bella Hendriani Sukma, S.M',
-    description: 'Pose siluet artistik dari belakang memperlihatkan detail bordir selempang kelulusan dan arsitektur gedung kampus.',
-    instagramUrl: 'https://www.instagram.com/p/DcOXf-6J2wG/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Dokumentasi khidmat serah terima seserahan pernikahan dan buket bunga segar sebagai simbol ikatan restu dua keluarga.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=3',
   },
 
-  // 24. Wisuda - Playful Relaxed
+  // 21. Engagement Carousel - Penyematan Cincin & Doa Restu
   {
-    id: 'ig-24',
-    title: 'Playful Relief: Memeluk Ijazah Kelulusan',
-    category: 'graduation',
-    categoryLabel: 'Wisuda',
-    image: '/portfolio/p24_DcOX1ODFLNM.jpg',
+    id: 'ig-47',
+    title: 'Penyematan Cincin & Doa Restu Keluarga',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p47_DdB3DEik_QK_rings.jpg',
     aspect: 'tall',
-    location: 'Kampus Jakarta',
-    client: 'Bella Hendriani Sukma, S.M',
-    description: 'Ekspresi lega dan riang bersandar di pagar kampus memegang map ijazah setelah perjuangan bertahun-tahun kuliah.',
-    instagramUrl: 'https://www.instagram.com/p/DcOX1ODFLNM/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Momen sakral penyematan cincin tunangan di jari manis dan senyum penuh haru kebersamaan keluarga inti.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=4',
   },
 
-  // 25. Event - Tim Futsal PLN Serpong
+  // 22. Engagement Carousel - The Rings & The Promise
   {
-    id: 'ig-25',
-    title: 'Kompak & Semangat Juara: Tim PLN Serpong',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p25_Dcfzob2lAZb.jpg',
+    id: 'ig-48',
+    title: 'The Rings & The Promise: Alfathan & Arova',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p48_DdB3DEik_QK_heart.jpg',
     aspect: 'tall',
-    location: 'Lapangan Olahraga Serpong',
-    client: 'PLN Unit Layanan Serpong',
-    description: 'Dokumentasi kebersamaan dan kekompakan tim futsal karyawan PLN Serpong dalam rangkaian turnamen kemerdekaan.',
-    instagramUrl: 'https://www.instagram.com/p/Dcfzob2lAZb/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Pose simbol cinta lambang hati dan potret makro cincin tunangan emas yang elegan di atas genggaman tangan.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=5',
   },
 
-  // 26. Event - Trofi Bergilir Juara
+  // 23. Engagement Carousel - Outdoor Garden Brick Wall Portrait
   {
-    id: 'ig-26',
-    title: 'Kebanggaan Mengangkat Trofi Bergilir',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p26_Dcf0M6AFLdX.jpg',
+    id: 'ig-49',
+    title: 'Outdoor Garden Engagement Portrait',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p49_DdB3DEik_QK_brick.jpg',
     aspect: 'tall',
-    location: 'Serpong, Tangerang Selatan',
-    client: 'Juara Turnamen PLN',
-    description: 'Senyum bangga atlet pemenang turnamen berfoto bersama deretan piala kejuaraan bergilir.',
-    instagramUrl: 'https://www.instagram.com/p/Dcf0M6AFLdX/',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Potret berdua di latar dinding bata estetis dengan buket bunga pastel nan manis dan senyum semringah.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=6',
+  },
+
+  // 24. Engagement Carousel - Modern Architectural Stairs Session
+  {
+    id: 'ig-50',
+    title: 'Architectural Stairs Engagement Portrait',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p50_DdB3DEik_QK_stairs.jpg',
+    aspect: 'tall',
+    location: 'Tangerang, Indonesia',
+    client: 'Alfathan & Arova',
+    description: 'Sesi foto estetis di tangga arsitektural modern memperlihatkan keanggunan busana batik dan kebaya lamaran.',
+    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=7',
+  },
+
+  // 25. Birthday - 5th Birthday Anak & Ibu
+  {
+    id: 'ig-29',
+    title: 'Sweet 5th Birthday & Ciuman Kasih Ibu',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p29_DdBp9ZBk5QW.jpg',
+    aspect: 'tall',
+    location: 'Tangerang',
+    client: 'Ulang Tahun ke-5',
+    description: 'Kehangatan pelukan dan ciuman tulus seorang ibu merayakan pertambahan usia ke-5 jagoan kecilnya dengan balon angka emas.',
+    instagramUrl: 'https://www.instagram.com/p/DdBp9ZBk5QW/',
+  },
+
+  // 26. Prewedding - Annisa & Daffa Lying on Grass
+  {
+    id: 'ig-28',
+    title: 'Lying On Grass: Annisa & Daffa Prewedding',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p28_DcigMdxFDWZ.jpg',
+    aspect: 'tall',
+    location: 'Taman Asri BSD',
+    client: 'Annisa & Daffa',
+    description: 'Komposisi simetris romantis berbaring santai di atas rumput hijau dengan sentuhan busana putih dan kain veil anggun.',
+    instagramUrl: 'https://www.instagram.com/p/DcigMdxFDWZ/',
   },
 
   // 27. Event - Badminton Turnamen
@@ -421,383 +476,328 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     instagramUrl: 'https://www.instagram.com/p/Dcf3W33lLMT/',
   },
 
-  // 28. Prewedding - Annisa & Daffa Lying on Grass
+  // 28. Event - Trofi Bergilir Juara
   {
-    id: 'ig-28',
-    title: 'Lying On Grass: Annisa & Daffa Prewedding',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p28_DcigMdxFDWZ.jpg',
+    id: 'ig-26',
+    title: 'Kebanggaan Mengangkat Trofi Bergilir',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p26_Dcf0M6AFLdX.jpg',
     aspect: 'tall',
-    location: 'Taman Asri BSD',
-    client: 'Annisa & Daffa',
-    description: 'Komposisi simetris romantis berbaring santai di atas rumput hijau dengan sentuhan busana putih dan kain veil anggun.',
-    instagramUrl: 'https://www.instagram.com/p/DcigMdxFDWZ/',
+    location: 'Serpong, Tangerang Selatan',
+    client: 'Juara Turnamen PLN',
+    description: 'Senyum bangga atlet pemenang turnamen berfoto bersama deretan piala kejuaraan bergilir.',
+    instagramUrl: 'https://www.instagram.com/p/Dcf0M6AFLdX/',
   },
 
-  // 29. Birthday - 5th Birthday Anak & Ibu
+  // 29. Event - Tim Futsal PLN Serpong
   {
-    id: 'ig-29',
-    title: 'Sweet 5th Birthday & Ciuman Kasih Ibu',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p29_DdBp9ZBk5QW.jpg',
+    id: 'ig-25',
+    title: 'Kompak & Semangat Juara: Tim PLN Serpong',
+    category: 'event',
+    categoryLabel: 'Event',
+    image: '/portfolio/p25_Dcfzob2lAZb.jpg',
+    aspect: 'tall',
+    location: 'Lapangan Olahraga Serpong',
+    client: 'PLN Unit Layanan Serpong',
+    description: 'Dokumentasi kebersamaan dan kekompakan tim futsal karyawan PLN Serpong dalam rangkaian turnamen kemerdekaan.',
+    instagramUrl: 'https://www.instagram.com/p/Dcfzob2lAZb/',
+  },
+
+  // 30. Wisuda - Playful Relaxed
+  {
+    id: 'ig-24',
+    title: 'Playful Relief: Memeluk Ijazah Kelulusan',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p24_DcOX1ODFLNM.jpg',
+    aspect: 'tall',
+    location: 'Kampus Jakarta',
+    client: 'Bella Hendriani Sukma, S.M',
+    description: 'Ekspresi lega dan riang bersandar di pagar kampus memegang map ijazah setelah perjuangan bertahun-tahun kuliah.',
+    instagramUrl: 'https://www.instagram.com/p/DcOX1ODFLNM/',
+  },
+
+  // 31. Wisuda - Silhouette & Campus View
+  {
+    id: 'ig-23',
+    title: 'Editorial Silhouette & Campus Architecture',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p23_DcOXf-6J2wG.jpg',
+    aspect: 'tall',
+    location: 'Kampus Jakarta',
+    client: 'Bella Hendriani Sukma, S.M',
+    description: 'Pose siluet artistik dari belakang memperlihatkan detail bordir selempang kelulusan dan arsitektur gedung kampus.',
+    instagramUrl: 'https://www.instagram.com/p/DcOXf-6J2wG/',
+  },
+
+  // 32. Wisuda - Bella Hendriani Sukma, S.M
+  {
+    id: 'ig-22',
+    title: 'Wisuda Sarjana Manajemen: Bella Hendriani, S.M',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p22_DcOXUqBFA5w.jpg',
+    aspect: 'tall',
+    location: 'Kampus Jakarta',
+    client: 'Bella Hendriani Sukma, S.M',
+    description: 'Sorot kebahagiaan dan kebanggaan mengenakan selempang sarjana manajemen di bawah rindangnya pepohonan kampus.',
+    instagramUrl: 'https://www.instagram.com/p/DcOXUqBFA5w/',
+  },
+
+  // 33. Prewedding - Framing Pagar Kawat
+  {
+    id: 'ig-21',
+    title: 'Artistic Framing: Cincin di Balik Jaring',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p21_Db99wJ8kwty.jpg',
+    aspect: 'tall',
+    location: 'Depok',
+    client: 'Pasangan Tunangan',
+    description: 'Sudut pengambilan foto kreatif memanfaatkan tekstur pagar kawat lapangan untuk menonjolkan cincin pertunangan.',
+    instagramUrl: 'https://www.instagram.com/p/Db99wJ8kwty/',
+  },
+
+  // 34. Prewedding - Casual Basket Court Reels
+  {
+    id: 'ig-20',
+    title: 'Casual & Romantic di Lapangan Basket',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p20_Db909O2TBA1.jpg',
+    aspect: 'tall',
+    location: 'Depok Outdoor',
+    client: 'Pasangan Sporty Romantis',
+    description: 'Sesi foto dan video reels prewedding santai di lapangan basket dengan outfit casual coklat & buket bunga cantik.',
+    instagramUrl: 'https://www.instagram.com/reel/Db909O2TBA1/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v20_Db909O2TBA1.mp4',
+  },
+
+  // 35. Prewedding - These Kids Are Getting Engaged
+  {
+    id: 'ig-19',
+    title: 'Playful & Fun: These Kids Are Getting Engaged',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p19_Db9zP8ck52O.jpg',
+    aspect: 'tall',
+    location: 'Depok',
+    client: 'Pasangan Ceria',
+    description: 'Konsep foto pertunangan kekinian bertema youthful dengan pose menutup satu mata dan senyum lepas tanpa jaim.',
+    instagramUrl: 'https://www.instagram.com/p/Db9zP8ck52O/',
+  },
+
+  // 36. Lamaran - Say Good Bye / Cincin
+  {
+    id: 'ig-18',
+    title: 'Our Journey Begins Here - Engagement Ring',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p18_Db9w6hPz_6r.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Sesi Pertunangan',
+    description: 'Lambaian tangan manis memperlihatkan cincin lamaran dengan konsep editorial modern "A little moment, a lifetime promise".',
+    instagramUrl: 'https://www.instagram.com/p/Db9w6hPz_6r/',
+  },
+
+  // 37. Lamaran - Potret Kebaya Payet
+  {
+    id: 'ig-17',
+    title: 'Anggun Dalam Balutan Kebaya Tunangan',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p17_Db9wHXEzixp.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Calon Mempelai Wanita',
+    description: 'Kecantikan memikat dengan balutan kebaya brokat coklat bertabur payet elegan dan riasan lembut natural.',
+    instagramUrl: 'https://www.instagram.com/p/Db9wHXEzixp/',
+  },
+
+  // 38. Lamaran - Makeup Touch-Up
+  {
+    id: 'ig-16',
+    title: 'Behind The Scenes: Riasan Cantik Lamaran',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p16_Db9v6fQzGta.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Selatan',
+    client: 'Calon Pengantin',
+    description: 'Dokumentasi detail persiapan makeup calon mempelai wanita sebelum menyambut kedatangan keluarga besar.',
+    instagramUrl: 'https://www.instagram.com/p/Db9v6fQzGta/',
+  },
+
+  // 39. Wedding - Pamer Cincin Kawin
+  {
+    id: 'ig-15',
+    title: 'Pamer Cincin Pernikahan di Pelaminan',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p15_DbnAcriE8hH.jpg',
     aspect: 'tall',
     location: 'Tangerang',
-    client: 'Ulang Tahun ke-5',
-    description: 'Kehangatan pelukan dan ciuman tulus seorang ibu merayakan pertambahan usia ke-5 jagoan kecilnya dengan balon angka emas.',
-    instagramUrl: 'https://www.instagram.com/p/DdBp9ZBk5QW/',
+    client: 'Pengantin Bahagia',
+    description: 'Simbol ikatan cinta suci abadi, kilau cincin kawin di jari manis kedua mempelai yang saling tersenyum hangat.',
+    instagramUrl: 'https://www.instagram.com/p/DbnAcriE8hH/',
   },
 
-  // 30. Engagement - Alfathan & Arova Monokrom Editorial
+  // 40. Wedding - Pamer Buku Nikah
   {
-    id: 'ig-30',
-    title: 'A New Chapter: Engagement Alfathan & Arova',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p30_DdB3DEik_QK.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Potret hangat lamaran Mas Alfathan & Kak Arova di Tangerang dengan sentuhan monokrom editorial dan bingkai artistic swirl.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/',
-  },
-
-  // 31. Birthday - Newborn Baby Pure Innocence
-  {
-    id: 'ig-31',
-    title: 'Newborn Photography: Little Miracle Sleep',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p31_DdRYl8cE56c.jpg',
-    aspect: 'tall',
-    location: 'Tangerang Home Session',
-    client: 'Baby Newborn',
-    description: 'Kolase potret kedamaian bayi mungil yang tertidur lelap, jari-jemari mungil yang menggenggam, dan kepolosan alami.',
-    instagramUrl: 'https://www.instagram.com/p/DdRYl8cE56c/',
-  },
-
-  // 32. Birthday/Event - Aqiqah Baby Kavi Noah
-  {
-    id: 'ig-32',
-    title: 'Tasyakuran Aqiqah Baby Kavi Noah Pratama',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p32_DdRfHShTr7Q.jpg',
+    id: 'ig-14',
+    title: 'Momen Sah & Bahagia Pamer Buku Nikah',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p14_DbnAQxzk_XR.jpg',
     aspect: 'tall',
     location: 'Tangerang Selatan',
-    client: 'Keluarga Baby Kavi',
-    description: 'Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.',
-    instagramUrl: 'https://www.instagram.com/reel/DdRfHShTr7Q/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v32_DdRfHShTr7Q.mp4',
+    client: 'Sepasang Pengantin Baru',
+    description: 'Senyum lega dan sumringah kedua mempelai memperlihatkan buku nikah resmi sebagai tanda sah menjadi suami istri.',
+    instagramUrl: 'https://www.instagram.com/p/DbnAQxzk_XR/',
   },
 
-  // 33. Event - Syukuran & Momen Keluarga Besar
+  // 41. Wedding - Sungkeman Akad
   {
-    id: 'ig-33',
-    title: 'Dokumentasi Syukuran & Kebersamaan Keluarga',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p33_DdWVs71FI2a.jpg',
-    aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Keluarga Besar',
-    description: 'Kolase kebahagiaan momen kumpul keluarga besar, penyerahan bingkisan syukuran, dan senyum guyub generasi.',
-    instagramUrl: 'https://www.instagram.com/p/DdWVs71FI2a/',
-  },
-
-  // 34. Birthday - Shayra Cinnamoroll Birthday
-  {
-    id: 'ig-34',
-    title: 'Cinnamoroll Theme Birthday Party Shayra',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p34_DdbXbC5FDdp.jpg',
-    aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Shayra & Family',
-    description: 'Keceriaan putri kecil di depan kue ulang tahun bertingkat karakter Cinnamoroll favorit bertabur balon meriah.',
-    instagramUrl: 'https://www.instagram.com/p/DdbXbC5FDdp/',
-  },
-
-  // 35. Birthday - Construction Theme B&B Party
-  {
-    id: 'ig-35',
-    title: 'B&B Construction Theme Birthday Celebration',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p35_Ddy-wNJk8PD.jpg',
-    aspect: 'tall',
-    location: 'Jakarta Barat',
-    client: 'Keluarga B&B',
-    description: 'Pesta ulang tahun seru bertema mobil konstruksi warna-warni bersama ayah, ibu, dan saudara tercinta.',
-    instagramUrl: 'https://www.instagram.com/p/Ddy-wNJk8PD/',
-  },
-
-  // 36. Birthday - 1st Smash Cake Under The Sea
-  {
-    id: 'ig-36',
-    title: '1st Birthday: Under The Sea & Chocolate Cake',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p36_Dd1iye5k7f4.jpg',
-    aspect: 'tall',
-    location: 'Tangerang Studio',
-    client: 'Baby 1st Birthday',
-    description: 'Momen menggemaskan tiup lilin dan potong kue ulang tahun pertama bernuansa laut biru dan kue cokelat Tous les Jours.',
-    instagramUrl: 'https://www.instagram.com/p/Dd1iye5k7f4/',
-  },
-
-  // 37. Event - Weekend Stroll di Blok M
-  {
-    id: 'ig-37',
-    title: 'Weekend Stroll & Urban Hangout di Blok M',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p37_DeeRlPGlFnm.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan, capturing canda tawa hangat dan potret urban casual natural.',
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/',
-    isVideo: false,
-  },
-
-  // 38. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
-  {
-    id: 'ig-38',
-    title: 'Reuni Akbar Eks Karyawan PT Jaya Obayashi',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p38_DeRoRBnlOFJ.jpg',
-    aspect: 'tall',
-    location: 'Tomlex Resto & Cafe, Jakarta',
-    client: 'Alumni PT Jaya Obayashi',
-    description: 'Dokumentasi hangat temu kangen dan silaturahmi eks karyawan PT Jaya Obayashi, merajut kembali kenangan indah masa kerja dalam bingkai kebersamaan.',
-    instagramUrl: 'https://www.instagram.com/p/DeRoRBnlOFJ/',
-    isVideo: false,
-  },
-
-  // 39. Prewedding - The Engagement Day: Sarah & Singgih
-  {
-    id: 'ig-39',
-    title: 'The Engagement Day: Sarah & Singgih',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p39_DeKDqlqk26K.jpg',
-    aspect: 'tall',
-    location: 'Twins Studio, Jakarta',
-    client: 'Sarah & Singgih',
-    description: 'Potret pertunangan sakral dan romantis Sarah & Singgih dalam balutan busana formal elegan dengan background dekorasi studio minimalis modern.',
-    instagramUrl: 'https://www.instagram.com/p/DeKDqlqk26K/',
-    isVideo: false,
-  },
-
-  // 40. Birthday Reel - Jose 1st Birthday Celebration
-  {
-    id: 'ig-40',
-    title: "Jose's 1st Birthday Celebration Reel",
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p40_Dd_R1Tzp70Z.jpg',
-    aspect: 'tall',
-    location: 'Jakarta',
-    client: 'Keluarga Sekar & Soelthan',
-    description: 'Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.',
-    instagramUrl: 'https://www.instagram.com/reel/Dd_R1Tzp70Z/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v40_Dd_R1Tzp70Z.mp4',
-  },
-
-  // 41. Birthday Reel - Benjamin & Berkant Birthday Moments
-  {
-    id: 'ig-41',
-    title: 'Benjamin & Berkant Construction Birthday Reel',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p41_Dd1elU1Tycq.jpg',
-    aspect: 'tall',
-    location: 'Jakarta Barat',
-    client: 'Keluarga Zulianita',
-    description: 'Kompilasi video seru keceriaan pesta ulang tahun Benjamin & Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.',
-    instagramUrl: 'https://www.instagram.com/reel/Dd1elU1Tycq/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v41_Dd1elU1Tycq.mp4',
-  },
-
-  // 42. Event Reel - Tasyakuran & Aqiqah Baby
-  {
-    id: 'ig-42',
-    title: 'Tasyakuran & Aqiqah Baby Ceremony Reel',
-    category: 'event',
-    categoryLabel: 'Event',
-    image: '/portfolio/p42_DdjhHhOz7Am.jpg',
-    aspect: 'tall',
-    location: 'Jakarta',
-    client: 'Keluarga Baby',
-    description: 'Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.',
-    instagramUrl: 'https://www.instagram.com/reel/DdjhHhOz7Am/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v42_DdjhHhOz7Am.mp4',
-  },
-
-  // 43. Birthday Reel - Chayra's Birthday Party Highlight
-  {
-    id: 'ig-43',
-    title: "Chayra's Sweet Birthday Party Highlight Reel",
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p43_DdiavVAz1HK.jpg',
-    aspect: 'tall',
-    location: 'Tangerang',
-    client: 'Chayra & Family',
-    description: 'Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.',
-    instagramUrl: 'https://www.instagram.com/reel/DdiavVAz1HK/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v43_DdiavVAz1HK.mp4',
-  },
-
-  // 44. Birthday Reel - Elegant Milestone Birthday
-  {
-    id: 'ig-44',
-    title: 'Elegant Milestone Birthday Celebration Reel',
-    category: 'birthday',
-    categoryLabel: 'Kids & Birthday',
-    image: '/portfolio/p44_DdT7VcKhZHA.jpg',
-    aspect: 'tall',
-    location: 'Jakarta',
-    client: 'Birthday Milestone Client',
-    description: 'Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.',
-    instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v44_DdT7VcKhZHA.mp4',
-  },
-
-  // 45. Engagement Carousel - Storyboard Kolase 9 Frame
-  {
-    id: 'ig-45',
-    title: 'Engagement Storyboard: Alfathan & Arova',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p45_DdB3DEik_QK_grid.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Kolase 9 frame momen bahagia lamaran Mas Alfathan & Kak Arova, mulai dari tatapan penuh kasih hingga tawa bahagia berdua.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=2',
-  },
-
-  // 46. Engagement Carousel - Penyerahan Hantaran & Seserahan
-  {
-    id: 'ig-46',
-    title: 'Penyerahan Hantaran & Seserahan Lamaran',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p46_DdB3DEik_QK_seserahan.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Dokumentasi khidmat serah terima seserahan pernikahan dan buket bunga segar sebagai simbol ikatan restu dua keluarga.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=3',
-  },
-
-  // 47. Engagement Carousel - Penyematan Cincin & Doa Restu
-  {
-    id: 'ig-47',
-    title: 'Penyematan Cincin & Doa Restu Keluarga',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p47_DdB3DEik_QK_rings.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Momen sakral penyematan cincin tunangan di jari manis dan senyum penuh haru kebersamaan keluarga inti.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=4',
-  },
-
-  // 48. Engagement Carousel - The Rings & The Promise
-  {
-    id: 'ig-48',
-    title: 'The Rings & The Promise: Alfathan & Arova',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p48_DdB3DEik_QK_heart.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Pose simbol cinta lambang hati dan potret makro cincin tunangan emas yang elegan di atas genggaman tangan.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=5',
-  },
-
-  // 49. Engagement Carousel - Outdoor Garden Brick Wall Portrait
-  {
-    id: 'ig-49',
-    title: 'Outdoor Garden Engagement Portrait',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p49_DdB3DEik_QK_brick.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Potret berdua di latar dinding bata estetis dengan buket bunga pastel nan manis dan senyum semringah.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=6',
-  },
-
-  // 50. Engagement Carousel - Modern Architectural Stairs Session
-  {
-    id: 'ig-50',
-    title: 'Architectural Stairs Engagement Portrait',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p50_DdB3DEik_QK_stairs.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: 'Sesi foto estetis di tangga arsitektural modern memperlihatkan keanggunan busana batik dan kebaya lamaran.',
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=7',
-  },
-
-  // 51. Prewed Casual - Urban Garden Greenery Stephanie & Firta
-  {
-    id: 'ig-51',
-    title: 'Urban Garden Greenery: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p51_DeeRlPGlFnm_urban.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: 'Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
-  },
-
-  // 52. Wedding - The Classic Elegance Putra & Putri at New Batavia Cafe
-  {
-    id: 'ig-52',
-    title: 'The Classic Elegance: Putra & Putri',
+    id: 'ig-13',
+    title: 'Sungkeman Penuh Haru & Restu Akad Nikah',
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p52_DewhdRwlMg_stairs.jpg',
+    image: '/portfolio/p13_Dbm_6vmEwfE.jpg',
     aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe, memancarkan pesona cinta abadi bernuansa vintage.',
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=1',
+    location: 'Tangerang',
+    client: 'Prosesi Akad Nikah',
+    description: 'Momen sakral dan penuh haru memohon doa restu kepada orang tua sebelum melangkah ke lembaran baru pernikahan.',
+    instagramUrl: 'https://www.instagram.com/p/Dbm_6vmEwfE/',
   },
 
-  // 53. Wedding - Storyboard Collage Moments Putra & Putri
+  // 42. Wedding - Dian & Rizky Pelaminan
   {
-    id: 'ig-53',
-    title: 'Wedding Storyboard: Putra & Putri',
+    id: 'ig-9',
+    title: 'Pelaminan Sakral Penuh Bunga & Doa',
     category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p53_DewhdRwlMg_grid.jpg',
+    categoryLabel: 'Wedding',
+    image: '/portfolio/p9_DbVNZCJFIJL.jpg',
     aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: 'Kolase 9 frame momen sakral dan bahagia pernikahan Mas Putra & Kak Putri, mulai dari akad khidmat, buku nikah, hingga romantic walk di Kota Tua Jakarta.',
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
+    location: 'Pelaminan Tradisional Modern',
+    client: 'Dian & Rizky',
+    description: 'Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.',
+    instagramUrl: 'https://www.instagram.com/p/DbVNZCJFIJL/',
+  },
+
+  // 43. Wedding - Dian Mahkota Emas
+  {
+    id: 'ig-8',
+    title: 'Potret Anggun Mahkota & Kebaya Emas',
+    category: 'wedding',
+    categoryLabel: 'Wedding',
+    image: '/portfolio/p8_DbVNIwIFLbn.jpg',
+    aspect: 'tall',
+    location: 'Gedung Pernikahan Tangerang',
+    client: 'Pengantin Wanita Dian',
+    description: 'Detail keindahan rias pengantin, mahkota tiara, dan busana berpayet emas elegan.',
+    instagramUrl: 'https://www.instagram.com/p/DbVNIwIFLbn/',
+  },
+
+  // 44. Wedding - Dian & Rizky
+  {
+    id: 'ig-7',
+    title: 'Kehangatan Cinta & Senyum Pengantin Baru',
+    category: 'wedding',
+    categoryLabel: 'Wedding',
+    image: '/portfolio/p7_DbVM3ScFJoX.jpg',
+    aspect: 'tall',
+    location: 'Tangerang Selatan',
+    client: 'Dian & Rizky',
+    description: 'Potret intim pengantin berbusana adat kuning emas dengan buket bunga mawar merekah.',
+    instagramUrl: 'https://www.instagram.com/p/DbVM3ScFJoX/',
+  },
+
+  // 45. Wisuda - Rooftop Skyline
+  {
+    id: 'ig-6',
+    title: 'Golden Hour Rooftop Sky Portrait',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p6_DbOWVZSk3Xz.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Skyline Rooftop',
+    client: 'Wisudawati Glamour',
+    description: 'Potret glamor wisudawati berbalut kebaya merah marun di bawah langit biru kota Jakarta.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWVZSk3Xz/',
+  },
+
+  // 46. Wisuda - Restu Kedua Orang Tua
+  {
+    id: 'ig-5',
+    title: 'Restu & Bangga Kedua Orang Tua',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p5_DbOWOPjE9jN.jpg',
+    aspect: 'tall',
+    location: 'Rooftop Wisuda Senayan',
+    client: 'Keluarga Besar Sarah',
+    description: 'Sentuhan tangan ayah di pundak putrinya dengan tatapan bangga dan senyum teduh sang ibu.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWOPjE9jN/',
+  },
+
+  // 47. Wisuda - Dynamic Fashion 05mm Look
+  {
+    id: 'ig-4',
+    title: 'Dynamic & Fashion Graduation Outdoor',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p4_DbOWBkKE80l.jpg',
+    aspect: 'tall',
+    location: 'Stadion Outdoor Jakarta',
+    client: 'Wisudawati Sarah',
+    description: 'Pose dinamis modern dengan angle lebar (05mm look) memperlihatkan keanggunan jubah toga di lapangan terbuka.',
+    instagramUrl: 'https://www.instagram.com/p/DbOWBkKE80l/',
+  },
+
+  // 48. Wisuda - Pelukan Ibu
+  {
+    id: 'ig-3',
+    title: 'Pelukan Haru & Bangga Ibu Tercinta',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p3_DbOV1UJk41A.jpg',
+    aspect: 'tall',
+    location: 'Lobi Wisuda Jakarta',
+    client: 'Ibu & Wisudawati',
+    description: 'Ekspresi cinta tulus dan pelukan hangat seorang ibu mendampingi putrinya meraih gelar sarjana.',
+    instagramUrl: 'https://www.instagram.com/p/DbOV1UJk41A/',
+  },
+
+  // 49. Wisuda - Lailonas Glow
+  {
+    id: 'ig-2',
+    title: 'Glow & Senyum Bahagia Sarjana Baru',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p2_DbOVvb6E70Q.jpg',
+    aspect: 'tall',
+    location: 'Gedung Wisuda Jakarta',
+    client: 'Wisudawati Lailonas',
+    description: 'Potret senyum anggun wisudawati dengan latar belakang bunga selebrasi kelulusan.',
+    instagramUrl: 'https://www.instagram.com/p/DbOVvb6E70Q/',
+  },
+
+  // 50. Wisuda - Ch Lailonas, S.Ak Family
+  {
+    id: 'ig-1',
+    title: 'Selebrasi Wisuda Bersama Keluarga Tercinta',
+    category: 'graduation',
+    categoryLabel: 'Wisuda',
+    image: '/portfolio/p1_DbOVpy9kzB1.jpg',
+    aspect: 'tall',
+    location: 'Jakarta Convention Center',
+    client: 'Ch Lailonas, S.Ak',
+    description: 'Momen penuh kebanggaan bersama ibunda dan keluarga saat prosesi wisuda dengan balutan kebaya biru elegan.',
+    instagramUrl: 'https://www.instagram.com/p/DbOVpy9kzB1/',
   },
 ];
 
