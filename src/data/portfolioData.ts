@@ -83,27 +83,27 @@ export const HIGHLIGHT_STORIES = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  // 1. Wedding - The Classic Elegance Putra & Putri at New Batavia Cafe
+  // 1. Wedding - Seserahan & Akad: Putra & Putri at New Batavia Cafe (Slide 1)
   {
     id: 'ig-52',
-    title: 'The Classic Elegance: Putra & Putri',
+    title: 'Seserahan & Akad: Putra & Putri',
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p52_DewhdRwlMg_stairs.jpg',
+    image: '/portfolio/p52_DewhdRwlMg_01_seserahan.jpg',
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe, memancarkan pesona cinta abadi bernuansa vintage.',
+    description: 'Momen sakral Mas Putra & Kak Putri memegang kotak mahar seserahan perhiasan di pelaminan bunga New Batavia Cafe dengan senyum penuh kebahagiaan.',
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=1',
   },
 
-  // 2. Wedding - Storyboard Collage Moments Putra & Putri
+  // 2. Wedding - Storyboard Collage Moments Putra & Putri (Slide 2)
   {
     id: 'ig-53',
     title: 'Wedding Storyboard: Putra & Putri',
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p53_DewhdRwlMg_grid.jpg',
+    image: '/portfolio/p53_DewhdRwlMg_02_storyboard.jpg',
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
@@ -111,22 +111,106 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
   },
 
-  // 3. Event - Weekend Stroll di Blok M
+  // 3. Wedding - The Classic Elegance Putra & Putri at Stairs (Slide 3)
+  {
+    id: 'ig-54',
+    title: 'The Classic Elegance: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p54_DewhdRwlMg_03_stairs.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe dengan nuansa swirl vignette vintage.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=3',
+  },
+
+  // 4. Wedding - The Radiant Bride: Kak Putri (Slide 4)
+  {
+    id: 'ig-55',
+    title: 'The Radiant Bride: Kak Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p55_DewhdRwlMg_04_bride_rose.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Potret close-up anggun dan memikat Kak Putri mengintip lembut di sela rangkaian bunga mawar pastel dengan riasan flawless.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=4',
+  },
+
+  // 5. Wedding - Vintage Staircase Intimacy: Putra & Putri (Slide 5)
+  {
+    id: 'ig-56',
+    title: 'Vintage Staircase Intimacy: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p56_DewhdRwlMg_05_high_angle.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'High-angle portrait menangkap keintiman tatapan Mas Putra dan Kak Putri di anak tangga kayu bersejarah New Batavia Cafe.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=5',
+  },
+
+  // 6. Wedding - Rattan Chair Editorial: Kak Putri (Slide 6)
+  {
+    id: 'ig-57',
+    title: 'Rattan Chair Editorial: Kak Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p57_DewhdRwlMg_06_rattan_chair.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Storyboard 4 pose elegan Kak Putri duduk di kursi rotan antik New Batavia Cafe memamerkan detail kebaya dan mahkota adat modern.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=6',
+  },
+
+  // 7. Wedding - Warm Shoulder Rest: Putra & Putri (Slide 7)
+  {
+    id: 'ig-58',
+    title: 'Warm Shoulder Rest: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p58_DewhdRwlMg_07_shoulder_rest.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Momen romantis dan hangat saat Kak Putri bersandar di pundak Mas Putra sembari memegang buket mawar putih berlatar arsitektur kolonial.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=7',
+  },
+
+  // 8. Wedding - Colonial Heritage Walk: Putra & Putri (Slide 8)
+  {
+    id: 'ig-59',
+    title: 'Colonial Heritage Walk: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p59_DewhdRwlMg_08_colonial_outdoor.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Outdoor portrait megah di selasar New Batavia Cafe Kota Tua Jakarta, merekam keanggunan busana pengantin berpadu atmosfer klasik Batavia.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=8',
+  },
+
+  // 9. Event & Hangout - Weekend Stroll di Blok M (Slide 1)
   {
     id: 'ig-37',
     title: 'Weekend Stroll & Urban Hangout di Blok M',
     category: 'event',
-    categoryLabel: 'Event',
+    categoryLabel: 'Event & Hangout',
     image: '/portfolio/p37_DeeRlPGlFnm.jpg',
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan, capturing canda tawa hangat dan potret urban casual natural.',
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/',
+    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan di depan Mie Mama Wan, capturing canda tawa hangat dan potret urban casual natural.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=1',
     isVideo: false,
   },
 
-  // 4. Prewed Casual - Urban Garden Greenery Stephanie & Firta
+  // 10. Prewed Casual - Urban Garden Greenery Stephanie & Firta (Slide 2)
   {
     id: 'ig-51',
     title: 'Urban Garden Greenery: Stephanie & Firta',
@@ -136,8 +220,92 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
+    description: 'Kompilasi 9 frame foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
+  },
+
+  // 11. Prewed Casual - Ivy Wall Filmstrip: Stephanie & Firta (Slide 3)
+  {
+    id: 'ig-60',
+    title: 'Ivy Wall Filmstrip: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p60_DeeRlPGlFnm_03_filmstrip.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Film strip estetis 3 frame menampilkan canda tawa Stephanie & Firta di depan dinding tanaman rambat hijau rimbun Blok M.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=3',
+  },
+
+  // 12. Prewed Casual - Park Railing Candid: Stephanie & Firta (Slide 4)
+  {
+    id: 'ig-61',
+    title: 'Park Railing Candid: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p61_DeeRlPGlFnm_04_fence_candid.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Pose santai bersandar di pagar taman kota Blok M dengan senyuman tulus dan pencahayaan alami yang menyejukkan.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=4',
+  },
+
+  // 13. Prewed Casual - Urban Alleyway Stroll: Stephanie & Firta (Slide 5)
+  {
+    id: 'ig-62',
+    title: 'Urban Alleyway Stroll: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p62_DeeRlPGlFnm_05_street_walk.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Potret berdua melangkah santai menyusuri pedestrian jalanan Blok M yang kaya akan tekstur urban dan atmosfer modern.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=5',
+  },
+
+  // 14. Prewed Casual - Golden Hour Portrait: Stephanie (Slide 6)
+  {
+    id: 'ig-63',
+    title: 'Golden Hour Portrait: Stephanie',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p63_DeeRlPGlFnm_06_hijab_portrait.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Potret manis dan anggun Stephanie dengan balutan hijab cokelat susu diterpa hangatnya sinar matahari sore golden hour.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=6',
+  },
+
+  // 15. Prewed Casual - City Bench Conversations: Stephanie & Firta (Slide 7)
+  {
+    id: 'ig-64',
+    title: 'City Bench Conversations: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p64_DeeRlPGlFnm_07_bench_sit.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Duduk berdua di bangku taman kota Blok M saling bertukar cerita dan tawa riang di bawah rindangnya pepohonan Jakarta Selatan.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=7',
+  },
+
+  // 16. Prewed Casual - Joyful Connection: Stephanie & Firta (Slide 8)
+  {
+    id: 'ig-65',
+    title: 'Joyful Connection: Stephanie & Firta',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p65_DeeRlPGlFnm_08_laugh_candid.jpg',
+    aspect: 'tall',
+    location: 'Blok M, Jakarta Selatan',
+    client: 'Stephanie & Firta',
+    description: 'Candid tawa lepas dan chemistry natural Stephanie & Firta saling memandang mesra, merekam kebahagiaan murni yang tak dibuat-buat.',
+    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=8',
   },
 
   // 5. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
