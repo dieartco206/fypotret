@@ -771,6 +771,34 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: 'Kompilasi foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
   },
+
+  // 52. Wedding - The Classic Elegance Putra & Putri at New Batavia Cafe
+  {
+    id: 'ig-52',
+    title: 'The Classic Elegance: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p52_DewhdRwlMg_stairs.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe, memancarkan pesona cinta abadi bernuansa vintage.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=1',
+  },
+
+  // 53. Wedding - Storyboard Collage Moments Putra & Putri
+  {
+    id: 'ig-53',
+    title: 'Wedding Storyboard: Putra & Putri',
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p53_DewhdRwlMg_grid.jpg',
+    aspect: 'tall',
+    location: 'New Batavia Cafe, Kota Tua Jakarta',
+    client: 'Putra & Putri',
+    description: 'Kolase 9 frame momen sakral dan bahagia pernikahan Mas Putra & Kak Putri, mulai dari akad khidmat, buku nikah, hingga romantic walk di Kota Tua Jakarta.',
+    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
+  },
 ];
 
 export const PRICING_PACKAGES: PricingPackage[] = [
