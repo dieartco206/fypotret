@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = () => {
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-100"
                   >
                     <img
-                      src="/portfolio/p_rama_12.jpg"
+                      src="/portfolio/hero_rama_wedding.jpg"
                       alt="Wedding Rama & Sahrani - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="eager"
@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = () => {
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-250"
                   >
                     <img
-                      src="/portfolio/p_rio_06.jpg"
+                      src="/portfolio/hero_rio_birthday.jpg"
                       alt="Kids & Birthday Rio - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
