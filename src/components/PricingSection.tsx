@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { PRICING_PACKAGES, type PricingPackage } from '../data/portfolioData';
-import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight, Car, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight, Car } from 'lucide-react';
 
 interface PricingSectionProps {
   onSelectPackage: (pkg: PricingPackage) => void;
@@ -8,10 +8,6 @@ interface PricingSectionProps {
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const sliderRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const filteredPackages = selectedCategory === 'all'
     ? PRICING_PACKAGES
@@ -27,57 +23,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
     { id: 'birthday', label: 'Birthday' },
     { id: 'event', label: 'Event' },
   ] as const;
-
-  const checkScrollState = () => {
-    if (!sliderRef.current) return;
-    const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
-    setCanScrollLeft(scrollLeft > 20);
-    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 20);
-
-    const firstCard = sliderRef.current.children[0] as HTMLElement | undefined;
-    if (firstCard) {
-      const cardWidth = firstCard.offsetWidth + 24;
-      const index = Math.round(scrollLeft / cardWidth);
-      setActiveSlideIndex(Math.min(filteredPackages.length - 1, Math.max(0, index)));
-    }
-  };
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-    slider.addEventListener('scroll', checkScrollState, { passive: true });
-    checkScrollState();
-    return () => slider.removeEventListener('scroll', checkScrollState);
-  }, [filteredPackages]);
-
-  useEffect(() => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
-    }
-    setActiveSlideIndex(0);
-    setCanScrollLeft(false);
-    setCanScrollRight(filteredPackages.length > 1);
-  }, [selectedCategory, filteredPackages.length]);
-
-  const handleScroll = (direction: 'left' | 'right') => {
-    if (!sliderRef.current) return;
-    const firstCard = sliderRef.current.children[0] as HTMLElement | undefined;
-    const cardWidth = firstCard ? firstCard.offsetWidth + 24 : 440;
-    const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
-    sliderRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  };
-
-  const scrollToSlide = (index: number) => {
-    if (!sliderRef.current) return;
-    const cards = sliderRef.current.children;
-    if (cards[index]) {
-      (cards[index] as HTMLElement).scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center',
-      });
-    }
-  };
 
   return (
     <section id="pricing" className="py-16 sm:py-24 relative isolate overflow-hidden">
@@ -101,7 +46,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold mb-3">
             <Camera className="w-3.5 h-3.5" />
             <span>Investasi & Pilihan Paket</span>
@@ -131,59 +76,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
           </div>
         </div>
 
-        {/* Carousel Slider Controls Bar */}
-        <div className="flex items-center justify-between mb-4 max-w-5xl mx-auto px-1">
-          <div className="text-xs sm:text-sm text-zinc-400 flex items-center gap-2">
-            <span className="font-medium">Geser untuk membandingkan paket</span>
-            <span className="hidden sm:inline text-zinc-600">•</span>
-            <span className="hidden sm:inline text-gold-400 font-semibold">{filteredPackages.length} Pilihan Paket</span>
-          </div>
-          
-          {/* Arrow Navigation Controls */}
-          {filteredPackages.length > 1 && (
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => handleScroll('left')}
-                disabled={!canScrollLeft}
-                className={`p-2.5 rounded-full border transition-all duration-200 cursor-pointer ${
-                  canScrollLeft
-                    ? 'bg-zinc-900/90 hover:bg-gold-500 hover:text-obsidian-950 text-white border-white/10 active:scale-95 shadow-md shadow-black/40'
-                    : 'bg-zinc-900/30 text-zinc-600 border-white/5 cursor-not-allowed opacity-30'
-                }`}
-                title="Paket Sebelumnya"
-                aria-label="Paket Sebelumnya"
-              >
-                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
-              </button>
-              <button
-                onClick={() => handleScroll('right')}
-                disabled={!canScrollRight}
-                className={`p-2.5 rounded-full border transition-all duration-200 cursor-pointer ${
-                  canScrollRight
-                    ? 'bg-zinc-900/90 hover:bg-gold-500 hover:text-obsidian-950 text-white border-white/10 active:scale-95 shadow-md shadow-black/40'
-                    : 'bg-zinc-900/30 text-zinc-600 border-white/5 cursor-not-allowed opacity-30'
-                }`}
-                title="Paket Selanjutnya"
-                aria-label="Paket Selanjutnya"
-              >
-                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
-              </button>
-            </div>
-          )}
-        </div>
-
-        {/* Horizontal Carousel Slider Track */}
-        <div
-          ref={sliderRef}
-          className="flex gap-5 sm:gap-6 overflow-x-auto pb-6 pt-3 px-1 sm:px-4 snap-x snap-mandatory scroll-smooth no-scrollbar max-w-5xl mx-auto select-none"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
+        {/* Pricing Grid - 2 Columns on Desktop & Tablet (2 x 2 Balanced Grid), 1 on Mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto items-stretch">
           {filteredPackages.map((pkg, index) => {
             return (
               <div
                 key={pkg.id}
                 style={{ animationDelay: `${index * 150}ms` }}
-                className={`w-[85vw] sm:w-[380px] md:w-[440px] flex-shrink-0 snap-center relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 ${
+                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 ${
                   pkg.isPopular
                     ? 'border-gold-400/90 shadow-2xl shadow-gold-500/20 ring-1 ring-gold-400/50'
                     : 'hover:border-gold-500/50'
@@ -267,24 +167,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
             );
           })}
         </div>
-
-        {/* Pagination Dots Indicator */}
-        {filteredPackages.length > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-4">
-            {filteredPackages.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => scrollToSlide(i)}
-                className={`transition-all duration-300 rounded-full cursor-pointer min-h-[14px] flex items-center ${
-                  activeSlideIndex === i
-                    ? 'w-7 h-2 bg-gradient-to-r from-gold-500 to-amber-500 shadow-md shadow-gold-500/30'
-                    : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
-                }`}
-                aria-label={`Lihat paket ${i + 1}`}
-              />
-            ))}
-          </div>
-        )}
 
         {/* Custom Event Note */}
         <div className="mt-12 text-center p-6 rounded-2xl bg-zinc-900/60 border border-white/5 max-w-2xl mx-auto">
