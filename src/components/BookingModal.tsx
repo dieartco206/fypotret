@@ -26,11 +26,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   // Sync state if preselected values exist
   useEffect(() => {
     if (preselectedPackage) {
-      setPackageChoice(preselectedPackage.title);
+      setPackageChoice(`${preselectedPackage.title} (${preselectedPackage.price})`);
       if (preselectedPackage.category === 'graduation') setService('Wisuda');
       if (preselectedPackage.category === 'wedding') setService('Wedding');
       if (preselectedPackage.category === 'prewedding') setService('Prewedding');
       if (preselectedPackage.category === 'birthday') setService('Birthday');
+      if (preselectedPackage.category === 'event') setService('Event');
     } else if (preselectedItem) {
       setPackageChoice(`Referensi Foto: ${preselectedItem.title}`);
       if (preselectedItem.category === 'event') setService('Event');
