@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { PRICING_PACKAGES, CONTACT_INFO, type PricingPackage } from '../data/portfolioData';
 import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight, Car } from 'lucide-react';
 
@@ -7,23 +7,6 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
-
-  const filteredPackages = selectedCategory === 'all'
-    ? PRICING_PACKAGES
-    : PRICING_PACKAGES.filter((p) => 
-        p.category === selectedCategory || (p.categories && p.categories.includes(selectedCategory as any))
-      );
-
-  const filterTabs = [
-    { id: 'all', label: 'Semua Paket' },
-    { id: 'wedding', label: 'Wedding & Akad' },
-    { id: 'graduation', label: 'Wisuda' },
-    { id: 'prewedding', label: 'Prewed & Lamaran' },
-    { id: 'birthday', label: 'Birthday' },
-    { id: 'event', label: 'Event' },
-  ] as const;
-
   return (
     <section id="pricing" className="py-16 sm:py-24 relative isolate overflow-hidden">
       {/* Real Photography Backdrop for Pricing Section */}
@@ -57,28 +40,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
           <p className="text-sm sm:text-base text-zinc-400 mt-3 font-sans">
             Harga transparan, sudah termasuk transport area Jabodetabek. Seluruh file master RAW + edit dikirim langsung via Google Drive.
           </p>
-
-          {/* Category Tabs */}
-          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 mt-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
-            {filterTabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setSelectedCategory(tab.id)}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] flex-shrink-0 whitespace-nowrap ${
-                  selectedCategory === tab.id
-                    ? 'bg-gold-500 text-obsidian-950 font-bold shadow-md shadow-gold-500/20'
-                    : 'bg-zinc-900 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/5'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Pricing Grid - 2 Columns on Desktop & Tablet (2 x 2 Balanced Grid), 1 on Mobile */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto items-stretch">
-          {filteredPackages.map((pkg, index) => {
+          {PRICING_PACKAGES.map((pkg, index) => {
             return (
               <div
                 key={pkg.id}
