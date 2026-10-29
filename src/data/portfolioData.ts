@@ -84,6 +84,7 @@ export const HIGHLIGHT_STORIES = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+
   // 1. Wedding - Seserahan & Akad: Putra & Putri at New Batavia Cafe (Slide 1)
   {
     id: 'ig-52',
@@ -94,9 +95,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Momen sakral Mas Putra & Kak Putri memegang kotak mahar seserahan perhiasan di pelaminan bunga New Batavia Cafe dengan senyum penuh kebahagiaan.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=1',
   },
+
 
   // 2. Wedding - Storyboard Collage Moments Putra & Putri (Slide 2)
   {
@@ -108,9 +123,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Kolase 9 frame momen sakral dan bahagia pernikahan Mas Putra & Kak Putri, mulai dari akad khidmat, buku nikah, hingga romantic walk di Kota Tua Jakarta.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
   },
+
 
   // 3. Wedding - The Classic Elegance Putra & Putri at Stairs (Slide 3)
   {
@@ -122,9 +151,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Potret anggun Mas Putra & Kak Putri dalam balutan busana pengantin perak di tangga klasik New Batavia Cafe dengan nuansa swirl vignette vintage.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=3',
   },
+
 
   // 4. Wedding - The Radiant Bride: Kak Putri (Slide 4)
   {
@@ -136,9 +179,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Potret close-up anggun dan memikat Kak Putri mengintip lembut di sela rangkaian bunga mawar pastel dengan riasan flawless.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=4',
   },
+
 
   // 5. Wedding - Vintage Staircase Intimacy: Putra & Putri (Slide 5)
   {
@@ -150,9 +207,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'High-angle portrait menangkap keintiman tatapan Mas Putra dan Kak Putri di anak tangga kayu bersejarah New Batavia Cafe.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=5',
   },
+
 
   // 6. Wedding - Rattan Chair Editorial: Kak Putri (Slide 6)
   {
@@ -164,9 +235,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Storyboard 4 pose elegan Kak Putri duduk di kursi rotan antik New Batavia Cafe memamerkan detail kebaya dan mahkota adat modern.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=6',
   },
+
 
   // 7. Wedding - Warm Shoulder Rest: Putra & Putri (Slide 7)
   {
@@ -178,9 +263,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Momen romantis dan hangat saat Kak Putri bersandar di pundak Mas Putra sembari memegang buket mawar putih berlatar arsitektur kolonial.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=7',
   },
+
 
   // 8. Wedding - Colonial Heritage Walk: Putra & Putri (Slide 8)
   {
@@ -192,9 +291,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'New Batavia Cafe, Kota Tua Jakarta',
     client: 'Putra & Putri',
-    description: 'Outdoor portrait megah di selasar New Batavia Cafe Kota Tua Jakarta, merekam keanggunan busana pengantin berpadu atmosfer klasik Batavia.',
+    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
+    
+    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
+    
+    terima kasih kepada.
+    
+    MUA: @keisyanmakeup
+    MC: @mc_depok
+    BA: @brideassistant_byapipah
+    FG/VG: @fypotretid
+    
+    Venue : @newbataviacafe
+    
+    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
     instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=8',
   },
+
 
   // 9. Event & Hangout - Weekend Stroll di Blok M (Slide 1)
   {
@@ -206,10 +319,18 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Momen santai akhir pekan menyusuri spot estetik Blok M Jakarta Selatan di depan Mie Mama Wan, capturing canda tawa hangat dan potret urban casual natural.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=1',
     isVideo: false,
   },
+
 
   // 10. Prewed Casual - Urban Garden Greenery Stephanie & Firta (Slide 2)
   {
@@ -221,9 +342,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Kompilasi 9 frame foto santai dan playful di antara rimbun dedaunan hijau urban Blok M dengan nuansa hangat penuh tawa.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
   },
+
 
   // 11. Prewed Casual - Ivy Wall Filmstrip: Stephanie & Firta (Slide 3)
   {
@@ -235,9 +364,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Film strip estetis 3 frame menampilkan canda tawa Stephanie & Firta di depan dinding tanaman rambat hijau rimbun Blok M.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=3',
   },
+
 
   // 12. Prewed Casual - Park Railing Candid: Stephanie & Firta (Slide 4)
   {
@@ -249,9 +386,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Pose santai bersandar di pagar taman kota Blok M dengan senyuman tulus dan pencahayaan alami yang menyejukkan.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=4',
   },
+
 
   // 13. Prewed Casual - Urban Alleyway Stroll: Stephanie & Firta (Slide 5)
   {
@@ -263,9 +408,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Potret berdua melangkah santai menyusuri pedestrian jalanan Blok M yang kaya akan tekstur urban dan atmosfer modern.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=5',
   },
+
 
   // 14. Prewed Casual - Golden Hour Portrait: Stephanie (Slide 6)
   {
@@ -277,9 +430,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Potret manis dan anggun Stephanie dengan balutan hijab cokelat susu diterpa hangatnya sinar matahari sore golden hour.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=6',
   },
+
 
   // 15. Prewed Casual - City Bench Conversations: Stephanie & Firta (Slide 7)
   {
@@ -291,9 +452,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Duduk berdua di bangku taman kota Blok M saling bertukar cerita dan tawa riang di bawah rindangnya pepohonan Jakarta Selatan.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=7',
   },
+
 
   // 16. Prewed Casual - Joyful Connection: Stephanie & Firta (Slide 8)
   {
@@ -305,9 +474,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Blok M, Jakarta Selatan',
     client: 'Stephanie & Firta',
-    description: 'Candid tawa lepas dan chemistry natural Stephanie & Firta saling memandang mesra, merekam kebahagiaan murni yang tak dibuat-buat.',
+    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
+    @firtasar_
+    
+    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
+    
+    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
+    
+    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
     instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=8',
   },
+
 
   // 5. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
   {
@@ -319,10 +496,19 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tomlex Resto & Cafe, Jakarta',
     client: 'Alumni PT Jaya Obayashi',
-    description: 'Dokumentasi hangat temu kangen dan silaturahmi eks karyawan PT Jaya Obayashi, merajut kembali kenangan indah masa kerja dalam bingkai kebersamaan.',
+    description: `Reuni Eks PT Jaya Obayashi 📸✨ @adelina_kitchen
+    
+    Mengabadikan momen, cerita, dan kebersamaan yang kembali terjalin di @tomlex.jkt
+    
+    Senang bisa menjadi bagian dari momen spesial ini dan menangkap setiap cerita di balik lensa. 📸🤍
+    
+    Terimakasih sudah mempercayakan moment bahagia ini bersama fypotretid 🙏🏻✨
+    
+    #ReuniEksJayaObayashi #JayaObayashi #EventPhotography #DokumentasiAcara #AbadikanMomen`,
     instagramUrl: 'https://www.instagram.com/p/DeRoRBnlOFJ/',
     isVideo: false,
   },
+
 
   // 6. Prewedding - The Engagement Day: Sarah & Singgih
   {
@@ -334,10 +520,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Twins Studio, Jakarta',
     client: 'Sarah & Singgih',
-    description: 'Potret pertunangan sakral dan romantis Sarah & Singgih dalam balutan busana formal elegan dengan background dekorasi studio minimalis modern.',
+    description: `Sarah & Singgih — one step closer to forever. 💍 Semoga perjalanan menuju hari bahagia selalu dipenuhi cinta, doa, dan kebahagiaan. 🤍
+    
+    Congratulations on your engagement, Sarah & Singgih! 🤲🏻✨
+    
+    🕺🏻: @twins_studio3
+    
+    #SarahAndSungguh #SarahSungguh #Engagement #EngagementDay`,
     instagramUrl: 'https://www.instagram.com/p/DeKDqlqk26K/',
     isVideo: false,
   },
+
 
   // 7. Birthday Reel - Jose 1st Birthday Celebration
   {
@@ -349,11 +542,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta',
     client: 'Keluarga Sekar & Soelthan',
-    description: 'Highlight video sinematik selebrasi ulang tahun pertama baby Jose, penuh kebahagiaan, tepuk tangan, dan kecupan kasih dari kedua orang tua tercinta.',
+    description: `Happy 1st Birthday, Jose! 🎉🧸@sekarfdla @msoelthan
+    
+    Terima kasih sudah mempercayakan momen spesial ini untuk aku abadikan. 🙏🏻✨
+    
+    #Jose1stBirthday #HappyBirthdayJose #FirstBirthday #BirthdayMoment`,
     instagramUrl: 'https://www.instagram.com/reel/Dd_R1Tzp70Z/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v40_Dd_R1Tzp70Z.mp4',
   },
+
 
   // 8. Birthday - 1st Smash Cake Under The Sea
   {
@@ -365,9 +563,18 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang Studio',
     client: 'Baby 1st Birthday',
-    description: 'Momen menggemaskan tiup lilin dan potong kue ulang tahun pertama bernuansa laut biru dan kue cokelat Tous les Jours.',
+    description: `✨ Jose’s 1st Birthday ✨
+    
+    One year of love, laughter, and so many beautiful little moments. 🤍📸
+    
+    Happy 1st Birthday, Jose! 🥳🎂
+    
+    Semoga Jose tumbuh menjadi anak yang sehat, bahagia, penuh cinta, dan selalu dikelilingi orang-orang yang sayang sama Jose. 🤍
+    
+    #JoseTurnsOne #Jose1stBirthday #JoseBirthday #FirstBirthday #BirthdayCelebration`,
     instagramUrl: 'https://www.instagram.com/p/Dd1iye5k7f4/',
   },
+
 
   // 9. Birthday Reel - Benjamin & Berkant Birthday Moments
   {
@@ -385,6 +592,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     videoSrc: '/portfolio/videos/v41_Dd1elU1Tycq.mp4',
   },
 
+
   // 10. Birthday - Construction Theme B&B Party
   {
     id: 'ig-35',
@@ -395,9 +603,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta Barat',
     client: 'Keluarga B&B',
-    description: 'Pesta ulang tahun seru bertema mobil konstruksi warna-warni bersama ayah, ibu, dan saudara tercinta.',
+    description: `3 cheers for Berkant! 🎉💙 @zulianitaa @benjamindanberkant
+    
+    Happy 3rd Birthday, Berkant! 🎂🥳
+    Semoga selalu sehat, tumbuh jadi anak yang ceria, pintar, penuh kebaikan, dan selalu dikelilingi orang-orang yang sayang sama Berkant. 🤍
+    
+    Cheers to more beautiful moments ahead! ✨🎈
+    
+    #birthday #tangerang #BerkantTurnsThree #BerkantIsThree #Berkant3rdBirthday`,
     instagramUrl: 'https://www.instagram.com/p/Ddy-wNJk8PD/',
   },
+
 
   // 11. Event Reel - Tasyakuran & Aqiqah Baby
   {
@@ -409,11 +625,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta',
     client: 'Keluarga Baby',
-    description: 'Video reel khidmat dan penuh haru dokumentasi tasyakuran aqiqah sang buah hati, momen pemotongan rambut, dan lantunan doa kebaikan keluarga.',
+    description: `Your hair, your eyes, your lips…
+    and your name. 🤍
+    
+    Semua tentangnya adalah doa yang di titipkan kepada Allah.
+    
+    #fypotret #tasyakuran #baby #indonesia #jakarta`,
     instagramUrl: 'https://www.instagram.com/reel/DdjhHhOz7Am/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v42_DdjhHhOz7Am.mp4',
   },
+
 
   // 12. Birthday Reel - Chayra's Birthday Party Highlight
   {
@@ -425,11 +647,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Chayra & Family',
-    description: 'Highlight video reel pesta ulang tahun meriah putri kecil Chayra, momen tiup lilin kue karakter manis dan kehangatan sanak saudara.',
+    description: `Happy Birthday Chayra ✨
+    
+    #happybirthday #birthday #jasafoto #jasavideo #fyp`,
     instagramUrl: 'https://www.instagram.com/reel/DdiavVAz1HK/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v43_DdiavVAz1HK.mp4',
   },
+
 
   // 13. Birthday - Shayra Cinnamoroll Birthday
   {
@@ -441,9 +666,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Shayra & Family',
-    description: 'Keceriaan putri kecil di depan kue ulang tahun bertingkat karakter Cinnamoroll favorit bertabur balon meriah.',
+    description: `Happy Birthday, Chayra! 🎂🎈✨
+    Semoga Chayra selalu sehat, ceria, bahagia, dan tumbuh menjadi anak hebat yang penuh kebaikan
+    
+    ✨ Alhamdulillah, sesi birthday Chayra kemarin berjalan dengan penuh keceriaan dan momen manis 🤍🎂
+    
+    Terima kasih sudah mempercayakan kami untuk mengabadikan hari spesial Chayra. Semoga
+    
+    #FYPotret #BirthdayChayra #BirthdayParty #KidsBirthday #BirthdayPhotography`,
     instagramUrl: 'https://www.instagram.com/p/DdbXbC5FDdp/',
   },
+
 
   // 14. Event - Syukuran & Momen Keluarga Besar
   {
@@ -455,9 +688,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Keluarga Besar',
-    description: 'Kolase kebahagiaan momen kumpul keluarga besar, penyerahan bingkisan syukuran, dan senyum guyub generasi.',
+    description: `Satu langkah kecil menuju perjalanan yang lebih panjang. 🤍 Engagement Dimas & Faradila
+    
+    Mengabadikan momen penuh doa, restu, dan kebahagiaan dalam sebuah perjalanan menuju hari yang istimewa.
+    
+    Selamat atas langkah barunya. Semoga segala proses menuju hari bahagia dilancarkan dan dipenuhi keberkahan. ✨
+    
+    #FYPotret #Engagement #EngagementDay #EngagementMoment #Lamaran Prewedding CoupleSession`,
     instagramUrl: 'https://www.instagram.com/p/DdWVs71FI2a/',
   },
+
 
   // 15. Birthday Reel - Elegant Milestone Birthday
   {
@@ -469,11 +709,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta',
     client: 'Birthday Milestone Client',
-    description: 'Video reel sinematik pesta perayaan ulang tahun elegan dengan lighting hangat, dekorasi premium, dan kebersamaan keluarga yang tak terlupakan.',
+    description: `Happy birthday! 🎂✨
+    Semoga di usia yang baru, semakin banyak hal baik yang datang, doa-doa yang perlahan terwujud, dan kebahagiaan yang nggak pernah ada habisnya. Semoga selalu dikelilingi orang-orang yang tulus dan disayangi dengan cara yang paling indah. 🤍
+    
+    Wishing you nothing but happiness, love, and beautiful moments ahead. 🥂✨
+    
+    #happybirthday #birthday #birthdayvibes #ulangtahun #fyp`,
     instagramUrl: 'https://www.instagram.com/reel/DdT7VcKhZHA/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v44_DdT7VcKhZHA.mp4',
   },
+
 
   // 16. Birthday/Event - Aqiqah Baby Kavi Noah
   {
@@ -485,11 +731,18 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang Selatan',
     client: 'Keluarga Baby Kavi',
-    description: 'Prosesi syukuran aqiqah penuh berkah, kedua orang tua menggendong sang buah hati di depan dekorasi penuh doa.',
+    description: `Mashaallah Tabarakallah ✨
+    A Blessed Beginning 🤍
+    Tasyakuran Aqiqah — Putra dari ka @desvitaemiliaw
+    
+    Semoga menjadi awal perjalanan yang penuh keberkahan, kesehatan, kebahagiaan, dan kebaikan. Semoga Allah senantiasa melindungi dan memberikan keberkahan untuk si kecil dan keluarga. 🤲🏻✨
+    
+    #TasyakuranAqiqah #Aqiqah #MomenAqiqah #VideoAqiqah #DokumentasiAqiqah`,
     instagramUrl: 'https://www.instagram.com/reel/DdRfHShTr7Q/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v32_DdRfHShTr7Q.mp4',
   },
+
 
   // 17. Birthday - Newborn Baby Pure Innocence
   {
@@ -501,9 +754,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang Home Session',
     client: 'Baby Newborn',
-    description: 'Kolase potret kedamaian bayi mungil yang tertidur lelap, jari-jemari mungil yang menggenggam, dan kepolosan alami.',
+    description: `Mashaallah, Tabarakallah
+    Tasyakuran Aqiqah putra dari Kak @desvitaemiliaw
+    
+    Momen Penuh Syukur dan Kebahagiaan 🤍
+    
+    Mengabadikan sebuah momen istimewa yang dipenuhi rasa syukur, doa, dan kebahagiaan bersama keluarga tercinta. Semoga menjadi awal dari perjalanan yang penuh keberkahan dan kebaikan. 🤲🏻✨
+    
+    #TasyakuranAqiqah #Aqiqah #AqiqahAnak #MomenAqiqah #FotograferIndonesia`,
     instagramUrl: 'https://www.instagram.com/p/DdRYl8cE56c/',
   },
+
 
   // 18. Engagement - Alfathan & Arova Monokrom Editorial
   {
@@ -515,9 +776,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Potret hangat lamaran Mas Alfathan & Kak Arova di Tangerang dengan sentuhan monokrom editorial dan bingkai artistic swirl.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/',
   },
+
 
   // 19. Engagement Carousel - Storyboard Kolase 9 Frame
   {
@@ -529,9 +795,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Kolase 9 frame momen bahagia lamaran Mas Alfathan & Kak Arova, mulai dari tatapan penuh kasih hingga tawa bahagia berdua.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=2',
   },
+
 
   // 20. Engagement Carousel - Penyerahan Hantaran & Seserahan
   {
@@ -543,9 +814,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Dokumentasi khidmat serah terima seserahan pernikahan dan buket bunga segar sebagai simbol ikatan restu dua keluarga.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=3',
   },
+
 
   // 21. Engagement Carousel - Penyematan Cincin & Doa Restu
   {
@@ -557,9 +833,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Momen sakral penyematan cincin tunangan di jari manis dan senyum penuh haru kebersamaan keluarga inti.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=4',
   },
+
 
   // 22. Engagement Carousel - The Rings & The Promise
   {
@@ -571,9 +852,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Pose simbol cinta lambang hati dan potret makro cincin tunangan emas yang elegan di atas genggaman tangan.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=5',
   },
+
 
   // 23. Engagement Carousel - Outdoor Garden Brick Wall Portrait
   {
@@ -585,9 +871,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Potret berdua di latar dinding bata estetis dengan buket bunga pastel nan manis dan senyum semringah.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=6',
   },
+
 
   // 24. Engagement Carousel - Modern Architectural Stairs Session
   {
@@ -599,9 +890,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang, Indonesia',
     client: 'Alfathan & Arova',
-    description: 'Sesi foto estetis di tangga arsitektural modern memperlihatkan keanggunan busana batik dan kebaya lamaran.',
+    description: `A new chapter in a journey worth sharing. 🤍💍
+    
+    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
+    
+    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
     instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=7',
   },
+
 
   // 25. Birthday - 5th Birthday Anak & Ibu
   {
@@ -613,9 +909,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Ulang Tahun ke-5',
-    description: 'Kehangatan pelukan dan ciuman tulus seorang ibu merayakan pertambahan usia ke-5 jagoan kecilnya dengan balon angka emas.',
+    description: `✋ High five untuk Wira! happy Birthday 🎉
+    
+    Hari spesial, penuh tawa, kebahagiaan, dan momen-momen seru bersama orang-orang tersayang. 🥳🎂
+    
+    Selamat ulang tahun, Wira! Semoga selalu diberikan kebahagiaan, kesehatan, dan kesuksesan. ✨ @cintiyadarmawan
+    
+    #BirthdayWira #HappyBirthday #BirthdayParty #BirthdayMoment #BirthdayVibes`,
     instagramUrl: 'https://www.instagram.com/p/DdBp9ZBk5QW/',
   },
+
 
   // 26. Prewedding - Annisa & Daffa Lying on Grass
   {
@@ -627,9 +930,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Taman Asri BSD',
     client: 'Annisa & Daffa',
-    description: 'Komposisi simetris romantis berbaring santai di atas rumput hijau dengan sentuhan busana putih dan kain veil anggun.',
+    description: `Prewedding session kak Annisa & mas Daffa 📸
+    
+    Mengabadikan cerita, tawa, dan momen sederhana sebelum menuju hari yang istimewa. ✨📸
+    
+    #PreweddingAnnisaDaffa #AnnisaDaffa #Prewedding #PreweddingSession #PreweddingPhotography`,
     instagramUrl: 'https://www.instagram.com/p/DcigMdxFDWZ/',
   },
+
 
   // 27. Event - Badminton Turnamen
   {
@@ -641,9 +949,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Hall Badminton Serpong',
     client: 'Turnamen Badminton PLN',
-    description: 'Aksi lincah dan canda tawa sehat pertandingan persahabatan bulutangkis antar pegawai instansi.',
+    description: `MOMENT SERU — BADMINTON 🏆🇮🇩
+    
+    FYPotret ID kembali dipercaya untuk mengabadikan keseruan Badminton PLN Cup Layanan Services Bintaro, Cikupa & Serpong dalam rangka memeriahkan HUT ke-81 Republik Indonesia.
+    
+    One Court. One Spirit. One Champion. 🏸🔥
+    
+    #FYPotretID #MomentChampion #PLNCup #Badminton #BadmintonPhotography SportsPhotography PLN HUTRI81 Bintaro Cikupa Serpong MomenBerharga IndonesiaMerdeka`,
     instagramUrl: 'https://www.instagram.com/p/Dcf3W33lLMT/',
   },
+
 
   // 28. Event - Trofi Bergilir Juara
   {
@@ -655,9 +970,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Serpong, Tangerang Selatan',
     client: 'Juara Turnamen PLN',
-    description: 'Senyum bangga atlet pemenang turnamen berfoto bersama deretan piala kejuaraan bergilir.',
+    description: `One Game. One Spirit. One Champion. 🏆
+    
+    Terima kasih atas kepercayaannya kepada kami  untuk mengabadikan setiap momennya. 🤝📸
+    
+    #FYPotretID #MomentChampion #tangerang #FYPotretID #HUTRI81`,
     instagramUrl: 'https://www.instagram.com/p/Dcf0M6AFLdX/',
   },
+
 
   // 29. Event - Tim Futsal PLN Serpong
   {
@@ -669,9 +989,19 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Lapangan Olahraga Serpong',
     client: 'PLN Unit Layanan Serpong',
-    description: 'Dokumentasi kebersamaan dan kekompakan tim futsal karyawan PLN Serpong dalam rangkaian turnamen kemerdekaan.',
+    description: `Momen Berharga Bersama kami 📸✨
+    
+    Sebuah kehormatan bagi kami untuk dipercaya ikut serta dalam acara PLN Cup Layanan Services Bintaro, Cikupa & Serpong dalam rangka memeriahkan HUT ke-81 Republik Indonesia 🇮🇩
+    
+    Bukan sekadar mengabadikan momen, tetapi menjadi bagian dari cerita, kebersamaan, semangat sportivitas, dan kemeriahan yang tercipta di dalamnya.
+    
+    Terima kasih atas kepercayaan yang diberikan kepada kami . 🙏🏻
+    Sampai jumpa di momen berharga berikutnya! ❤️🤍
+    
+    #FYPotretID #tangerang #PLN #Bintaro #Cikupa`,
     instagramUrl: 'https://www.instagram.com/p/Dcfzob2lAZb/',
   },
+
 
   // 30. Wisuda - Playful Relaxed
   {
@@ -683,9 +1013,12 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Kampus Jakarta',
     client: 'Bella Hendriani Sukma, S.M',
-    description: 'Ekspresi lega dan riang bersandar di pagar kampus memegang map ijazah setelah perjuangan bertahun-tahun kuliah.',
+    description: `Satu tahap selesai, satu langkah lebih dekat menuju impian. ✨
+    
+    #fypotret #fypotretphotography #sidangskripsi #sidang`,
     instagramUrl: 'https://www.instagram.com/p/DcOX1ODFLNM/',
   },
+
 
   // 31. Wisuda - Silhouette & Campus View
   {
@@ -697,9 +1030,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Kampus Jakarta',
     client: 'Bella Hendriani Sukma, S.M',
-    description: 'Pose siluet artistik dari belakang memperlihatkan detail bordir selempang kelulusan dan arsitektur gedung kampus.',
+    description: `Satu momen, satu pencapaian. 🎓✨
+    Selamat atas selesainya sidang! Kak @bellahndrni11_
+    
+    #fypotret #sidangskripsi #graduation #photography #fyp`,
     instagramUrl: 'https://www.instagram.com/p/DcOXf-6J2wG/',
   },
+
 
   // 32. Wisuda - Bella Hendriani Sukma, S.M
   {
@@ -711,9 +1048,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Kampus Jakarta',
     client: 'Bella Hendriani Sukma, S.M',
-    description: 'Sorot kebahagiaan dan kebanggaan mengenakan selempang sarjana manajemen di bawah rindangnya pepohonan kampus.',
+    description: `Mengabadikan satu momen penting setelah perjalanan panjang. 🎓✨
+    
+    Selamat atas selesainya sidang, semoga langkah berikutnya semakin dekat dengan impian. 🤍
+    
+    #fypotret #fypotretphotography #sidangskripsi #graduation`,
     instagramUrl: 'https://www.instagram.com/p/DcOXUqBFA5w/',
   },
+
 
   // 33. Prewedding - Framing Pagar Kawat
   {
@@ -725,9 +1067,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Depok',
     client: 'Pasangan Tunangan',
-    description: 'Sudut pengambilan foto kreatif memanfaatkan tekstur pagar kawat lapangan untuk menonjolkan cincin pertunangan.',
+    description: `A beautiful beginning to forever. 💍✨
+    @sucii.rhmwt
+    
+    Semoga setiap langkahnya dimudahkan, dilancarkan, dan dipenuhi keberkahan. Dan dilancarkan sampai hari H 🤍
+    
+    #Lamaran #Engagement #EngagementMoment #AdayToRemember`,
     instagramUrl: 'https://www.instagram.com/p/Db99wJ8kwty/',
   },
+
 
   // 34. Prewedding - Casual Basket Court Reels
   {
@@ -739,11 +1087,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Depok Outdoor',
     client: 'Pasangan Sporty Romantis',
-    description: 'Sesi foto dan video reels prewedding santai di lapangan basket dengan outfit casual coklat & buket bunga cantik.',
+    description: `A day to remember. 🤍✨
+    
+    Satu hari yang penuh cerita, haru, dan kebahagiaan. Momen yang mungkin hanya terjadi sekali, tapi kenangannya akan tersimpan selamanya. 💍📸
+    
+    Terima kasih kak sudah mempercayakan momen spesial ini bersama kami. Senang bisa menjadi bagian dari cerita indah kalian. 🤍`,
     instagramUrl: 'https://www.instagram.com/reel/Db909O2TBA1/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v20_Db909O2TBA1.mp4',
   },
+
 
   // 35. Prewedding - These Kids Are Getting Engaged
   {
@@ -755,9 +1108,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Depok',
     client: 'Pasangan Ceria',
-    description: 'Konsep foto pertunangan kekinian bertema youthful dengan pose menutup satu mata dan senyum lepas tanpa jaim.',
+    description: `One step closer. 🤍💍
+    @sucii.rhmwt
+    
+    Satu langkah lebih dekat menuju hari yang telah dinantikan. Momen sederhana hari ini, menjadi bagian dari cerita indah yang akan terus dikenang. ✨
+    Terima kasih kak @sucii.rhmwt sudah mempercayakan momen spesial ini bersama FYPotret. 📸🤍`,
     instagramUrl: 'https://www.instagram.com/p/Db9zP8ck52O/',
   },
+
 
   // 36. Lamaran - Say Good Bye / Cincin
   {
@@ -769,9 +1127,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta',
     client: 'Sesi Pertunangan',
-    description: 'Lambaian tangan manis memperlihatkan cincin lamaran dengan konsep editorial modern "A little moment, a lifetime promise".',
+    description: `She said yes. 💍🤍
+    Satu kata yang mengubah cerita menjadi perjalanan baru.
+    
+    Thank you for trusting FYPotret to capture this beautiful beginning. 📸✨
+    #SheSaidYes #Engagement #EngagementMoment #Lamaran #LamaranIndonesia`,
     instagramUrl: 'https://www.instagram.com/p/Db9w6hPz_6r/',
   },
+
 
   // 37. Lamaran - Potret Kebaya Payet
   {
@@ -783,9 +1146,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta',
     client: 'Calon Mempelai Wanita',
-    description: 'Kecantikan memikat dengan balutan kebaya brokat coklat bertabur payet elegan dan riasan lembut natural.',
+    description: `Dari setiap sentuhan brush, detail makeup, sampai finishing look—semuanya punya proses dan cerita tersendiri. 🤍
+    
+    Terima kasih @sucii.rhmwt sudah mempercayakan momen ini bersama FYPotret. 📸✨
+    
+    #FYPotret #BehindTheScene #MakeupBehindTheScene #MakeupArtis`,
     instagramUrl: 'https://www.instagram.com/p/Db9wHXEzixp/',
   },
+
 
   // 38. Lamaran - Makeup Touch-Up
   {
@@ -797,9 +1165,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta Selatan',
     client: 'Calon Pengantin',
-    description: 'Dokumentasi detail persiapan makeup calon mempelai wanita sebelum menyambut kedatangan keluarga besar.',
+    description: `Di balik setiap riasan, ada proses, ketelitian, dan cerita yang nggak selalu terlihat. ✨
+    
+    Terima kasih kak @sucii.rhmwt sudah mengabadikan momen indah ini bersama FYPotret. 🤍
+    
+    #FYPotret #FYPotretPhotography #FotograferIndonesia #FotograferJabodetabek`,
     instagramUrl: 'https://www.instagram.com/p/Db9v6fQzGta/',
   },
+
 
   // 39. Wedding - Pamer Cincin Kawin
   {
@@ -811,9 +1184,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Pengantin Bahagia',
-    description: 'Simbol ikatan cinta suci abadi, kilau cincin kawin di jari manis kedua mempelai yang saling tersenyum hangat.',
+    description: `Satu hari yang penuh cinta, sejuta kenangan yang akan selalu dikenang. 🤍
+    
+    Terima kasih telah mempercayakan FY Potret untuk mengabadikan momen istimewa ini. Merupakan sebuah kehormatan bisa menjadi bagian dari hari bahagia ini
+    
+    #FYPotret #FYPotretWedding #WeddingIndonesia #WeddingPhotographer #WeddingPhotography #WeddingCouple #WeddingVibes #HariPernikahan #Pernikahan`,
     instagramUrl: 'https://www.instagram.com/p/DbnAcriE8hH/',
   },
+
 
   // 40. Wedding - Pamer Buku Nikah
   {
@@ -825,9 +1203,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang Selatan',
     client: 'Sepasang Pengantin Baru',
-    description: 'Senyum lega dan sumringah kedua mempelai memperlihatkan buku nikah resmi sebagai tanda sah menjadi suami istri.',
+    description: `Akhirnya, buku baru dimulai. 🤍📖 Bukan sekadar buku, tetapi awal dari perjalanan seumur hidup yang dipenuhi cinta, doa, dan kebersamaan. Selamat atas pernikahannya, semoga setiap halaman dipenuhi kebahagiaan dan keberkahan. 💍✨
+    
+    Terima kasih telah mempercayakan FY Potret untuk mengabadikan momen spesial kalian. Semoga kenangan indah ini selalu abadi. 📸✨
+    
+    #FYPotret #Wedding #WeddingPhotography #WeddingPhotographer #WeddingDay #JustMarried #HappyWedding #Pernikahan #PernikahanIndonesia #FotoPernikahan #WeddingMoment #WeddingPortrait #LoveStory #Pengantin #MomenBahagia #CaptureTheMoment #ForeverStartsNow #CoupleGoals #AkadNikah #WeddingInspiration`,
     instagramUrl: 'https://www.instagram.com/p/DbnAQxzk_XR/',
   },
+
 
   // 41. Wedding - Sungkeman Akad
   {
@@ -839,9 +1222,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang',
     client: 'Prosesi Akad Nikah',
-    description: 'Momen sakral dan penuh haru memohon doa restu kepada orang tua sebelum melangkah ke lembaran baru pernikahan.',
+    description: `Selamat atas pernikahannya! 🤍
+    selalu dipenuhi kebahagiaan, keberkahan, dan cinta yang tak pernah pudar. Selamat menempuh hidup baru! 💍✨
+    
+    Terima kasih telah memilih FY Potret untuk mengabadikan momen indah kalian. 🤍
+    
+    #FYPotret #WeddingPhotography #WeddingPhotographer #WeddingDay #HappyWedding #JustMarried #Pengantin #Pernikahan #MomenBahagia #WeddingMoment #LoveStory #CoupleGoals #WeddingInspiration #FotoPernikahan #JasaFotografi #WeddingPortrait #IndonesiaWedding #WeddingIndonesia #CaptureTheMoment #foreverstartsnow`,
     instagramUrl: 'https://www.instagram.com/p/Dbm_6vmEwfE/',
   },
+
 
   // 42. Wedding - Dian & Rizky Pelaminan
   {
@@ -853,9 +1242,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Pelaminan Tradisional Modern',
     client: 'Dian & Rizky',
-    description: 'Momen duduk bersanding di pelaminan indah disaksikan seluruh keluarga dan sahabat.',
+    description: `💐 Happy Wedding, Tante Chris!
+    Selamat atas hari bahagia ini. Semoga ikatan pernikahan yang telah dipersatukan dipenuhi dengan cinta yang tulus, kebahagiaan yang tak berujung, serta keberkahan dalam setiap langkah kehidupan bersama. Selamat menempuh hidup baru. ❤️
+    
+    #HappyWedding #WeddingDay #ForeverBeginsToday #HappilyEverAfter #LoveForever #WeddingMoments #FYPotret`,
     instagramUrl: 'https://www.instagram.com/p/DbVNZCJFIJL/',
   },
+
 
   // 43. Wedding - Dian Mahkota Emas
   {
@@ -867,9 +1260,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Gedung Pernikahan Tangerang',
     client: 'Pengantin Wanita Dian',
-    description: 'Detail keindahan rias pengantin, mahkota tiara, dan busana berpayet emas elegan.',
+    description: `✨ Happy Wedding, Tante Chris!
+    Wishing you both a lifetime filled with love, laughter, and endless happiness.
+    
+    #HappyWedding #WeddingDay #ForeverBeginsToday #HappilyEverAfter #LoveForever #WeddingMoments #FYPotret`,
     instagramUrl: 'https://www.instagram.com/p/DbVNIwIFLbn/',
   },
+
 
   // 44. Wedding - Dian & Rizky
   {
@@ -881,9 +1278,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Tangerang Selatan',
     client: 'Dian & Rizky',
-    description: 'Potret intim pengantin berbusana adat kuning emas dengan buket bunga mawar merekah.',
+    description: `💍 Happy Wedding, Tante Chris!
+    Selamat menempuh perjalanan hidup yang baru. Semoga cinta, kebahagiaan, kesehatan, dan keberkahan selalu menyertai setiap langkah Tante dan pasangan. Semoga menjadi keluarga yang harmonis hingga selamanya. 🤍
+    
+    #HappyWedding #WeddingDay #ForeverBeginsToday #HappilyEverAfter #LoveForever #WeddingMoments #FYPotret`,
     instagramUrl: 'https://www.instagram.com/p/DbVM3ScFJoX/',
   },
+
 
   // 45. Wisuda - Rooftop Skyline
   {
@@ -895,9 +1296,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta Skyline Rooftop',
     client: 'Wisudawati Glamour',
-    description: 'Potret glamor wisudawati berbalut kebaya merah marun di bawah langit biru kota Jakarta.',
+    description: `🎓 Rayakan Momen Wisudamu!
+    
+    Setiap lembar tugas, setiap malam begadang, setiap tantangan, hingga akhirnya hari ini tiba.
+    
+    #FYPOTRET #HappyGraduation #GraduationPhotography #Wisuda #GraduationDay #FotoWisuda #GraduationPortrait #PortraitPhotography #CelebrateAchievement #CaptureTheMoment #PhotographerIndonesia`,
     instagramUrl: 'https://www.instagram.com/p/DbOWVZSk3Xz/',
   },
+
 
   // 46. Wisuda - Restu Kedua Orang Tua
   {
@@ -909,9 +1315,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Rooftop Wisuda Senayan',
     client: 'Keluarga Besar Sarah',
-    description: 'Sentuhan tangan ayah di pundak putrinya dengan tatapan bangga dan senyum teduh sang ibu.',
+    description: `Behind every graduation photo is years of hard work, prayers, and perseverance. 🎓
+    
+    Biarkan setiap pelukan, tawa, dan air mata bahagia menjadi kenangan yang tak terlupakan melalui setiap jepretan FYPOTRET.
+    
+    #FYPOTRET #HappyGraduation #GraduationPhotography #Wisuda #GraduationDay #FotoWisuda #GraduationPortrait #PortraitPhotography #CelebrateAchievement #CaptureTheMoment #PhotographerIndonesia #FotograferDepok`,
     instagramUrl: 'https://www.instagram.com/p/DbOWOPjE9jN/',
   },
+
 
   // 47. Wisuda - Dynamic Fashion 05mm Look
   {
@@ -923,9 +1334,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Stadion Outdoor Jakarta',
     client: 'Wisudawati Sarah',
-    description: 'Pose dinamis modern dengan angle lebar (05mm look) memperlihatkan keanggunan jubah toga di lapangan terbuka.',
+    description: `🎓 Satu Bab Berakhir, Bab Baru Dimulai.
+    
+    Wisuda bukanlah akhir dari perjalanan, melainkan awal dari petualangan yang lebih besar.
+    
+    #FYPOTRET #Graduation #HappyGraduation #Wisuda2026 #FotoWisuda #GraduationPhotoshoot #PhotographerIndonesia #FotograferDepok #CaptureYourStory #PortraitPhotography`,
     instagramUrl: 'https://www.instagram.com/p/DbOWBkKE80l/',
   },
+
 
   // 48. Wisuda - Pelukan Ibu
   {
@@ -937,9 +1353,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Lobi Wisuda Jakarta',
     client: 'Ibu & Wisudawati',
-    description: 'Ekspresi cinta tulus dan pelukan hangat seorang ibu mendampingi putrinya meraih gelar sarjana.',
+    description: `Karena hari wisuda hanya datang sekali, tetapi kenangannya akan selalu hidup dalam setiap foto.
+    
+    📸 Graduation Session Available
+    📍 Jakarta • Jabodetabek
+    
+    #FYPOTRET #HappyGraduation #GraduationPhotography #GraduationPhotos #Wisuda #FotoWisuda #FotograferWisuda #FotograferDepok #PhotographerIndonesia`,
     instagramUrl: 'https://www.instagram.com/p/DbOV1UJk41A/',
   },
+
 
   // 49. Wisuda - Lailonas Glow
   {
@@ -951,9 +1373,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Gedung Wisuda Jakarta',
     client: 'Wisudawati Lailonas',
-    description: 'Potret senyum anggun wisudawati dengan latar belakang bunga selebrasi kelulusan.',
+    description: `🎓 Selamat Wisuda! ✨
+    
+    Setiap langkah kecil yang kamu ambil telah membawamu sampai di titik ini.
+    
+    #FYPOTRET #HappyGraduation #GraduationPhotography #GraduationPhotos #Wisuda #FotoWisuda #FotograferWisuda #FotograferDepok #PhotographerIndonesia #PortraitPhotography #GraduationMemories`,
     instagramUrl: 'https://www.instagram.com/p/DbOVvb6E70Q/',
   },
+
 
   // 50. Wisuda - Ch Lailonas, S.Ak Family
   {
@@ -965,9 +1392,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspect: 'tall',
     location: 'Jakarta Convention Center',
     client: 'Ch Lailonas, S.Ak',
-    description: 'Momen penuh kebanggaan bersama ibunda dan keluarga saat prosesi wisuda dengan balutan kebaya biru elegan.',
+    description: `🎓 Rayakan Momen Wisudamu Bersama Orang Terkasih 🤍
+    
+    #FYPOTRET #HappyGraduation #Graduation #GraduationPhotography #GraduationPhotoshoot #GraduationDay #GraduationPortrait #Wisuda #Wisuda2026 #FotoWisuda #JasaFotoWisuda #PhotographerIndonesia #FotograferDepok`,
     instagramUrl: 'https://www.instagram.com/p/DbOVpy9kzB1/',
-  },
+  }
 ];
 
 export const PRICING_PACKAGES: PricingPackage[] = [

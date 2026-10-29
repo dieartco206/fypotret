@@ -188,7 +188,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             <h4 className="text-sm sm:text-lg font-serif font-bold text-white truncate">
               {currentItem.title}
             </h4>
-            <p className="text-[11px] sm:text-xs text-zinc-400 mt-0.5 line-clamp-1 sm:line-clamp-none">
+            <p className="text-[11px] sm:text-xs text-zinc-300 mt-1 line-clamp-2 sm:line-clamp-4 max-h-24 overflow-y-auto whitespace-pre-line leading-relaxed scrollbar-thin">
               {currentItem.description}
             </p>
           </div>
