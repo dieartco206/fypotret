@@ -37,6 +37,15 @@ export interface Testimonial {
   rating: number;
 }
 
+export const CONTACT_INFO = {
+  phone: '+6281539323244',
+  phoneDisplay: '+62 815-3932-3244',
+  whatsappNumber: '6281539323244',
+  whatsappUrl: 'https://wa.me/6281539323244',
+  instagram: 'https://instagram.com/fypotretid',
+  instagramHandle: '@fypotretid',
+} as const;
+
 export const CATEGORIES = [
   { id: 'all', label: 'Semua', icon: 'Images' },
   { id: 'graduation', label: 'Wisuda', icon: 'GraduationCap' },

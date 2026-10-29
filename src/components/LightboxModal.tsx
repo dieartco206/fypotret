@@ -158,50 +158,30 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Top Header Bar */}
-      <div className="w-full px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between z-30 bg-gradient-to-b from-black/90 via-black/60 to-transparent">
-        <div className="flex items-center gap-2">
-          <span className="text-xs sm:text-sm font-semibold text-gold-400 font-serif">
-            FYPotret Gallery
+      {/* Top Header Bar - Clean, spacious & uncluttered */}
+      <div className="w-full px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between z-30 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-xs sm:text-sm font-semibold text-gold-400 font-serif tracking-wide truncate">
+            FYPotret
           </span>
-          <span className="hidden sm:inline text-zinc-600">•</span>
-          <span className="hidden sm:inline text-xs text-zinc-400 font-mono">
-            Karya {currentIndex + 1} dari {items.length}
-          </span>
-          {slides && (
-            <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-950/80 text-amber-300 border border-amber-500/40 flex items-center gap-1 shadow-sm">
-              <Images className="w-3 h-3 text-amber-400" />
-              <span>Foto {currentSlideIndex + 1} / {slides.length}</span>
+          <span className="text-zinc-600">•</span>
+          {slides ? (
+            <span className="text-[11px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
+              Foto {currentSlideIndex + 1} dari {slides.length}
+            </span>
+          ) : (
+            <span className="text-[11px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
+              Karya {currentIndex + 1} dari {items.length}
             </span>
           )}
-        </div>
-
-        {/* Mobile Central Stepper (Single unified arrows) */}
-        <div className="flex sm:hidden items-center gap-1 bg-zinc-900/90 rounded-full px-2 py-1 border border-white/10 backdrop-blur-md">
-          <button
-            onClick={handleUnifiedPrev}
-            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90 cursor-pointer"
-            aria-label="Sebelumnya"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-          <span className="text-[11px] font-mono text-gold-400 px-1.5 font-bold">
-            {slides ? `${currentSlideIndex + 1} / ${slides.length}` : `${currentIndex + 1} / ${items.length}`}
-          </span>
-          <button
-            onClick={handleUnifiedNext}
-            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90 cursor-pointer"
-            aria-label="Selanjutnya"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
         </div>
 
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="p-2 sm:p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white transition-all cursor-pointer min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] flex items-center justify-center border border-white/10 active:scale-95"
+          className="p-2 sm:p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white transition-all cursor-pointer min-w-[38px] min-h-[38px] sm:min-w-[44px] sm:min-h-[44px] flex items-center justify-center border border-white/10 active:scale-95"
           aria-label="Tutup Fullscreen"
+          title="Tutup"
         >
           <X className="w-5 h-5" />
         </button>
@@ -223,22 +203,12 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               Browser Anda tidak mendukung pemutar video HTML5.
             </video>
           ) : (
-            <>
-              <img
-                key={`${currentItem.id}-${currentSlideIndex}`}
-                src={activeImageSrc}
-                alt={`${currentItem.title} - Slide ${currentSlideIndex + 1}`}
-                className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
-              />
-
-              {/* Discreet Counter Badge on Top-Right of Photo */}
-              {slides && (
-                <div className="absolute top-2.5 right-2.5 z-20 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 text-[10px] sm:text-xs font-mono font-bold flex items-center gap-1.5 shadow-lg">
-                  <Images className="w-3.5 h-3.5 text-gold-400" />
-                  <span>{currentSlideIndex + 1} / {slides.length}</span>
-                </div>
-              )}
-            </>
+            <img
+              key={`${currentItem.id}-${currentSlideIndex}`}
+              src={activeImageSrc}
+              alt={`${currentItem.title} - Slide ${currentSlideIndex + 1}`}
+              className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
+            />
           )}
         </div>
 

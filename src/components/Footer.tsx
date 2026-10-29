@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, MapPin, Heart } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
+import { CONTACT_INFO } from '../data/portfolioData';
 
 export const Footer: React.FC = () => {
   return (
@@ -80,13 +81,13 @@ export const Footer: React.FC = () => {
               </a>
 
               <a
-                href="https://wa.me/6281234567890"
+                href={CONTACT_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-200 hover:text-emerald-400 transition-all border border-white/5 text-xs"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400" />
-                <span>WhatsApp: Booking & Konsultasi</span>
+                <span>WhatsApp: {CONTACT_INFO.phoneDisplay}</span>
               </a>
             </div>
           </div>

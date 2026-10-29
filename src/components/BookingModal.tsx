@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { PricingPackage, PortfolioItem } from '../data/portfolioData';
+import { CONTACT_INFO, type PricingPackage, type PortfolioItem } from '../data/portfolioData';
 import { X, Camera, Calendar, MapPin, User, Heart, MessageSquare } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
 
@@ -76,8 +76,8 @@ Saya ingin menanyakan ketersediaan jadwal dan reservasi sesi foto:
 Apakah jadwal pada tanggal tersebut masih tersedia? Mohon informasi ketersediaan dan detail selanjutnya. Terima kasih!`;
 
     const encodedText = encodeURIComponent(text);
-    // Standard phone link for FYPotret (WhatsApp)
-    const waUrl = `https://wa.me/6281234567890?text=${encodedText}`;
+    // WhatsApp contact for FYPotret
+    const waUrl = `https://wa.me/${CONTACT_INFO.whatsappNumber}?text=${encodedText}`;
     window.open(waUrl, '_blank');
     onClose();
   };
