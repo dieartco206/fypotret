@@ -158,30 +158,39 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Top Header Bar - Clean, spacious & uncluttered */}
-      <div className="w-full px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between z-30 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
-        <div className="flex items-center gap-2 min-w-0">
-          <span className="text-xs sm:text-sm font-semibold text-gold-400 font-serif tracking-wide truncate">
-            FYPotret
-          </span>
-          <span className="text-zinc-600">•</span>
-          {slides ? (
-            <span className="text-[11px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
-              Foto {currentSlideIndex + 1} dari {slides.length}
+      {/* Top Header Bar - Clean, spacious & uncluttered with Official Logo */}
+      <div className="w-full px-4 py-2.5 sm:px-6 sm:py-3.5 flex items-center justify-between z-30 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden bg-obsidian-900 border border-gold-500/80 flex items-center justify-center shadow-md shadow-gold-500/20 flex-shrink-0">
+            <img
+              src="/logo.jpg"
+              alt="FYPotret Official Logo"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex items-center gap-1.5 min-w-0">
+            <span className="text-xs sm:text-sm font-black tracking-tight font-sans text-gold-400">
+              FYP<span className="text-white font-bold">otret</span>
             </span>
-          ) : (
-            <span className="text-[11px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
-              Karya {currentIndex + 1} dari {items.length}
-            </span>
-          )}
+            <span className="text-zinc-600">•</span>
+            {slides ? (
+              <span className="text-[10px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
+                Foto {currentSlideIndex + 1} / {slides.length}
+              </span>
+            ) : (
+              <span className="text-[10px] sm:text-xs font-mono text-zinc-300 font-medium whitespace-nowrap">
+                Karya {currentIndex + 1} / {items.length}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="p-2 sm:p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white transition-all cursor-pointer min-w-[38px] min-h-[38px] sm:min-w-[44px] sm:min-h-[44px] flex items-center justify-center border border-white/10 active:scale-95"
+          className="p-2 sm:p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white transition-all cursor-pointer min-w-[36px] min-h-[36px] sm:min-w-[42px] sm:min-h-[42px] flex items-center justify-center border border-white/10 active:scale-95"
           aria-label="Tutup Fullscreen"
-          title="Tutup"
+          title="Tutup (Esc)"
         >
           <X className="w-5 h-5" />
         </button>

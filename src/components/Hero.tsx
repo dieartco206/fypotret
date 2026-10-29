@@ -25,14 +25,14 @@ export const Hero: React.FC<HeroProps> = () => {
       {/* Champagne Gold Halo behind Headline (Hangat Mewah, Tidak Gelap Gulita) */}
       <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 lg:py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 md:py-10 lg:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
-          <div className="lg:col-span-6 text-center lg:text-left">
+          <div className="md:col-span-6 text-center md:text-left">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
+            <h1 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
               <span className="block sm:inline">Abadikan Momen</span>{' '}
               <span className="block sm:inline">Berharga Bersama</span>{' '}
               <span className="italic font-normal animate-gold-flow block sm:inline-block">
@@ -41,31 +41,31 @@ export const Hero: React.FC<HeroProps> = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed animate-text-reveal animation-delay-200">
+            <p className="text-sm sm:text-base md:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto md:mx-0 leading-relaxed animate-text-reveal animation-delay-200">
               Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
           </div>
 
           {/* Right Column: Staggered Dual-Column Editorial Showcase (Enlarged & Balanced) */}
-          <div className="lg:col-span-6 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[370px] lg:max-w-[410px] xl:max-w-[440px]">
+          <div className="md:col-span-6 relative mt-6 md:mt-0 flex justify-center md:justify-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[370px] lg:max-w-[420px] xl:max-w-[450px]">
               
               {/* Subtle Ambient Golden Halo */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[420px] h-[320px] sm:h-[420px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
 
-              {/* 2-Column Staggered Grid (Mobile-friendly: 2 columns side by side) */}
+              {/* 2-Column Staggered Grid (Mobile & iPad friendly: 2 columns side by side) */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4 items-start">
                 
                 {/* Column 1 with Subtle Float */}
                 <div className="flex flex-col gap-3 sm:gap-4 animate-float-a">
-                  {/* 01. Wedding & Akad */}
+                  {/* 01. Wedding & Akad: Rama & Sahrani */}
                   <a
                     href="#gallery"
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-100"
                   >
                     <img
-                      src="/portfolio/p7_DbVM3ScFJoX.jpg"
-                      alt="Wedding & Akad Dian & Rizky - FYPotret"
+                      src="/portfolio/p_rama_12.jpg"
+                      alt="Wedding Rama & Sahrani - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="eager"
                     />
@@ -75,30 +75,30 @@ export const Hero: React.FC<HeroProps> = () => {
                         Wedding
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Dian & Rizky
+                        Rama & Sahrani
                       </p>
                     </div>
                   </a>
 
-                  {/* 02. Lamaran & Prewedding */}
+                  {/* 02. Kids & Birthday: Rio 2nd Birthday */}
                   <a
                     href="#gallery"
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-250"
                   >
                     <img
-                      src="/portfolio/p39_DeKDqlqk26K.jpg"
-                      alt="Lamaran Sarah & Singgih - FYPotret"
-                      className="w-full h-full object-cover object-center scale-125 group-hover:scale-135 transition-transform duration-700 ease-out"
+                      src="/portfolio/p_rio_06.jpg"
+                      alt="Kids & Birthday Rio - FYPotret"
+                      className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
                       decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
                     <div className="absolute bottom-2.5 left-2.5 sm:bottom-3.5 sm:left-3.5 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
-                        Lamaran
+                        Birthday
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Sarah & Singgih
+                        Rio 2nd Birthday
                       </p>
                     </div>
                   </a>
@@ -106,46 +106,46 @@ export const Hero: React.FC<HeroProps> = () => {
 
                 {/* Column 2 (Offset / Staggered down) with Complementary Float */}
                 <div className="flex flex-col gap-3 sm:gap-4 pt-3.5 sm:pt-5 animate-float-b">
-                  {/* 03. Wisuda Solo */}
+                  {/* 03. Sacred Vows: Putra & Putri (Batavia Cafe Kota Tua) */}
                   <a
                     href="#gallery"
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-200"
                   >
                     <img
-                      src="/portfolio/p2_DbOVvb6E70Q.jpg"
-                      alt="Wisuda Ch Lailonas - FYPotret"
+                      src="/portfolio/p58_DewhdRwlMg_07_shoulder_rest.jpg"
+                      alt="Sacred Vows Putra & Putri - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
                     <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
-                        Wisuda
+                        Akad Nikah
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Graduation Solo
+                        Putra & Putri
                       </p>
                     </div>
                   </a>
 
-                  {/* 04. Wisuda Outdoor / Dynamic Portrait */}
+                  {/* 04. Event & Hangout: Blok M Weekend Stroll */}
                   <a
                     href="#gallery"
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-350"
                   >
                     <img
-                      src="/portfolio/p4_DbOWBkKE80l.jpg"
-                      alt="Wisuda Dynamic Portrait - FYPotret"
+                      src="/portfolio/p62_DeeRlPGlFnm_05_street_walk.jpg"
+                      alt="Weekend Stroll Blok M - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
                     <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
-                        Wisuda
+                        Hangout
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Graduation Moments
+                        Blok M Weekend
                       </p>
                     </div>
                   </a>
