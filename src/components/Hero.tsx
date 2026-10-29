@@ -112,7 +112,7 @@ export const Hero: React.FC<HeroProps> = () => {
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-200"
                   >
                     <img
-                      src="/portfolio/p58_DewhdRwlMg_07_shoulder_rest.jpg"
+                      src="/portfolio/p52_DewhdRwlMg_01_seserahan.jpg"
                       alt="Sacred Vows Putra & Putri - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
