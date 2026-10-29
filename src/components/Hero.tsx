@@ -25,14 +25,14 @@ export const Hero: React.FC<HeroProps> = () => {
       {/* Champagne Gold Halo behind Headline (Hangat Mewah, Tidak Gelap Gulita) */}
       <div className="absolute top-1/4 -left-12 w-[520px] sm:w-[750px] h-[520px] sm:h-[750px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.20)_0%,_rgba(245,158,11,0.08)_40%,_transparent_70%)] pointer-events-none z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 md:py-10 lg:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-6 sm:py-8 lg:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Editorial Headline & Copy */}
-          <div className="md:col-span-6 text-center md:text-left">
+          <div className="lg:col-span-6 text-center lg:text-left">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-white tracking-tight leading-[1.2] sm:leading-[1.12] mb-4 sm:mb-5 animate-text-reveal">
               <span className="block sm:inline">Abadikan Momen</span>{' '}
               <span className="block sm:inline">Berharga Bersama</span>{' '}
               <span className="italic font-normal animate-gold-flow block sm:inline-block">
@@ -41,14 +41,14 @@ export const Hero: React.FC<HeroProps> = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base md:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto md:mx-0 leading-relaxed animate-text-reveal animation-delay-200">
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-300 font-sans max-w-xl mx-auto lg:mx-0 leading-relaxed animate-text-reveal animation-delay-200">
               Jasa foto <strong>Wedding</strong>, <strong>Wisuda</strong>, <strong>Lamaran</strong>, dan <strong>Event</strong> di Jabodetabek. Tim fotografer kami siap memandu pose santai agar hasil foto natural dan berkesan.
             </p>
           </div>
 
-          {/* Right Column: Staggered Dual-Column Editorial Showcase (Enlarged & Balanced) */}
-          <div className="md:col-span-6 relative mt-6 md:mt-0 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[370px] lg:max-w-[420px] xl:max-w-[450px]">
+          {/* Right Column: Staggered Dual-Column Editorial Showcase (Center on Mobile & iPad, Side-by-side on Desktop) */}
+          <div className="lg:col-span-6 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[390px] lg:max-w-[420px] xl:max-w-[450px]">
               
               {/* Subtle Ambient Golden Halo */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[420px] h-[320px] sm:h-[420px] bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.14)_0%,_rgba(245,158,11,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
