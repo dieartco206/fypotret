@@ -50,7 +50,7 @@ export const HIGHLIGHT_STORIES = [
   {
     id: 'graduation',
     title: 'Wisuda',
-    subtitle: 'Graduation Squad',
+    subtitle: 'Graduation Moments',
     iconName: 'GraduationCap',
     image: '/portfolio/p4_DbOWBkKE80l.jpg',
   },
@@ -85,6 +85,82 @@ export const HIGHLIGHT_STORIES = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+
+  // 01. Kids & Birthday - Rio's 2nd Birthday Celebration (Postingan Terbaru IG)
+  {
+    id: 'ig-55',
+    title: 'Happy 2nd Birthday, Rio!',
+    images: [
+      '/portfolio/p_rio_01.jpg',
+      '/portfolio/p_rio_02.jpg',
+      '/portfolio/p_rio_03.jpg',
+      '/portfolio/p_rio_04.jpg',
+      '/portfolio/p_rio_05.jpg',
+      '/portfolio/p_rio_06.jpg',
+      '/portfolio/p_rio_07.jpg',
+      '/portfolio/p_rio_08.jpg',
+      '/portfolio/p_rio_09.jpg',
+      '/portfolio/p_rio_10.jpg',
+      '/portfolio/p_rio_11.jpg',
+      '/portfolio/p_rio_12.jpg',
+      '/portfolio/p_rio_13.jpg',
+    ],
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p_rio_01.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Rio & Keluarga',
+    description: `A day full of smiles, laughter, and unforgettable memories. 🎂🤍
+
+Happy 2nd Birthday, Rio! ✨
+
+Semoga hari spesial ini dipenuhi kebahagiaan, tawa, dan momen indah bersama orang-orang tersayang.
+
+Thank you for letting us capture your special day. 📸
+
+#BirthdayRio #BirthdayMoments #BirthdayPhotography #fypotret`,
+    instagramUrl: 'https://www.instagram.com/p/DfEPr4nEwB8/',
+  },
+
+  // 02. Wedding - Happy Wedding Mas Rama & Kak Sahrani (Postingan Terbaru IG)
+  {
+    id: 'ig-54',
+    title: 'Happy Wedding, Mas Rama & Kak Sahrani',
+    images: [
+      '/portfolio/p_rama_01.jpg',
+      '/portfolio/p_rama_02.jpg',
+      '/portfolio/p_rama_03.jpg',
+      '/portfolio/p_rama_04.jpg',
+      '/portfolio/p_rama_05.jpg',
+      '/portfolio/p_rama_06.jpg',
+      '/portfolio/p_rama_07.jpg',
+      '/portfolio/p_rama_08.jpg',
+      '/portfolio/p_rama_09.jpg',
+      '/portfolio/p_rama_10.jpg',
+      '/portfolio/p_rama_11.jpg',
+      '/portfolio/p_rama_12.jpg',
+      '/portfolio/p_rama_13.jpg',
+      '/portfolio/p_rama_14.jpg',
+      '/portfolio/p_rama_15.jpg',
+      '/portfolio/p_rama_16.jpg',
+    ],
+    category: 'wedding',
+    categoryLabel: 'Wedding & Akad',
+    image: '/portfolio/p_rama_01.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Mas Rama & Kak Sahrani',
+    description: `Happy Wedding, Mas Rama & Kak Sahrani! 🤍✨
+@rmahyp @shrani_hfzh
+
+Selamat menempuh hidup baru bersama. Semoga selalu diberikan kebahagiaan, kelancaran dalam setiap langkah, dan menjadi pasangan yang saling melengkapi hingga hari tua. Sakinah mawadah warohmah ✨🙏🏻
+
+Terima kasih telah mempercayakan momen spesial ini kepada kami 🙏🏻✨.
+
+#wedding #nikah #jakarta #pernikahanindonesia #weddingdream #fypotret`,
+    instagramUrl: 'https://www.instagram.com/p/DezSr2Pk0bA/',
+  },
 
   // 1. Wedding - Seserahan & Akad: Putra & Putri at New Batavia Cafe (Slide 1)
   {

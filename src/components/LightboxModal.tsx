@@ -30,62 +30,50 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
     setCurrentSlideIndex(0);
   }, [currentIndex]);
 
-  const handlePrev = useCallback(() => {
+  const handlePrevItem = useCallback(() => {
     if (currentIndex !== null && items.length > 0) {
       const nextIndex = (currentIndex - 1 + items.length) % items.length;
       onNavigate(nextIndex);
     }
   }, [currentIndex, items.length, onNavigate]);
 
-  const handleNext = useCallback(() => {
+  const handleNextItem = useCallback(() => {
     if (currentIndex !== null && items.length > 0) {
       const nextIndex = (currentIndex + 1) % items.length;
       onNavigate(nextIndex);
     }
   }, [currentIndex, items.length, onNavigate]);
 
-  // Navigate within carousel slides
-  const handlePrevSlide = useCallback(
+  // Single unified navigation: flips through slides first, then moves between posts seamlessly
+  const handleUnifiedPrev = useCallback(
     (e?: React.MouseEvent) => {
       if (e) e.stopPropagation();
-      if (slides) {
-        setCurrentSlideIndex((prev) => (prev > 0 ? prev - 1 : slides.length - 1));
+      if (slides && currentSlideIndex > 0) {
+        setCurrentSlideIndex((prev) => prev - 1);
       } else {
-        handlePrev();
+        handlePrevItem();
       }
     },
-    [slides, handlePrev]
+    [slides, currentSlideIndex, handlePrevItem]
   );
 
-  const handleNextSlide = useCallback(
+  const handleUnifiedNext = useCallback(
     (e?: React.MouseEvent) => {
       if (e) e.stopPropagation();
-      if (slides) {
-        setCurrentSlideIndex((prev) => (prev < slides.length - 1 ? prev + 1 : 0));
+      if (slides && currentSlideIndex < slides.length - 1) {
+        setCurrentSlideIndex((prev) => prev + 1);
       } else {
-        handleNext();
+        handleNextItem();
       }
     },
-    [slides, handleNext]
+    [slides, currentSlideIndex, handleNextItem]
   );
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
-      if (e.key === 'ArrowLeft') {
-        if (slides && currentSlideIndex > 0) {
-          setCurrentSlideIndex((prev) => prev - 1);
-        } else {
-          handlePrev();
-        }
-      }
-      if (e.key === 'ArrowRight') {
-        if (slides && currentSlideIndex < slides.length - 1) {
-          setCurrentSlideIndex((prev) => prev + 1);
-        } else {
-          handleNext();
-        }
-      }
+      if (e.key === 'ArrowLeft') handleUnifiedPrev();
+      if (e.key === 'ArrowRight') handleUnifiedNext();
     };
 
     if (currentIndex !== null) {
@@ -97,7 +85,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [currentIndex, onClose, handlePrev, handleNext, slides, currentSlideIndex]);
+  }, [currentIndex, onClose, handleUnifiedPrev, handleUnifiedNext]);
 
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
@@ -112,26 +100,10 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
     if (deltaX > 40) {
       // Swipe left -> next
-      if (slides) {
-        if (currentSlideIndex < slides.length - 1) {
-          setCurrentSlideIndex((prev) => prev + 1);
-        } else {
-          handleNext();
-        }
-      } else {
-        handleNext();
-      }
+      handleUnifiedNext();
     } else if (deltaX < -40) {
       // Swipe right -> prev
-      if (slides) {
-        if (currentSlideIndex > 0) {
-          setCurrentSlideIndex((prev) => prev - 1);
-        } else {
-          handlePrev();
-        }
-      } else {
-        handlePrev();
-      }
+      handleUnifiedPrev();
     }
     setTouchStartX(null);
   };
@@ -157,27 +129,27 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           {slides && (
             <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-950/80 text-amber-300 border border-amber-500/40 flex items-center gap-1 shadow-sm">
               <Images className="w-3 h-3 text-amber-400" />
-              <span>Slide {currentSlideIndex + 1}/{slides.length}</span>
+              <span>Foto {currentSlideIndex + 1} / {slides.length}</span>
             </span>
           )}
         </div>
 
-        {/* Mobile Central Prev/Next Stepper */}
+        {/* Mobile Central Stepper (Single unified arrows) */}
         <div className="flex sm:hidden items-center gap-1 bg-zinc-900/90 rounded-full px-2 py-1 border border-white/10 backdrop-blur-md">
           <button
-            onClick={handlePrev}
-            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90"
-            aria-label="Karya Sebelumnya"
+            onClick={handleUnifiedPrev}
+            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90 cursor-pointer"
+            aria-label="Sebelumnya"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <span className="text-[11px] font-mono text-gold-400 px-1.5 font-bold">
-            {currentIndex + 1} / {items.length}
+            {slides ? `${currentSlideIndex + 1} / ${slides.length}` : `${currentIndex + 1} / ${items.length}`}
           </span>
           <button
-            onClick={handleNext}
-            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90"
-            aria-label="Karya Selanjutnya"
+            onClick={handleUnifiedNext}
+            className="p-1 rounded-full text-zinc-300 hover:text-white active:scale-90 cursor-pointer"
+            aria-label="Selanjutnya"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -194,8 +166,8 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       </div>
 
       {/* Main Image/Video Viewport Area */}
-      <div className="relative flex-1 w-full max-w-6xl mx-auto flex items-center justify-center px-3 sm:px-12 overflow-hidden my-auto">
-        <div className="relative group/media inline-flex items-center justify-center max-w-full max-h-[52vh] sm:max-h-[64vh]">
+      <div className="relative flex-1 w-full max-w-6xl mx-auto flex items-center justify-center px-3 sm:px-16 overflow-hidden my-auto">
+        <div className="relative group/media inline-flex items-center justify-center max-w-full max-h-[54vh] sm:max-h-[66vh]">
           {currentItem.isVideo ? (
             <video
               key={currentItem.id}
@@ -204,7 +176,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               controls
               autoPlay
               playsInline
-              className="max-h-[52vh] sm:max-h-[64vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 bg-black/80"
+              className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 bg-black/80"
             >
               Browser Anda tidak mendukung pemutar video HTML5.
             </video>
@@ -214,65 +186,44 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 key={`${currentItem.id}-${currentSlideIndex}`}
                 src={activeImageSrc}
                 alt={`${currentItem.title} - Slide ${currentSlideIndex + 1}`}
-                className="max-h-[52vh] sm:max-h-[64vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
+                className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
               />
 
-              {/* In-Image Slide Navigation Arrows for Carousel */}
+              {/* Discreet Counter Badge on Top-Right of Photo */}
               {slides && (
-                <>
-                  <button
-                    onClick={handlePrevSlide}
-                    className="absolute left-2 sm:left-3 p-2 sm:p-2.5 rounded-full bg-black/70 hover:bg-gold-500 hover:text-obsidian-950 text-white backdrop-blur-md transition-all active:scale-90 border border-white/20 cursor-pointer shadow-xl z-20"
-                    aria-label="Foto Slide Sebelumnya"
-                    title="Foto Sebelumnya di Album ini"
-                  >
-                    <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </button>
-
-                  <button
-                    onClick={handleNextSlide}
-                    className="absolute right-2 sm:right-3 p-2 sm:p-2.5 rounded-full bg-black/70 hover:bg-gold-500 hover:text-obsidian-950 text-white backdrop-blur-md transition-all active:scale-90 border border-white/20 cursor-pointer shadow-xl z-20"
-                    aria-label="Foto Slide Selanjutnya"
-                    title="Foto Selanjutnya di Album ini"
-                  >
-                    <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </button>
-
-                  {/* Top-Right Badge on Photo showing Slide Counter */}
-                  <div className="absolute top-2.5 right-2.5 z-20 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 text-[10px] sm:text-xs font-mono font-bold flex items-center gap-1.5 shadow-lg">
-                    <Images className="w-3.5 h-3.5 text-gold-400" />
-                    <span>{currentSlideIndex + 1} / {slides.length}</span>
-                  </div>
-                </>
+                <div className="absolute top-2.5 right-2.5 z-20 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 text-[10px] sm:text-xs font-mono font-bold flex items-center gap-1.5 shadow-lg">
+                  <Images className="w-3.5 h-3.5 text-gold-400" />
+                  <span>{currentSlideIndex + 1} / {slides.length}</span>
+                </div>
               )}
             </>
           )}
         </div>
 
-        {/* Desktop Lateral Navigation Buttons (Between Gallery Items) */}
+        {/* SINGLE Desktop Lateral Navigation Buttons (Tidak double, bersih di samping) */}
         <button
-          onClick={handlePrev}
-          className="hidden sm:flex absolute left-4 p-3 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-white border border-white/15 backdrop-blur-md transition-all cursor-pointer min-w-[48px] min-h-[48px] items-center justify-center active:scale-90 shadow-xl"
-          aria-label="Karya Sebelumnya"
-          title="Karya Sebelumnya"
+          onClick={handleUnifiedPrev}
+          className="hidden sm:flex absolute left-4 p-3 rounded-full bg-obsidian-950/85 hover:bg-gold-500 hover:text-obsidian-950 text-white border border-white/15 backdrop-blur-md transition-all cursor-pointer min-w-[48px] min-h-[48px] items-center justify-center active:scale-90 shadow-xl z-20"
+          aria-label="Sebelumnya"
+          title="Sebelumnya (Slide / Karya)"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
 
         <button
-          onClick={handleNext}
-          className="hidden sm:flex absolute right-4 p-3 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-white border border-white/15 backdrop-blur-md transition-all cursor-pointer min-w-[48px] min-h-[48px] items-center justify-center active:scale-90 shadow-xl"
-          aria-label="Karya Selanjutnya"
-          title="Karya Selanjutnya"
+          onClick={handleUnifiedNext}
+          className="hidden sm:flex absolute right-4 p-3 rounded-full bg-obsidian-950/85 hover:bg-gold-500 hover:text-obsidian-950 text-white border border-white/15 backdrop-blur-md transition-all cursor-pointer min-w-[48px] min-h-[48px] items-center justify-center active:scale-90 shadow-xl z-20"
+          aria-label="Selanjutnya"
+          title="Selanjutnya (Slide / Karya)"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
       </div>
 
-      {/* Interactive Thumbnail Carousel Strip for Multi-Photo Albums */}
+      {/* Clean Interactive Thumbnail Strip without Numbers */}
       {slides && (
-        <div className="w-full max-w-4xl mx-auto px-4 py-2 flex items-center justify-center gap-2 overflow-x-auto scrollbar-none z-30">
-          <div className="flex items-center gap-2 px-2 py-1 bg-black/60 backdrop-blur-md rounded-xl border border-white/10 max-w-full overflow-x-auto">
+        <div className="w-full max-w-4xl mx-auto px-4 py-1.5 flex items-center justify-center gap-2 overflow-x-auto scrollbar-none z-30">
+          <div className="flex items-center gap-2 px-2.5 py-1.5 bg-black/60 backdrop-blur-md rounded-2xl border border-white/10 max-w-full overflow-x-auto scrollbar-none">
             {slides.map((slideImg, sIdx) => (
               <button
                 key={sIdx}
@@ -282,20 +233,18 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 }}
                 className={`relative rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 cursor-pointer ${
                   currentSlideIndex === sIdx
-                    ? 'ring-2 ring-gold-400 scale-105 opacity-100 shadow-lg shadow-gold-500/25 w-10 h-13 sm:w-12 sm:h-16'
-                    : 'opacity-50 hover:opacity-90 border border-white/20 w-8 h-11 sm:w-10 sm:h-13'
+                    ? 'ring-2 ring-gold-400 scale-105 opacity-100 shadow-lg shadow-gold-500/30 w-11 h-14 sm:w-13 sm:h-17'
+                    : 'opacity-50 hover:opacity-90 border border-white/15 w-8 h-11 sm:w-10 sm:h-13'
                 }`}
-                title={`Lihat Slide ${sIdx + 1}`}
+                title={`Lihat Foto ${sIdx + 1}`}
+                aria-label={`Lihat Foto ${sIdx + 1}`}
               >
                 <img
                   src={slideImg}
-                  alt={`Slide ${sIdx + 1}`}
+                  alt={`Thumbnail ${sIdx + 1}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <span className="absolute bottom-0 inset-x-0 bg-black/80 text-[8px] sm:text-[9px] font-mono text-center text-zinc-300 font-bold py-0.5">
-                  {sIdx + 1}
-                </span>
               </button>
             ))}
           </div>

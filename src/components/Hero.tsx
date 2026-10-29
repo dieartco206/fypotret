@@ -128,24 +128,24 @@ export const Hero: React.FC<HeroProps> = () => {
                     </div>
                   </a>
 
-                  {/* 04. Wisuda Squad / Sahabat */}
+                  {/* 04. Wisuda Outdoor / Dynamic Portrait */}
                   <a
                     href="#gallery"
                     className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/50 bg-obsidian-900 shadow-xl shadow-black/60 aspect-[3/4] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-gold-500/20 block animate-card-enter animation-delay-350"
                   >
                     <img
                       src="/portfolio/p4_DbOWBkKE80l.jpg"
-                      alt="Wisuda Bestie Squad - FYPotret"
+                      alt="Wisuda Dynamic Portrait - FYPotret"
                       className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none" />
                     <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 z-10">
                       <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-gold-500 text-obsidian-950 inline-block mb-1 font-sans shadow-sm">
-                        Squad
+                        Wisuda
                       </span>
                       <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                        Momen Bersama Sahabat
+                        Graduation Moments
                       </p>
                     </div>
                   </a>
