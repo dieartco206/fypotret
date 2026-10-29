@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
-import { MapPin, Camera, Filter, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { MapPin, Camera, Filter, ChevronLeft, ChevronRight, Play, Images } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface GalleryProps {
@@ -149,7 +149,7 @@ export const Gallery: React.FC<GalleryProps> = ({
                   {/* Gradient Shadow Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
 
-                  {/* Top Header inside Image: Category Badge & Instagram Icon */}
+                  {/* Top Header inside Image: Category Badge, Reel/Album Badge & Instagram Icon */}
                   <div className="absolute top-2 left-2 right-2 sm:top-3 sm:left-3 sm:right-3 z-10 flex items-center justify-between">
                     <div className="flex items-center gap-1 sm:gap-1.5 flex-nowrap min-w-0">
                       <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-[#0e1017]/90 sm:backdrop-blur-md text-gold-400 border border-gold-500/30">
@@ -159,6 +159,12 @@ export const Gallery: React.FC<GalleryProps> = ({
                         <span className="whitespace-nowrap flex-shrink-0 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-pink-950/80 sm:backdrop-blur-md text-pink-300 border border-pink-500/35 flex items-center gap-1">
                           <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
                           <span>Reel</span>
+                        </span>
+                      )}
+                      {item.images && item.images.length > 1 && (
+                        <span className="whitespace-nowrap flex-shrink-0 px-1.5 py-0.5 sm:px-2 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-amber-950/85 sm:backdrop-blur-md text-amber-300 border border-amber-500/35 flex items-center gap-1 shadow-sm">
+                          <Images className="w-2.5 h-2.5 text-amber-400" />
+                          <span>{item.images.length} Foto</span>
                         </span>
                       )}
                     </div>
@@ -187,13 +193,18 @@ export const Gallery: React.FC<GalleryProps> = ({
                     </div>
                   )}
 
-                  {/* Camera/Play HUD Indicator on Hover (Desktop only) */}
+                  {/* Camera/Play/Album HUD Indicator on Hover (Desktop only) */}
                   <div className="hidden sm:block absolute top-12 right-3 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-1 group-hover:translate-y-0">
                     <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 flex items-center gap-1 shadow-md">
                       {item.isVideo ? (
                         <>
                           <Play className="w-3 h-3 fill-gold-400 text-gold-400" />
                           <span>PUTAR REEL</span>
+                        </>
+                      ) : item.images && item.images.length > 1 ? (
+                        <>
+                          <Images className="w-3 h-3 text-gold-400" />
+                          <span>{item.images.length} FOTO</span>
                         </>
                       ) : (
                         <>

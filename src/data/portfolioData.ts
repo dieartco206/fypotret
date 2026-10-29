@@ -11,6 +11,7 @@ export interface PortfolioItem {
   instagramUrl?: string;
   isVideo?: boolean;
   videoSrc?: string;
+  images?: string[];
 }
 
 export interface PricingPackage {
@@ -88,7 +89,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   // 1. Wedding - Seserahan & Akad: Putra & Putri at New Batavia Cafe (Slide 1)
   {
     id: 'ig-52',
-    title: 'Seserahan & Akad: Putra & Putri',
+    title: 'The Sacred Vows & Akad: Putra & Putri',
+    images: [
+          '/portfolio/p52_DewhdRwlMg_01_seserahan.jpg',
+          '/portfolio/p53_DewhdRwlMg_02_storyboard.jpg',
+          '/portfolio/p54_DewhdRwlMg_03_stairs.jpg',
+          '/portfolio/p55_DewhdRwlMg_04_bride_rose.jpg',
+          '/portfolio/p56_DewhdRwlMg_05_high_angle.jpg',
+          '/portfolio/p57_DewhdRwlMg_06_rattan_chair.jpg',
+          '/portfolio/p58_DewhdRwlMg_07_shoulder_rest.jpg',
+          '/portfolio/p59_DewhdRwlMg_08_colonial_outdoor.jpg'
+    ],
     category: 'wedding',
     categoryLabel: 'Wedding & Akad',
     image: '/portfolio/p52_DewhdRwlMg_01_seserahan.jpg',
@@ -113,206 +124,34 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 
 
-  // 2. Wedding - Storyboard Collage Moments Putra & Putri (Slide 2)
-  {
-    id: 'ig-53',
-    title: 'Wedding Storyboard: Putra & Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p53_DewhdRwlMg_02_storyboard.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=2',
-  },
 
 
-  // 3. Wedding - The Classic Elegance Putra & Putri at Stairs (Slide 3)
-  {
-    id: 'ig-54',
-    title: 'The Classic Elegance: Putra & Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p54_DewhdRwlMg_03_stairs.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=3',
-  },
 
 
-  // 4. Wedding - The Radiant Bride: Kak Putri (Slide 4)
-  {
-    id: 'ig-55',
-    title: 'The Radiant Bride: Kak Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p55_DewhdRwlMg_04_bride_rose.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=4',
-  },
 
 
-  // 5. Wedding - Vintage Staircase Intimacy: Putra & Putri (Slide 5)
-  {
-    id: 'ig-56',
-    title: 'Vintage Staircase Intimacy: Putra & Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p56_DewhdRwlMg_05_high_angle.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=5',
-  },
 
 
-  // 6. Wedding - Rattan Chair Editorial: Kak Putri (Slide 6)
-  {
-    id: 'ig-57',
-    title: 'Rattan Chair Editorial: Kak Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p57_DewhdRwlMg_06_rattan_chair.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=6',
-  },
 
 
-  // 7. Wedding - Warm Shoulder Rest: Putra & Putri (Slide 7)
-  {
-    id: 'ig-58',
-    title: 'Warm Shoulder Rest: Putra & Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p58_DewhdRwlMg_07_shoulder_rest.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=7',
-  },
 
 
-  // 8. Wedding - Colonial Heritage Walk: Putra & Putri (Slide 8)
-  {
-    id: 'ig-59',
-    title: 'Colonial Heritage Walk: Putra & Putri',
-    category: 'wedding',
-    categoryLabel: 'Wedding & Akad',
-    image: '/portfolio/p59_DewhdRwlMg_08_colonial_outdoor.jpg',
-    aspect: 'tall',
-    location: 'New Batavia Cafe, Kota Tua Jakarta',
-    client: 'Putra & Putri',
-    description: `Selamat menempuh hidup baru, Mas Putra & Kak Putri. @ralvians_ @adriellapkumambong
-    
-    Semoga Allah memberkahi pernikahan kalian dengan cinta, kebahagiaan, dan keberkahan yang tiada habisnya. Semoga kalian selalu menemukan ketenangan satu sama lain dan membangun keluarga yang sakinah, mawaddah, wa rahmah. ✨
-    
-    terima kasih kepada.
-    
-    MUA: @keisyanmakeup
-    MC: @mc_depok
-    BA: @brideassistant_byapipah
-    FG/VG: @fypotretid
-    
-    Venue : @newbataviacafe
-    
-    #jakarta #wedding #pernikahan #weddingintimate #indonesia`,
-    instagramUrl: 'https://www.instagram.com/p/DewhdRwlMg_/?img_index=8',
-  },
 
 
   // 9. Event & Hangout - Weekend Stroll di Blok M (Slide 1)
   {
     id: 'ig-37',
     title: 'Weekend Stroll & Urban Hangout di Blok M',
+    images: [
+          '/portfolio/p37_DeeRlPGlFnm.jpg',
+          '/portfolio/p51_DeeRlPGlFnm_urban.jpg',
+          '/portfolio/p60_DeeRlPGlFnm_03_filmstrip.jpg',
+          '/portfolio/p61_DeeRlPGlFnm_04_fence_candid.jpg',
+          '/portfolio/p62_DeeRlPGlFnm_05_street_walk.jpg',
+          '/portfolio/p63_DeeRlPGlFnm_06_hijab_portrait.jpg',
+          '/portfolio/p64_DeeRlPGlFnm_07_bench_sit.jpg',
+          '/portfolio/p65_DeeRlPGlFnm_08_laugh_candid.jpg'
+    ],
     category: 'event',
     categoryLabel: 'Event & Hangout',
     image: '/portfolio/p37_DeeRlPGlFnm.jpg',
@@ -332,158 +171,18 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 
 
-  // 10. Prewed Casual - Urban Garden Greenery Stephanie & Firta (Slide 2)
-  {
-    id: 'ig-51',
-    title: 'Urban Garden Greenery: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p51_DeeRlPGlFnm_urban.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=2',
-  },
 
 
-  // 11. Prewed Casual - Ivy Wall Filmstrip: Stephanie & Firta (Slide 3)
-  {
-    id: 'ig-60',
-    title: 'Ivy Wall Filmstrip: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p60_DeeRlPGlFnm_03_filmstrip.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=3',
-  },
 
 
-  // 12. Prewed Casual - Park Railing Candid: Stephanie & Firta (Slide 4)
-  {
-    id: 'ig-61',
-    title: 'Park Railing Candid: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p61_DeeRlPGlFnm_04_fence_candid.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=4',
-  },
 
 
-  // 13. Prewed Casual - Urban Alleyway Stroll: Stephanie & Firta (Slide 5)
-  {
-    id: 'ig-62',
-    title: 'Urban Alleyway Stroll: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p62_DeeRlPGlFnm_05_street_walk.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=5',
-  },
 
 
-  // 14. Prewed Casual - Golden Hour Portrait: Stephanie (Slide 6)
-  {
-    id: 'ig-63',
-    title: 'Golden Hour Portrait: Stephanie',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p63_DeeRlPGlFnm_06_hijab_portrait.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=6',
-  },
 
 
-  // 15. Prewed Casual - City Bench Conversations: Stephanie & Firta (Slide 7)
-  {
-    id: 'ig-64',
-    title: 'City Bench Conversations: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p64_DeeRlPGlFnm_07_bench_sit.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=7',
-  },
 
 
-  // 16. Prewed Casual - Joyful Connection: Stephanie & Firta (Slide 8)
-  {
-    id: 'ig-65',
-    title: 'Joyful Connection: Stephanie & Firta',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p65_DeeRlPGlFnm_08_laugh_candid.jpg',
-    aspect: 'tall',
-    location: 'Blok M, Jakarta Selatan',
-    client: 'Stephanie & Firta',
-    description: `Weekend stroll at Blok M, captured in little moments 📸✨ @stephaniest_1
-    @firtasar_
-    
-    Terima kasih banyak Kak @stephaniest_1 dan kak @firtasar_ sudah mengajak Fypotret untuk mengabadikan momen jalan-jalan weekend kali ini.
-    
-    Semoga setiap fotonya bisa jadi kenangan manis yang bisa dikenang lagi nanti 🤍
-    
-    #Fypotret #BlokM #WeekendVibes #StreetPhotography #JasaFotoJakarta PhotographerJakarta CaptureTheMoment`,
-    instagramUrl: 'https://www.instagram.com/p/DeeRlPGlFnm/?img_index=8',
-  },
 
 
   // 5. Event - Reuni Akbar Eks Karyawan PT Jaya Obayashi
@@ -770,6 +469,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'ig-30',
     title: 'A New Chapter: Engagement Alfathan & Arova',
+    images: [
+          '/portfolio/p30_DdB3DEik_QK.jpg',
+          '/portfolio/p45_DdB3DEik_QK_grid.jpg',
+          '/portfolio/p46_DdB3DEik_QK_seserahan.jpg',
+          '/portfolio/p47_DdB3DEik_QK_rings.jpg',
+          '/portfolio/p48_DdB3DEik_QK_heart.jpg',
+          '/portfolio/p49_DdB3DEik_QK_brick.jpg',
+          '/portfolio/p50_DdB3DEik_QK_stairs.jpg'
+    ],
     category: 'prewedding',
     categoryLabel: 'Lamaran & Prewed',
     image: '/portfolio/p30_DdB3DEik_QK.jpg',
@@ -785,118 +493,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 
 
-  // 19. Engagement Carousel - Storyboard Kolase 9 Frame
-  {
-    id: 'ig-45',
-    title: 'Engagement Storyboard: Alfathan & Arova',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p45_DdB3DEik_QK_grid.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=2',
-  },
 
 
-  // 20. Engagement Carousel - Penyerahan Hantaran & Seserahan
-  {
-    id: 'ig-46',
-    title: 'Penyerahan Hantaran & Seserahan Lamaran',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p46_DdB3DEik_QK_seserahan.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=3',
-  },
 
 
-  // 21. Engagement Carousel - Penyematan Cincin & Doa Restu
-  {
-    id: 'ig-47',
-    title: 'Penyematan Cincin & Doa Restu Keluarga',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p47_DdB3DEik_QK_rings.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=4',
-  },
 
 
-  // 22. Engagement Carousel - The Rings & The Promise
-  {
-    id: 'ig-48',
-    title: 'The Rings & The Promise: Alfathan & Arova',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p48_DdB3DEik_QK_heart.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=5',
-  },
 
 
-  // 23. Engagement Carousel - Outdoor Garden Brick Wall Portrait
-  {
-    id: 'ig-49',
-    title: 'Outdoor Garden Engagement Portrait',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p49_DdB3DEik_QK_brick.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=6',
-  },
 
 
-  // 24. Engagement Carousel - Modern Architectural Stairs Session
-  {
-    id: 'ig-50',
-    title: 'Architectural Stairs Engagement Portrait',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p50_DdB3DEik_QK_stairs.jpg',
-    aspect: 'tall',
-    location: 'Tangerang, Indonesia',
-    client: 'Alfathan & Arova',
-    description: `A new chapter in a journey worth sharing. 🤍💍
-    
-    Happy engagement, Mas @alfathaaan_ & Kak @arovajp
-    
-    #Engagement #EngagementSession #LoveStory #weddingjourney #Lamaran`,
-    instagramUrl: 'https://www.instagram.com/p/DdB3DEik_QK/?img_index=7',
-  },
 
 
   // 25. Birthday - 5th Birthday Anak & Ibu
