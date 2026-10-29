@@ -11,6 +11,48 @@ interface LightboxModalProps {
   onInquire: (item: PortfolioItem) => void;
 }
 
+// Helper to convert @mentions and #hashtags in caption into clickable Instagram links
+const renderFormattedCaption = (text: string) => {
+  if (!text) return null;
+  const regex = /(@[a-zA-Z0-9_]+(?:\.[a-zA-Z0-9_]+)*|#[a-zA-Z0-9_]+)/g;
+  const parts = text.split(regex);
+
+  return parts.map((part, index) => {
+    if (part.startsWith('@')) {
+      const username = part.slice(1);
+      return (
+        <a
+          key={index}
+          href={`https://www.instagram.com/${username}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-gold-400 hover:text-gold-300 font-semibold underline underline-offset-2 decoration-gold-400/50 hover:decoration-gold-300 transition-colors inline-block"
+          title={`Buka profil Instagram @${username}`}
+        >
+          {part}
+        </a>
+      );
+    } else if (part.startsWith('#')) {
+      const tag = part.slice(1);
+      return (
+        <a
+          key={index}
+          href={`https://www.instagram.com/explore/tags/${tag}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-zinc-400 hover:text-gold-400 transition-colors inline-block"
+          title={`Lihat tag #${tag} di Instagram`}
+        >
+          {part}
+        </a>
+      );
+    }
+    return <span key={index}>{part}</span>;
+  });
+};
+
 export const LightboxModal: React.FC<LightboxModalProps> = ({
   items,
   currentIndex,
@@ -282,7 +324,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               {currentItem.title}
             </h4>
             <p className="text-[11px] sm:text-xs text-zinc-300 mt-1 line-clamp-2 sm:line-clamp-4 max-h-24 overflow-y-auto whitespace-pre-line leading-relaxed scrollbar-thin">
-              {currentItem.description}
+              {renderFormattedCaption(currentItem.description)}
             </p>
           </div>
 
