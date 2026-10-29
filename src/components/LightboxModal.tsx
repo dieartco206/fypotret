@@ -27,7 +27,7 @@ const renderFormattedCaption = (text: string) => {
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="text-gold-400 hover:text-gold-300 font-semibold underline underline-offset-2 decoration-gold-400/50 hover:decoration-gold-300 transition-colors inline-block"
+          className="text-amber-400 hover:text-amber-300 font-bold underline underline-offset-2 decoration-amber-400/60 hover:decoration-amber-300 transition-colors inline-block cursor-pointer relative z-10"
           title={`Buka profil Instagram @${username}`}
         >
           {part}
@@ -42,7 +42,7 @@ const renderFormattedCaption = (text: string) => {
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="text-zinc-400 hover:text-gold-400 transition-colors inline-block"
+          className="text-zinc-400 hover:text-gold-400 transition-colors inline-block cursor-pointer relative z-10"
           title={`Lihat tag #${tag} di Instagram`}
         >
           {part}
@@ -323,7 +323,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             <h4 className="text-sm sm:text-lg font-serif font-bold text-white truncate">
               {currentItem.title}
             </h4>
-            <p className="text-[11px] sm:text-xs text-zinc-300 mt-1 line-clamp-2 sm:line-clamp-4 max-h-24 overflow-y-auto whitespace-pre-line leading-relaxed scrollbar-thin">
+            <p className="text-[11px] sm:text-xs text-zinc-300 mt-1 line-clamp-2 sm:line-clamp-4 max-h-24 overflow-y-auto whitespace-pre-line leading-relaxed scrollbar-thin select-text pointer-events-auto">
               {renderFormattedCaption(currentItem.description)}
             </p>
           </div>
