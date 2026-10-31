@@ -95,6 +95,28 @@ export const HIGHLIGHT_STORIES = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
+  // 00. Kids & Birthday Reel - Happy 2nd Birthday, Rio! (Video/Reel Terbaru IG)
+  {
+    id: 'ig-56',
+    title: 'Happy 2nd Birthday, Rio! (Cinematic Reel)',
+    category: 'birthday',
+    categoryLabel: 'Kids & Birthday',
+    image: '/portfolio/p56_DfH_IQ7zp3S.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'Rio & Keluarga (@dewandarioo)',
+    description: `Happy 2nd Birthday, Rio! ✨@dewandarioo
+
+Semoga hari spesial ini dipenuhi kebahagiaan, tawa, dan momen indah bersama orang-orang tersayang.
+
+Thank you for letting us capture your special day. 📸
+
+#BirthdayRio #BirthdayMoments #BirthdayPhotography #fypotret`,
+    instagramUrl: 'https://www.instagram.com/reel/DfH_IQ7zp3S/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v56_DfH_IQ7zp3S.mp4',
+  },
+
   // 01. Kids & Birthday - Rio's 2nd Birthday Celebration (Postingan Terbaru IG)
   {
     id: 'ig-55',
