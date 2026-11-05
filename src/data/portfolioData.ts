@@ -95,6 +95,52 @@ export const HIGHLIGHT_STORIES = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
+  // 00. Lamaran & Prewed - Chelsea & Ade Engagement Day (Postingan Terbaru IG)
+  {
+    id: 'ig-57',
+    title: "Here's to a Beautiful Beginning: Chelsea & Ade",
+    images: [
+      '/portfolio/p_chelsea_01.jpg',
+      '/portfolio/p_chelsea_02.jpg',
+      '/portfolio/p_chelsea_03.jpg',
+      '/portfolio/p_chelsea_04.jpg',
+      '/portfolio/p_chelsea_05.jpg',
+      '/portfolio/p_chelsea_06.jpg',
+      '/portfolio/p_chelsea_07.jpg',
+      '/portfolio/p_chelsea_08.jpg',
+      '/portfolio/p_chelsea_09.jpg',
+      '/portfolio/p_chelsea_10.jpg',
+      '/portfolio/p_chelsea_11.jpg',
+      '/portfolio/p_chelsea_12.jpg',
+      '/portfolio/p_chelsea_13.jpg',
+      '/portfolio/p_chelsea_14.jpg',
+      '/portfolio/p_chelsea_15.jpg',
+      '/portfolio/p_chelsea_16.jpg',
+      '/portfolio/p_chelsea_17.jpg',
+      '/portfolio/p_chelsea_18.jpg',
+      '/portfolio/p_chelsea_19.jpg',
+      '/portfolio/p_chelsea_20.jpg',
+    ],
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p_chelsea_01.jpg',
+    aspect: 'tall',
+    location: "D'Bakoel Terrace",
+    client: 'Chelsea & Ade (@bijiewijen @elfrogyp)',
+    description: `Here's to a beautiful beginning. 🤍
+
+Selamat atas hari bahagia nya kak Chelsea & Ade. @bijiewijen @elfrogyp, one step closer ✨🌸
+
+Semoga menjadi awal yang baik untuk perjalanan bersama ke depannya. Semoga segala persiapan menuju hari pernikahan diberikan kelancaran.
+
+Terima kasih telah mempercayakan momen berharga ini kepada kami.
+
+Venue : @dbakoelterrace
+
+#ChelseaAndAde #EngagementDay #EngagementMoments #CheersToLove FYPotret`,
+    instagramUrl: 'https://www.instagram.com/p/DfXKzKFk-sQ/',
+  },
+
   // 00. Kids & Birthday Reel - Happy 2nd Birthday, Rio! (Video/Reel Terbaru IG)
   {
     id: 'ig-56',
