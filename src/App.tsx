@@ -23,7 +23,25 @@ export function App() {
 
   // Filtered gallery items
   const filteredGallery = useMemo(() => {
-    if (selectedCategory === 'all') return PORTFOLIO_ITEMS;
+    if (selectedCategory === 'all' || selectedCategory === 'review') return PORTFOLIO_ITEMS;
+    if (selectedCategory === 'wedding') return PORTFOLIO_ITEMS.filter((item) => item.category === 'wedding');
+    if (selectedCategory === 'wisuda' || selectedCategory === 'graduation') {
+      return PORTFOLIO_ITEMS.filter((item) => item.category === 'graduation');
+    }
+    if (selectedCategory === 'prewedding') {
+      return PORTFOLIO_ITEMS.filter((item) => item.category === 'prewedding');
+    }
+    if (selectedCategory === 'engagement') {
+      return PORTFOLIO_ITEMS.filter(
+        (item) =>
+          item.category === 'prewedding' ||
+          item.title.toLowerCase().includes('lamaran') ||
+          item.title.toLowerCase().includes('engagement')
+      );
+    }
+    if (selectedCategory === 'bts' || selectedCategory === 'event') {
+      return PORTFOLIO_ITEMS.filter((item) => item.category === 'event' || item.category === 'birthday');
+    }
     return PORTFOLIO_ITEMS.filter((item) => item.category === selectedCategory);
   }, [selectedCategory]);
 

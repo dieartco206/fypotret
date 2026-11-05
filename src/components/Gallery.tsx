@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
+import { type PortfolioItem } from '../data/portfolioData';
 import { MapPin, Camera, Filter, ChevronLeft, ChevronRight, Play, Images } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 import { HighlightStories } from './HighlightStories';
@@ -95,28 +95,12 @@ export const Gallery: React.FC<GalleryProps> = ({
             Pilih sorotan cerita atau filter kategori untuk melihat resolusi penuh dan detail setiap momen istimewa.
           </p>
 
-          {/* Integrated Authentic Instagram Story Highlights */}
-          <HighlightStories onOpenStory={onOpenStory} />
-
-          {/* Category Filter Pills (Mobile Responsive Swipe) */}
-          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 mt-5 sm:mt-6 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
-            {CATEGORIES.map((cat) => {
-              const isSelected = selectedCategory === cat.id;
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => onSelectCategory(cat.id)}
-                  className={`px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer min-h-[40px] flex items-center gap-1.5 active:scale-95 flex-shrink-0 whitespace-nowrap ${
-                    isSelected
-                      ? 'bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 shadow-lg shadow-gold-500/25 scale-105'
-                      : 'bg-zinc-900/90 text-zinc-300 hover:text-white hover:bg-zinc-800 border border-white/5'
-                  }`}
-                >
-                  <span>{cat.label}</span>
-                </button>
-              );
-            })}
-          </div>
+          {/* Integrated Visual Category Filters & Instagram Story Highlights */}
+          <HighlightStories
+            activeCategory={selectedCategory}
+            onSelectCategory={onSelectCategory}
+            onOpenStory={onOpenStory}
+          />
         </div>
 
         {/* Dynamic Bento / Masonry Gallery Grid - 2 Kolom di Mobile, 2 Kolom di Tablet, 3 Kolom di Desktop */}
