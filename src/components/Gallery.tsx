@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { type PortfolioItem, CATEGORIES } from '../data/portfolioData';
 import { MapPin, Camera, Filter, ChevronLeft, ChevronRight, Play, Images } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
+import { HighlightStories } from './HighlightStories';
 
 interface GalleryProps {
   items: PortfolioItem[];
   selectedCategory: string;
   onSelectCategory: (category: string) => void;
   onOpenLightbox: (index: number) => void;
+  onOpenStory: (highlightId: string) => void;
   onInquireItem?: (item: PortfolioItem) => void;
 }
 
@@ -18,6 +20,7 @@ export const Gallery: React.FC<GalleryProps> = ({
   selectedCategory,
   onSelectCategory,
   onOpenLightbox,
+  onOpenStory,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -89,11 +92,14 @@ export const Gallery: React.FC<GalleryProps> = ({
             Koleksi Karya & Momen Terbaik
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 mt-3 font-sans">
-            Pilih foto untuk melihat resolusi penuh, informasi lokasi, dan detail setiap momen istimewa.
+            Pilih sorotan cerita atau filter kategori untuk melihat resolusi penuh dan detail setiap momen istimewa.
           </p>
 
+          {/* Integrated Authentic Instagram Story Highlights */}
+          <HighlightStories onOpenStory={onOpenStory} />
+
           {/* Category Filter Pills (Mobile Responsive Swipe) */}
-          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 mt-8 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
+          <div className="flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 mt-5 sm:mt-6 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none no-scrollbar">
             {CATEGORIES.map((cat) => {
               const isSelected = selectedCategory === cat.id;
               return (

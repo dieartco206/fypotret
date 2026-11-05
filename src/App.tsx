@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { HighlightStories } from './components/HighlightStories';
 import { Gallery } from './components/Gallery';
 import { PricingSection } from './components/PricingSection';
 import { Testimonials } from './components/Testimonials';
@@ -97,15 +96,13 @@ export function App() {
         {/* Hero Section */}
         <Hero onOpenBooking={handleOpenGeneralBooking} />
 
-        {/* Authentic Instagram Story Highlights Bar */}
-        <HighlightStories onOpenStory={(storyId) => setActiveStoryId(storyId)} />
-
-        {/* Dynamic Bento Gallery with Category Tabs */}
+        {/* Dynamic Bento Gallery with Story Highlights & Category Tabs */}
         <Gallery
           items={filteredGallery}
           selectedCategory={selectedCategory}
           onSelectCategory={(catId) => setSelectedCategory(catId)}
           onOpenLightbox={handleOpenLightbox}
+          onOpenStory={(storyId) => setActiveStoryId(storyId)}
         />
 
         {/* Transparent Pricing Section */}
