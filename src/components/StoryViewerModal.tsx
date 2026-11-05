@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { INSTAGRAM_HIGHLIGHTS, type StoryHighlight, type StorySlide } from '../data/storyData';
-import { X, Play, Pause, Volume2, VolumeX, ChevronLeft, ChevronRight, MessageCircle, Star, MapPin } from 'lucide-react';
+import { X, Play, Pause, Volume2, VolumeX, ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
+import { InstagramIcon } from './InstagramIcon';
 
 interface StoryViewerModalProps {
   initialHighlightId: string | null;
@@ -61,7 +62,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
       setSlideIndex(0);
       setProgress(0);
     } else {
-      // Reached the very end of all highlights
+      // Reached the end of all highlights
       onClose();
     }
   }, [currentHighlight, slideIndex, highlightIndex, onClose]);
@@ -81,26 +82,28 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
     }
   }, [slideIndex, highlightIndex]);
 
-  // Handle timer & progress bar
+  // Handle timer & progress bar for static images
   useEffect(() => {
     if (!initialHighlightId || !currentSlide || isPaused) {
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       return;
     }
 
-    const duration = currentSlide.type === 'video' ? 12000 : 5000;
-    const intervalStep = 50; // ms
-    const increment = (intervalStep / duration) * 100;
+    if (currentSlide.type === 'image') {
+      const duration = 5000;
+      const intervalStep = 50; // ms
+      const increment = (intervalStep / duration) * 100;
 
-    progressIntervalRef.current = window.setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          goToNextSlide();
-          return 0;
-        }
-        return prev + increment;
-      });
-    }, intervalStep);
+      progressIntervalRef.current = window.setInterval(() => {
+        setProgress((prev) => {
+          if (prev >= 100) {
+            goToNextSlide();
+            return 0;
+          }
+          return prev + increment;
+        });
+      }, intervalStep);
+    }
 
     return () => {
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
@@ -193,7 +196,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
         onPointerCancel={handlePointerUp}
       >
         {/* Top Progress Bars (Segmented per slide) */}
-        <div className="absolute top-0 left-0 right-0 z-30 pt-3 px-3 flex gap-1.5 pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 z-30 pt-3 px-3 flex gap-1 pointer-events-none">
           {currentHighlight.slides.map((slide, idx) => {
             let widthPercent = 0;
             if (idx < slideIndex) widthPercent = 100;
@@ -230,7 +233,9 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="text-xs font-bold text-white tracking-wide">fypotretid</span>
-                <span className="text-[10px] text-zinc-400 font-sans">• Story</span>
+                <span className="text-[10px] text-zinc-400 font-sans">
+                  • {slideIndex + 1}/{currentHighlight.slides.length}
+                </span>
               </div>
               <span className="text-[11px] font-semibold text-gold-400 leading-tight">
                 {currentHighlight.title}
@@ -273,7 +278,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
 
         {/* Media Viewport (Image or Video) */}
         <div
-          className="relative flex-1 w-full h-full overflow-hidden flex items-center justify-center cursor-pointer"
+          className="relative flex-1 w-full h-full overflow-hidden flex items-center justify-center cursor-pointer bg-black"
           onClick={handleTapNavigation}
         >
           {currentSlide.type === 'video' ? (
@@ -284,8 +289,14 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
               poster={currentSlide.posterUrl}
               autoPlay
               playsInline
-              loop
               muted={isMuted}
+              onEnded={goToNextSlide}
+              onTimeUpdate={(e) => {
+                const v = e.currentTarget;
+                if (v.duration) {
+                  setProgress((v.currentTime / v.duration) * 100);
+                }
+              }}
               className="w-full h-full object-cover"
             />
           ) : (
@@ -299,49 +310,13 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
           )}
 
           {/* Gradient Overlay for Readable Text at Top & Bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/60 pointer-events-none" />
-
-          {/* Review Card Layout (If Slide is a Testimonial Review) */}
-          {currentSlide.isReview && (
-            <div className="absolute inset-x-4 top-1/2 -translate-y-1/2 z-20 p-5 rounded-2xl bg-obsidian-950/85 backdrop-blur-md border border-gold-500/30 shadow-2xl text-center pointer-events-none">
-              <div className="flex justify-center gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
-                ))}
-              </div>
-              <p className="text-xs sm:text-sm text-zinc-100 font-sans italic leading-relaxed mb-4">
-                "{currentSlide.reviewQuote}"
-              </p>
-              <div className="border-t border-white/10 pt-3">
-                <p className="text-xs font-bold text-gold-400">{currentSlide.client}</p>
-                <p className="text-[10px] text-zinc-400">{currentSlide.clientRole}</p>
-              </div>
-            </div>
-          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/60 pointer-events-none" />
 
           {/* Bottom Story Description & CTA */}
           <div
             className="absolute bottom-4 left-3 right-3 z-30 flex flex-col gap-2.5"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Title & Location Tag */}
-            <div className="pointer-events-none">
-              {currentSlide.location && (
-                <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-zinc-300 text-[10px] font-sans mb-1.5">
-                  <MapPin className="w-2.5 h-2.5 text-gold-400" />
-                  <span>{currentSlide.location}</span>
-                </div>
-              )}
-              <h3 className="text-base sm:text-lg font-serif font-bold text-white tracking-wide drop-shadow-md">
-                {currentSlide.title}
-              </h3>
-              {currentSlide.description && (
-                <p className="text-[11px] sm:text-xs text-zinc-300 font-sans line-clamp-2 leading-relaxed drop-shadow-sm mt-0.5">
-                  {currentSlide.description}
-                </p>
-              )}
-            </div>
-
             {/* Direct Interactive CTA */}
             <div className="flex items-center gap-2 pt-1">
               <button
@@ -362,11 +337,12 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
                   href={currentSlide.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-xs flex items-center justify-center border border-white/20 transition-all min-h-[40px]"
-                  title="Buka di Instagram"
+                  className="px-3 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-xs flex items-center justify-center border border-white/20 transition-all min-h-[40px] gap-1"
+                  title="Buka Sorotan di Instagram"
                   aria-label="Open on Instagram"
                 >
-                  IG
+                  <InstagramIcon className="w-3.5 h-3.5 text-pink-400" />
+                  <span>IG</span>
                 </a>
               )}
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { INSTAGRAM_HIGHLIGHTS, type StoryHighlight } from '../data/storyData';
-import { Play, Sparkles, ChevronRight } from 'lucide-react';
+import { Play, ChevronRight } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface HighlightStoriesProps {
@@ -25,8 +25,8 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({ onOpenStory 
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-xs sm:text-sm font-bold tracking-wider uppercase text-zinc-200 flex items-center gap-1.5">
-                  Sorotan Instagram <Sparkles className="w-3 h-3 text-gold-400 animate-pulse" />
+                <h2 className="text-xs sm:text-sm font-bold tracking-wider uppercase text-zinc-200">
+                  Sorotan Instagram
                 </h2>
                 <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gold-500/10 text-gold-400 border border-gold-500/20">
                   @fypotretid
