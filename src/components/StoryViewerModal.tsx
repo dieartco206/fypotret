@@ -329,7 +329,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
                 className="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-obsidian-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-lg shadow-gold-500/20 active:scale-98 transition-all cursor-pointer min-h-[40px]"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-obsidian-950" />
-                <span>Konsultasi Konsep Serupa</span>
+                <span>Konsultasi</span>
               </button>
 
               {currentSlide.instagramUrl && (

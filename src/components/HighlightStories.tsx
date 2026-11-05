@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Images, Film } from 'lucide-react';
+import { Play, Images } from 'lucide-react';
 
 interface HighlightStoriesProps {
   activeCategory: string;
@@ -80,10 +80,6 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
     },
   ];
 
-  // Find currently active item
-  const currentActive =
-    FILTER_ITEMS.find((it) => it.categoryValue === activeCategory) || FILTER_ITEMS[0];
-
   const handleCircleClick = (item: FilterCircle) => {
     if (item.id === 'review') {
       // Review is primarily an authentic Instagram Story experience
@@ -103,7 +99,7 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
   };
 
   return (
-    <div className="mt-7 sm:mt-9 mb-6 flex flex-col items-center">
+    <div className="mt-7 sm:mt-9 mb-4 flex flex-col items-center">
       {/* Centered Horizontal Scroll Filter Bar */}
       <div className="w-full overflow-x-auto py-2 scrollbar-none no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth">
         <div className="flex items-center justify-center gap-3.5 sm:gap-6 lg:gap-7 w-max mx-auto">
@@ -232,32 +228,6 @@ export const HighlightStories: React.FC<HighlightStoriesProps> = ({
             );
           })}
         </div>
-      </div>
-
-      {/* Dynamic Contextual Story CTA Pill Button */}
-      <div className="mt-3 sm:mt-4 flex items-center justify-center animate-fade-in">
-        {currentActive.storyId ? (
-          <button
-            onClick={() => onOpenStory(currentActive.storyId!)}
-            className="group px-4 py-1.5 sm:px-5 sm:py-2 rounded-full bg-gold-500/10 hover:bg-gold-500/20 text-gold-400 border border-gold-500/30 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-sm transition-all duration-200 cursor-pointer active:scale-95"
-            title={`Tonton Story Instagram ${currentActive.title}`}
-          >
-            <span className="w-2 h-2 rounded-full bg-gold-400 animate-ping" />
-            <Play className="w-3.5 h-3.5 fill-gold-400 text-gold-400 ml-0.5" />
-            <span>
-              Tonton {currentActive.slideCount} Story Instagram {currentActive.title}
-            </span>
-          </button>
-        ) : (
-          <button
-            onClick={() => onOpenStory('bts')}
-            className="group px-4 py-1.5 sm:px-5 sm:py-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-gold-400 border border-white/10 text-xs sm:text-sm font-medium flex items-center gap-2 transition-all duration-200 cursor-pointer active:scale-95"
-            title="Tonton Cuplikan Cerita Instagram FYPotret"
-          >
-            <Film className="w-3.5 h-3.5 text-gold-400" />
-            <span>Tonton Sorotan Cerita Instagram (@fypotretid)</span>
-          </button>
-        )}
       </div>
     </div>
   );

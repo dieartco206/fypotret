@@ -339,7 +339,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wide shadow-lg shadow-gold-500/20 active:scale-98 transition-all min-h-[40px] sm:min-h-[44px] cursor-pointer"
             >
               <MessageCircle className="w-4 h-4 fill-obsidian-950 flex-shrink-0" />
-              <span>Konsultasi Konsep Serupa</span>
+              <span>Konsultasi</span>
             </button>
           </div>
         </div>
