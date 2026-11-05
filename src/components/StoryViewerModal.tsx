@@ -190,7 +190,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
 
       {/* Main 9:16 Instagram Story Container */}
       <div
-        className="relative w-full h-full sm:h-[88vh] sm:max-h-[820px] sm:max-w-[410px] bg-obsidian-950 sm:rounded-3xl overflow-hidden shadow-2xl shadow-black/80 flex flex-col border border-white/10"
+        className="relative w-full h-full sm:h-[88vh] sm:max-h-[820px] sm:max-w-[410px] bg-obsidian-950 sm:rounded-3xl overflow-hidden shadow-2xl shadow-black/80 flex flex-col border border-white/10 animate-story-modal"
         onPointerDown={handlePointerDown}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}

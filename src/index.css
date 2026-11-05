@@ -169,7 +169,23 @@
 }
 
 .animate-story-spin {
-  animation: storyRingSpin 8s linear infinite;
+  animation: storyRingSpin 6s linear infinite;
+}
+
+/* 5b. Instagram Story Modal Spring Zoom-In */
+@keyframes storyModalOpen {
+  0% {
+    opacity: 0;
+    transform: scale(0.86) translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-story-modal {
+  animation: storyModalOpen 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* 6. Card Staggered Entrance (Meluncur halus dari bawah & scale up lembut) */
