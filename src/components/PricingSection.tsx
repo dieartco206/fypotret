@@ -51,14 +51,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
         </div>
 
         {/* Pricing Grid - 2 Columns on Desktop & Tablet (2 x 2 Balanced Grid), 1 on Mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 sm:gap-8 max-w-5xl mx-auto items-stretch pt-4 sm:pt-2">
           {PRICING_PACKAGES.map((pkg, index) => {
             return (
               <div
                 key={pkg.id}
                 onMouseMove={handleMouseMove}
                 style={{ animationDelay: `${index * 150}ms` }}
-                className={`group relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 overflow-hidden ${
+                className={`group relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 ${
                   pkg.isPopular
                     ? 'border-gold-400/90 shadow-2xl shadow-gold-500/20 ring-1 ring-gold-400/50'
                     : 'hover:border-gold-500/50'
@@ -66,7 +66,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
               >
                 {/* Interactive Cursor Spotlight Glow (Apple / Linear style) */}
                 <div
-                  className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"
+                  className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"
                   style={{
                     background:
                       'radial-gradient(420px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(245, 158, 11, 0.16), transparent 75%)',
