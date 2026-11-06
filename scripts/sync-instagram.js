@@ -262,6 +262,22 @@ async function runSync() {
 
       await new Promise((r) => setTimeout(r, 4000));
 
+      // If it's a carousel (multi-photo) post, click through all slides to trigger lazy-loading of all images
+      for (let slide = 0; slide < 25; slide++) {
+        const hasNext = await postPage.evaluate(() => {
+          const nextBtn = document.querySelector(
+            'button[aria-label="Next"], button[aria-label="Berikutnya"], button[aria-label*="Next"], div[role="button"][aria-label*="Next"]'
+          );
+          if (nextBtn) {
+            nextBtn.click();
+            return true;
+          }
+          return false;
+        });
+        if (!hasNext) break;
+        await new Promise((r) => setTimeout(r, 700));
+      }
+
       // Extract metadata
       const details = await postPage.evaluate(() => {
         // Caption
