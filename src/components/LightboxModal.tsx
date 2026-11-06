@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback, useState } from 'react';
 import type { PortfolioItem } from '../data/portfolioData';
-import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin, Play, Images } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin, Play } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface LightboxModalProps {
@@ -276,28 +276,9 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       <div className="w-full p-3.5 sm:p-5 bg-obsidian-950/95 border-t border-white/10 z-30 backdrop-blur-xl">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4">
           <div className="min-w-0 pr-2">
-            <div className="flex flex-wrap items-center gap-1.5 text-[10px] sm:text-xs text-zinc-400 mb-1">
-              <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 rounded bg-gold-500/20 text-gold-400 font-semibold border border-gold-500/30 text-[10px] sm:text-xs">
-                {currentItem.categoryLabel}
-              </span>
-              {currentItem.isVideo && (
-                <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 font-semibold border border-pink-500/30 text-[10px] sm:text-xs flex items-center gap-1">
-                  <Play className="w-2.5 h-2.5 fill-pink-400 text-pink-400" />
-                  <span>Video Reel</span>
-                </span>
-              )}
-              {slides && (
-                <span className="whitespace-nowrap flex-shrink-0 px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/30 text-[10px] sm:text-xs flex items-center gap-1">
-                  <Images className="w-2.5 h-2.5 text-amber-400" />
-                  <span>Album ({slides.length} Foto)</span>
-                </span>
-              )}
-              <span className="flex items-center gap-1 whitespace-nowrap">
-                <MapPin className="w-3 h-3 text-gold-400 flex-shrink-0" />
-                <span>{currentItem.location}</span>
-              </span>
-              <span>•</span>
-              <span className="text-zinc-300 whitespace-nowrap">{currentItem.client}</span>
+            <div className="flex items-center gap-1.5 text-[11px] sm:text-xs text-gold-400 font-medium mb-1">
+              <MapPin className="w-3 h-3 text-gold-400 flex-shrink-0" />
+              <span className="truncate">{currentItem.location}</span>
             </div>
             <h4 className="text-sm sm:text-lg font-serif font-bold text-white truncate">
               {currentItem.title}
