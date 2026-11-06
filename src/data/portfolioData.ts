@@ -95,6 +95,28 @@ export const HIGHLIGHT_STORIES = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
+  // 00. Lamaran & Prewed Video Reel - Mas Ade & Kak Chelsea (Reel Terbaru IG)
+  {
+    id: 'ig-58',
+    title: 'Cheers to Love: Chelsea & Ade Engagement Reel',
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p58_DfY1Lj1paTq.jpg',
+    aspect: 'tall',
+    location: "D'Bakoel Terrace",
+    client: 'Mas Ade & kak Chelsea (@bijiewijen @elfrogyp)',
+    description: `🥂 Cheers to Love, Laughter & a Beautiful Beginning! 🤍 Mas Ade & kak Chelsea 
+
+A special day filled with happiness, warmth, and unforgettable moments.
+
+Semoga segala niat baik diberikan kelancaran hingga tiba waktunya menjadi satu dalam ikatan pernikahan. ✨
+
+#ChelseaAndAde #EngagementDay #CheersToLove #HariLamaran #momenlamaran`,
+    instagramUrl: 'https://www.instagram.com/reel/DfY1Lj1paTq/',
+    isVideo: true,
+    videoSrc: '/portfolio/videos/v58_DfY1Lj1paTq.mp4',
+  },
+
   // 00. Lamaran & Prewed - Chelsea & Ade Engagement Day (Postingan Terbaru IG)
   {
     id: 'ig-57',
