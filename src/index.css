@@ -274,6 +274,30 @@
   animation: floatSubtleB 7s ease-in-out infinite;
 }
 
+/* 10. Camera Lens Autofocus Snap Transition */
+@keyframes autofocusLock {
+  0% {
+    opacity: 0;
+    filter: blur(12px) contrast(115%);
+    transform: scale(1.03);
+  }
+  60% {
+    opacity: 0.95;
+    filter: blur(1.5px) contrast(105%);
+    transform: scale(1.005);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px) contrast(100%);
+    transform: scale(1);
+  }
+}
+
+.animate-autofocus {
+  animation: autofocusLock 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, filter, opacity;
+}
+
 /* Staggered Delay Utilities */
 .animation-delay-100 { animation-delay: 100ms; }
 .animation-delay-150 { animation-delay: 150ms; }

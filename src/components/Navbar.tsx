@@ -8,6 +8,7 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -16,6 +17,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
           setIsScrolled(window.scrollY > 20);
+          const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+          if (totalHeight > 0) {
+            setScrollProgress((window.scrollY / totalHeight) * 100);
+          }
           ticking = false;
         });
         ticking = true;
@@ -167,6 +172,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </div>
         </div>
       )}
+
+      {/* Golden Scroll Progress Bar */}
+      <div className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-white/5 overflow-hidden pointer-events-none">
+        <div
+          className="h-full bg-gradient-to-r from-gold-500 via-amber-400 to-yellow-200 transition-all duration-150 ease-out shadow-[0_0_12px_rgba(245,158,11,0.85)]"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
     </header>
   );
 };

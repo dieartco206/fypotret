@@ -9,6 +9,7 @@ import { LightboxModal } from './components/LightboxModal';
 import { BookingModal } from './components/BookingModal';
 import { StoryViewerModal } from './components/StoryViewerModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { BookingSocialProof } from './components/BookingSocialProof';
 import { BackgroundDecoration } from './components/BackgroundDecoration';
 import { PORTFOLIO_ITEMS, type PricingPackage, type PortfolioItem } from './data/portfolioData';
 import { type StorySlide } from './data/storyData';
@@ -156,6 +157,9 @@ export function App() {
         preselectedPackage={preselectedPackage}
         preselectedItem={preselectedItem}
       />
+
+      {/* Live Social Proof Toast */}
+      <BookingSocialProof onOpenBooking={handleOpenGeneralBooking} />
 
       {/* Mobile-First Floating WhatsApp in Thumb-Zone */}
       <FloatingWhatsApp onOpenBooking={handleOpenGeneralBooking} />

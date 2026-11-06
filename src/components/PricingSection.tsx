@@ -7,6 +7,14 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage }) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+    e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+  };
+
   return (
     <section id="pricing" className="py-16 sm:py-24 relative isolate overflow-hidden">
       {/* Real Photography Backdrop for Pricing Section */}
@@ -48,13 +56,22 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
             return (
               <div
                 key={pkg.id}
+                onMouseMove={handleMouseMove}
                 style={{ animationDelay: `${index * 150}ms` }}
-                className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 ${
+                className={`group relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 card-luxury animate-card-enter hover:-translate-y-1.5 overflow-hidden ${
                   pkg.isPopular
                     ? 'border-gold-400/90 shadow-2xl shadow-gold-500/20 ring-1 ring-gold-400/50'
                     : 'hover:border-gold-500/50'
                 }`}
               >
+                {/* Interactive Cursor Spotlight Glow (Apple / Linear style) */}
+                <div
+                  className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"
+                  style={{
+                    background:
+                      'radial-gradient(420px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(245, 158, 11, 0.16), transparent 75%)',
+                  }}
+                />
                 {/* Popular Pill */}
                 {pkg.isPopular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-gold-500 to-amber-500 text-obsidian-950 font-black text-xs uppercase tracking-wider shadow-md shadow-gold-500/30 flex items-center gap-1.5 whitespace-nowrap z-10">

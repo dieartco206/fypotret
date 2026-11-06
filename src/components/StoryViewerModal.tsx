@@ -304,7 +304,7 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
               key={currentSlide.id}
               src={currentSlide.mediaUrl}
               alt={currentSlide.title}
-              className="w-full h-full object-cover animate-fade-in"
+              className="w-full h-full object-cover animate-autofocus"
               loading="eager"
             />
           )}

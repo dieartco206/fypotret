@@ -216,7 +216,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
               key={`${currentItem.id}-${currentSlideIndex}`}
               src={activeImageSrc}
               alt={`${currentItem.title} - Slide ${currentSlideIndex + 1}`}
-              className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-fade-in transition-all duration-300 ease-out"
+              className="max-h-[54vh] sm:max-h-[66vh] w-auto max-w-full object-contain rounded-lg sm:rounded-xl shadow-2xl border border-white/10 select-none animate-autofocus transition-all duration-300 ease-out"
             />
           )}
         </div>
