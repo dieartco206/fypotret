@@ -1,6 +1,6 @@
 import React from 'react';
 import { PRICING_PACKAGES, type PricingPackage } from '../data/portfolioData';
-import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight, Car } from 'lucide-react';
+import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight } from 'lucide-react';
 
 interface PricingSectionProps {
   onSelectPackage: (pkg: PricingPackage) => void;
@@ -79,12 +79,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
                     <span>Favorit Klien</span>
                   </div>
                 )}
-
-                {/* Free Transport Pill */}
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-4 self-start">
-                  <Car className="w-3.5 h-3.5" />
-                  <span>Free Transport Jabodetabek</span>
-                </div>
 
                 {/* Package Title & Tagline */}
                 <div className="mb-5 flex flex-col justify-start">
