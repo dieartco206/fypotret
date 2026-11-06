@@ -315,13 +315,20 @@ async function runSync() {
         foundImages: details.imgs.length,
       });
 
-      const caption = details.caption.trim();
+      let caption = details.caption.trim();
+      // Clean meta description wrappers if present
+      caption = caption
+        .replace(/^\d+[\d,.]*\s+likes?,\s+\d+[\d,.]*\s+comments?\s+-\s+[^:]+:\s*"/i, '')
+        .replace(/"\.$/, '')
+        .replace(/\\n/g, '\n')
+        .trim();
+
       const location = details.location || 'Jakarta';
       const isVideo = details.isVideo || !!videoUrl;
       const { category, categoryLabel } = determineCategory(caption);
 
-      // Extract client handles from caption
-      const mentions = caption.match(/@([A-Za-z0-9_.]+)/g) || [];
+      // Extract client handles from caption or meta
+      const mentions = caption.match(/@([A-Za-z0-9_.]+)/g) || (details.caption.match(/@([A-Za-z0-9_.]+)/g) || []);
       const client = mentions.length > 0 ? mentions.join(' ') : 'FYPotret Client';
 
       nextId++;
