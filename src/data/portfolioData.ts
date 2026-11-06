@@ -235,7 +235,7 @@ Selamat menempuh hidup baru bersama. Semoga selalu diberikan kebahagiaan, kelanc
 
 Terima kasih telah mempercayakan momen spesial ini kepada kami 🙏🏻✨.
 
-#wedding #nikah #jakarta #pernikahanindonesia #weddingdream #fypotret`,
+#wedding #nikah #jakarta #pernikahanindonesia #weddingdream`,
     instagramUrl: 'https://www.instagram.com/p/DezSr2Pk0bA/',
   },
 
@@ -437,8 +437,11 @@ Terima kasih telah mempercayakan momen spesial ini kepada kami 🙏🏻✨.
     image: '/portfolio/p41_Dd1elU1Tycq.jpg',
     aspect: 'tall',
     location: 'Jakarta Barat',
-    client: 'Keluarga Zulianita',
-    description: 'Kompilasi video seru keceriaan pesta ulang tahun Benjamin & Berkant bertema mobil konstruksi ceria dengan dekorasi balon meriah.',
+    client: 'Keluarga Zulianita (@zulianitaa)',
+    description: `Dua anak yang selalu jadi alasan Mami tersenyum dan bersyukur. 🤍
+Semoga kalian tumbuh dengan bahagia, sehat, dan selalu merasa dicintai.
+
+Happy birthday, my greatest little loves. ❤️`,
     instagramUrl: 'https://www.instagram.com/reel/Dd1elU1Tycq/',
     isVideo: true,
     videoSrc: '/portfolio/videos/v41_Dd1elU1Tycq.mp4',
