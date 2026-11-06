@@ -1,5 +1,5 @@
 import React from 'react';
-import { PRICING_PACKAGES, CONTACT_INFO, type PricingPackage } from '../data/portfolioData';
+import { PRICING_PACKAGES, type PricingPackage } from '../data/portfolioData';
 import { Check, Camera, Flame, Clock, HardDrive, MessageCircle, ArrowRight, Car } from 'lucide-react';
 
 interface PricingSectionProps {
@@ -149,21 +149,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPackage 
               </div>
             );
           })}
-        </div>
-
-        {/* Custom Event Note */}
-        <div className="mt-12 text-center p-6 rounded-2xl bg-zinc-900/60 border border-white/5 max-w-2xl mx-auto">
-          <p className="text-xs sm:text-sm text-zinc-300">
-            Butuh penyesuaian kebutuhan khusus atau dokumentasi <strong>Event Perusahaan / Komunitas</strong>?
-          </p>
-          <a
-            href={`https://wa.me/${CONTACT_INFO.whatsappNumber}?text=Halo%20Admin%20FYPotret%2C%20saya%20ingin%20konsultasi%20paket%20dokumentasi%20acara...`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-300 text-xs sm:text-sm font-bold mt-2 underline underline-offset-4"
-          >
-            Konsultasikan langsung bersama Admin FYPotret via WhatsApp →
-          </a>
         </div>
 
       </div>
