@@ -95,6 +95,34 @@ export const HIGHLIGHT_STORIES = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
+  // 00. Lamaran & Prewed Album - A Promise of Forever Begins Here (Postingan Foto Terbaru IG)
+  {
+    id: 'ig-59',
+    title: 'A Promise of Forever Begins Here',
+    images: [
+      '/portfolio/p_forever_01.jpg',
+      '/portfolio/p_forever_02.jpg',
+      '/portfolio/p_forever_03.jpg',
+      '/portfolio/p_forever_04.jpg',
+      '/portfolio/p_forever_05.jpg',
+      '/portfolio/p_forever_06.jpg',
+      '/portfolio/p_forever_07.jpg',
+      '/portfolio/p_forever_08.jpg',
+      '/portfolio/p_forever_09.jpg',
+    ],
+    category: 'prewedding',
+    categoryLabel: 'Lamaran & Prewed',
+    image: '/portfolio/p_forever_01.jpg',
+    aspect: 'tall',
+    location: 'Jakarta',
+    client: 'FYPotret (@twins_studio3)',
+    description: `A promise of forever begins here. 
+Sebuah kesungguhan yang diikat dalam doa, restu, dan harapan untuk masa depan bersama. 🤍
+
+#lamaran #engagement #tunangan #jasafotoberkualitas`,
+    instagramUrl: 'https://www.instagram.com/p/DfY7xttlKz6/',
+  },
+
   // 00. Lamaran & Prewed Video Reel - Mas Ade & Kak Chelsea (Reel Terbaru IG)
   {
     id: 'ig-58',

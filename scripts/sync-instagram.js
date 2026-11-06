@@ -17,10 +17,8 @@ const PORTFOLIO_VIDEOS_DIR = path.join(ROOT_DIR, 'public/portfolio/videos');
 fs.mkdirSync(PORTFOLIO_MEDIA_DIR, { recursive: true });
 fs.mkdirSync(PORTFOLIO_VIDEOS_DIR, { recursive: true });
 
-// Shortcodes to ignore/exclude from auto-import
-const IGNORED_SHORTCODES = new Set([
-  'DfY7xttlKz6', // Excluded per user request
-]);
+// Shortcodes to ignore/exclude from auto-import if needed
+const IGNORED_SHORTCODES = new Set([]);
 
 function downloadFile(url, dest) {
   return new Promise((resolve, reject) => {
@@ -56,6 +54,7 @@ function loadCookies() {
   }
 
   const localCookiePaths = [
+    path.join(process.env.HOME || '', '.ig_cookies.json'),
     '/tmp/ig_cookies.json',
     path.join(__dirname, 'ig_cookies.json'),
     path.join(ROOT_DIR, 'ig_cookies.json'),
@@ -307,12 +306,35 @@ async function runSync() {
         const isVideo = !!video;
         const domPoster = video ? video.poster : '';
 
-        // Images in carousel
+        // Images in carousel DOM
         const imgs = Array.from(document.querySelectorAll('article img, div[role="dialog"] img'))
           .map((img) => img.src)
           .filter((src) => src && src.includes('cdninstagram.com') && !src.includes('150x150'));
 
-        return { caption, location, isVideo, domPoster, imgs };
+        // Also extract carousel_media from JSON script tags if available
+        const scripts = Array.from(document.querySelectorAll('script[type="application/json"]')).map((s) => s.innerText);
+        const scriptCarouselUrls = [];
+        for (const raw of scripts) {
+          if (raw.includes('xdt_api__v1__media__shortcode__web_info') || raw.includes('carousel_media')) {
+            try {
+              const data = JSON.parse(raw);
+              function findCarousel(obj) {
+                if (!obj || typeof obj !== 'object') return;
+                if (Array.isArray(obj.carousel_media)) {
+                  for (const c of obj.carousel_media) {
+                    const cands = c.image_versions2?.candidates || [];
+                    if (cands[0]?.url) scriptCarouselUrls.push(cands[0].url);
+                  }
+                  return;
+                }
+                for (const k of Object.keys(obj)) findCarousel(obj[k]);
+              }
+              findCarousel(data);
+            } catch (e) {}
+          }
+        }
+
+        return { caption, location, isVideo, domPoster, imgs, scriptCarouselUrls };
       });
 
       console.log('Metadata extracted:', {
@@ -320,6 +342,7 @@ async function runSync() {
         location: details.location || '(none)',
         isVideo: details.isVideo,
         foundImages: details.imgs.length,
+        foundScriptImages: details.scriptCarouselUrls.length,
       });
 
       let caption = details.caption.trim();
@@ -331,7 +354,7 @@ async function runSync() {
         .trim();
 
       const location = details.location || 'Jakarta';
-      const isVideo = details.isVideo || !!videoUrl;
+      const isVideo = details.isVideo;
       const { category, categoryLabel } = determineCategory(caption);
 
       // Extract client handles from caption or meta
@@ -409,7 +432,9 @@ async function runSync() {
   },`;
       } else {
         // Photo or Carousel
-        const allImgUrls = Array.from(new Set([...imageUrls, ...details.imgs]));
+        const allImgUrls = Array.from(
+          new Set([...(details.scriptCarouselUrls || []), ...imageUrls, ...details.imgs])
+        );
         if (allImgUrls.length > 1) {
           console.log(`Downloading ${allImgUrls.length} carousel images...`);
           const savedImages = [];
