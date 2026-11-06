@@ -165,62 +165,6 @@ export const Gallery: React.FC<GalleryProps> = ({
                     </div>
                   )}
 
-                  {/* Camera/Play/Album HUD Indicator on Hover (Desktop only) */}
-                  <div className="hidden sm:block absolute top-12 right-3 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-1 group-hover:translate-y-0">
-                    <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-black/80 backdrop-blur-md text-gold-300 border border-gold-500/40 flex items-center gap-1 shadow-md">
-                      {item.isVideo ? (
-                        <>
-                          <Play className="w-3 h-3 fill-gold-400 text-gold-400" />
-                          <span>PUTAR REEL</span>
-                        </>
-                      ) : item.images && item.images.length > 1 ? (
-                        <>
-                          <Images className="w-3 h-3 text-gold-400" />
-                          <span>{item.images.length} FOTO</span>
-                        </>
-                      ) : (
-                        <>
-                          <Camera className="w-3 h-3 text-gold-400" />
-                          <span>LIHAT</span>
-                        </>
-                      )}
-                    </span>
-                  </div>
-
-                  {/* Mirrorless Viewfinder Reticle on Hover */}
-                  <div className="absolute inset-2 sm:inset-3 pointer-events-none z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between">
-                    {/* Top Corner Brackets & Focus Status */}
-                    <div className="flex items-center justify-between">
-                      <span className="w-3 h-3 border-t-2 border-l-2 border-gold-400/90 rounded-tl-sm shadow-[0_0_6px_rgba(245,158,11,0.6)]" />
-                      <div className="hidden sm:flex items-center gap-1.5 px-1.5 py-0.5 rounded bg-black/75 backdrop-blur-sm border border-gold-500/30 text-[9px] font-mono text-gold-300">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                        <span>AF-LOCKED</span>
-                      </div>
-                      <span className="w-3 h-3 border-t-2 border-r-2 border-gold-400/90 rounded-tr-sm shadow-[0_0_6px_rgba(245,158,11,0.6)]" />
-                    </div>
-
-                    {/* Center Focus Reticle */}
-                    {!item.isVideo && (
-                      <div className="self-center w-5 h-5 border border-gold-400/40 rounded-sm flex items-center justify-center">
-                        <span className="w-1.5 h-[1px] bg-gold-400/70" />
-                        <span className="h-1.5 w-[1px] bg-gold-400/70 -ml-[1px]" />
-                      </div>
-                    )}
-
-                    {/* Bottom Corner Brackets & Lens Parameters */}
-                    <div className="flex items-end justify-between">
-                      <span className="w-3 h-3 border-b-2 border-l-2 border-gold-400/90 rounded-bl-sm shadow-[0_0_6px_rgba(245,158,11,0.6)]" />
-                      <div className="hidden sm:flex items-center gap-2 px-1.5 py-0.5 rounded bg-black/75 backdrop-blur-sm border border-gold-500/30 text-[9px] font-mono text-zinc-300">
-                        <span>ISO 100</span>
-                        <span>•</span>
-                        <span>1/250s</span>
-                        <span>•</span>
-                        <span className="text-gold-400 font-bold">f/1.4</span>
-                      </div>
-                      <span className="w-3 h-3 border-b-2 border-r-2 border-gold-400/90 rounded-br-sm shadow-[0_0_6px_rgba(245,158,11,0.6)]" />
-                    </div>
-                  </div>
-
                   {/* Bottom Image Info */}
                   <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4 z-10">
                     <div className="flex items-center gap-1 text-[10px] sm:text-xs text-zinc-300 font-medium mb-0.5 sm:mb-1">
