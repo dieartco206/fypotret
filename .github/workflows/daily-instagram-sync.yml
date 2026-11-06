@@ -3,7 +3,7 @@ name: Daily Instagram Sync
 on:
   schedule:
     # Berjalan setiap hari pukul 00:00 UTC (07:00 WIB pagi)
-    - cron: '0 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Tombol manual trigger di tab GitHub Actions
 
 permissions:
