@@ -17,6 +17,11 @@ const PORTFOLIO_VIDEOS_DIR = path.join(ROOT_DIR, 'public/portfolio/videos');
 fs.mkdirSync(PORTFOLIO_MEDIA_DIR, { recursive: true });
 fs.mkdirSync(PORTFOLIO_VIDEOS_DIR, { recursive: true });
 
+// Shortcodes to ignore/exclude from auto-import
+const IGNORED_SHORTCODES = new Set([
+  'DfY7xttlKz6', // Excluded per user request
+]);
+
 function downloadFile(url, dest) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(dest);
@@ -184,8 +189,10 @@ async function runSync() {
 
     console.log(`📋 Found ${candidateShortcodes.length} recent posts on profile:`, candidateShortcodes.join(', '));
 
-    // Find new posts (not yet in portfolioData.ts)
-    const newShortcodes = candidateShortcodes.filter((sc) => !existingShortcodes.has(sc));
+    // Find new posts (not yet in portfolioData.ts and not ignored)
+    const newShortcodes = candidateShortcodes.filter(
+      (sc) => !existingShortcodes.has(sc) && !IGNORED_SHORTCODES.has(sc)
+    );
 
     if (newShortcodes.length === 0) {
       console.log('✨ All Instagram posts are already up to date in the portfolio! No sync needed.');

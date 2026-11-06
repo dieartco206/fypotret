@@ -95,26 +95,6 @@ export const HIGHLIGHT_STORIES = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
-  // ig-59. Lamaran & Prewed Reel - DfY7xttlKz6 (Auto-synced from Instagram)
-  {
-    id: 'ig-59',
-    title: 'A Promise of Forever Begins Here',
-    category: 'prewedding',
-    categoryLabel: 'Lamaran & Prewed',
-    image: '/portfolio/p59_DfY7xttlKz6.jpg',
-    aspect: 'tall',
-    location: "Jakarta",
-    client: '@twins_studio3',
-    description: `A promise of forever begins here. 
-Sebuah kesungguhan yang diikat dalam doa, restu, dan harapan untuk masa depan bersama. 🤍
-
-#lamaran #engagement #tunangan #jasafotoberkualitas`,
-    instagramUrl: 'https://www.instagram.com/reel/DfY7xttlKz6/',
-    isVideo: true,
-    videoSrc: '/portfolio/videos/v59_DfY7xttlKz6.mp4',
-  },
-
-
   // 00. Lamaran & Prewed Video Reel - Mas Ade & Kak Chelsea (Reel Terbaru IG)
   {
     id: 'ig-58',
